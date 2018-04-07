@@ -11,25 +11,31 @@
         <p class="title">Formularz w HTML5</p>
         <form method="POST" action="https://formspree.io/siragata@op.pl">
             <label for="name">Imię:</label><br>
-            <input type="text" name="name" id="name" placeholder="Podaj Twoje imię" pattern="[a-zA-Z]+" required><br>
+                <input type="text" name="name" id="name" placeholder="Podaj Twoje imię" required><br>
 
             <label for="surname">Nazwisko:</label><br>
-            <input type="text" name="surname" id="surname" placeholder="Podaj Twoje nazwisko" pattern="[a-zA-Z]+" required><br>
+                <input type="text" name="surname" id="surname" placeholder="Podaj Twoje nazwisko" required><br>
 
+            <label>Wybierz płeć:</label><br>
+                <input type="radio" name="gender" id="male" value="male" checked><label for="male" >Mężczyzna</label><br>
+                <input type="radio" name="gender" id="female" value="female"><label for="female">Kobieta</label><br>
+                <input type="radio" name="gender" id="other" value="other"><label for="other">Yeti</label><br>
+           
             <label for="email">Adres e-mail:</label><br>
-            <input type="email" name="email" id="email" placeholder="Podaj Twój e-mail" required><br>
+                <input type="email" name="email" id="email" placeholder="Podaj Twój e-mail" required><br>
 
             <label for="phone">Numer telefonu</label><br>
-            <input type="text" name="phone" id="phone" placeholder="Podaj Twój numer telefonu" pattern="^[0-9\-\+\s\(\)]*$" required><br>
+                <input type="text" name="phone" id="phone" placeholder="Podaj Twój numer telefonu" pattern="^[0-9\-\+\s\(\)]*$" required><br>
 
             <label for="wojewodztwo">Województwo</label><br>
-            <select name="wojewodztwo" id="wojewodztwo">
+                <select name="wojewodztwo" id="wojewodztwo">
                     <option value="pomorskie" >Pomorskie</option>
                     <option value="mazowieckie">Mazowieckie</option>
                     <option value="slaskie" selected>Śląskie</option>
-            </select><br>
+                </select><br>
+            
             <label for="message">Treść wiadomości</label><br>
-            <textarea name="message" id="message" maxlength=“1000” placeholder="Treść Twojej wiadomości" required></textarea><br>
+                <textarea name="message" id="message" maxlength="1000" placeholder="Treść Twojej wiadomości" required></textarea><br>
 
             <button type="submit">Zapisz się ></button>
         </form>
