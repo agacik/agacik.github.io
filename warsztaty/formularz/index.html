@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+</head>
+
+<body>
+    <div class="form_container">
+        <p class="title">Formularz w HTML5</p>
+        <form method="POST" action="https://formspree.io/siragata@op.pl">
+            <label for=“name”>Imię:</label><br>
+            <input type="text" name="name" placeholder="Podaj Twoje imię" pattern="[a-zA-Z]+" required><br>
+            
+            <label for=“surname”>Nazwisko:</label><br>
+            <input type="text" name="surname" placeholder="Podaj Twoje nazwisko" pattern="[a-zA-Z]+" required><br>
+            
+            <label for=“email”>Adres e-mail:</label><br>
+            <input type="email" name="email" placeholder="Podaj Twój e-mail" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required><br>
+            
+            <label for=“phone”>Numer telefonu</label><br>
+            <input type="email" name="phone" placeholder="Podaj Twój numer telefonu" pattern="^[0-9\-\+\s\(\)]*$" required><br>
+            
+            <label for=“message”>Treść wiadomości</label><br>
+            <textarea name="message" placeholder="Treść Twojej wiadomości" required></textarea><br>
+            
+            <button type="submit">Zapisz się ></button>
+        </form>
+    </div>
+</body>
+
+</html>
