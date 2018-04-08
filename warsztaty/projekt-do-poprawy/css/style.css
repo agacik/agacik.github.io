@@ -1,0 +1,178 @@
+/* General Style - START */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+/* General Style - END */
+
+
+
+
+
+
+
+/* Nav Style - START */
+
+nav {
+    background-color: #222;
+    height: 60px;
+    width: 100%;
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+nav#menu > ul > li {
+    display: inline-block;
+}
+
+nav#menu > ul {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav#menu > ul > li > a {
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+nav#menu > ul > li > a:hover {
+    color: #222;
+    background-color: #fff;
+    font-weight: 800;
+}
+
+/* Nav Style - END */
+
+
+/* Header Style - START */
+header#header {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+header#header > img {
+    width: 100%;
+}
+
+header#header > h1#main-header-text {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+    margin: 0 auto;
+    z-index: 99;
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* Header Style - END */
+
+
+/* Section About - START */
+
+#about {
+    background-color: #fff;
+    height: 150px;
+    padding: 20px 40px;
+}
+
+#about > #about-header {
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#about > #about-header > p.about-content {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Section About - END */
+
+#contact {
+    background-color: #222;
+    padding: 40px 40px 5px 40px;
+    color: #fff;
+    text-align: center;
+}
+
+#contact > #contact-header {
+    padding-bottom: 20px;
+    font-size: 26px;
+}
+
+#contact > address#contact-content {
+    font-style: normal;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+
+#contact address#contact-content > a {
+    text-decoration-color: #fff;
+    color: #fff;
+}
+
+#contact > div#social {
+    width: 30%;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+#contact > div#social a {
+    color: #222;
+}
+
+#contact > div#social  > div > a:hover {
+    color: #fff;
+}
+
+#contact > div#social > div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 0 5px;
+}
+
+#contact > div#social > div:hover {
+    background-color: gold;
+}
+
+#contact > div#social > div > a {
+    text-align: center;    
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+#contact > div#social > div#facebook > a {
+    content: ''
+}
+
+#contact > div#social > div:hover {
+    transform: rotate(20deg) translate(-20px);
+    transition: all 1s ease;
+}
