@@ -1,4 +1,5 @@
 /* General Style - START */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,13 +10,8 @@ body {
     font-size: 12px;
     color: #000;
 }
+
 /* General Style - END */
-
-
-
-
-
-
 
 /* Nav Style - START */
 
@@ -23,7 +19,7 @@ nav {
     background-color: #222;
     height: 60px;
     width: 100%;
-    
+
     position: fixed;
     top: 0;
     right: 0;
@@ -55,8 +51,8 @@ nav#menu > ul > li > a:hover {
 
 /* Nav Style - END */
 
-
 /* Header Style - START */
+
 header#header {
     position: relative;
     top: 0;
@@ -79,8 +75,8 @@ header#header > h1#main-header-text {
     text-transform: uppercase;
     text-align: center;
 }
-/* Header Style - END */
 
+/* Header Style - END */
 
 /* Section About - START */
 
@@ -103,76 +99,68 @@ header#header > h1#main-header-text {
 
 /* Section About - END */
 
-#contact {
+/* Fotter - START*/
+
+footer#contact {
     background-color: #222;
     padding: 40px 40px 5px 40px;
     color: #fff;
     text-align: center;
 }
 
-#contact > #contact-header {
+footer#contact > #contact-header {
     padding-bottom: 20px;
     font-size: 26px;
 }
 
-#contact > address#contact-content {
+footer#contact > address#contact-content {
     font-style: normal;
     font-size: 13px;
     margin-bottom: 10px;
 }
 
-
-#contact address#contact-content > a {
+footer#contact address#contact-content > a {
     text-decoration-color: #fff;
     color: #fff;
 }
 
-#contact > div#social {
-    width: 30%;
-    color: #fff;
-    font-size: 20px;
-    margin: 0 auto;
-}
-
-#contact > div#social a {
-    color: #222;
-}
-
-#contact > div#social  > div > a:hover {
-    color: #fff;
-}
-
-#contact > div#social > div {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #fff;
+footer#contact > ul#social > li {
+    list-style: none;
     display: inline-block;
-    position: relative;
-    top: 0;
-    right: 0;
-    margin: 0 5px;
-}
-
-#contact > div#social > div:hover {
-    background-color: gold;
-}
-
-#contact > div#social > div > a {
-    text-align: center;    
-    width: 35px;
-    height: 35px;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #fff;
     border-radius: 50%;
+    font-size: 20px;
+    position: relative;
+    transition: 0.8s ease-in-out;
+    color: #222;
+    z-index: 1;
+}
+
+footer#contact > ul#social > li:before {
+    content: "";
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 5px;
-    right: 0;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.8s ease-in-out;
+    z-index: -1;
 }
 
-#contact > div#social > div#facebook > a {
-    content: ''
+footer#contact > ul#social > li:hover:before {
+    transform: scale(0.9);
 }
 
-#contact > div#social > div:hover {
-    transform: rotate(20deg) translate(-20px);
-    transition: all 1s ease;
+footer#contact > ul#social > li:hover {
+    color: #fff;
 }
+
+/* Fotter - END */
