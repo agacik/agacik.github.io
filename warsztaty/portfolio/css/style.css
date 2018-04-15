@@ -1,0 +1,139 @@
+/*   Main Style - START   */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    color: #291f1a;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;   
+    font-weight: 300;
+    margin: 0;
+}
+
+h2, h3 {
+    font-weight: 300;
+    margin: 0;
+}
+
+span {
+    color: #1ac056;
+    font-weight: 400;
+}
+
+a {
+    transition: color 1s ease-in-out;
+}
+
+.container {
+    background-color: #f9fcfe;
+    width: 100%;
+    height: 350px;
+    padding: 0 80px 100px;
+}
+
+/*   Main Style - END   */
+
+
+/*   Nav Style - START   */
+nav#menu {
+    width: 100%;
+    height: 60px;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    z-index: 100;
+}
+
+nav#menu > ul {
+    margin: 0;
+    float: right;
+}
+
+nav#menu > ul > li {
+    display: inline-block;
+
+}
+
+nav#menu > ul > li > a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 25px;
+    line-height: 60px;
+}
+
+nav#menu > ul > li:hover > a {
+    border-bottom: 2px solid #1ac056;
+    color: #1ac056;
+}
+
+/*   Nav Style - END   */
+
+/*   Header Style - START   */
+
+header#main {
+    background-image: url("../img/header-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+header#main > div.header-content {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header#main h1 {
+    font-size: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+header#main p.main {
+    font-family: 'Roboto', sans-serif;   
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+/*   Header Style - END   */
+
+
+/*   O-mnie Style - START   */
+section#o-mnie {
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+section#o-mnie h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+section#o-mnie > div.o-mnie > img {
+    width: 200px;
+    float: left;
+    margin: 0 50px;
+}
+
+section#o-mnie > div.o-mnie > p {
+    line-height: 20px;
+    text-align: justify;
+}
+
+
+/*   O-mnie Style - END   */
