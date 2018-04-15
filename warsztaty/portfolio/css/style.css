@@ -30,10 +30,20 @@ a {
     transition: color 1s linear;
 }
 
-.container {
-    background-color: #f9fcfe;
+section {
     overflow: hidden;
     padding: 0 80px 50px;
+}
+
+section > h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+section p {
+    line-height: 25px;
+    text-align: justify;
 }
 
 /*   Main Style - END   */
@@ -58,7 +68,6 @@ nav#menu > ul {
 
 nav#menu > ul > li {
     display: inline-block;
-
 }
 
 nav#menu > ul > li > a {
@@ -114,13 +123,8 @@ header#main p.main {
 
 /*   O-mnie Style - START   */
 section#o-mnie {
-    box-shadow: 0px 5px 5px 0px rgba(51,37,32,0.75);
-}
-
-section#o-mnie h2 {
-    font-size: 30px;
-    text-align: center;
-    padding: 20px 0;
+    box-shadow: 0px 5px 5px 0px rgba(51,37,32,0.2);
+    background-color: #f9fcfe;
 }
 
 section#o-mnie figure {
@@ -143,5 +147,18 @@ section#o-mnie > article {
     width: 50%;
     float: left;
 }
-
 /*   O-mnie Style - END   */
+
+
+/*   Skills Style - START   */
+section#skills p, .skills-icon {
+    text-align: center;
+}
+
+figure.skills-icon-item {
+    display: inline-block;
+}
+
+
+
+/*   Skills Style - END   */
