@@ -4,6 +4,7 @@
         height: 70vh;
         background-image: url("../img/man-2.jpg");
         font-size: 15px;
+        position: relative;
     }
 
     #wrapper > #content {
