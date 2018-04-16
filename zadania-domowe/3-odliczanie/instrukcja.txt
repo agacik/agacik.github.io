@@ -1,0 +1,9 @@
+Zadaniem jest stworzenie animacji odliczaj¹cej od 10 do 1.
+
+Ka¿da liczba wyœwietla siê dok³adnie przez sekundê, nastêpnie znika i pojawia siê kolejna.
+
+Ca³a animacja koñczy siê napisem "I love CSS :)"
+
+Zadanie proszê wykonaæ na platformie https://repl.it
+
+Do³¹czony obrazek, pokazuj¹cy przyk³adow¹ animacjê.
