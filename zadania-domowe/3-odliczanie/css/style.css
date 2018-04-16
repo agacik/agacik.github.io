@@ -1,0 +1,94 @@
+div.container {
+    width: 500px;
+    height: 200px;
+    
+    background: linear-gradient(45deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-size: 400%;
+    
+    font-size: 88px;
+    color: #fff;
+    text-align: center;
+    line-height: 200px;
+    
+    position: relative;
+    top: 0;
+    left: 0;
+
+    animation-name: background;
+    animation-iteration-count: infinite;
+    animation-duration: 11s;
+    animation-timing-function: linear;
+}
+
+.odliczanie {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+}
+
+.liczba-10 {
+    animation: odliczanie 1s ease-in 0s;
+}
+
+.liczba-9 {
+    animation: odliczanie 1s ease-in 1s;
+}
+
+.liczba-8 {
+    animation: odliczanie 1s ease-in 2s;
+}
+
+.liczba-7 {
+    animation: odliczanie 1s ease-in 3s;
+}
+
+.liczba-6 {
+    animation: odliczanie 1s ease-in 4s;
+}
+
+.liczba-5 {
+    animation: odliczanie 1s ease-in 5s;
+}
+
+.liczba-4 {
+    animation: odliczanie 1s ease-in 6s;
+}
+
+.liczba-3 {
+    animation: odliczanie 1s ease-in 7s;
+}
+
+.liczba-2 {
+    animation: odliczanie 1s ease-in 8s;
+}
+
+.liczba-1 {
+    animation: odliczanie 1s ease-in 9s;
+}
+
+.love-css {
+    animation: odliczanie 1s ease-in 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes odliczanie {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+
+@keyframes background {
+    0%,
+    100% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+}
