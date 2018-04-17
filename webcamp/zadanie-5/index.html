@@ -1,0 +1,670 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Language" content="pl" />
+  <meta name="description" content="Zadanie 5 / IAI WEBCAMP#4" />
+  <meta name="keywords" content="Webcamp, IAI-Shop.com" />
+  <title>Zadanie 5 / IAI WEBCAMP#4</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+  <link href="css/font-awesome.css" rel="stylesheet"> 
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>  
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  
+  
+  <script type="text/javascript">
+    $(function(){
+      $('.slider_main').slick({
+        infinite: true,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        fade: true
+      });
+      $('.slider_products').slick({
+        infinite: true,
+        dots: false,
+        arrows: true,
+        nextArrow: '<div class="nextArrow"></div>',
+        prevArrow: '<div class="prevArrow"></div>',
+      });
+    });
+  </script>
+
+</head>
+  <body>
+
+  <header>
+  	<div>
+	  	<form>
+	  		<input placeholder="Czego szukasz?"/><!--
+	  		--><button type="submit"><i class="fa fa-search"></i></button>
+	  	</form>
+  	</div>
+
+  	<div>
+	  	<a href="/" tilte="IAI WEBCAMP#4 - Zadanie 1">
+	  		<img src="img/ff_logo.png" alt="IAI WEBCAMP#4 - Zadanie 1" />
+	  	</a>
+  	</div>
+  	
+  	<div>
+  		<div>
+	  		<a class="login" href="#toplayer" title="Zaloguj się">
+		  		Logowanie
+		  	</a>
+		  	<span>|</span>
+		  	<a class="contact" href="mailto:office@flavorfactory.pl" title="Zarejestruj się">
+		  		Kontakt
+		  	</a>
+	  	</div>
+	  	<div class="shopping_cart">
+		  	<a href="/" title="Koszyk">
+		  		<i class="fa fa-shopping-basket"></i>123,45 zł
+		  	</a>
+	  	</div>
+  	</div>
+
+    <nav>
+    	<ul>
+        <li>
+          <a href="/" title="Flavor Factory">Flavor Factory</a>
+        <ul>
+            <li><!--
+            --><a href="/" target="_self" title="Powder shots">Powder shots</a>
+                <ul>
+                    <li><a href="/" target="_self">Energy bars</a></li><!--
+                    --><li><a href="/" target="_self">Lio Shakes</a></li><!--
+                    --><li><a href="/" target="_self">Superfoods</a></li><!--
+                    --><li><a href="/" target="_self">Białka roślinne</a></li><!--
+                    --><li><a href="/" target="_self">Smoothies</a></li><!--
+                    --><li><a href="/" target="_self">Musli</a></li><!--
+                    --><li><a href="/" target="_self">Musli bezglutenowe</a></li><!--
+                    --><li><a href="/" target="_self">Kasze</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                    --><li><a href="/" target="_self">Masła i oleje</a></li><!--
+                    --><li><a href="/" target="_self">Suplementy</a></li><!--
+                 --></ul>
+            </li><!--
+         --><li>
+                <a href="/" target="_self" title="Dust for life">Dust for life</a>
+                <ul>
+                    <li><a href="/" target="_self">Business</a></li><!--
+                    --><li><a href="/" target="_self">Musli bezglutenowe</a></li><!--
+                    --><li><a href="/" target="_self">Kasze</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                    --><li><a href="/" target="_self">Masła i oleje</a></li><!--
+                    --><li><a href="/" target="_self">Suplementy</a></li><!--
+                 --></ul>
+            </li><!--
+         --><li>
+                <a href="/" target="_self" title="Musli">Musli</a>
+                <ul>
+                    <li><a href="/" target="_self">Signature</a></li><!--
+                    --><li><a href="/" target="_self">Lio Shakes</a></li><!--
+                    --><li><a href="/" target="_self">Superfoods</a></li><!--
+                    --><li><a href="/" target="_self">Białka roślinne</a></li><!--
+                    --><li><a href="/" target="_self">Smoothies</a></li><!--
+                    --><li><a href="/" target="_self">Musli</a></li><!--
+                    --><li><a href="/" target="_self">Musli bezglutenowe</a></li><!--
+                    --><li><a href="/" target="_self">Kasze</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                    --><li><a href="/" target="_self">Masła i oleje</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                    --><li><a href="/" target="_self">Masła i oleje</a></li><!--
+                 --></ul>
+            </li><!--
+         --><li>
+                <a href="/" target="_self" title="Flavor box">Flavor box</a>
+                <ul>
+                    <li><a href="/" target="_self">Białka roślinne</a></li><!--
+                    --><li><a href="/" target="_self">Smoothies</a></li><!--
+                    --><li><a href="/" target="_self">Musli</a></li><!--
+                    --><li><a href="/" target="_self">Musli bezglutenowe</a></li><!--
+                    --><li><a href="/" target="_self">Kasze</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                 --></ul>
+            </li>
+        </ul>
+    </li><!--
+
+   --><li>
+     <a href="/" title="Dla niej">Dla niej</a>
+        <ul>
+          <li>
+                <a href="/" target="_self" title="Dust for life">Dust for life</a>
+                <ul>
+                    <li><a href="/" target="_self">Business</a></li><!--
+                    --><li><a href="/" target="_self">Musli bezglutenowe</a></li><!--
+                    --><li><a href="/" target="_self">Kasze</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                    --><li><a href="/" target="_self">Masła i oleje</a></li><!--
+                    --><li><a href="/" target="_self">Suplementy</a></li><!--
+                 --></ul>
+            </li><!--
+         --><li>
+                <a href="/" target="_self" title="Musli">Musli</a>
+                <ul>
+                    <li><a href="/" target="_self">Signature</a></li><!--
+                    --><li><a href="/" target="_self">Lio Shakes</a></li><!--
+                    --><li><a href="/" target="_self">Superfoods</a></li><!--
+                    --><li><a href="/" target="_self">Białka roślinne</a></li><!--
+                    --><li><a href="/" target="_self">Smoothies</a></li><!--
+                    --><li><a href="/" target="_self">Musli</a></li><!--
+                    --><li><a href="/" target="_self">Musli bezglutenowe</a></li><!--
+                    --><li><a href="/" target="_self">Kasze</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                    --><li><a href="/" target="_self">Masła i oleje</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                    --><li><a href="/" target="_self">Masła i oleje</a></li><!--
+                 --></ul>
+            </li><!--
+         --><li>
+                <a href="/" target="_self" title="Flavor box">Flavor box</a>
+                <ul>
+                    <li><a href="/" target="_self">Białka roślinne</a></li><!--
+                    --><li><a href="/" target="_self">Smoothies</a></li><!--
+                    --><li><a href="/" target="_self">Musli</a></li><!--
+                    --><li><a href="/" target="_self">Musli bezglutenowe</a></li><!--
+                    --><li><a href="/" target="_self">Kasze</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                 --></ul>
+            </li><!--
+         --><li><!--
+            --><a href="/" target="_self" title="Powder shots">Powder shots</a>
+                <ul>
+                    <li><a href="/" target="_self">Energy bars</a></li><!--
+                    --><li><a href="/" target="_self">Lio Shakes</a></li><!--
+                    --><li><a href="/" target="_self">Superfoods</a></li><!--
+                    --><li><a href="/" target="_self">Białka roślinne</a></li><!--
+                    --><li><a href="/" target="_self">Smoothies</a></li><!--
+                    --><li><a href="/" target="_self">Musli</a></li><!--
+                    --><li><a href="/" target="_self">Musli bezglutenowe</a></li><!--
+                    --><li><a href="/" target="_self">Kasze</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                    --><li><a href="/" target="_self">Masła i oleje</a></li><!--
+                    --><li><a href="/" target="_self">Suplementy</a></li><!--
+                 --></ul>
+            </li>
+        </ul>
+    </li><!--
+
+
+  --><li>
+        <a href="/" title="Dla niego">Dla niego</a>
+        <ul>
+            <li><!--
+            --><a href="/" target="_self" title="Powder shots">Powder shots</a>
+                <ul>
+                    <li><a href="/" target="_self">Energy bars</a></li><!--
+                    --><li><a href="/" target="_self">Lio Shakes</a></li><!--
+                    --><li><a href="/" target="_self">Superfoods</a></li><!--
+                    --><li><a href="/" target="_self">Białka roślinne</a></li><!--
+                    --><li><a href="/" target="_self">Smoothies</a></li><!--
+                    --><li><a href="/" target="_self">Musli</a></li><!--
+                    --><li><a href="/" target="_self">Musli bezglutenowe</a></li><!--
+                    --><li><a href="/" target="_self">Kasze</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                    --><li><a href="/" target="_self">Masła i oleje</a></li><!--
+                    --><li><a href="/" target="_self">Suplementy</a></li><!--
+                 --></ul>
+            </li><!--
+         --><li>
+                <a href="/" target="_self" title="Dust for life">Dust for life</a>
+                <ul>
+                    <li><a href="/" target="_self">Business</a></li><!--
+                    --><li><a href="/" target="_self">Musli bezglutenowe</a></li><!--
+                    --><li><a href="/" target="_self">Kasze</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                    --><li><a href="/" target="_self">Masła i oleje</a></li><!--
+                    --><li><a href="/" target="_self">Suplementy</a></li><!--
+                 --></ul>
+            </li><!--
+         --><li>
+                <a href="/" target="_self" title="Musli">Musli</a>
+                <ul>
+                    <li><a href="/" target="_self">Signature</a></li><!--
+                    --><li><a href="/" target="_self">Lio Shakes</a></li><!--
+                    --><li><a href="/" target="_self">Superfoods</a></li><!--
+                    --><li><a href="/" target="_self">Białka roślinne</a></li><!--
+                    --><li><a href="/" target="_self">Smoothies</a></li><!--
+                    --><li><a href="/" target="_self">Musli</a></li><!--
+                    --><li><a href="/" target="_self">Musli bezglutenowe</a></li><!--
+                    --><li><a href="/" target="_self">Kasze</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                    --><li><a href="/" target="_self">Masła i oleje</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                    --><li><a href="/" target="_self">Masła i oleje</a></li><!--
+                 --></ul>
+            </li><!--
+         --><li>
+                <a href="/" target="_self" title="Flavor box">Flavor box</a>
+                <ul>
+                    <li><a href="/" target="_self">Białka roślinne</a></li><!--
+                    --><li><a href="/" target="_self">Smoothies</a></li><!--
+                    --><li><a href="/" target="_self">Musli</a></li><!--
+                    --><li><a href="/" target="_self">Musli bezglutenowe</a></li><!--
+                    --><li><a href="/" target="_self">Kasze</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                 --></ul>
+            </li>
+        </ul>
+    </li><!--
+
+   --><li>
+        <a href="/" title="Dieta & Sport">Dieta & Sport</a>
+        <ul>
+          <li><!--
+             --><a href="/" target="_self" title="Dust for life">Dust for life</a>
+                <ul>
+                    <li><a href="/" target="_self">Business</a></li><!--
+                    --><li><a href="/" target="_self">Musli bezglutenowe</a></li><!--
+                    --><li><a href="/" target="_self">Kasze</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                    --><li><a href="/" target="_self">Masła i oleje</a></li><!--
+                    --><li><a href="/" target="_self">Suplementy</a></li><!--
+                 --></ul>
+            </li><!--
+         --><li><!--
+            --><a href="/" target="_self" title="Powder shots">Powder shots</a>
+                <ul>
+                    <li><a href="/" target="_self">Energy bars</a></li><!--
+                    --><li><a href="/" target="_self">Lio Shakes</a></li><!--
+                    --><li><a href="/" target="_self">Superfoods</a></li><!--
+                    --><li><a href="/" target="_self">Białka roślinne</a></li><!--
+                    --><li><a href="/" target="_self">Smoothies</a></li><!--
+                    --><li><a href="/" target="_self">Musli</a></li><!--
+                    --><li><a href="/" target="_self">Musli bezglutenowe</a></li><!--
+                    --><li><a href="/" target="_self">Kasze</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                    --><li><a href="/" target="_self">Masła i oleje</a></li><!--
+                    --><li><a href="/" target="_self">Suplementy</a></li><!--
+                 --></ul>
+            </li><!--
+         --><li>
+                <a href="/" target="_self" title="Dust for life">Dust for life</a>
+                <ul>
+                    <li><a href="/" target="_self">Business</a></li><!--
+                    --><li><a href="/" target="_self">Musli bezglutenowe</a></li><!--
+                    --><li><a href="/" target="_self">Kasze</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                    --><li><a href="/" target="_self">Masła i oleje</a></li><!--
+                    --><li><a href="/" target="_self">Suplementy</a></li><!--
+                 --></ul>
+            </li><!--
+         --><li>
+                <a href="/" target="_self" title="Musli">Musli</a>
+                <ul>
+                    <li><a href="/" target="_self">Signature</a></li><!--
+                    --><li><a href="/" target="_self">Lio Shakes</a></li><!--
+                    --><li><a href="/" target="_self">Superfoods</a></li><!--
+                    --><li><a href="/" target="_self">Białka roślinne</a></li><!--
+                    --><li><a href="/" target="_self">Smoothies</a></li><!--
+                    --><li><a href="/" target="_self">Musli</a></li><!--
+                    --><li><a href="/" target="_self">Musli bezglutenowe</a></li><!--
+                    --><li><a href="/" target="_self">Kasze</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                    --><li><a href="/" target="_self">Masła i oleje</a></li><!--
+                    --><li><a href="/" target="_self">Chipsy</a></li><!--
+                    --><li><a href="/" target="_self">Masła i oleje</a></li><!--
+                 --></ul>
+            </li>
+        </ul>
+    </li><!--
+    --><li>
+        <a href="/" title="FAQ">FAQ</a>
+        
+    </li><!--
+
+  --><li>
+        <a href="/" title="Gluten Free"><i class="fa fa-leaf"></i>Gluten Free</a>
+    </li>
+
+  </ul>
+    </nav>
+
+  </header>
+
+
+   <article>
+    <ul class="slider_main">
+      <li>
+        <a href="/" tilte="Banner 1">
+          <img src="img/banner_1.jpg" alt="" />
+        </a>
+      </li>
+      <li>
+        <a href="/" tilte="Banner 2">
+          <img src="img/banner_2.jpg" alt="" />
+        </a>
+      </li>
+      <li>
+        <a href="/" tilte="Banner 1">
+          <img src="img/banner_1.jpg" alt="" />
+        </a>
+      </li>
+      <li>
+        <a href="/" tilte="Banner 2">
+          <img src="img/banner_2.jpg" alt="" />
+        </a>
+      </li>
+      <li>
+        <a href="/" tilte="Banner 1">
+          <img src="img/banner_1.jpg" alt="" />
+        </a>
+      </li>
+    </ul>
+
+
+  <section>
+    <h2>Nowości</h2>
+      <div class="slider_products">
+        <div>
+          <div class="product">
+            <a class="product-icon" href="/" title="product1">
+              <img src="img/product_1.jpg" />
+            </a>
+            <a class="product-name" href="/" title="product1">Świeży sok z pomarańczy</a>
+            <div class="product-prices">
+              <del>139,99 zł</del>
+              <span>129,99 zł</span>
+            </div>
+          </div><!--
+          --><div class="product">
+            <a class="product-icon" href="/" title="product1">
+              <img src="img/product_2.jpg" />
+            </a>
+            <a class="product-name" href="/" title="product1">Pyszna tarta truskawkowa</a>
+            <div class="product-prices">
+              <del>29,99 zł</del>
+              <span>24,99 zł</span>
+            </div>
+          </div><!--
+          --><div class="product">
+            <a class="product-icon" href="/" title="product1">
+              <img src="img/product_3.jpg" />
+            </a>
+            <a class="product-name" href="/" title="product1">Delikatny sernik z czekoladą</a>
+            <div class="product-prices">
+              <del>29,99 zł</del>
+              <span>24,99 zł</span>
+            </div>
+          </div><!--
+          --><div class="product">
+            <a class="product-icon" href="/" title="product1">
+              <img src="img/product_4.jpg" />
+            </a>
+            <a class="product-name" href="/" title="product1">Słodkie maliny</a>
+            <div class="product-prices">
+              <del>139,99 zł</del>
+              <span>129,99 zł</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="product">
+            <a class="product-icon" href="/" title="product1">
+              <img src="img/product_1.jpg" />
+            </a>
+            <a class="product-name" href="/" title="product1">Świeży sok z pomarańczy</a>
+            <div class="product-prices">
+              <del>139,99 zł</del>
+              <span>129,99 zł</span>
+            </div>
+          </div><!--
+          --><div class="product">
+            <a class="product-icon" href="/" title="product1">
+              <img src="img/product_2.jpg" />
+            </a>
+            <a class="product-name" href="/" title="product1">Pyszna tarta truskawkowa</a>
+            <div class="product-prices">
+              <del>29,99 zł</del>
+              <span>24,99 zł</span>
+            </div>
+          </div><!--
+          --><div class="product">
+            <a class="product-icon" href="/" title="product1">
+              <img src="img/product_3.jpg" />
+            </a>
+            <a class="product-name" href="/" title="product1">Delikatny sernik z czekoladą</a>
+            <div class="product-prices">
+              <del>29,99 zł</del>
+              <span>24,99 zł</span>
+            </div>
+          </div><!--
+          --><div class="product">
+            <a class="product-icon" href="/" title="product1">
+              <img src="img/product_4.jpg" />
+            </a>
+            <a class="product-name" href="/" title="product1">Słodkie maliny</a>
+            <div class="product-prices">
+              <del>139,99 zł</del>
+              <span>129,99 zł</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="product">
+            <a class="product-icon" href="/" title="product1">
+              <img src="img/product_1.jpg" />
+            </a>
+            <a class="product-name" href="/" title="product1">Świeży sok z pomarańczy</a>
+            <div class="product-prices">
+              <del>139,99 zł</del>
+              <span>129,99 zł</span>
+            </div>
+          </div><!--
+          --><div class="product">
+            <a class="product-icon" href="/" title="product1">
+              <img src="img/product_2.jpg" />
+            </a>
+            <a class="product-name" href="/" title="product1">Pyszna tarta truskawkowa</a>
+            <div class="product-prices">
+              <del>29,99 zł</del>
+              <span>24,99 zł</span>
+            </div>
+          </div><!--
+          --><div class="product">
+            <a class="product-icon" href="/" title="product1">
+              <img src="img/product_3.jpg" />
+            </a>
+            <a class="product-name" href="/" title="product1">Delikatny sernik z czekoladą</a>
+            <div class="product-prices">
+              <del>29,99 zł</del>
+              <span>24,99 zł</span>
+            </div>
+          </div><!--
+          --><div class="product">
+            <a class="product-icon" href="/" title="product1">
+              <img src="img/product_4.jpg" />
+            </a>
+            <a class="product-name" href="/" title="product1">Słodkie maliny</a>
+            <div class="product-prices">
+              <del>139,99 zł</del>
+              <span>129,99 zł</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="buttons">
+        <a href="/" title="button1"><b>Royal seeds & nuts</b><img src="img/button_1.jpg" alt="button1" /><span>Sprawdź!</span></a><!--
+        --><a href="/" title="button2"><b>Mix bread</b><img src="img/button_2.jpg" alt="button2" /><span>Sprawdź!</span></a><!--
+        --><a href="/" title="button3"><b>Musli</b><img src="img/button_3.jpg" alt="button3" /><span>Sprawdź!</span></a><!--
+        --><a href="/" title="button2"><b>Mix bread</b><img src="img/button_2.jpg" alt="button2" /><span>Sprawdź!</span></a><!--
+        --><a href="/" title="button3"><b>Musli</b><img src="img/button_3.jpg" alt="button3" /><span>Sprawdź!</span></a><!--
+        --><a href="/" title="button1"><b>Royal seeds & nuts</b><img src="img/button_1.jpg" alt="button1" /><span>Sprawdź!</span></a>
+      </div>
+    </section>
+
+    <div id="creative_box">
+      <div class="container">
+       
+       <aside class="">
+            <div class="container">
+                <div class="popup-inner">
+                    <a href="" class="btn" id="info-button" onclick="showPopup(event);">Więcej info o produkcie</a>
+                </div>
+            </div>
+       </aside>
+       
+        <div id="popup">
+            <div class="popup-inner" id="popup-inner">
+                <a href="" class="close" onClik="hidePopup(event);">
+                    <i class="fa fa-2x fa-times"></i>
+                </a>
+                    <h3>Świeży sok pomarańczowy</h3>
+                        <img src="img/product_1.jpg">
+                            <div class="product-description">
+                                <p>Sok pomarańczowy ma wiele wspaniałych korzyści. Naturalne związki zawarte w pomarańczach, są o wiele silniej skoncentrowane w postaci soku niż w formie całego owocu, dlatego też sok pomarańczowy działa na nas jeszcze lepiej niż sama pomarańcza.</p>
+                            </div>
+                            <div class="product-prices">
+                              <del>139,99 zł</del>
+                              <span>129,99 zł</span>
+                            </div>
+                            <div class="product-basket">
+                                <button type="submit" class="button minus">-</button>
+                                <input id="ilosc" type="text" placeholder="1"/>
+                                <button type="submit" class="button plus">+</button>
+                                <button type="submit" class="button basket">Dodaj do koszyka</button>
+                            </div>
+            </div>    
+        </div>
+       
+        
+      </div>
+    </div>
+
+
+  </article>
+  
+
+  
+<div class="zakladki_all">
+<div class="tabs">
+    <a href="#tab1" class="active" class="news_tab">News</a>
+    <a href="#tab2" class="o_nas_tab">O Nas</a>
+    <a href="#tab3" class="blog_tab">Blog</a>
+</div>
+
+<div class="tabs-container">
+    <article id="tab1" class="tab-content active">
+    
+        <div class="news container tabs-container" id="news">
+             <div>
+              <h3><a href="/" title="Chinese New Year 2018 - adidas Equipment Support "Year of the Rooster"">Chinese New Year 2018 - adidas Equipment Support "Year of the Rooster"</a></h3>
+              <small class="date">07/02/2018</small>
+              <p class="news content">Rok 2018 według chińskiego horoskopu jest rokiem Koguta - żywiołu ognia. Rozpoczął się 28 stycznia 2018 roku, a potrwa do 15 lutego 2018 roku. Według chińskiej astrologii, Rok Koguta będzie czasem, w którym warto skupić się na ciężkiej pracy, która jest drogą do osiągnięcia sukcesu. Również jakość ma w tym roku duże znaczenie! Temat najwyraźniej bardzo poważnie potraktował niemiecki brand, za sprawą bardzo ekskluzywnego wydania - adidas Originals Equipment Support Ultra CNY  czyli "Chinese New Year", bądź jak kto woli „Year of the Rooster”. Pierwszy detal, który nam to komunikuje to pudełko, a dokładniej miękki wyściełany, drewniany box z grawerowanym kogutem oraz logo adidas Originals na wieku.</p>
+              <small class="author">pkrupa</small>
+            </div>
+            <div>
+              <h3><a href="/" title="Znak jakości adidas Group dla SneakerStudio">Znak jakości adidas Group dla SneakerStudio</a></h3>
+              <small class="date">01/02/2018</small>
+              <img src="img/button_1.jpg" alt="Aktualność 2" />
+              <p class="news content">Mamy to…niezmiernie miło nam poinformować Was, iż internetowa odsłona naszego butiku została wyróżnienia dyplomem jakości adidas Poland. Nagrodę przyznano za zgodność sklepu SneakerStudio.pl  z wytycznymi e-Commerce adidas Group, a dokładniej za wizualizację oferty handlowej on-line, odpowiadającej standardom prezentacji marki oraz produktu adidas i Reebok! Layout, menu e-sklepu i moduły wspierające obsługę klienta, a także autorska prezentacja produktów, spowodowały, iż zostaliśmy wyróżnieni „Znakiem Jakości adidas Poland”.</p>
+              <small class="author">skaczmarek</small>
+            </div>
+            <div>
+              <h3><a href="/" title="Chinese New Year 2018 - adidas Equipment Support "Year of the Rooster"">Chinese New Year 2018 - adidas Equipment Support "Year of the Rooster"</a></h3>
+              <small class="date">07/02/2018</small>
+              <p class="news content">Rok 2018 według chińskiego horoskopu jest rokiem Koguta - żywiołu ognia. Rozpoczął się 28 stycznia 2018 roku, a potrwa do 15 lutego 2018 roku. Według chińskiej astrologii, Rok Koguta będzie czasem, w którym warto skupić się na ciężkiej pracy, która jest drogą do osiągnięcia sukcesu. Również jakość ma w tym roku duże znaczenie! Temat najwyraźniej bardzo poważnie potraktował niemiecki brand, za sprawą bardzo ekskluzywnego wydania - adidas Originals Equipment Support Ultra CNY  czyli "Chinese New Year", bądź jak kto woli „Year of the Rooster”. Pierwszy detal, który nam to komunikuje to pudełko, a dokładniej miękki wyściełany, drewniany box z grawerowanym kogutem oraz logo adidas Originals na wieku.</p>
+              <small class="author">pkrupa</small>
+            </div>
+        </div> 
+    </article>
+    <article id="tab2" class="tab-content">
+        <div class="o_nas container tabs-container" id="o_nas">
+        <div>
+            <h3><a href="/" title="Historia">Historia</a></h3>
+            <small class="date">01/02/2018</small>
+            <p class="o_nas content">NAZWA FIRMY to historia 40 lat najlepiej rozumianego włoskiego stylu, jakości i elegancji. Od otwarcia pierwszego salonu w 1972 roku, przy prestiżowej Via Monte Napoleone w Mediolanie, DENI CLER ubiera kobiety świadome własnej kobiecości a przez to również wartości i siły. W 1991 roku marka pojawiła się na polskim rynku wprowadzając nową jakość do rodzimego świata mody.</p>
+            <img src="img/banner_2.jpg" alt="Nowy sklep"/>
+            <p class="o_nas title_img">1993 rok, foto: JEAN BAPTISTE MONDINO</p>
+            <p class="o_nas content">Podkreślanie włoskiego rodowodu nie jest snobizmem, a wyrazem szacunku dla historii marki a także zobowiązaniem wobec klientek. Przy wszystkich zmianach, jakim w ciągu tych 40 lat podlegała DENI CLER niezmienna pozostała wierność klasycznemu włoskiemu stylowi i najwyższej jakości od początku utożsamianej z marką.</p>
+            <p class="o_nas content">Współcześnie DENI CLER to doskonale rozwinięta sieć sprzedaży z 33 salonami w całej Polsce. Każdego roku trafiają do nich starannie wyselekcjonowane modele tworząc śmiałe kolekcje z najwyższej jakości tkanin, szlachetnymi dodatkami i designerskim krojem.</p>
+            <small class="author">pkrupa</small>
+        </div>
+    </div>
+    </article>
+    <article id="tab3" class="tab-content">
+        <div class="blog container tabs-container active" id="blog">
+             <div>
+              <h3><a href="/" title="Chinese New Year 2018 - adidas Equipment Support "Year of the Rooster"">Chinese New Year 2018 - adidas Equipment Support "Year of the Rooster"</a></h3>
+              <small class="date">07/02/2018</small>
+              <p class="blog content"><img src="img/button_2.jpg" alt="Blog 1" />Rok 2018 według chińskiego horoskopu jest rokiem Koguta - żywiołu ognia. Rozpoczął się 28 stycznia 2018 roku, a potrwa do 15 lutego 2018 roku. Według chińskiej astrologii, Rok Koguta będzie czasem, w którym warto skupić się na ciężkiej pracy, która jest drogą do osiągnięcia sukcesu. Również jakość ma w tym roku duże znaczenie! Temat najwyraźniej bardzo poważnie potraktował niemiecki brand, za sprawą bardzo ekskluzywnego wydania - adidas Originals Equipment Support Ultra CNY  czyli "Chinese New Year", bądź jak kto woli „Year of the Rooster”. Pierwszy detal, który nam to komunikuje to pudełko, a dokładniej miękki wyściełany, drewniany box z grawerowanym kogutem oraz logo adidas Originals na wieku.</p>
+              <small class="author">skaczmarek</small>
+            </div>
+            <div class="blog_content">
+              <h3><a href="/" title="Znak jakości adidas Group dla SneakerStudio">Znak jakości adidas Group dla SneakerStudio</a></h3>
+              <small class="date">01/02/2018</small>
+              <p class="blog content">Mamy to…niezmiernie miło nam poinformować Was, iż internetowa odsłona naszego butiku została wyróżnienia dyplomem jakości adidas Poland. Nagrodę przyznano za zgodność sklepu SneakerStudio.pl  z wytycznymi e-Commerce adidas Group, a dokładniej za wizualizację oferty handlowej on-line, odpowiadającej standardom prezentacji marki oraz produktu adidas i Reebok! Layout, menu e-sklepu i moduły wspierające obsługę klienta, a także autorska prezentacja produktów, spowodowały, iż zostaliśmy wyróżnieni „Znakiem Jakości adidas Poland”.</p>
+              <small class="author">pkrupa</small>
+            </div>
+            <div class="blog_content">
+              <h3><a href="/" title="Chinese New Year 2018 - adidas Equipment Support "Year of the Rooster"">Chinese New Year 2018 - adidas Equipment Support "Year of the Rooster"</a></h3>
+              <small class="date">07/02/2018</small>
+              <p class="blog content"><img src="img/button_3.jpg" alt="Blog 3" />Rok 2018 według chińskiego horoskopu jest rokiem Koguta - żywiołu ognia. Rozpoczął się 28 stycznia 2018 roku, a potrwa do 15 lutego 2018 roku. Według chińskiej astrologii, Rok Koguta będzie czasem, w którym warto skupić się na ciężkiej pracy, która jest drogą do osiągnięcia sukcesu. Również jakość ma w tym roku duże znaczenie! Temat najwyraźniej bardzo poważnie potraktował niemiecki brand, za sprawą bardzo ekskluzywnego wydania - adidas Originals Equipment Support Ultra CNY  czyli "Chinese New Year", bądź jak kto woli „Year of the Rooster”. Pierwszy detal, który nam to komunikuje to pudełko, a dokładniej miękki wyściełany, drewniany box z grawerowanym kogutem oraz logo adidas Originals na wieku.</p>
+              <small class="author">skaczmarek</small>
+            </div>
+        </div>
+    </article>
+</div>  
+</div>  
+  <script>
+$(function() {
+    
+    //dla każdego kontenera z treścią tabów dodajemy klasę js -> patrz dalej
+    $('.tabs-container').addClass('js');
+
+    $('.tabs').each(function() {
+        const $a = $(this).find('a'); //pobieram wszystkie linki-zakładki
+
+        //po kliknięciu na link...
+        $a.on('click', function(e) {
+            //podstawiamy pod zmienną $this kliknięty link
+            const $this = $(this);
+
+            //pobieramy href klikniętego linka
+            const href = $this.attr('href');
+            //pobieramy treść na którą wskazuje link
+            const $target = $(href);
+
+            //jeżeli ta treść w ogóle istnieje...
+            if ($target.length) {
+                e.preventDefault(); //przerwij domyślną czynność jeżeli istnieje zawartość zakładki - inaczej niech dziala jak link
+
+                //usuwamy z sąsiednich linków klasę active
+                $this.siblings('a').removeClass('active');
+                //klikniętemu linkowi dajemy klasę active
+                $this.addClass('active');
+
+                //podobne działanie robimy dla treści tabów
+                $target.siblings('.tab-content').removeClass('active');
+                $target.addClass('active');
+            }
+        });
+    });
+});      
+</script>
+
+
+
+<!--  Tutaj dodamy plik JavaScript  -->
+    <script>
+        function showPopup(event) {
+        event.preventDefault();
+        document.getElementById("popup").style.display = "block";
+        }
+
+        function hidePopup(event) {
+        event.preventDefault();
+        document.getElementById("popup").style.display = "none";
+        }
+    </script>
+
+  </body>
+</html>
