@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+div.hover-effect {
+    margin: 10px;
+    padding: 0;
+    font-size: 0;
+}
+
+div.hover-effect div {
+    list-style: none;
+    padding: 10px 40px;
+    position: relative;
+}
+
+div.hover-effect div a {
+    display: block;
+    width: 650px;
+    height: 350px;
+    background-image: url("../img/4-jezioro.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+}
+
+div.hover-effect div a span:first-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 0;
+    background: transparent;
+    border-top: 2px solid #222;
+    border-left: 2px solid #222;
+    border-right: 2px solid #222;
+    transition: height 4s ease-in-out, top 0.5s linear;
+    opacity: 0;
+}
+
+div.hover-effect div a:hover span:first-child::before {
+    opacity: 1;
+    top: -5px;
+    left: -5px;
+    height: 100%;
+}
+
+div.hover-effect div a span:first-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 101%;
+    height: 0;
+    background: transparent;
+    border-bottom: 2px solid #222;
+    border-left: 2px solid #222;
+    border-right: 2px solid #222;
+    transition: height 4s ease-in-out, bottom 0.5s linear;
+    opacity: 0;
+}
+
+div.hover-effect div a:hover span:first-child:after {
+    opacity: 1;
+    bottom: -5px;
+    left: -5px;
+    height: 100%;
+}
+
+div.hover-effect div a:hover span:last-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+
+div.hover-effect div a span:last-child::after {
+    content: "";
+    font-size: 0;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -5px;
+    right: -5px;
+    margin: auto;
+    width: 0px;
+    height: 0px;
+    background: #222;
+    transition: height 2s linear, font-size 0.5s ease-in 1.5s;
+    opacity: 0;
+}
+
+div.hover-effect div a:hover span:last-child::after {
+    content: "Lake View";
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    width: auto;
+    height: 50px;
+    opacity: 0.95;
+}

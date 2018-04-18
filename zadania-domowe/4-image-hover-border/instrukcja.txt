@@ -1,0 +1,18 @@
+Wykorzystuj¹c dotychczas zdobyt¹ wiedzê o HTML5 i CSS3 stwórz nastêpuj¹cy efekt:
+
+- Po najechaniu myszk¹ na obrazek pojawia ramka, która animuje siê od góry do po³owy i od do³u do po³owy tak, aby na koñcu obramowanie by³o na ca³ym obrazku. 
+- Miêdzy ramk¹ a obrazkiem ma byæ 5px odstêpu. 
+- Na œrodku obrazka wyœwietlaj jego opis. Ma on siê stopniowo pojawiaæ po najechaniu na obrazek myszk¹.
+
+PodpowiedŸ:
+Do stworzenia ramki musisz u¿yæ pseudoelementów ::before i ::after - pamiêtaj musz¹ one zawieraæ w³aœciwoœæ 'content' oraz musisz je pozycjonowaæ absolutnie wzglêdem kontenera z obrazkiem
+
+Podgl¹d efektu na za³¹czonych obrazkach
+- 4-image-hover-border-1-before.png
+- 4-image-hover-border-2-during.png
+- 4-image-hover-border-3-after.png
+
+Do realizacji projektu u¿yj za³¹czonego obrazka:
+- 4-jezioro.jpg
+
+Zadanie zrób za pomoc¹ GitHub Pages
