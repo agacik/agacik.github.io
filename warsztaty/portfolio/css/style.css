@@ -1,7 +1,9 @@
 /*   Main Style - START   */
+
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Lato', sans-serif;
     font-size: 12px;
@@ -10,13 +12,14 @@ body {
     color: #291f1a;
 }
 
-h1{
-    font-family: 'Roboto', sans-serif;   
+h1 {
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     margin: 0;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-weight: 300;
     margin: 0;
 }
@@ -48,8 +51,8 @@ section p {
 
 /*   Main Style - END   */
 
-
 /*   Nav Style - START   */
+
 nav#menu {
     width: 100%;
     height: 60px;
@@ -111,19 +114,20 @@ header#main h1 {
 }
 
 header#main p.main {
-    font-family: 'Roboto', sans-serif;   
+    font-family: 'Roboto', sans-serif;
     color: #fff;
     font-weight: 300;
     text-align: center;
     font-size: 40px;
     margin: 0;
 }
+
 /*   Header Style - END   */
 
-
 /*   O-mnie Style - START   */
+
 section#o-mnie {
-    box-shadow: 0px 5px 5px 0px rgba(51,37,32,0.2);
+    box-shadow: 0px 5px 5px 0px rgba(51, 37, 32, 0.2);
     background-color: #f9fcfe;
 }
 
@@ -147,11 +151,13 @@ section#o-mnie > article {
     width: 50%;
     float: left;
 }
+
 /*   O-mnie Style - END   */
 
-
 /*   Skills Style - START   */
-section#skills p, .skills-icon {
+
+section#skills p,
+.skills-icon {
     text-align: center;
 }
 
@@ -162,3 +168,86 @@ figure.skills-icon-item {
 
 
 /*   Skills Style - END   */
+
+/*   Portfolio Style - START   */
+
+section#portfolio {
+    box-sizing: border-box;
+}
+
+section#portfolio div.portfolio-items {
+    text-align: center;
+    font-size: 0;
+}
+
+section#portfolio a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section#portfolio a:hover {
+    color: #1ac056;
+}
+
+section#portfolio div.portfolio-item {
+    position: relative;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    width: 350px;
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+}
+
+section#portfolio div.portfolio-item div.item-mask {
+    position: absolute;
+    top: 0;
+    background-color: rgba(42, 61, 79, 0.8);
+    width: 100%;
+    height: 100%;
+    font-size: initial;
+    opacity: 0;
+}
+
+section#portfolio div.portfolio-item div.item-mask:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+section#portfolio div.portfolio-item div.item-mask div.item-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px solid #fff;
+    margin: 10px;
+    width: 330px;
+    height: 330px;
+}
+
+section#portfolio div.portfolio-item div.item-mask div.item-content div.item-content-inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 5px;
+}
+
+
+section#portfolio div#portfolio-item-1 {
+    background-image: url("../img/portfolio1.jpg");
+}
+
+section#portfolio div#portfolio-item-2 {
+    background-image: url("../img/portfolio2.jpg");
+}
+
+section#portfolio div#portfolio-item-3 {
+    background-image: url("../img/portfolio4.jpg");
+}
+
+
+/*   Portfolio Style - END   */
