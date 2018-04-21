@@ -73,6 +73,16 @@ nav#menu {
     z-index: 100;
 }
 
+nav#menu .toggle {
+    display: none;
+}
+
+/*
+nav#menu #drop {
+    display: none;    
+}
+*/
+
 nav#menu > ul {
     margin: 0;
     float: right;
