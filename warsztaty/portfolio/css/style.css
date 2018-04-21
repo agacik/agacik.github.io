@@ -29,8 +29,9 @@ span {
     font-weight: 400;
 }
 
-a {
+a, i {
     transition: color 1s linear;
+    color: #fff;
 }
 
 section {
@@ -175,7 +176,7 @@ section#portfolio {
     box-sizing: border-box;
 }
 
-section#portfolio div.portfolio-items {
+section#portfolio .portfolio-items {
     text-align: center;
     font-size: 0;
 }
@@ -189,45 +190,45 @@ section#portfolio a:hover {
     color: #1ac056;
 }
 
-section#portfolio div.portfolio-item {
+section#portfolio .portfolio-item {
     position: relative;
     height: 350px;
+    width: 33%;
+    display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: inline-block;
-    width: 350px;
-    font-size: 11px;
     color: #fff;
     text-align: center;
+    font-size: 14px;
 }
 
-section#portfolio div.portfolio-item div.item-mask {
-    position: absolute;
-    top: 0;
-    background-color: rgba(42, 61, 79, 0.8);
+section#portfolio .portfolio-item .item-mask {
     width: 100%;
     height: 100%;
-    font-size: initial;
+    background-color: rgba(42, 61, 79, 0.8);
     opacity: 0;
+    position: absolute;
+    top: 0;
+    padding: 5px;
 }
 
-section#portfolio div.portfolio-item div.item-mask:hover {
+section#portfolio .portfolio-item .item-mask:hover {
     opacity: 1;
     transition: all 0.3s ease-in-out;
 }
 
-section#portfolio div.portfolio-item div.item-mask div.item-content {
+section#portfolio .portfolio-item .item-mask .item-content {
     position: relative;
     top: 0;
     left: 0;
     border: 1px solid #fff;
-    margin: 10px;
-    width: 330px;
+    margin: 5px;
+    width: auto;
     height: 330px;
 }
 
-section#portfolio div.portfolio-item div.item-mask div.item-content div.item-content-inner {
+section#portfolio .portfolio-item .item-mask .item-content .item-content-inner {
     position: absolute;
     top: 50%;
     left: 0;
@@ -236,18 +237,149 @@ section#portfolio div.portfolio-item div.item-mask div.item-content div.item-con
     padding: 5px;
 }
 
+section#portfolio .portfolio-item .item-mask .item-content .item-content-inner h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
 
-section#portfolio div#portfolio-item-1 {
+section#portfolio .portfolio-item .item-mask .item-content .item-content-inner h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+section#portfolio .portfolio-item .item-mask .item-content .item-content-inner p {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+section#portfolio #portfolio-item-1 {
     background-image: url("../img/portfolio1.jpg");
 }
 
-section#portfolio div#portfolio-item-2 {
+section#portfolio #portfolio-item-2 {
     background-image: url("../img/portfolio2.jpg");
 }
 
-section#portfolio div#portfolio-item-3 {
+section#portfolio #portfolio-item-3 {
     background-image: url("../img/portfolio4.jpg");
 }
 
 
 /*   Portfolio Style - END   */
+
+/*   Contact Style - START   */
+section#contact {
+    background-color: #213b50;
+    color: #fff;
+    overflow: hidden;
+}
+
+section#contact .contact-data {
+    font-size: initial;
+    width: 50%;
+    float: left;
+    position: relative;
+    padding: 20px 0;
+}
+
+section#contact  .contact-data h2 {
+    text-align: left;
+    color: #fff;
+}
+
+section#contact .contact-data address {
+    font-style: normal;
+    color: #fff;
+}
+
+section#contact .contact-data address p {
+    line-height: 12px;
+}
+
+section#contact .contact-data address p:nth-of-type(2) {
+    margin-bottom: 50px;
+}
+
+
+section#contact .contact-form {
+    font-size: initial;
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    text-align: left;
+    padding: 20px 0;
+}
+
+section#contact .contact-form input {
+    background-color: #2B4A64;
+    font-family: 'Lato', sans-serif;
+    color: #f9fcfe;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 400px;
+}
+
+section#contact .contact-form input::placeholder {
+    color: #f9fcfe;
+    font-family: 'Lato', sans-serif;
+}
+
+section#contact .contact-form input:focus {
+    border: 1px solid #f9fcfe;
+}
+
+section#contact .contact-form button {
+    padding: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #1ac056;
+    outline: none;
+    border: 1px solid #fff;
+    margin-top: 10px;
+}
+
+section#contact .contact-form button:hover {
+    color: #1ac056;
+    background-color: #fff;
+    border: 1px solid #1ac056;
+}
+
+section#contact .contact-form textarea {
+    background-color: #2B4A64;
+    font-family: 'Lato', sans-serif;
+    color: #f9fcfe;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 10px 10px 40px 10px;
+    margin-bottom: 15px;
+    width: 400px;
+}
+
+section#contact .contact-form textarea::placeholder {
+    color: #f9fcfe;
+    font-family: 'Lato', sans-serif;
+}
+
+section#contact .contact-data .contact-social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 16px;
+    margin: 10px;
+    line-height: 40px;
+}
+
+section#contact .contact-data .contact-social-icons a:hover i {
+    transform: scale(1.5);   
+}
+
+
+
+/*   Contact Style - END   */
