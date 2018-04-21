@@ -18,6 +18,14 @@ h1 {
     margin: 0;
 }
 
+h1::selection, h2::selection, h3::selection {
+    background-color: #1ac056;
+}
+
+p::selection {
+    background-color: #1ac056;
+}
+
 h2,
 h3 {
     font-weight: 300;
@@ -29,9 +37,9 @@ span {
     font-weight: 400;
 }
 
-a, i {
+*a, i, .fab {
     transition: color 1s linear;
-    color: #fff;
+    color: #f9fcfe;
 }
 
 section {
@@ -280,25 +288,27 @@ section#contact .contact-data {
     width: 50%;
     float: left;
     position: relative;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 section#contact  .contact-data h2 {
     text-align: left;
-    color: #fff;
+    font-size: 38px;    
 }
 
 section#contact .contact-data address {
     font-style: normal;
+    line-height: 25px
     color: #fff;
+    margin: 72px 0;
 }
 
 section#contact .contact-data address p {
     line-height: 12px;
 }
 
-section#contact .contact-data address p:nth-of-type(2) {
-    margin-bottom: 50px;
+section#contact .contact-data address a.mail {
+    color: #1ac056;
 }
 
 
@@ -308,7 +318,7 @@ section#contact .contact-form {
     width: 50%;
     position: relative;
     text-align: left;
-    padding: 20px 0;
+    margin-top: 100px;
 }
 
 section#contact .contact-form input {
@@ -319,7 +329,7 @@ section#contact .contact-form input {
     border: 1px solid transparent;
     padding: 10px;
     margin-bottom: 15px;
-    width: 400px;
+    width: 100%;
 }
 
 section#contact .contact-form input::placeholder {
@@ -327,25 +337,26 @@ section#contact .contact-form input::placeholder {
     font-family: 'Lato', sans-serif;
 }
 
-section#contact .contact-form input:focus {
+section#contact .contact-form input:focus, section#contact .contact-form textarea:focus  {
     border: 1px solid #f9fcfe;
+    background-color: #426684;
 }
 
 section#contact .contact-form button {
-    padding: 20px;
-    color: #fff;
+    padding: 15px 30px;
+    color: #f9fcfe;
     text-transform: uppercase;
     font-weight: 700;
     background-color: #1ac056;
     outline: none;
-    border: 1px solid #fff;
-    margin-top: 10px;
+    border: 1px solid #1ac056;
+    margin-top: 5px;
+    float: right;
 }
 
 section#contact .contact-form button:hover {
     color: #1ac056;
-    background-color: #fff;
-    border: 1px solid #1ac056;
+    background-color: #f9fcfe;
 }
 
 section#contact .contact-form textarea {
@@ -356,7 +367,7 @@ section#contact .contact-form textarea {
     border: 1px solid transparent;
     padding: 10px 10px 40px 10px;
     margin-bottom: 15px;
-    width: 400px;
+    width: 100%;
 }
 
 section#contact .contact-form textarea::placeholder {
@@ -366,20 +377,49 @@ section#contact .contact-form textarea::placeholder {
 
 section#contact .contact-data .contact-social-icons a {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
     text-align: center;
-    color: #fff;
-    border: 1px solid #fff;
-    font-size: 16px;
-    margin: 10px;
-    line-height: 40px;
+    color: #f9fcfe;
+    border: 1px solid #f9fcfe;
+    font-size: 22px;
+    margin-right: 30px;
+    line-height: 38px;
 }
 
 section#contact .contact-data .contact-social-icons a:hover i {
-    transform: scale(1.5);   
+    transform: scale(0.8);   
+    color: #213b50; 
+}
+
+section#contact .contact-data .contact-social-icons a:hover {
+    color: #213b50;
+    background-color: #f9fcfe;
+}
+
+
+/*   Contact Style - END   */
+
+/*   Footer Style - START   */
+
+footer {
+    background: #142634;
+    padding: 0 80px;
+    color: #f9fcfe;
+    height: 28px;
+    font-size: 14px;
+}
+
+footer .copyright {
+    position: relative;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    margin:0;
+    
 }
 
 
 
-/*   Contact Style - END   */
+/*   Footer Style - END   */
