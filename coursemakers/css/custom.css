@@ -165,9 +165,70 @@ header div.header-icon a {
     color: #f8f8f8;
 }
 
-header div.header-icon a.music {
+header div.header-icon a#music {
     float: right;
 }
+
+
+#scroll {
+    padding-top: 60px;
+}
+#scroll span {
+    position: absolute;
+    top: 10px;
+    left: 48%;
+    width: 4px;
+    height: 40px;
+    background-color: rgba(248, 248, 248, 0.25);
+    box-sizing: border-box;
+}
+#scroll span::before {
+    position: absolute;
+    top: 2px;
+    left: 48%;
+    content: " ";
+    width: 4px;
+    height: 10px;
+    margin-left: -2px;
+    background-color: rgba(248, 248, 248, 0.37);
+    -webkit-animation: scroll 2s infinite;
+    animation: scroll 2s infinite;
+    box-sizing: border-box;
+    transition: all 2s linear;
+}
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translate(0, 0);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: translate(0, 30px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    80% {
+        transform: translate(0, 30px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 
 /*   Header + Menu Section Style - End   */
 
