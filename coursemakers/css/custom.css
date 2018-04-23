@@ -1,353 +1,207 @@
-
-
-/*
-
-Template Name   : Volcano
-Template Author : http://pixelhint.com
-Author Email    : contact@pixelhint.com
-License    		: http://pixelhint.com/license
-
-
-*****************************************
-
-
-- Fonts
-- Reset Default Foundation Styling
-- Hero
-- Header
-- Services
-- Fancy Button
-- Quote
-- Testimonials
-- Call To Action
-- Google Map
-- Footer
-- Responsive CSS
-
-*/
-
-
-dla HOVERA
-color: rgba(248,248,248,0.37);
-
-
-
-
-
-
-/*		Fonts		*/
-
-@font-face {
-    font-family: 'lato-black';
-    src: url('../fonts/lato-black.eot');
-    src: url('../fonts/lato-black.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/lato-black.woff') format('woff'),
-        url('../fonts/lato-black.ttf') format('truetype'),
-        url('../fonts/lato-black.svg#LatoBlack') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-
-@font-face {
-    font-family: 'lato-light';
-    src: url('../fonts/lato-light.eot');
-    src: url('../fonts/lato-light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/lato-light.woff') format('woff'),
-        url('../fonts/lato-light.ttf') format('truetype'),
-        url('../fonts/lato-light.svg#LatoLight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'lato-bold';
-    src: url('../fonts/lato-bold.eot');
-    src: url('../fonts/lato-bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/lato-bold.woff') format('woff'),
-        url('../fonts/lato-bold.ttf') format('truetype'),
-        url('../fonts/lato-bold.svg#LatoBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'lato-hairline';
-    src: url('../fonts/lato-hairline.eot');
-    src: url('../fonts/lato-hairline.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/lato-hairline.woff') format('woff'),
-        url('../fonts/lato-hairline.ttf') format('truetype'),
-        url('../fonts/lato-hairline.svg#LatoHairline') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'raleway-bold';
-    src: url('../fonts/raleway-bold.eot');
-    src: url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/raleway-bold.woff') format('woff'),
-        url('../fonts/raleway-bold.ttf') format('truetype'),
-        url('../fonts/raleway-bold.svg#RalewayBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'raleway-light';
-    src: url('../fonts/raleway-light.eot');
-    src: url('../fonts/raleway-light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/raleway-light.woff') format('woff'),
-        url('../fonts/raleway-light.ttf') format('truetype'),
-        url('../fonts/raleway-light.svg#RalewayLight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'raleway-regular';
-    src: url('../fonts/raleway-regular.eot');
-    src: url('../fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/raleway-regular.woff') format('woff'),
-        url('../fonts/raleway-regular.ttf') format('truetype'),
-        url('../fonts/raleway-regular.svg#RalewayRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'raleway-semibold';
-    src: url('../fonts/raleway-semibold.eot');
-    src: url('../fonts/raleway-semibold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/raleway-semibold.woff') format('woff'),
-        url('../fonts/raleway-semibold.ttf') format('truetype'),
-        url('../fonts/raleway-semibold.svg#RalewaySemibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-/*    Body    */
-
 
 body {
     background-color: #00061d;
     color: #f8f8f8;
+    margin: auto;
+}
+
+.row {
     width: 1230px;
     margin: auto;
 }
 
+button, a.btn {
+    position: relative;
+    top: 20px;
+    display: block;
+    width: 270px;
+    height: 60px;
+    background-image: linear-gradient(90deg, #f44336, #e91e63);
+    margin: 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #f8f8f8;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 60px;
+}
 
 
+/*   Header + Menu Section Style - Start   */
+section.header {
+    background-color: #000;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+}
 
-/*    Reset Default Foundation Styling    */
+header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden
+}
 
-.row{
-    max-width: 1230px;
+header nav.main-menu {
+    margin-top: 60px;
+}
+
+header nav.main-menu ul {
+    margin: 0;
+    float: left;
+}
+
+header nav.main-menu ul li {
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    outline: none;
+    text-align: center;
+    position: relative;
+    top: 0;
     padding: 0 20px;
 }
 
-
-.top-bar .toggle-topbar.menu-icon a span::after{
-    right: 0;
+header nav.main-menu ul li a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: rgba(248, 248, 248, 0.63);
+    font-size: 11pt;
+    transition: all 0.5s linear;
 }
 
-.top-bar .toggle-topbar.menu-icon a{
-    padding: 0 2rem 0 0.9375rem;
-}
-
-
-.top-bar,
-.top-bar-section li:not(.has-form) a:not(.button),
-.top-bar-section li:not(.has-form) a:not(.button):hover,
-.top-bar-section ul li,
-.top-bar.expanded .title-area,
-.no-js .top-bar-section ul li:hover > a{
-    background: transparent;
-    height: auto;
-    line-height:normal;
+header nav.main-menu ul:not(.logo) li:hover a {
+    color: #f8f8f8;
+    border-bottom: 1px solid #f8f8f8;
     padding: 0;
+    text-shadow: 0px 0px 4px #f8f8f8;
 }
 
-
-.top-bar .name,
-.top-bar .name h1,
-.top-bar .name h2,
-.top-bar .name h3,
-.top-bar .name h4,
-.top-bar .name span,
-.top-bar .name p{
-    line-height: normal;
-    height: auto;
-    font-size: 1.375rem;
+header nav.main-menu ul.logo {
+    width: 20%;
+    line-height: 60px;
 }
 
-
-.top-bar.expanded .toggle-topbar a{
-    color: #fbdd90;
+header nav.main-menu ul.logo li {
+    text-align: left;
+    margin: 5px;
 }
 
-.top-bar.expanded .toggle-topbar a span::after {
-    box-shadow: 0 0 0 1px #fbdd90, 0 7px 0 1px #fbdd90, 0 14px 0 1px #fbdd90;
-}
-
-
-
-
-
-
-
-
-/*    Hero    */
-
-.hero{
-    width: 100%;
-    height: 100vh;
-    background: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
-}
-
-.hero .caption{
-    margin-top: 25%;
+header nav.main-menu ul.main-nav {
     text-align: center;
+    width: 60%;
 }
 
-.hero .caption h2.sub_cap{
-    font-family: "lato-light", Helvetica, Arial, sans-serif;
-    font-weight: lighter;
-    font-size: 60px;
-    color: #fff;
-    text-transform: uppercase;
+header nav.main-menu ul.main-nav li a {
+    display: block;
     line-height: 70px;
-    margin-bottom: 50px;
 }
 
+header nav.main-menu ul.contact-nav {
+    float: right;
+    text-align: right;
+    width: 20%;
+}
 
-.hero .caption .btn_details span{
-    display: inline-block;
-    color: #fff;
-    font-family: "raleway-regular", Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    letter-spacing: .5px;
+header nav.main-menu ul.contact-nav li a {
+    display: block;
+    line-height: 70px;
+}
+
+header div.caption {
+    width: 50%;
+    text-align: center;
     position: relative;
-    margin-right: 5px;
-    border-bottom: 1px dashed #ffffff;
-    padding-bottom: 3px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.hero .caption .btn_details .arrow{
-    -webkit-transition:all .2s ease-out;
-    -o-transition:all .2s ease-out;
-    transition:all .2s ease-out;
-}
-
-.hero .caption .btn_details:hover .arrow{
-    -webkit-transform:translateX(3px);
-    -ms-transform:translateX(3px);
-    -o-transform:translateX(3px);
-    transform:translateX(3px);
-}
-
-.hero .caption h1.mean_cap {
-    font-family: 'Playfair Display', serif;
+header div.caption h1 {
+    font-family: Playfair Display, san-serif;
     font-size: 32pt;
     color: #f8f8f8;
-    text-transform: none;
     font-weight: 700;
     font-style: italic;
 }
 
-.hero .caption p {
+header div.caption p {
     font-family: 'Montserrat', sans-serif;
-    color: rgba(248,248,248,0.75);
-    font-size: 16pt;
+    font-style: normal;
     font-weight: 300;
-    line-height: 12pt;
-}
-
-
-
-
-/*    Header    */
-
-header{
-    width: 100%;
-    height: 130px;
-    background: transparent;
-}
-
-.logo h1{
-    text-decoration: none;
-    color: #ffffff;
-    font-family: "lato-bold", Helvetica, Arial, sans-serif;
-    font-size: 22px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.logo h1 .tld{
-    font-family: "lato-hairline", Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 16pt;
+    color: rgba(248, 248, 248, 0.25);
+    padding: 0;
     margin: 0;
 }
 
-header .logo{
-    margin: 50px 0 0 0;
+header div.header-icon {
+
+    position: absolute;
+    bottom: 10px;
+    left:0;
+    right:0;
+    text-align: center;
 }
 
-header nav{
-    margin-top: 60px;
-}
-
-header nav .top-bar, .top-bar ul {
-    background-color: transparent;  
-}
-
-header .top-bar-section ul li, header .top-bar ul li{
-    list-style: none;
+header div.header-icon a {
     display: inline-block;
-    text-transform: uppercase;
-}
-
-header .top-bar-section ul li a{
-    color: #f8f8f8;
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
     font-size: 11pt;
-    font-weight: 600;
-    margin-right: 30px;
-    letter-spacing: .5px;
+    color: #f8f8f8;
 }
 
+header div.header-icon a.music {
+    float: right;
+}
 
-header .top-bar-section ul li:last-child a{
+/*   Header + Menu Section Style - End   */
+
+section.author {
+    margin: 110px 0 22px 0;
+    overflow: hidden;
+}
+
+section.author img {
+    display: inline-block;
+    width: 30%;
+    font-size: 0;
+    margin: 0;
+    margin-right: 22px;
+    padding: 0;
+    float: left;
+}
+
+/*
+section.author img:hover {
+    filter: contrast(2);
+
+}
+
+section.author div.author-image::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63, 81, 181, 0.8);
+}
+*/
+
+/*
+section.author img[alt="Author 3"] {
     margin-right: 0;
 }
-
-
-header .top-bar-section li:not(.has-form) a:not(.button){
-    -webkit-transition:all .2s linear;
-    -o-transition:all .2s linear;
-    transition:all .2s linear;
-}
-
-header .top-bar-section li:not(.has-form) a:not(.button):hover{
-    color: #fbdd90;
-}
-
-
-
-
-
-
-
-
-
+*/

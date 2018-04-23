@@ -8,11 +8,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon and touch icons -->
-    <link rel="icon" type="image/png" sizes="192x192" href="img/ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/ico/android-chrome-192x192">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/ico/android-chrome-256x256">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="280x280" href="img/ico/favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-touch-icon.png">
     <link rel="manifest" href="img/ico/site.webmanifest">
     <link rel="mask-icon" href="img/ico/safari-pinned-tab.svg" color="#5bbad5">
 
@@ -30,60 +31,68 @@
 </head>
 
 <body>
-    <!--  Start Hero Section  -->
-    <section class="hero">
+    <!--  Header + Menu Section - Start   -->
+    <section class="header">
         <header>
             <div class="row">
-                <nav class="top-bar" data-topbar role="navigation">
-                    <!--    Start Logo    -->
-                    <ul class="title-area">
-                        <li class="name">
-                            <a href="#" class="logo">
-                                <img src="img/logo-top.png">
-                            </a>
-                        </li>
-                        </li>
+                <nav class="main-menu">
+                    <ul class="logo columns">
+                        <li><a href="#"><img src="img/logo-top.png"></a></li>
                     </ul>
-                    <!--    End Logo    -->
-
-                    <!--    Start Navigation Menu    -->
-                    <section class="top-bar-section" id="mean_nav">
-                        <ul class="center">
-                            <li><a href="#">Rozwiązania</a></li>
-                            <li><a href="#">Autorzy</a></li>
-                            <li><a href="#">Wiedza</a></li>
-                            <li><a href="#">#KursNaKurs 2018</a></li>
-
-                            <li><a href="#" class="right">Firma</a></li>
-                            <li><a href="#" class="right">Kontakt</a></li>
-                        </ul>
-                    </section>
-                    <!--    End Navigation Menu    -->
+                    <ul class="main-nav columns">
+                        <li><a href="#">Rozwiązania</a></li>
+                        <li><a href="#">Autorzy</a></li>
+                        <li><a href="#">Wiedza</a></li>
+                        <li><a href="#">#KursNaKurs 2018</a></li>
+                    </ul>
+                    <ul class="contact-nav columns">
+                        <li><a href="#">Firma</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
                 </nav>
             </div>
-        </header>
-        <!--    Start Hero Caption    -->
-        <section class="caption">
-            <div class="row">
-                <h1 class="mean_cap">Uczymy świat razem</h1>
-                    <p>CourseMakers to Twój partner na drodze budowania biznesu opartego na kursie online.</p>
-                    <p>Dołącz do wyjątkowej społeczności nauczycieli i praktyków, dla których edukacja online to wielka pasja.</p>
+
+            <div class="row caption">
+                <h1 class="mean_header">Uczymy świat razem</h1>
+                <p>CourseMakers to Twój partner na drodze budowania biznesu opartego na kursie online.</p>
+                <p>Dołącz do wyjątkowej społeczności nauczycieli i praktyków, dla których edukacja online to wielka pasja.</p>
             </div>
-        </section>
-        <!--    End Hero Caption    -->
+
+            <div class="row header-icon">
+                <a href="#" class="scroll">scroll</a>
+                <a href="#" class="music">music</a>
+            </div>
+        </header>
     </section>
-    <!--  End Hero Section  -->
+
+    <section class="author">
+        <div class="author-content row">
+            <div class="large-3 columns author-image">
+                <img src="img/author_01.png" alt="Author 1">
+            </div>
+            <div class="large-3 columns author-image">
+                <img src="img/author_02.png" alt="Author 2">
+            </div>
+            <div class="large-3 columns author-image">
+                <img src="img/author_03.png" alt="Author 3">
+            </div>
+            <button class="btn">Poznaj wszystkich autorów</button>
+            <!--            <a href="" class="btn">Poznaj wszystkich autorów</a>         -->
+        </div>
+    </section>
+
+    <!--  Header + Menu Section - End   -->
 
 
-
-    <!-- Foundation Framework Java Script - START -->
+    <!-- Foundation Framework Java Script - Start -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
     <script>
         $(document).foundation();
+
     </script>
-    <!-- Foundation Framework Java Script - END -->
+    <!-- Foundation Framework Java Script - End -->
 </body>
 
 </html>
