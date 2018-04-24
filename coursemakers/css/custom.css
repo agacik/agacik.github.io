@@ -13,15 +13,19 @@ body {
 .row {
     max-width: 1230px;
     margin: auto;
+    overflow: hidden;
 }
 
-button, a.btn {
-    position: relative;
-    top: 20px;
-    display: block;
+section {
+    margin: 110px 0 22px 0;
+    overflow: hidden;
+}
+
+button, a.button {
     width: 270px;
     height: 60px;
     background-image: linear-gradient(90deg, #f44336, #e91e63);
+    background-color: transparent;
     margin: 30px 0;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -31,6 +35,7 @@ button, a.btn {
     border-radius: 2px;
     text-align: center;
     line-height: 60px;
+    padding: 0;
 }
 
 a, a:hover, a:visited, a:active {
@@ -191,7 +196,6 @@ header div.header-icon a#music {
     width: 1px;
     height: 40px;
     background-color: rgba(248, 248, 248, 0.25);
-    box-sizing: border-box;
 }
 #scroll span::before {
     position: absolute;
@@ -200,12 +204,12 @@ header div.header-icon a#music {
     content: " ";
     width: 1px;
     height: 10px;
-    margin-left: -1px;
+    margin-left: -0.5px;
     background-color: #f8f8f8;
     -webkit-animation: scroll 2s infinite;
     animation: scroll 2s infinite;
-    box-sizing: border-box;
     transition: all 2s linear;
+    box-shadow: 0px 0px 5px 0px #f8f8f8;
 }
 @-webkit-keyframes scroll {
     0% {
@@ -263,6 +267,14 @@ section.author div.author-image:nth-child(3) {
     margin-right: 0;
 }
 
+section.author div.author-btn a {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
 
 
 
@@ -306,7 +318,7 @@ section.support div.support-header h3 {
     font-style: normal;
     font-weight: 300;
     font-size: 11pt;
-    color: rgba(248, 248, 248, 0.67);
+    color: rgba(248, 248, 248, 0.36);
     padding: 0;
     margin: 0;
     text-transform: uppercase;
@@ -314,33 +326,37 @@ section.support div.support-header h3 {
 
 section.support div.support-animation h2 {
     font-family: 'Playfair Display', san-serif;
-    font-size: 32pt;
+    font-size: 26pt;
     color: #f8f8f8;
     font-weight: 700;
     font-style: italic;
     margin: 0;
+    text-shadow: -2px 2px #00061d;
+    line-height: 40px;
 }
 
 section.support div.support-animation h3 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 11pt;
-    color: rgba(248, 248, 248, 0.67);
+    font-size: 10pt;
+    color: #f8f8f8;
     padding: 0;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 80px;
     text-transform: uppercase;
+    padding: 0;
+    text-shadow: -1px 1px #00061d;
 }
 
 section.support div.support-animation div.support-more {
     position: absolute;
-    bottom: 5px;
+    bottom: 10px;
     left: 0;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 11pt;
+    font-size: 10pt;
     color: rgba(248, 248, 248, 0.67);
     text-transform: uppercase;
     width: 100%;
@@ -348,50 +364,46 @@ section.support div.support-animation div.support-more {
 }
 
 section.support div.support-animation div.support-more a {
-    color: rgba(248, 248, 248, 0.67);
+    color: rgba(248, 248, 248, 0.37);
 }
 
 section.support div.support-animation div.support-more span {
-    padding-right: 20px;
+    padding-right: 65px;
 }
 
 
 section.support div.support-animation div.support-more img.arrow {
     margin: 8px 0;
     vertical-align: middle;
-    -webkit-animation: arrow 2s infinite;
-    animation: arrow 2s infinite;
-    box-sizing: border-box;
     transition: all 2s linear;
 }
+
+/*
+section.support div.support-animation div.support-more:hover img.arrow {
+    -webkit-animation: arrow 2s both ;
+    animation: arrow 2s both;
+    transition: all 2s linear;
+}
+*/
 
 @-webkit-keyframes arrow {
     0% {
         -webkit-transform: translateX(0);
         opacity: 1;
     }
-    50% {
-        opacity: 1;
-    }
-    80% {
+    100% {
         -webkit-transform: translateX(20px);
         opacity: 1;
-    }
-    100% {
-        opacity: 0;
     }
 }
 @keyframes arrow {
     0% {
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
         opacity: 1;
     }
-    80% {
-        transform: translateX(20px);
+    100% {
+        -webkit-transform: translateX(20px);
         opacity: 1;
-    }
-    81%, 100% {
-        opacity: 0;
     }
 }
 
@@ -463,11 +475,17 @@ section.footer {
     font-style: normal;
     font-weight: 300;
     font-size: 11pt;
-    color: rgba(248, 248, 248, 0.67);
+    color: rgba(248, 248, 248, 0.37);
 }
 
 section.footer div.footer-wrapper:first-child {
     margin-right: 30px;
+}
+
+section.footer div.footer-wrapper a {
+    color: rgba(248, 248, 248, 0.37);
+    font-size: 11pkt;
+    text-transform: uppercase;
 }
 
 section.footer div.footer-wrapper > i {
@@ -477,6 +495,7 @@ section.footer div.footer-wrapper > i {
     -webkit-text-fill-color: transparent;
     animation: pulse 1s linear infinite;
 }
+
 
 
 @keyframes pulse {
@@ -503,6 +522,238 @@ section.footer div.footer-wrapper > i {
     }
 
 }
+
+section.about-us {
+    position: relative;
+}
+
+section.about-us div.about-us-content {
+    float: left;
+    width: 50%;
+    margin-right: 30px;
+}
+
+section.about-us div.about-us-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+}
+
+section.about-us div.about-us-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #f8f8f8;
+    padding: 0;
+    margin: 0;
+}
+
+section.about-us div.about-us-header h2 > span {
+    color: #3f51b5;
+}
+
+section.about-us div.about-us-header p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16pkt;
+    color: rgba(248, 248, 248, 0.25);
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+}
+
+
+
+
+section.knowledge {
+    margin: 110px 0 22px 0;
+    overflow: hidden;
+}
+
+section.knowledge div.knowledge-image {
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-right: 15px;
+}
+
+section.knowledge div.knowledge-image:nth-child(4) {
+    margin-right: 0;
+}
+
+
+section.knowledge div.knowledge-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28pt;
+    color: #f8f8f8;
+    padding: 0;
+    margin: 0;
+}
+
+section.knowledge div.knowledge-header h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11pt;
+    color: rgba(248, 248, 248, 0.36);
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    margin-bottom:30px;
+}
+
+
+
+
+
+section.newsletter {
+    position: relative;
+}
+
+section.newsletter div.newsletter-content {
+    float: left;
+    width: 50%;
+    margin-right: 30px;
+}
+
+section.newsletter div.newsletter-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+}
+
+section.newsletter div.newsletter-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #f8f8f8;
+    padding: 0;
+    margin-top: 60px;
+}
+
+section.newsletter div.newsletter-header h2 > span {
+    color: #3f51b5;
+}
+
+section.newsletter div.newsletter-header p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16pkt;
+    color: rgba(248, 248, 248, 0.25);
+    padding: 0;
+    margin: 0;
+    margin: 25px 0;
+}
+
+
+
+section.newsletter form input[type="text"], section.newsletter form input[type="email"] {
+    width: 340px;
+    height: 40px;
+    color: #f8f8f8;
+    padding: 10px 0;
+    margin: 5px 0 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16pkt;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #f8f8f8;
+    transition: all 0.5s linear;
+}
+
+section.newsletter form input[type="text"]::placeholder, section.newsletter form input[type="email"]::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16pkt;
+    background-color: transparent;
+    color: rgba(248, 248, 248, 0.25);
+    padding: 10px 0;
+}
+
+section.newsletter form input[type="text"]:focus, section.newsletter form input[type="email"]:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #f8f8f8;
+    color: #f8f8f8;
+    box-shadow: none;
+}
+
+section.newsletter form label[for="name"], section.newsletter form label[for="email"] {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16pkt;
+    color: rgba(248, 248, 248, 0.25);
+    padding: 0;
+    margin: 0;
+}
+
+section.newsletter form input[type=checkbox] + label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding: 0;  
+    padding-left: 20px;
+    margin: 0;
+    vertical-align: middle;
+    color: #f8f8f8;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16pkt;
+    vertical-align: middle;
+}
+
+section.newsletter form input[type=checkbox] {  
+    display: none;  
+    position: relative;
+}
+
+section.newsletter form input[type=checkbox] + label::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: absolute;  
+    left: 0;   
+    background-color: #f8f8f8;
+    top: 6px;
+
+}
+
+
+section.newsletter form input[type=checkbox]:checked + label::before {
+    color: #f8f8f8;
+    background-color: transparent;  
+    background-image: linear-gradient(135deg, #248cef, #344aa2);
+    border: 2px solid #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    line-height: 6px;
+    vertical-align: middle;
+    box-shadow: 0px 0px 10px #248cef; 
+}
+
+
 
 
 
