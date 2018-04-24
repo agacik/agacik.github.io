@@ -11,7 +11,7 @@ body {
 }
 
 .row {
-    width: 1230px;
+    max-width: 1230px;
     margin: auto;
 }
 
@@ -35,6 +35,10 @@ button, a.btn {
 
 a, a:hover, a:visited, a:active {
     color: #f8f8f8;
+}
+
+.menu a, .menu button {
+    padding: 0;
 }
 
 /*   Header + Menu Section Style - Start   */
@@ -101,12 +105,13 @@ header nav.main-menu ul.logo {
 
 header nav.main-menu ul.logo li {
     text-align: left;
-    margin: 5px;
+    margin: 5px 0;
+
 }
 
 header nav.main-menu ul.main-nav {
     text-align: center;
-    width: 60%;
+    width: 65%;
 }
 
 header nav.main-menu ul.main-nav li a {
@@ -115,10 +120,12 @@ header nav.main-menu ul.main-nav li a {
 }
 
 header nav.main-menu ul.contact-nav {
-    float: right;
     text-align: right;
-    width: 25%;
+    width: 20%;
+    margin-right: 0;
+    padding-right: 0;
 }
+
 
 header nav.main-menu ul.contact-nav li a {
     display: block;
@@ -208,7 +215,7 @@ header div.header-icon a#music {
     50% {
         opacity: 1;
     }
-    80% {
+    70% {
         -webkit-transform: translate(0, 30px);
         opacity: 0;
     }
@@ -224,7 +231,7 @@ header div.header-icon a#music {
     50% {
         opacity: 1;
     }
-    80% {
+    70% {
         transform: translate(0, 30px);
         opacity: 0;
     }
@@ -238,40 +245,49 @@ header div.header-icon a#music {
 
 section.author {
     margin: 110px 0 22px 0;
+    overflow: hidden;
 }
 
 section.author div.author-image {
     display: inline-block;
-    width: 33.3%;
+    width: 400px;
     height: auto;
     font-size: 0;
     margin: 0;
     padding: 0;
     float: left;
+    margin-right: 15px;
 }
+
+section.author div.author-image:nth-child(3) {
+    margin-right: 0;
+}
+
+
 
 
 section.support {
     margin: 110px 0 22px 0;
+    overflow: hidden;
 }
 
 section.support div.support-animation {
+    position: relative;
     display: inline-block;
-    width: 23%;
-    height: auto;
+    width: 285px;
+    height: 370px;
     margin-top: 30px;
-    margin-left: 10px;
-    padding: 20px;
+    margin-right: 30px;
+    padding: 40px 30px;
     float: left;
     background: #1c265c;
-    height: 300px;
     color: #f8f8f8;
     border-radius: 2px;
     border: none;
 }
 
-section.support div.support-animation:first-of-type {
-    margin-left: 0;
+section.support div.support-animation:nth-child(5) {
+    margin-right: 0;
 
 }
 
@@ -318,10 +334,67 @@ section.support div.support-animation h3 {
 }
 
 section.support div.support-animation div.support-more {
-    position: relative;
-    bottom: 0;
+    position: absolute;
+    bottom: 5px;
     left: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11pt;
+    color: rgba(248, 248, 248, 0.67);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px 20px;
 }
+
+section.support div.support-animation div.support-more a {
+    color: rgba(248, 248, 248, 0.67);
+}
+
+section.support div.support-animation div.support-more span {
+    padding-right: 20px;
+}
+
+
+section.support div.support-animation div.support-more img.arrow {
+    margin: 8px 0;
+    vertical-align: middle;
+    -webkit-animation: arrow 2s infinite;
+    animation: arrow 2s infinite;
+    box-sizing: border-box;
+    transition: all 2s linear;
+}
+
+@-webkit-keyframes arrow {
+    0% {
+        -webkit-transform: translateX(0);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: translateX(20px);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes arrow {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(20px);
+        opacity: 1;
+    }
+    81%, 100% {
+        opacity: 0;
+    }
+}
+
 
 div.icon {
     width: 100px;
@@ -380,6 +453,58 @@ div.icon {
     transform-origin: -45px;
     transition: transform 1s linear;
 }
+
+
+section.footer {
+    width: 100%;
+    height: 30px;
+    margin: 110px 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11pt;
+    color: rgba(248, 248, 248, 0.67);
+}
+
+section.footer div.footer-wrapper:first-child {
+    margin-right: 30px;
+}
+
+section.footer div.footer-wrapper > i {
+    margin: 0 2px;
+    background: -webkit-linear-gradient(90deg, #f44336, #e91e63);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: pulse 1s linear infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    50% {
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+
+}
+
+
 
 /*
 section.author img:hover {
