@@ -1,0 +1,6 @@
+Napisz funkcjê ze zmiennymi lokalnymi, która liczy sumê kwadratów elementów tablicy [0,1,2,3,4,5]. Funkcja przyjmuje jeden parametr - w/w tablicê z liczbami. Funkcja zwraca sumê kwadratow. Wyœwietl wynik dzia³ania funkcji w konsoli.
+
+Zadanie domowe robimy z wykorzystaniem serwisu https://repl.it
+
+PodpowiedŸ przed wys³aniem zadania do sprawdzenia:
+- u¿yj w zadaniu pêtli, któr¹ uwa¿asz za s³uszn¹ i klasy Math.

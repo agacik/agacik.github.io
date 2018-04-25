@@ -21,7 +21,8 @@ section {
     overflow: hidden;
 }
 
-button, a.button {
+button,
+a.button {
     width: 270px;
     height: 60px;
     background-image: linear-gradient(90deg, #f44336, #e91e63);
@@ -38,15 +39,20 @@ button, a.button {
     padding: 0;
 }
 
-a, a:hover, a:visited, a:active {
+a,
+a:hover,
+a:visited,
+a:active {
     color: #f8f8f8;
 }
 
-.menu a, .menu button {
+.menu a,
+.menu button {
     padding: 0;
 }
 
 /*   Header + Menu Section Style - Start   */
+
 section.header {
     background-color: #000;
     position: relative;
@@ -80,7 +86,6 @@ header {
 }
 */
 
-
 header nav.main-menu ul {
     margin: 0;
     float: left;
@@ -112,7 +117,7 @@ header nav.main-menu ul li a {
 header nav.main-menu ul:not(.logo) li:hover a {
     color: #f8f8f8;
     border-bottom: 1px solid #f8f8f8;
-    margin:0;
+    margin: 0;
     padding: 0;
     text-shadow: 0px 0px 4px #f8f8f8;
 }
@@ -181,8 +186,8 @@ header div.header-icon {
 
     position: absolute;
     bottom: 10px;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
     text-align: center;
 }
 
@@ -203,6 +208,7 @@ header div.header-icon a#music {
 #scroll {
     padding-top: 60px;
 }
+
 #scroll span {
     position: absolute;
     top: 10px;
@@ -211,6 +217,7 @@ header div.header-icon a#music {
     height: 40px;
     background-color: rgba(248, 248, 248, 0.25);
 }
+
 #scroll span::before {
     position: absolute;
     top: 2px;
@@ -225,6 +232,7 @@ header div.header-icon a#music {
     transition: all 2s linear;
     box-shadow: 0px 0px 5px 0px #f8f8f8;
 }
+
 @-webkit-keyframes scroll {
     0% {
         -webkit-transform: translate(0, 0);
@@ -241,6 +249,7 @@ header div.header-icon a#music {
         opacity: 0;
     }
 }
+
 @keyframes scroll {
     0% {
         transform: translate(0, 0);
@@ -275,6 +284,26 @@ section.author div.author-image {
     padding: 0;
     float: left;
     margin-right: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+section.author div#author-item-1 {
+    background-image: url("../img/author_01.png");
+    width: 400px;
+    height: 350px;
+}
+
+section.author div#author-item-2 {
+    background-image: url("../img/author_02.png");
+    width: 400px;
+    height: 350px;
+}
+
+section.author div#author-item-3 {
+    background-image: url("../img/author_03.png");
+    width: 400px;
+    height: 350px;
 }
 
 section.author div.author-image:nth-child(3) {
@@ -286,8 +315,90 @@ section.author div.author-btn a {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    
 }
+
+
+section.author div.author-image:hover {
+    filter: contrast(1.4);
+}
+
+
+section.author div.author-image::after {
+    content: "";
+    background-color: rgba(0,0,0, 0.8);
+}
+
+
+section.author div.author-image .item-mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52, 74, 162, 0.8);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    padding: 5px;
+}
+
+section.author div.author-image .item-mask:hover {
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+
+section.author div.author-image .item-mask .item-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 30px 0 80px;
+    widows: 100%;
+    height: 100%;
+}
+
+section.author div.author-image .item-mask .item-content .item-content-inner {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    background-image: linear-gradient(90deg, rgba(244, 67, 54, 0.8), rgba(233, 30, 99, 0.8));
+    background-color: transparent;
+    text-align: left;
+}
+
+section.author div.author-image .item-mask .item-content .item-content-inner h2 {
+    font-family: 'Playfair Display', san-serif;
+    font-size: 32px;
+    color: #f8f8f8;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+
+
+section.author div.author-image .item-mask .item-content .item-content-inner span {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    color: rgba(248, 248, 248, 0.67);
+    padding: 0;
+    margin: 0;
+    margin-right: 120px;
+    text-transform: uppercase;
+}
+
+section.author div.author-image .item-mask .item-content .item-content-inner img.arrow {
+    margin: 4px 0;
+    vertical-align: middle;
+    transition: all 2s linear;
+}
+
+
+
+
 
 
 
@@ -410,6 +521,7 @@ section.support div.support-animation div.support-more:hover img.arrow {
         opacity: 1;
     }
 }
+
 @keyframes arrow {
     0% {
         -webkit-transform: translateX(0);
@@ -660,7 +772,7 @@ section.knowledge div.knowledge-header h3 {
     padding: 0;
     margin: 0;
     text-transform: uppercase;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
 
@@ -677,7 +789,6 @@ section.knowledge div.knowledge-item::after {
 
 }
 */
-
 
 /*
 section.knowledge div.knowledge-item .item-mask {
@@ -698,14 +809,13 @@ section.knowledge div.knowledge-item .item-mask:hover {
 }
 */
 
-
 section.knowledge div.knowledge-item .item-mask .item-content .item-content-inner {
     position: absolute;
     top: 65%;
     left: 0;
     right: 0;
     padding: 10px 30px;
-    background-image: linear-gradient(90deg, rgba(244,67,54,0.8), rgba(233,30,99, 0.8));
+    background-image: linear-gradient(90deg, rgba(244, 67, 54, 0.8), rgba(233, 30, 99, 0.8));
     background-color: transparent;
     text-align: left;
 }
@@ -782,7 +892,8 @@ section.newsletter div.newsletter-header p {
 
 
 
-section.newsletter form input[type="text"], section.newsletter form input[type="email"] {
+section.newsletter form input[type="text"],
+section.newsletter form input[type="email"] {
     width: 340px;
     height: 40px;
     color: #f8f8f8;
@@ -799,7 +910,8 @@ section.newsletter form input[type="text"], section.newsletter form input[type="
     transition: all 0.5s linear;
 }
 
-section.newsletter form input[type="text"]::placeholder, section.newsletter form input[type="email"]::placeholder {
+section.newsletter form input[type="text"]::placeholder,
+section.newsletter form input[type="email"]::placeholder {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -809,7 +921,8 @@ section.newsletter form input[type="text"]::placeholder, section.newsletter form
     padding: 10px 0;
 }
 
-section.newsletter form input[type="text"]:focus, section.newsletter form input[type="email"]:focus {
+section.newsletter form input[type="text"]:focus,
+section.newsletter form input[type="email"]:focus {
     border: none;
     outline: none;
     border-bottom: 1px solid #f8f8f8;
@@ -817,7 +930,8 @@ section.newsletter form input[type="text"]:focus, section.newsletter form input[
     box-shadow: none;
 }
 
-section.newsletter form label[for="name"], section.newsletter form label[for="email"] {
+section.newsletter form label[for="name"],
+section.newsletter form label[for="email"] {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -831,7 +945,7 @@ section.newsletter form input[type=checkbox] + label {
     display: inline-block;
     cursor: pointer;
     position: relative;
-    padding: 0;  
+    padding: 0;
     padding-left: 20px;
     margin: 0;
     vertical-align: middle;
@@ -843,8 +957,8 @@ section.newsletter form input[type=checkbox] + label {
     vertical-align: middle;
 }
 
-section.newsletter form input[type=checkbox] {  
-    display: none;  
+section.newsletter form input[type=checkbox] {
+    display: none;
     position: relative;
 }
 
@@ -855,8 +969,8 @@ section.newsletter form input[type=checkbox] + label::before {
     height: 12px;
     border-radius: 50%;
     margin-right: 10px;
-    position: absolute;  
-    left: 0;   
+    position: absolute;
+    left: 0;
     background-color: #f8f8f8;
     top: 6px;
 
@@ -865,7 +979,7 @@ section.newsletter form input[type=checkbox] + label::before {
 
 section.newsletter form input[type=checkbox]:checked + label::before {
     color: #f8f8f8;
-    background-color: transparent;  
+    background-color: transparent;
     background-image: linear-gradient(135deg, #248cef, #344aa2);
     border: 2px solid #fff;
     width: 12px;
@@ -873,7 +987,7 @@ section.newsletter form input[type=checkbox]:checked + label::before {
     border-radius: 50%;
     line-height: 6px;
     vertical-align: middle;
-    box-shadow: 0px 0px 10px #248cef; 
+    box-shadow: 0px 0px 10px #248cef;
 }
 
 
@@ -912,4 +1026,3 @@ section {
     }
 }
 */
-
