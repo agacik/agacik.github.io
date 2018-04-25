@@ -1,0 +1,6 @@
+Napisz funkcjê ze zmiennymi lokalnymi, która policzy sumê i iloczyn elementów tablicy [1, 2, 3, 4, 5, 6]. Funkcja przyjmuje jeden parametr - ww. tablicê z liczbami. Funkcja nie zwraca nic. Funkcja wyœwietla wyniki w konsoli.
+
+Zadanie domowe robimy z wykorzystaniem serwisu https://repl.it
+
+PodpowiedŸ przed wys³aniem zadania do sprawdzenia:
+- u¿yj pêtli for lub forEach w zadaniu
