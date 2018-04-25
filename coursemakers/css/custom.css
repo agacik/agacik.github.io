@@ -898,7 +898,7 @@ section.newsletter form input[type="email"] {
     height: 40px;
     color: #f8f8f8;
     padding: 10px 0;
-    margin: 5px 0 20px 0;
+    margin: 10px 0 30px 0;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -909,6 +909,7 @@ section.newsletter form input[type="email"] {
     border-bottom: 1px solid #f8f8f8;
     transition: all 0.5s linear;
 }
+
 
 section.newsletter form input[type="text"]::placeholder,
 section.newsletter form input[type="email"]::placeholder {
@@ -930,18 +931,8 @@ section.newsletter form input[type="email"]:focus {
     box-shadow: none;
 }
 
-section.newsletter form label[for="name"],
-section.newsletter form label[for="email"] {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16pkt;
-    color: rgba(248, 248, 248, 0.25);
-    padding: 0;
-    margin: 0;
-}
 
-section.newsletter form input[type=checkbox] + label {
+section.newsletter form input[type="checkbox"] + label {
     display: inline-block;
     cursor: pointer;
     position: relative;
@@ -957,12 +948,12 @@ section.newsletter form input[type=checkbox] + label {
     vertical-align: middle;
 }
 
-section.newsletter form input[type=checkbox] {
+section.newsletter form input[type="checkbox"] {
     display: none;
     position: relative;
 }
 
-section.newsletter form input[type=checkbox] + label::before {
+section.newsletter form input[type="checkbox"] + label::before {
     content: "";
     display: inline-block;
     width: 12px;
@@ -977,7 +968,7 @@ section.newsletter form input[type=checkbox] + label::before {
 }
 
 
-section.newsletter form input[type=checkbox]:checked + label::before {
+section.newsletter form input[type="checkbox"]:checked + label::before {
     color: #f8f8f8;
     background-color: transparent;
     background-image: linear-gradient(135deg, #248cef, #344aa2);
@@ -991,6 +982,55 @@ section.newsletter form input[type=checkbox]:checked + label::before {
 }
 
 
+section.newsletter form label.correct::before {
+    content: "\2022";
+    font-size: 18px;
+    background: linear-gradient(90deg, #f4d736, #6ae91e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 0 8px;
+    text-shadow: 0px 0px 10px  #4be727;
+}
+
+section.newsletter form label.incorrect::before {
+    content: "\2022";
+    font-size: 18px;
+    background: linear-gradient(90deg, #f44336, #e91e63);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 0 8px;
+    text-shadow: 0px 0px 10px #e91e63;
+}
+
+.floated-label-wrapper {
+    position: relative;
+}
+
+.floated-label-wrapper label[for="name"], .floated-label-wrapper label[for="email"] {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: rgba(248, 248, 248, 0.25);
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    top: -30px;
+    transition: all 0.15s ease-in;
+    z-index: -1;
+}
+
+
+.floated-label-wrapper label.show {
+    opacity: 1;
+    top: -20px;
+    z-index: 1;
+    transition: all 0.15s ease-in;
+}
 
 
 

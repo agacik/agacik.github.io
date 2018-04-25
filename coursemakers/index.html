@@ -238,10 +238,18 @@
                 <div class="newsletter-content">
                     <h2>Zapisz się na newsletter CourseMakers</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque error dicta magnam, temporibus ad. Ad neque in consectetur obcaecati omnis, accusamus facere. Sint, a mollitia dicta quia commodi consequuntur eos.</p>
-                    <form action="" method="post">
-                        <label for="name">Imię</label><input type="text" name="name" id="name" placeholder="Imię" required><br>
-                        <label for="email">Email</label><input type="email" name="email" id="email" placeholder="E-mail" required><br>
-                        <input id="regulamin" type="checkbox" name="regulamin" value="regulamin"> <label for="regulamin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, totam.</label>
+                    <form action="" method="post" data-abide>
+                        <div class="input-wrapper floated-label-wrapper">
+                            <label for="name" class="correct">Imię</label>
+                            <input type="text" name="name" id="name" placeholder="Imię" required pattern="[a-zA-Z]+">
+                        </div>
+                        <div class="input-wrapper floated-label-wrapper">
+                        <label for="email"  class="incorrect">Email</label>
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <input id="regulamin" type="checkbox" name="regulamin" value="regulamin"  required> <label for="regulamin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, totam.</label>
+                        </div>
                     </form>
                     <a href="#" class="button" type="submit">Zapisz się</a>
                 </div>
@@ -267,7 +275,7 @@
                 <div class=""><a href="">Polityka prywatności</a></div>
             </div>
             <div class="footer-wrapper small-12 medium-6 large-6 columns float-right">
-                Stworzone z <i class="fas fa-heart"></i> w pięknym mieście Poznań | Course Makers &copy; 2018. Wszelkie prawa zastrzeżone.
+                Stworzone z <i class="fas fa-heart"></i> w pięknym mieście Poznań. | Course Makers &copy; 2018. Wszelkie prawa zastrzeżone.
             </div>
         </footer>
     </section>
