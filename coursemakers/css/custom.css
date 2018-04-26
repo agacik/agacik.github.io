@@ -10,6 +10,16 @@ body {
     margin: auto;
 }
 
+.sesame {
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient($bg-color 5%, transparent 6%), 
+        radial-gradient($bg-color 5%, transparent 6%);
+    background-size: 40px 30px;
+    background-position: 10px 0px, 30px 15px;
+
+}
+
 .row {
     max-width: 1230px;
     margin: auto;
@@ -42,14 +52,31 @@ a.button {
 a,
 a:hover,
 a:visited,
-a:active {
+a:active,
+a:focus {
     color: #f8f8f8;
 }
 
 .menu a,
-.menu button {
+.menu button, .dropdown {
     padding: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*   Header + Menu Section Style - Start   */
 
@@ -320,19 +347,21 @@ section.author div.author-btn a {
 
 section.author div.author-image:hover {
     filter: contrast(1.4);
+    
 }
 
 
 section.author div.author-image::after {
     content: "";
     background-color: rgba(0,0,0, 0.8);
+
 }
 
 
 section.author div.author-image .item-mask {
     width: 100%;
     height: 100%;
-    background-color: rgba(52, 74, 162, 0.8);
+    background-color: rgba(52, 74, 162, 0.6);
     opacity: 0;
     position: absolute;
     top: 0;
@@ -542,6 +571,128 @@ div.icon {
     top: 0;
     margin: 0 auto;
 }
+
+
+
+#video {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+/*
+    mask-image: url("../img/circle_big.svg");
+    -webkit-mask-image:  url("../img/circle_big.svg");
+*/
+    background-image: linear-gradient(135deg, #2196f3, #3f51b5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s linear;
+    transform-origin: center;
+    box-shadow: 0px 0px 100px 20px rgba(63, 81, 181, 0.6);
+}
+
+#video::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: -20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-image: linear-gradient(135deg, #2196f3, #3f51b5);
+    box-shadow: 0px 0px 20px 2px rgba(63, 81, 181, 0.8);
+    transition: all 2s linear, box-shadow 0s linear;
+}
+
+#video::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: linear-gradient(135deg, #248cef, #344aa2);
+    filter: blur(40px);
+}
+
+#video:hover {
+    transform: translateX(-10px);
+    box-shadow: 0px 0px 100px 20px rgba(63, 81, 181, 0.8);
+}
+
+#video:hover::after {
+    transform: rotate(-50deg);
+    background-image: linear-gradient(135deg, #e42774, #bd354b);
+    box-shadow: 0px 0px 20px 2px rgba(189, 53, 75, 0.8);
+    transform-origin: -45px;
+    transition: transform 1s linear;
+}
+
+
+
+
+
+
+#live {
+    position: relative;
+    top: 20px;
+    width: 80px;
+    height: 60px;
+        /*
+    mask-image: url("../img/circle_big.svg");
+    -webkit-mask-image:  url("../img/circle_big.svg");
+    */
+    background-image: linear-gradient(135deg, #2196f3, #3f51b5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s linear;
+    transform-origin: center;
+    box-shadow: 0px 0px 100px 20px rgba(63, 81, 181, 0.6);
+}
+
+#live::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 0;
+    width: 80px;
+    height: 10px;
+    background-image: linear-gradient(135deg, #2196f3, #3f51b5);
+    box-shadow: 0px 0px 20px 2px rgba(63, 81, 181, 0.8);
+    transition: all 0.5s linear, box-shadow 0s linear;
+    transform: rotate(10deg);
+    transform-origin: right bottom;
+}
+
+#live::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    background-image: linear-gradient(135deg, #248cef, #344aa2);
+    filter: blur(40px);
+}
+
+/*
+#live:hover {
+    transform: translateX(10px);
+    transform-origin: right bottom;
+    box-shadow: 0px 0px 100px 20px rgba(63, 81, 181, 0.8);
+}
+*/
+
+#live:hover::after {
+    transform: rotate(0deg);
+    background-image: linear-gradient(135deg, #e42774, #bd354b);
+/*    box-shadow: 0px 0px 20px 2px rgba(189, 53, 75, 0.8);*/
+    transform-origin: right bottom;
+    transition: transform 0.5s linear;
+}
+
+
 
 #platform {
     position: relative;
