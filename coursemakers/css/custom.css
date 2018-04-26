@@ -457,6 +457,16 @@ section.support div.support-animation:nth-child(5) {
 
 }
 
+
+section.support .icon-content {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-60%); 
+}
+
 section.support div.support-header h2 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -497,7 +507,7 @@ section.support div.support-animation h3 {
     color: #f8f8f8;
     padding: 0;
     margin: 0;
-    margin-top: 80px;
+    margin-top: 0;
     text-transform: uppercase;
     padding: 0;
     text-shadow: -1px 1px #00061d;
@@ -574,7 +584,7 @@ div.icon {
 
 
 
-#video {
+#live {
     position: relative;
     width: 80px;
     height: 80px;
@@ -591,7 +601,7 @@ div.icon {
     box-shadow: 0px 0px 100px 20px rgba(63, 81, 181, 0.6);
 }
 
-#video::after {
+#live::after {
     content: "";
     position: absolute;
     top: 30px;
@@ -603,27 +613,28 @@ div.icon {
     box-shadow: 0px 0px 20px 2px rgba(63, 81, 181, 0.8);
     transition: all 2s linear, box-shadow 0s linear;
 }
-
-#video::before {
+#live::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 70px;
-    height: 70px;
+    top: -60px;
+    left: -60px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-image: linear-gradient(135deg, #248cef, #344aa2);
-    filter: blur(40px);
+    opacity: 0.2;
+    transform-origin: center;
+    filter: blur(20px);
 }
 
-#video:hover {
+.support-animation:hover #live {
     transform: translateX(-10px);
     box-shadow: 0px 0px 100px 20px rgba(63, 81, 181, 0.8);
 }
 
-#video:hover::after {
+.support-animation:hover #live::after {
     transform: rotate(-50deg);
-    background-image: linear-gradient(135deg, #e42774, #bd354b);
+    background: linear-gradient(90deg, #f44336, #e91e63);
     box-shadow: 0px 0px 20px 2px rgba(189, 53, 75, 0.8);
     transform-origin: -45px;
     transition: transform 1s linear;
@@ -634,7 +645,7 @@ div.icon {
 
 
 
-#live {
+#video {
     position: relative;
     top: 20px;
     width: 80px;
@@ -651,13 +662,13 @@ div.icon {
     box-shadow: 0px 0px 100px 20px rgba(63, 81, 181, 0.6);
 }
 
-#live::after {
+#video::after {
     content: "";
     position: absolute;
-    top: -15px;
+    top: -20px;
     right: 0;
     width: 80px;
-    height: 10px;
+    height: 15px;
     background-image: linear-gradient(135deg, #2196f3, #3f51b5);
     box-shadow: 0px 0px 20px 2px rgba(63, 81, 181, 0.8);
     transition: all 0.5s linear, box-shadow 0s linear;
@@ -665,7 +676,7 @@ div.icon {
     transform-origin: right bottom;
 }
 
-#live::before {
+#video::before {
     content: "";
     position: absolute;
     top: 0;
@@ -676,21 +687,69 @@ div.icon {
     filter: blur(40px);
 }
 
-/*
-#live:hover {
-    transform: translateX(10px);
-    transform-origin: right bottom;
-    box-shadow: 0px 0px 100px 20px rgba(63, 81, 181, 0.8);
-}
-*/
-
-#live:hover::after {
+.support-animation:hover #video::after {
     transform: rotate(0deg);
-    background-image: linear-gradient(135deg, #e42774, #bd354b);
-/*    box-shadow: 0px 0px 20px 2px rgba(189, 53, 75, 0.8);*/
+    background: linear-gradient(90deg, #f44336, #e91e63);
     transform-origin: right bottom;
     transition: transform 0.5s linear;
 }
+
+
+
+
+
+
+#marketing {
+    position: relative;
+    top: 10px;
+}
+
+.marketing_icon_small {
+    position: absolute;
+    top: 40px;
+    left: -90px;
+    right: 0;
+    margin: 0 auto;
+    width: 20px;
+    height: 25px;
+    transition: all 0.5s linear;
+    filter: drop-shadow(-2px 2px 2px rgba(189, 53, 75, 0.8));
+    -webkit-filter: drop-shadow(-2px 2px 2px rgba(189, 53, 75, 0.8));
+}
+
+.marketing_icon_big {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0;
+    width: 63px;
+    height: 80px;
+    transition: all 0.5s linear;
+    filter: drop-shadow(0px 0px 10px rgba(63, 81, 181, 0.8));
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(63, 81, 181, 0.8));
+    margin-bottom: -30px;
+}
+
+.support-animation:hover .marketing_icon_small {
+    transition: all 0.5s linear;
+    transform: translate(60px, 10px);
+    transform-origin: right bottom;
+}
+
+.support-animation:hover .marketing_icon_big {
+    transition: all 0.5s linear;
+    transform: translateY(-5px);
+    transform-origin: center;
+}
+
+
+
+
+
+
+
 
 .header-icon {
     position: relative;
