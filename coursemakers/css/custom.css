@@ -239,7 +239,7 @@ header div.header-icon a#music {
 #scroll span {
     position: absolute;
     top: 10px;
-    left: 48%;
+    left: 50%;
     width: 1px;
     height: 40px;
     background-color: rgba(248, 248, 248, 0.25);
@@ -692,6 +692,42 @@ div.icon {
     transition: transform 0.5s linear;
 }
 
+.header-icon {
+    position: relative;
+}
+
+.music {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
+.scroll {
+    bottom: 10px;
+}
+
+
+.music_pulse {
+    fill:#FEFEFE;
+    animation: music_przesuniecie 2s linear infinite;
+}
+
+@keyframes music_przesuniecie {
+    0% {transform:translateX(0px)}
+    100% {transform:translateX(40px)}
+}
+
+.music_pulse_2 {
+    fill:#FEFEFE;
+    animation: music_przesuniecie_2 2s linear 1s infinite;
+    transform:translateX(-20px);
+    opacity: 0;
+}
+
+@keyframes music_przesuniecie_2 {
+    0% {transform:translateX(-20px); opacity: 1;}
+    100% {transform:translateX(20px); opacity: 1;}
+}
 
 
 #platform {
