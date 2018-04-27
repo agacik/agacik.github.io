@@ -581,15 +581,63 @@ div.icon {
 
 
 
+
+
+
+
+#video {
+    position: relative;
+    top: 20px;
+    width: 96px;
+    height: 70px;
+    background-image: linear-gradient(135deg, #2196f3, #3f51b5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s linear;
+    transform-origin: center;
+    box-shadow: 0px 0px 100px 20px rgba(63, 81, 181, 0.6);
+}
+
+#video::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 96px;
+    height: 16px;
+    background-image: linear-gradient(135deg, #2196f3, #3f51b5);
+    box-shadow: 0px 0px 20px 2px rgba(63, 81, 181, 0.8);
+    transition: all 0.5s linear, box-shadow 0s linear;
+    transform: rotate(10deg);
+    transform-origin: right bottom;
+}
+
+#video::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    background-image: linear-gradient(135deg, #248cef, #344aa2);
+    filter: blur(40px);
+}
+
+.support-animation:hover #video::after {
+    transform: rotate(0deg);
+    background: linear-gradient(90deg, #f44336, #e91e63);
+    transform-origin: right bottom;
+    transition: transform 0.5s linear;
+}
+
+
+
+
 #live {
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
-/*
-    mask-image: url("../img/circle_big.svg");
-    -webkit-mask-image:  url("../img/circle_big.svg");
-*/
     background-image: linear-gradient(135deg, #2196f3, #3f51b5);
     background-size: cover;
     background-repeat: no-repeat;
@@ -603,8 +651,8 @@ div.icon {
     position: absolute;
     top: 30px;
     right: -20px;
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background-image: linear-gradient(135deg, #2196f3, #3f51b5);
     box-shadow: 0px 0px 20px 2px rgba(63, 81, 181, 0.8);
@@ -642,64 +690,10 @@ div.icon {
 
 
 
-#video {
-    position: relative;
-    top: 20px;
-    width: 80px;
-    height: 60px;
-        /*
-    mask-image: url("../img/circle_big.svg");
-    -webkit-mask-image:  url("../img/circle_big.svg");
-    */
-    background-image: linear-gradient(135deg, #2196f3, #3f51b5);
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: all 0.5s linear;
-    transform-origin: center;
-    box-shadow: 0px 0px 100px 20px rgba(63, 81, 181, 0.6);
-}
-
-#video::after {
-    content: "";
-    position: absolute;
-    top: -20px;
-    right: 0;
-    width: 80px;
-    height: 15px;
-    background-image: linear-gradient(135deg, #2196f3, #3f51b5);
-    box-shadow: 0px 0px 20px 2px rgba(63, 81, 181, 0.8);
-    transition: all 0.5s linear, box-shadow 0s linear;
-    transform: rotate(10deg);
-    transform-origin: right bottom;
-}
-
-#video::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70px;
-    height: 70px;
-    background-image: linear-gradient(135deg, #248cef, #344aa2);
-    filter: blur(40px);
-}
-
-.support-animation:hover #video::after {
-    transform: rotate(0deg);
-    background: linear-gradient(90deg, #f44336, #e91e63);
-    transform-origin: right bottom;
-    transition: transform 0.5s linear;
-}
-
-
-
-
-
 
 
 #platform {
     position: relative;
-    top: 10px;
 }
 
 .platform_icon_big {
@@ -765,17 +759,16 @@ div.icon {
 
 #marketing {
     position: relative;
-    top: 10px;
 }
 
 .marketing_icon_small {
     position: absolute;
     top: 40px;
-    left: -90px;
+    left: -120px;
     right: 0;
     margin: 0 auto;
-    width: 20px;
-    height: 25px;
+    width: 29px;
+    height: 37px;
     transition: all 0.5s linear, filter 0s linear;
     filter: drop-shadow(-2px 2px 2px rgba(63, 81, 181, 0.8));
     -webkit-filter: drop-shadow(-2px 2px 2px rgba(63, 81, 181, 0.8));
@@ -788,8 +781,8 @@ div.icon {
     right: 0;
     margin: 0 auto;
     padding: 0;
-    width: 63px;
-    height: 80px;
+    width: 77px;
+    height: 97px;
     transition: all 0.5s linear;
     filter: drop-shadow(0px 0px 10px rgba(63, 81, 181, 0.8));
     -webkit-filter: drop-shadow(0px 0px 10px rgba(63, 81, 181, 0.8));
@@ -810,12 +803,12 @@ div.icon {
     transform-origin: center;
 }
 
-#marketin_icon_item_small {
+#marketing_icon_item_small {
     fill: url(#linear);
     transition: fill 1s linear;
 }
 
-.support-animation:hover #marketin_icon_item_small {
+.support-animation:hover #marketing_icon_item_small {
     fill: url(#linear_orange);
     transition: fill 1s linear;
     
