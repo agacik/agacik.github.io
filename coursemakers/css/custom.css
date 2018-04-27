@@ -404,7 +404,11 @@ section.author div.author-image .item-mask .item-content .item-content-inner h2 
     margin-bottom: 10px;
 }
 
-
+section.author div.author-image .item-mask .item-content .item-content-inner a {
+    color: rgba(248, 248, 248, 0.37);
+    display: inline-block;
+    width: 100%;
+}
 
 section.author div.author-image .item-mask .item-content .item-content-inner span {
     font-family: 'Montserrat', sans-serif;
@@ -414,7 +418,6 @@ section.author div.author-image .item-mask .item-content .item-content-inner spa
     color: rgba(248, 248, 248, 0.67);
     padding: 0;
     margin: 0;
-    margin-right: 120px;
     text-transform: uppercase;
 }
 
@@ -526,10 +529,8 @@ section.support div.support-animation div.support-more {
 
 section.support div.support-animation div.support-more a {
     color: rgba(248, 248, 248, 0.37);
-}
-
-section.support div.support-animation div.support-more span {
-    padding-right: 65px;
+    display: inline-block;
+    width: 100%;
 }
 
 
@@ -571,7 +572,7 @@ section.support div.support-animation div.support-more:hover img.arrow {
 
 
 div.icon {
-    width: 100px;
+    width: auto;
     height: 100px;
     left: 0;
     right: 0;
