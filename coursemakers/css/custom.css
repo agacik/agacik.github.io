@@ -603,8 +603,8 @@ div.icon {
     position: absolute;
     top: 30px;
     right: -20px;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-image: linear-gradient(135deg, #2196f3, #3f51b5);
     box-shadow: 0px 0px 20px 2px rgba(63, 81, 181, 0.8);
@@ -690,6 +690,73 @@ div.icon {
     transform-origin: right bottom;
     transition: transform 0.5s linear;
 }
+
+
+
+
+
+
+
+#platform {
+    position: relative;
+    top: 10px;
+}
+
+.platform_icon_big {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0;
+    transition: all 0.5s linear;
+    filter: drop-shadow(-2px 2px 2px rgba(63, 81, 181, 0.8));
+    -webkit-filter: drop-shadow(-2px 2px 2px rgba(63, 81, 181, 0.8));
+    margin-bottom: -30px;
+    z-index: 10;
+}
+.platform_icon_small {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    transition: all 0.5s linear, filter 0s linear;
+    filter: drop-shadow(-2px 2px 2px rgba(63, 81, 181, 0.8));
+    -webkit-filter: drop-shadow(-2px 2px 2px rgba(63, 81, 181, 0.8));
+}
+
+
+.support-animation:hover .platform_icon_small {
+    transition: all 0.5s linear, filter 0s linear;
+    transform: translateY(4px);
+    transform-origin: right bottom;
+    filter: drop-shadow(-2px 2px 2px rgba(189, 53, 75, 0.8));
+    -webkit-filter: drop-shadow(-2px 2px 2px rgba(189, 53, 75, 0.8));
+}
+
+.support-animation:hover .platform_icon_big {
+    transition: all 0.5s linear;
+    transform: translateY(-4px);
+    transform-origin: center;
+}
+
+#platform_icon_item_small {
+    fill: url(#linear);
+    transition: fill 1s linear;
+}
+
+.support-animation:hover #platform_icon_item_small {
+    fill: url(#linear_orange);
+    transition: fill 1s linear;
+
+}
+
+
+
+
+
 
 
 
