@@ -128,7 +128,9 @@ section {
     transition: all 0.45s;
 }
 
-
+.top-nav-collapse {
+    background-color: #00061d;
+}
 
 @media (min-width: 600px) {
     .navbar.scrolling-navbar {
@@ -142,16 +144,13 @@ section {
     .navbar.scrolling-navbar.top-nav-collapse {
         padding-top: 5px;
         padding-bottom: 5px; }
-    .caption {
-        width: 100vw;
+
+
     }
-}
 
 
 
-.top-nav-collapse {
-    background-color: #00061d;
-}
+
 
 @media only screen and (max-width: 768px) {
     .navbar {
@@ -175,10 +174,29 @@ section {
         left: 0;
         text-align: center;
     }
+    .about-us-image {
+        position: relative;
+        float: none;
+        margin-bottom: 20px;
+    }
     
+    .caption {
+        width: 100vw;
+    }
+    .footer {
+        text-align: center;
+    }
+    
+    
+
 }
 
-
+@media only screen and (min-width: 768px) {
+    .about-us-image {
+        position: absolute;
+        float: right;
+    }
+}
 
 
 
@@ -222,6 +240,8 @@ a.button {
     z-index: 100;
     -webkit-transition: all 0.45s;
     transition: all 0.45s;
+    outline: none;
+    cursor: pointer;
 }
 
 button::before,
@@ -240,6 +260,7 @@ a.button::before {
     z-index: -100;
     -webkit-transition: all 0.45s;
     transition: all 0.45s;
+
 }
 button:hover::before, a.button:hover::before {
     opacity: 1;
@@ -253,6 +274,10 @@ button:active::before, a.button:active::before {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
+button:focus,
+a.button:focus {
+    outline: none;
+}
 
 a,
 a:hover,
@@ -387,7 +412,7 @@ header nav.main-menu ul.contact-nav li a {
 }
 
 header div.caption {
-    width: 50vw;
+    width: 100%;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -1159,16 +1184,14 @@ section.about-us {
 }
 
 section.about-us div.about-us-content {
-    float: left;
-    width: 50%;
-    margin-right: 30px;
+    width: 100%;
 }
 
 section.about-us div.about-us-image {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
-    float: right;
+    padding: 0;
 }
 
 section.about-us div.about-us-header h2 {
@@ -1297,7 +1320,7 @@ section.knowledge div.knowledge-item .item-mask .item-content .item-content-inne
     top: 65%;
     left: 0;
     right: 0;
-    padding: 10px 30px;
+    padding: 10px 20px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(244, 67, 54, 0.8)), to(rgba(233, 30, 99, 0.8)));
     background-image: linear-gradient(90deg, rgba(244, 67, 54, 0.8), rgba(233, 30, 99, 0.8));
     background-color: transparent;
@@ -1350,8 +1373,8 @@ section.newsletter {
 
 section.newsletter div.newsletter-content {
     float: left;
-    width: 50%;
-    margin-right: 30px;
+    width: 100%;
+    z-index: 1;
 }
 
 section.newsletter div.newsletter-image {
@@ -1359,6 +1382,15 @@ section.newsletter div.newsletter-image {
     top: 0;
     right: 0;
     float: right;
+    padding: 0;
+    z-index: -1;
+
+}
+
+section.newsletter div.newsletter-image .newsletter-image-bg {
+    background-image: url("../img/newsletter.png");
+    background-size: cover;
+    background-position: center;
 }
 
 section.newsletter div.newsletter-header h2 {
@@ -1368,7 +1400,7 @@ section.newsletter div.newsletter-header h2 {
     font-size: 20px;
     color: #f8f8f8;
     padding: 0;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 section.newsletter div.newsletter-header h2 > span {
@@ -1553,7 +1585,7 @@ section.newsletter form label.incorrect::before {
 
 .floated-label-wrapper label.show {
     opacity: 1;
-    top: -20px;
+    top: -10px;
     z-index: 1;
     -webkit-transition: all 0.15s ease-in;
     transition: all 0.15s ease-in;
@@ -1562,9 +1594,6 @@ section.newsletter form label.incorrect::before {
 
 /*SiteMap Style - START*/
 section.sitemap {
-    width: 100%;
-    height: auto;
-    margin: 110px 0 20px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -1572,10 +1601,6 @@ section.sitemap {
     color: rgba(248, 248, 248, 0.37);
     overflow: hidden;
 
-}
-
-section.sitemap div.sitemap-wrapper {
-    width: 20%;
 }
 
 section.sitemap div.sitemap-wrapper img {
@@ -1635,17 +1660,20 @@ section.sitemap div.sitemap-wrapper p > a:hover {
 /*Footer Style - START*/
 section.footer {
     width: 100%;
-    height: 30px;
-    margin: 110px 0 20px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 11px;
     color: rgba(248, 248, 248, 0.37);
+    overflow: hidden;
 }
 
-section.footer div.footer-wrapper:first-child {
-    margin-right: 30px;
+section.footer .footer-logo {
+    margin: 20px 0;
+}
+
+section.footer div.footer-wrapper {
+    margin: 5px 0;
 }
 
 section.footer div.footer-wrapper a {
@@ -1772,22 +1800,3 @@ section.footer div.footer-wrapper > i {
         transform: scale(1);
     }
 }
-
-/*
-@media only screen and (max-width: 1170px) {
-body {
-background-color: #00061d;
-background-image: url("../img/logo-top.png");
-background-repeat: no-repeat;
-background-position: center;
-color: #f8f8f8;
-margin: auto;
-width: 100%;
-height: 100vh;
-}
-
-section {
-display: none;
-}
-}
-*/

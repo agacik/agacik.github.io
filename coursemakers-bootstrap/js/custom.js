@@ -1,6 +1,6 @@
 $(function() {
 
-$("a").removeClass("waves-effect waves-light");
+$("a, li").removeClass("waves-effect waves-light");
 
 $(function () {
     'use strict';
@@ -19,3 +19,9 @@ $(function () {
 });
     
 });
+
+$(document).ready(function(){
+    $('.navbar-toggler-icon').click(function(){
+        $(this).toggleClass('open');
+    });
+}); 
