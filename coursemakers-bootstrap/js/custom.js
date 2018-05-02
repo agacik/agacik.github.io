@@ -1,7 +1,10 @@
 $(function() {
 
+//Remove Waves Effect in MDBootstrap    
 $("a, li").removeClass("waves-effect waves-light");
 
+    
+//Show/Hidden Label Script    
 $(function () {
     'use strict';
     var showClass = 'show';
@@ -18,6 +21,8 @@ $(function () {
     });
 });
     
+    
+//Hover Dropdown Menu Script    
     $('.nav-link').hover(
         function(){ $(this).next('div.dropdown-menu-custom').addClass('show'), 
                     $(this).parent().addClass('show')},
@@ -28,6 +33,31 @@ $(function () {
         function(){ $(this).removeClass('show')});
     
     
+    
+    
+//Filter in site Author Script    
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+
+        if(value == "all")
+        {
+            $('.filter').slideDown('1000');
+        }
+        else
+        {
+            $(".filter").not('.'+value).slideUp('3000');
+            $('.filter').filter('.'+value).slideDown('3000');
+
+        }
+    });
+    
+    
+    $('.filter-button').click(
+        function(){ $(this).siblings().removeClass('filter-active')});
+    $('.filter-button').click(
+        function(){ $(this).addClass('filter-active')});
+        
+
     
 });
 
