@@ -13,6 +13,7 @@ body {
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
+    z-index: -1;
 }
 
 section {
@@ -324,7 +325,8 @@ section.header {
 header {
     width: 100%;
     height: 100vh;
-    overflow: hidden
+    overflow: hidden;
+    background-color: #000;
 }
 
 .main-menu {
