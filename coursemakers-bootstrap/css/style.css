@@ -1369,6 +1369,8 @@ section.knowledge div.knowledge-item .arrow {
 
 section.newsletter {
     position: relative;
+    background-color: #000414;
+    z-index: -1;
 }
 
 section.newsletter div.newsletter-content {
