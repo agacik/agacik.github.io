@@ -1382,7 +1382,7 @@ section.newsletter {
 section.newsletter div.newsletter-content {
     float: left;
     width: 100%;
-    z-index: 1;
+    padding: 20px 0;
 }
 
 section.newsletter div.newsletter-image {
@@ -1391,7 +1391,6 @@ section.newsletter div.newsletter-image {
     right: 0;
     float: right;
     padding: 0;
-    z-index: -1;
 
 }
 
