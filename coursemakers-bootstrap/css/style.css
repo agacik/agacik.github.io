@@ -21,6 +21,47 @@ section {
     overflow: hidden;
 }
 
+h1, h2.h2-header {
+    font-family: 'Playfair Display', san-serif;
+    font-size: 32px;
+    color: #f8f8f8;
+    font-weight: 700;
+    font-style: italic;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    color: #f8f8f8;
+    padding: 0;
+    margin: 0;
+    margin: 10px 0;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    color: rgba(248, 248, 248, 0.36);
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(248, 248, 248, 0.25);
+    padding: 0;
+    margin: 0;
+}
+
 .container {
     max-width: 1230px;
     margin: auto;
@@ -375,7 +416,7 @@ header div.caption p {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 16x;
+    font-size: 16px;
     color: rgba(248, 248, 248, 0.25);
     padding: 0;
     margin: 0;
@@ -1372,7 +1413,7 @@ section.newsletter form input[type="email"] {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 16x;
+    font-size: 16px;
     background-color: transparent;
     border: none;
     outline: none;
@@ -1777,8 +1818,6 @@ section.footer div.footer-wrapper > i {
     margin: 0;
 }
 
-
-
 .author-caption h3 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -1878,6 +1917,198 @@ button.filter-active:hover {
 /* Author Site Style - End */
 
 
+/* SuperVOD Site Style - Start */
+.super-vod {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.super-vod h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    color: rgba(248, 248, 248, 0.36);
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.super-vod .super-vod-btn {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+section.quality div.quality-image {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+    -webkit-transition: all 0.45s linear;
+    transition: all 0.45s linear;
+    -webkit-filter: contrast(1.4);
+    filter: contrast(1.4);
+}
+
+section.quality .quality-content {
+    -webkit-transition: all 0.45s;
+    transition: all 0.45s;
+}
+
+section.quality div#quality-item-1 {
+    background-image: url("http://via.placeholder.com/380x280");
+    background-color: rgba(52, 74, 162, 0.6);
+    background-blend-mode: multiply;
+    max-width: 380px;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+}
+
+section.quality div#quality-item-2 {
+    background-image: url("http://via.placeholder.com/380x280");
+    background-color: rgba(52, 74, 162, 0.6);
+    background-blend-mode: multiply;
+    max-width: 380px;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+}
+
+section.quality div#quality-item-3 {
+    background-image: url("http://via.placeholder.com/380x280");
+    background-color: rgba(52, 74, 162, 0.6);
+    background-blend-mode: multiply;
+    max-width: 380px;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+section.quality div#quality-item-1 a, section.quality div#quality-item-2 a, section.quality div#quality-item-3 a {
+    display: block;
+    width: 100%;
+    height: 100%; 
+    z-index: 10;
+}
+
+section.quality div.quality-image .item-mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52, 74, 162, 0.6);
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.45s linear;
+    transition: all 0.45s linear;
+}
+
+section.quality div.quality-image a:hover .item-mask {
+    opacity: 1;
+    -webkit-transition: all 0.45s linear;
+    transition: all 0.45s linear;
+}
+
+section.quality div.quality-image  .item-mask > .item-content {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+section.quality .quality-add {
+    margin-bottom: 15px;
+}
+
+section.process {
+    position: relative;
+}
+
+section.process .process-content {
+    position: relative; 
+}
+
+
+section.process .process-mask {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(52, 74, 162, 0.6);
+    margin: 10px 0;
+    position: relative;
+    vertical-align: middle;
+}
+
+section.process .process-mask .process-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: inherit;
+    height: inherit;
+}
+
+
+section.process .process-mask .process-item {
+    position: relative;
+    width: 100%;
+    height: inherit;
+}
+
+section.process .process-mask .process-item .item-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+section.process .process-mask .process-item .item-content h3 {
+    margin: 0;
+}
+
+section.process .process-mask .item-content h3 {
+    margin: 0;
+}
+
+section.process .arrow-down {
+    position: absolute;
+    top: 145px;
+    left: 40px;
+    display: block;
+    height: 500px;
+    width: 1px;
+    background-color: #f8f8f8;
+}
+
+section.process .arrow-down-triangle {
+    display: block;
+    position: absolute;
+    top: 645px;
+    left: 35px;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+
+    border-top: 5px solid #f8f8f8;
+}
+
+
+
+/* SuperVOD Site Style - End */
+
+/* RWD Style - Start */
 
 @media (min-width: 600px) {
     .navbar.scrolling-navbar {
@@ -1955,3 +2186,5 @@ button.filter-active:hover {
         float: right;
     }
 }
+
+/* RWD Style - End */
