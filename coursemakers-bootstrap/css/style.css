@@ -1954,15 +1954,15 @@ button.filter-active:hover {
 
 /* Author Site Style - End */
 
-/* SuperVOD Site Style - Start */
+/* SuperVOD i SuperLIVE Site Style - Start */
 
-.super-vod {
+.super-vod, .super-live {
     position: relative;
     margin: 0;
     padding: 0;
 }
 
-.super-vod h3 {
+.super-vod h3, .super-live h3 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -1973,7 +1973,7 @@ button.filter-active:hover {
     text-transform: uppercase;
 }
 
-.super-vod .super-vod-btn {
+.super-vod .super-vod-btn, .super-live .super-live-btn {
     position: absolute;
     top: 75%;
     left: 0;
@@ -1981,7 +1981,7 @@ button.filter-active:hover {
     margin: 0 auto;
 }
 
-section.quality div.quality-image {
+section.quality div.quality-image, section.possibilities div.possibilities-image {
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -1991,21 +1991,21 @@ section.quality div.quality-image {
     float: left;
     overflow: hidden;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 45px;
     -webkit-transition: all 0.45s linear;
     transition: all 0.45s linear;
     -webkit-filter: contrast(1.4);
     filter: contrast(1.4);
 }
 
-section.quality .quality-content {
+section.quality .quality-content, section.possibilities .possibilities-content {
     -webkit-transition: all 0.45s;
     transition: all 0.45s;
 }
 
 section.quality div#quality-item-1 {
-    background-image: url("http://via.placeholder.com/380x280");
-    background-color: rgba(52, 74, 162, 0.6);
+    background-image: url("../img/super_vod_04.jpg");
+    background-color: rgba(52, 74, 162, 0.8);
     background-blend-mode: multiply;
     max-width: 380px;
     height: 280px;
@@ -2014,8 +2014,8 @@ section.quality div#quality-item-1 {
 }
 
 section.quality div#quality-item-2 {
-    background-image: url("http://via.placeholder.com/380x280");
-    background-color: rgba(52, 74, 162, 0.6);
+    background-image: url("../img/super_vod_05.jpg");
+    background-color: rgba(52, 74, 162, 0.8);
     background-blend-mode: multiply;
     max-width: 380px;
     height: 280px;
@@ -2024,8 +2024,8 @@ section.quality div#quality-item-2 {
 }
 
 section.quality div#quality-item-3 {
-    background-image: url("http://via.placeholder.com/380x280");
-    background-color: rgba(52, 74, 162, 0.6);
+    background-image: url("../img/super_vod_06.jpg");
+    background-color: rgba(52, 74, 162, 0.8);
     background-blend-mode: multiply;
     max-width: 380px;
     height: 280px;
@@ -2034,19 +2034,52 @@ section.quality div#quality-item-3 {
 }
 
 
+section.possibilities div#possibilities-item-1 {
+    background-image: url("../img/super_live_04.jpg");
+    background-color: rgba(52, 74, 162, 0.8);
+    background-blend-mode: multiply;
+    max-width: 380px;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+}
+
+section.possibilities div#possibilities-item-2 {
+    background-image: url("../img/super_live_05.jpg");
+    background-color: rgba(52, 74, 162, 0.8);
+    background-blend-mode: multiply;
+    max-width: 380px;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+}
+
+section.possibilities div#possibilities-item-3 {
+    background-image: url("../img/super_live_06.jpg");
+    background-color: rgba(52, 74, 162, 0.8);
+    background-blend-mode: multiply;
+    max-width: 380px;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+}
+
 section.quality div#quality-item-1 a,
 section.quality div#quality-item-2 a,
-section.quality div#quality-item-3 a {
+section.quality div#quality-item-3 a,
+section.possibilities div#possibilities-item-1 a,
+section.possibilities div#possibilities-item-2 a,
+section.possibilities div#possibilities-item-3 a {
     display: block;
     width: 100%;
     height: 100%;
     z-index: 10;
 }
 
-section.quality div.quality-image .item-mask {
+section.quality div.quality-image .item-mask, section.possibilities div.possibilities-image .item-mask {
     width: 100%;
     height: 100%;
-    background-color: rgba(52, 74, 162, 0.6);
+    background-image: linear-gradient(0deg, rgba(63, 81, 181, 1), rgba(63, 81, 181, 0.5));
     opacity: 1;
     position: absolute;
     top: 0;
@@ -2054,13 +2087,13 @@ section.quality div.quality-image .item-mask {
     transition: all 0.45s linear;
 }
 
-section.quality div.quality-image a:hover .item-mask {
+section.quality div.quality-image a:hover .item-mask, section.possibilities div.possibilities-image a:hover .item-mask {
     opacity: 1;
     -webkit-transition: all 0.45s linear;
     transition: all 0.45s linear;
 }
 
-section.quality div.quality-image .item-mask > .item-content {
+section.quality div.quality-image .item-mask > .item-content, section.possibilities div.possibilities-image .item-mask > .item-content {
     position: absolute;
     top: 30px;
     left: 0;
@@ -2069,7 +2102,7 @@ section.quality div.quality-image .item-mask > .item-content {
     padding: 30px;
 }
 
-section.quality .quality-add {
+section.quality .quality-add, section.possibilities .possibilities-add  {
     margin-bottom: 15px;
 }
 
@@ -2091,6 +2124,54 @@ section.process .process-mask {
     vertical-align: middle;
 }
 
+section.process #process-week-1 {
+    background-image: url("../img/process-week-1.jpg");
+    background-color: rgba(52, 74, 162, 0.9);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: right bottom;
+}
+
+section.process #process-week-2 {
+    background-image: url("../img/process-week-2.jpg");
+    background-color: rgba(52, 74, 162, 0.9);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: right bottom;
+}
+
+section.process #process-week-3 {
+    background-image: url("../img/process-week-3.jpg");
+    background-color: rgba(52, 74, 162, 0.9);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: right bottom;
+}
+
+section.process #process-week-4 {
+    background-image: url("../img/process-week-4.jpg");
+    background-color: rgba(52, 74, 162, 0.9);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: right bottom;
+}
+
+section.process #process-week-5 {
+    background-image: url("../img/process-week-5.jpg");
+    background-color: rgba(52, 74, 162, 0.9);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: right bottom;
+}
+
+section.process #process-week-6 {
+    background-image: url("../img/process-week-6.jpg");
+    background-color: rgba(52, 74, 162, 0.9);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: right bottom;
+}
+
 section.process .process-mask .process-wrapper {
     position: absolute;
     top: 50%;
@@ -2099,6 +2180,7 @@ section.process .process-mask .process-wrapper {
     width: inherit;
     height: inherit;
 }
+
 
 
 section.process .process-mask .process-item {
@@ -2182,14 +2264,21 @@ section.process .arrow-down-triangle {
 }
 
 
-section.price .price-add i {
+section.price .price-add #live i {
+    margin: 40px 2px;
+    background: -webkit-linear-gradient(90deg, #f44336, #e91e63);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section.price .price-add #video i {
     margin: 20px 2px;
     background: -webkit-linear-gradient(90deg, #f44336, #e91e63);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-section.price .price-add .support-animation:hover i {
+section.price .price-add .price-animation:hover i {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
     -webkit-transform-origin: center;
@@ -2244,7 +2333,11 @@ section.contact-us {
 }
 
 section.contact-us .contact-us-content {
-    max-width: 50%;
+    max-width: 60%;
+}
+
+section.contact-us .contact-us-btn {
+    text-align: center;
 }
 
 section.contact-us .contact-us-btn > .button {
