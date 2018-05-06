@@ -2571,6 +2571,82 @@ header .cm-platform {
 
 
 
+/* Studio Site Style - Start */
+section.price .icon {
+    position: relative;
+}
+
+section.price .price-description {
+    position: absolute;
+    top: 85%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-85%);
+}
+
+
+section.price div#price-item-1 {
+    background-image: url("../img/studio_01.jpg");
+    background-color: rgba(25, 36, 90, 0.8);
+    background-blend-mode: multiply;
+    max-width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: top;
+    border-radius: 2px 2px 0 0;
+}
+
+section.price div#price-item-2 {
+    background-image: url("../img/studio_02.jpg");
+    background-color: rgba(25, 36, 90, 0.8);
+    background-blend-mode: multiply;
+    max-width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: top;
+    border-radius: 2px 2px 0 0;
+}
+
+section.price div#price-item-1 a,
+section.price div#price-item-2 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+section.price div.price-image .item-mask {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(rgba(25, 36, 90, 1), rgba(25, 36, 90, 0.5));
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.45s linear;
+    transition: all 0.45s linear;
+}
+
+section.price div.price-image a:hover .item-mask {
+    opacity: 1;
+    -webkit-transition: all 0.45s linear;
+    transition: all 0.45s linear;
+}
+
+section.price div.price-image .item-mask > .item-content {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+section.price .price-add, section.possibilities .possibilities-add  {
+    margin-bottom: 15px;
+}
+/* Studio Site Style - End */
+
 /* RWD Style - Start */
 
 @media (min-width: 600px) {
