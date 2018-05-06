@@ -317,6 +317,7 @@ header {
     height: 100vh;
     overflow: hidden;
     background-color: #000;
+    position: relative;
 }
 
 .main-menu {
@@ -2375,6 +2376,200 @@ section.contact-us .contact-us-btn > .button {
 }
 
 /* Error 404 Site Style - End */
+
+
+
+
+
+
+
+/* CM Platform Site Style - Start */
+
+header .cm-platform {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.cm-platform h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    color: rgba(248, 248, 248, 0.36);
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+.cm-platform .cm-platform-btn {
+    position: absolute;
+    top: 105%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.cm-platform img {
+    max-width: 300px;
+    height: auto;
+    margin: 20px;
+}
+
+.platform_icon_small {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    -webkit-transition: all 0.5s linear, -webkit-filter 0s linear;
+
+    transition: all 0.5s linear, -webkit-filter 0s linear;
+
+    transition: all 0.5s linear, filter 0s linear;
+
+    transition: all 0.5s linear, filter 0s linear, -webkit-filter 0s linear;
+    filter: drop-shadow(-2px 2px 2px rgba(63, 81, 181, 0.8));
+    -webkit-filter: drop-shadow(-2px 2px 2px rgba(63, 81, 181, 0.8));
+}
+
+.platform_icon_small_small {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transition: all 0.5s linear, -webkit-filter 0s linear;
+    transition: all 0.5s linear, -webkit-filter 0s linear;
+    transition: all 0.5s linear, filter 0s linear;
+    transition: all 0.5s linear, filter 0s linear, -webkit-filter 0s linear;
+    filter: drop-shadow(-2px 2px 2px rgba(63, 81, 181, 0.8));
+    -webkit-filter: drop-shadow(-2px 2px 2px rgba(63, 81, 181, 0.8));
+    z-index: 11;
+}
+
+
+.price-add:hover .platform_icon_small {
+    -webkit-transition: all 0.5s linear, -webkit-filter 0s linear;
+    transition: all 0.5s linear, -webkit-filter 0s linear;
+    transition: all 0.5s linear, filter 0s linear;
+    transition: all 0.5s linear, filter 0s linear, -webkit-filter 0s linear;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    filter: drop-shadow(-2px 2px 2px rgba(189, 53, 75, 0.8));
+    -webkit-filter: drop-shadow(-2px 2px 2px rgba(189, 53, 75, 0.8));
+}
+
+.price-add:hover .platform_icon_small_small {
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+.price-add:hover .platform_icon_big {
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+#platform_icon_item_small {
+    fill: url(#linear);
+    -webkit-transition: fill 1s linear;
+    transition: fill 1s linear;
+}
+
+#platform_icon_item_small_small {
+    fill: url(#linear);
+    -webkit-transition: fill 1s linear;
+    transition: fill 1s linear;
+}
+
+.price-add:hover #platform_icon_item_small {
+    fill: url(#linear_orange);
+    -webkit-transition: fill 1s linear;
+    transition: fill 1s linear;
+
+}
+
+#star-1 {
+    position: absolute;
+    top: 25px;
+    left: 105px;
+    transform: rotate(20deg);
+    font-size: 10px;
+}
+
+#star-2 {
+    position: absolute;
+    top: -10px;
+    left: 120px;
+    transform: rotate(-20deg);
+    font-size: 8px;
+}
+
+#star-3 {
+    position: absolute;
+    top: -15px;
+    left: 245px;
+    transform: rotate(20deg);
+    font-size: 7px;
+}
+
+#star-4 {
+    position: absolute;
+    top: 15px;
+    left: 265px;
+    transform: rotate(-20deg);
+    font-size: 10px;
+}
+
+#star-5 {
+    position: absolute;
+    top: 40px;
+    left: 260px;
+    transform: rotate(-20deg);
+    font-size: 12px;
+}
+
+#star-1 > i,
+#star-2 > i,
+#star-3 > i,
+#star-4 > i,
+#star-5 > i {
+    background: -webkit-linear-gradient(90deg, #248cef, #344aa2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+
+.price-add:hover #star-1 > i,
+.price-add:hover #star-2 > i,
+.price-add:hover #star-3 > i,
+.price-add:hover #star-4 > i,
+.price-add:hover #star-5 > i {
+    background: -webkit-linear-gradient(90deg, #f44336, #e91e63);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+
+.platform-content {
+    background-color: #000414; 
+    margin: 30px 0;
+}
+
+
+/* CM Platform Site Style - End */
+
+
 
 /* RWD Style - Start */
 
