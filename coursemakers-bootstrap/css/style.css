@@ -35,7 +35,7 @@ h2.h2-header {
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 28px;
     color: #f8f8f8;
     padding: 0;
@@ -231,7 +231,7 @@ a.button {
 }
 
 button:not(.filter-button)::before,
-a.button:not(.filter-button)::before,
+a.button:not(.filter-button)::before
 {
     border-radius: inherit;
     background-image: -webkit-gradient(linear, right top, left top, from(#f44336), to(#e91e63));
@@ -621,7 +621,7 @@ section.author div.author-image .item-mask .item-content {
     left: 0;
     right: 0;
     margin: 0 30px 0 80px;
-    widows: 100%;
+    width: 100%;
     height: 100%;
 }
 
@@ -1133,7 +1133,7 @@ div.icon {
 
 
 .music_pulse {
-    fill: #FEFEFE;
+    fill: #f8f8f8;
     -webkit-animation: music_przesuniecie 2s linear infinite;
     animation: music_przesuniecie 2s linear infinite;
 }
@@ -1161,7 +1161,7 @@ div.icon {
 }
 
 .music_pulse_2 {
-    fill: #FEFEFE;
+    fill: #f8f8f8;
     -webkit-animation: music_przesuniecie_2 2s linear 1s infinite;
     animation: music_przesuniecie_2 2s linear 1s infinite;
     -webkit-transform: translateX(-20px);
@@ -1307,7 +1307,7 @@ section.knowledge div.knowledge-item img:hover:not(.arrow) {
 section.knowledge div.knowledge-header h2 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 28px;
     color: #f8f8f8;
     padding: 0;
@@ -1529,7 +1529,7 @@ section.newsletter form input[type="checkbox"] + label::before {
     position: absolute;
     left: 0;
     background-color: #f8f8f8;
-    top: 6px;
+    top: 4px;
 
 }
 
@@ -1573,6 +1573,12 @@ section.newsletter form label.incorrect::before {
     vertical-align: middle;
     padding: 0 8px;
     text-shadow: 0px 0px 10px #e91e63;
+}
+
+section.newsletter .input-wrapper #regulamin + label {
+    font-size: 12px;
+    vertical-align: bottom;
+    margin: 2px 0;
 }
 
 .floated-label-wrapper {
@@ -1759,7 +1765,7 @@ section.footer div.footer-wrapper > i {
 .loading-bar:nth-child(1) {
     background-color: #f8f8f8;
     -webkit-animation-delay: 0;
-    animation-delay: 0;
+    animation-delay: 0s;
 }
 
 .loading-bar:nth-child(2) {
@@ -1853,7 +1859,7 @@ section.footer div.footer-wrapper > i {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 16x;
+    font-size: 16px;
     color: rgba(248, 248, 248, 0.25);
     padding: 0;
     margin: 0;
@@ -2619,7 +2625,7 @@ section.price div#price-item-2 a {
 section.price div.price-image .item-mask {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(0deg, rgba(rgba(25, 36, 90, 1), rgba(25, 36, 90, 0.5));
+    background-image: linear-gradient(0deg, rgba(rgba(25, 36, 90, 0.95), rgba(25, 36, 90, 0.5)));
     opacity: 1;
     position: absolute;
     top: 0;
@@ -2646,6 +2652,32 @@ section.price .price-add, section.possibilities .possibilities-add  {
     margin-bottom: 15px;
 }
 /* Studio Site Style - End */
+
+
+/* Blog Site Style - Start */
+section.blog {
+    margin: 0;
+}
+
+.blog-content {
+    background-color: #f8f8f8;
+}
+
+.blog-description {
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.blog-description > p{
+    color: black;
+    padding: 10px 0;
+}
+
+/* Blog Site Style - End */
+
 
 /* RWD Style - Start */
 
