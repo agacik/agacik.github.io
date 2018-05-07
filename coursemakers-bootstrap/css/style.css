@@ -2679,6 +2679,64 @@ section.blog {
 /* Blog Site Style - End */
 
 
+
+/* AboutUs Site Style - Start */
+
+
+#about-item-1 {
+    background-image: url("../img/about_01.jpg");
+    max-width: 400px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#about-item-2 {
+    background-image: url("../img/about_02.jpg");
+    max-width: 400px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+#about-item-3 {
+    background-image: url("../img/about_01.jpg");
+    max-width: 400px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#about-item-4 {
+    background-image: url("../img/about_02.jpg");
+    max-width: 400px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#about-item-5 {
+    background-image: url("../img/about_01.jpg");
+    max-width: 400px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+#about-item-6 {
+    background-image: url("../img/about_03.jpg");
+    max-width: 400px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* AboutUs Site Style - End */
+
+
 /* RWD Style - Start */
 
 @media (min-width: 600px) {
