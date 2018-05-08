@@ -1,0 +1,12 @@
+Stwórz stronê zawieraj¹c¹ przycisk pt. "Pobierz dane"
+
+Po klikniêciu przycisku pobierz dane o programiœcie w formacie JSON z internetu za pomoc¹ Javascript lub jQuery:
+
+https://akademia108.pl/kurs-front-end/ajax/1-pobierz-dane-programisty.php
+
+Pobrane dane wyœwietl poni¿ej przycisku w nowym, stworzonym DIVie o id="dane-programisty".
+
+Zadanie domowe zrób za pomoc¹ GitHub Pages.
+
+PodpowiedŸ przed wys³aniem zadania do sprawdzenia:
+- pracuj¹c z mechanizmem AJAX u¿ywaj wbudowanych funkcji jQuery

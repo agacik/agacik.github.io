@@ -1,0 +1,76 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+#btn {
+    width: 100px;
+    height: 45px;
+    border: 2px solid #6dcd61;
+    background-color: transparent;
+    outline: none;
+    color: #6dcd61;
+    font-weight: 700;
+    position: relative;
+    margin: 40px;
+    cursor: pointer;
+}
+
+#btn::before {
+    content: "";
+    width: 100px;
+    height: 45px;
+    background-color: #a5e6d2;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    z-index: -1;
+    transition: all 0.8s ease; 
+}
+
+#btn:hover::before {
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: all 0.8s ease; 
+}
+
+#dane-programisty p {
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    padding: 2px;
+    margin: 15px;
+    border: 2px solid #8b8a97;
+    background-color: transparent;
+    color: #8b8a97;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    position: relative
+}
+
+#dane-programisty p::before {
+    content: "";
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    border: 2px solid #cbc5cc;
+    background-color: #cbc5cc;
+    z-index: -1;
+}
+
+#dane-programisty p::after {
+    content: "";
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: -14px;
+    left: 14px;
+    border: 2px solid #8b8a97;
+    background-color: transparent;
+    color: #8b8a97;
+    z-index: -2;
+}
+
