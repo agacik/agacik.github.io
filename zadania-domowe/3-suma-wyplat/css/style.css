@@ -1,0 +1,37 @@
+body {
+    margin: 20px;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+#count-sum {
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#00bf72), to(#a8eb12));
+    background-image: linear-gradient(to right, #00bf72, #a8eb12);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #f8f8f8;
+}
+
+#count-sum:focus {
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    background-image: -webkit-gradient(linear, left top, right top, from(#a8eb12), to(#00bf72));
+    background-image: linear-gradient(to right, #a8eb12, #00bf72);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #f8f8f8;
+}
