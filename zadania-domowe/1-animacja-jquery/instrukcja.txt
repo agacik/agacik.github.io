@@ -1,0 +1,16 @@
+1. Stwórz przycisk - (element button)
+2. Pod przyciskiem stwórz kwadrat (znacznik div) o wysokoœci i
+szerokoœci 200px oraz kolorze czerwonym
+3. Po klikniêciu w przycisk kwadrat ma siê przesun¹æ w prawo o 100px
+oraz ma siê zmniejszyæ do rozmiaru 100px na 100px - wykorzystaj do
+tego metodê animate() - animacja ma trwaæ 3 sekundy
+4. Po zakoñczonej animacji zmieñ kolor kwadratu na niebieski - animacja
+zmiany ma trwaæ 5 sekund
+5. Gdy kwadrat zmieni kolor na niebieski wyœwietl wewn¹trz niego napis
+w nag³ówku h2 "Animacja zakoñczona"
+
+Zadanie podsy³amy z u¿yciem https://repl.it
+
+PodpowiedŸ przed wys³aniem zadania do sprawdzenia:
+- pamiêtaj, ¿e skrypty zawsze podpinamy na koñcu, a biblioteka jQuery ma byæ podpiêta powy¿ej Twojego skryptu.
+- bibliotekê jQuery podepnij w wersji zdalnej z serwera CDN.

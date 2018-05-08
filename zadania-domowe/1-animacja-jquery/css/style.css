@@ -1,0 +1,54 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+}
+
+#btn {
+    width: 100px;
+    height: 45px;
+    border: 2px solid #ff5876;
+    background-color: transparent;
+    outline: none;
+    color: #ff5876;
+    font-weight: 700;
+    position: relative;
+    margin: 40px;
+    cursor: pointer;
+}
+
+#btn::before {
+    content: "";
+    width: 100px;
+    height: 45px;
+    background-color: #ffd599;
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    z-index: -1;
+    transition: all 0.8s ease; 
+}
+
+#btn:hover::before {
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: all 0.8s ease; 
+}
+
+.kwadrat.background-color {
+    background-color: #91a3f6;
+    transition: background-color 5s ease;
+}
+
+.kwadrat {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #ff5876;
+}
