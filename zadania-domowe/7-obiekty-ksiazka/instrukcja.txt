@@ -1,0 +1,9 @@
+Napisz klasê "Ksiazka", która ma w³aœciwoœci "tytul", "autor", "przeczytana" (przeczytana jest typu Boolean) oraz jedn¹ metodê "opiszKsiazke", która zwraca stringa opisuj¹cego t¹ ksi¹¿kê wg. wzoru "Ksi¹¿ka ma tytu³ WiedŸmin, autorem jest Andrzej Sapkowski i zosta³a przeczytana.".
+
+Stwórz 3 instancje obiektu tej klasy z czego jedna z ksi¹¿ek ma byæ ju¿ przeczytana, a nastêpnie stwórz now¹ tablicê globaln¹ i dodaj do niej te 3 ksi¹¿ki.
+
+Nastêpnie napisz funkcjê "iloscPrzeczytanych", która jako parametr przyjmuje tablicê obiektów (naszych ksi¹¿ek, ktore stworzyliœmy), a zwraca nam iloœæ ksi¹¿ek, ktore zosta³y przeczytane. Podczas iteracji po tablicy (wewn¹trz tej funkcji) i sprawdzania, czy ksi¹¿ka jest przeczytana, wywo³uj tak¿e na obiekcie metodê opiszKsiazke(), a wynik jej dzia³ania wyœwietlaj w konsoli.
+
+Na samym koñcu wyœwietl w konsoli iloœæ przeczytanych ksi¹¿ek
+
+Zadanie domowe robimy z wykorzystaniem serwisu https://repl.it
