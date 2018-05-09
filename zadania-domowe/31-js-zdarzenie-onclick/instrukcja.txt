@@ -1,0 +1,9 @@
+W pliku html stwórz podstawow¹ strukturê html5, a nastêpnie stwórz folder "js" a w nim plik "main.js".
+
+Wewn¹trz body dodaj button z napisem "Klik!". Podepnij Twój skrypt main.js.
+
+W pliku main.js stworz zmienn¹ o o nazwie "button" i przypisz do niej stworzony wczeœniej przycisk (przy u¿yciu document.querySelector).
+
+Nastêpnie zaprogramuj event poprzez dodanie atrybutu onclick w buttonie, który po jego klikniêciu bêdzie wyœwietla³ alert z napisem "Klik dzia³a!".
+
+Pliki dodaj do zdalnego repozytorium i podeœlij link do sprawdzenia.

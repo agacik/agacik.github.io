@@ -1,0 +1,55 @@
+button {
+    background-color: #2012ff;
+    color: #f8f8f8;
+    width: 150px;
+    height: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    transition: all 0.5s;
+}
+button::after {
+    content: "";
+    position: absolute;
+    background-color: #060066;
+    bottom: -10px;
+    height: 10px;
+    width: 100%;
+    left: 5px;
+    transform: skewX(45deg);
+    transition: all 0.5s;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    background-color: #060066;
+    bottom: -5px;
+    height: 100%;
+    width: 10px;
+    right: -10px;
+    transform: skewY(45deg);
+    transition: all 0.5s;
+}
+
+button:active {
+    margin-left: 8px;
+    margin-top: 8px;
+}
+button:active::before {
+    right: -5px;
+    width: 5px;
+    bottom: -3px;
+}
+button:active::after {
+    bottom: -5px;
+    height: 5px;
+    left: 3px;
+
+}
