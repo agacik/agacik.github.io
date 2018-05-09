@@ -11,29 +11,23 @@ class Ksiazka {
             czyPrzeczytana = "przeczytana";
         } else czyPrzeczytana = "nieprzeczytana";
 
-        console.log("Książka ma tytuł " + this.tytul + ", autorem jest " + this.autor + " i została " + czyPrzeczytana + ".");
+        return "Książka ma tytuł " + this.tytul + ", autorem jest " + this.autor + " i została " + czyPrzeczytana + ".";
     }
 };
 
 var ksiazka01 = new Ksiazka('Wszystko czerwone', 'Joanna Chmielewska', true);
-ksiazka01.opiszKsiazke();
-
 var ksiazka02 = new Ksiazka('Boso ale w ostrogach', 'Stanisław Grzesiuk', true);
-ksiazka02.opiszKsiazke();
-
 var ksiazka03 = new Ksiazka('Nad Niemnem', 'Eliza Orzeszkowa', false);
-ksiazka03.opiszKsiazke();
-
 var wszystkieKsiazki = [ksiazka01, ksiazka02, ksiazka03];
 console.log(wszystkieKsiazki);
 
-function iloscPrzeczytanych(wszystkieKsiazki) {
+function iloscPrzeczytanych(funkcjaZKsiazki) {
     var liczbaPrzeczytanych = 0;
-    for (var i = 0; i < wszystkieKsiazki.length; i++) {
-        if (wszystkieKsiazki[i].przeczytana == true) {
+    for (var i = 0; i < funkcjaZKsiazki.length; i++) {
+        if (funkcjaZKsiazki[i].przeczytana == true) {
             liczbaPrzeczytanych = liczbaPrzeczytanych + 1;
         }
-        console.log(wszystkieKsiazki[i].opiszKsiazke());
+        console.log(funkcjaZKsiazki[i].opiszKsiazke());
     };
     var liczbaNieprzeczytanych = wszystkieKsiazki.length - liczbaPrzeczytanych;
 
