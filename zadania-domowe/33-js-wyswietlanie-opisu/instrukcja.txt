@@ -1,0 +1,18 @@
+W pliku html stwórz podstawow¹ strukturê html5, a nastêpnie stwórz folder "js" a w nim plik "main.js".
+
+W pliku html podepnij Twój skrypt "main.js" oraz dodaj nastêpuj¹c¹ strukturê:
+
+<h1>Produkt</p>
+<button>Wyœwietl opis</button>
+<p id="opis"></p>
+W pliku main.js stwórz zmienn¹ o dowolnej nazwie i przypisz do niej paragraf przy u¿yciu
+
+document.getElementById("nazwa-id");
+
+Nastêpnie stwórz kolejn¹ zmienn¹ i przypisz do niej button (przy u¿yciu document.querySelector)
+
+Do buttona dodaj zdarzenie onclick, po którym zostanie wywo³ana funkcja.
+
+Funkcja ma dodaæ do paragrafu opis (dowolny tekst).
+
+Pliki dodaj do zdalnego repozytorium i podeœlij link do sprawdzenia.
