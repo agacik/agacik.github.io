@@ -1025,7 +1025,6 @@ div.icon {
     fill: url(#linear_orange);
     -webkit-transition: fill 1s linear;
     transition: fill 1s linear;
-
 }
 
 
@@ -2572,6 +2571,10 @@ header .cm-platform {
     margin: 30px 0;
 }
 
+.platform-content img {
+    margin: 0;
+    padding: 0;
+}
 
 /* CM Platform Site Style - End */
 
@@ -2837,9 +2840,7 @@ section.blog {
         background-repeat: no-repeat;
         background-position: top;
     }
-    
 
-    
 }
 
 @media only screen and (min-width: 768px) {
