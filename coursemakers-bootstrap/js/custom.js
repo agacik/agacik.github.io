@@ -41,12 +41,12 @@ $(function () {
 
         if(value == "all")
         {
-            $('.filter').slideDown('1000');
+            $('.filter').fadeIn('1000');
         }
         else
         {
-            $(".filter").not('.'+value).slideUp('3000');
-            $('.filter').filter('.'+value).slideDown('3000');
+            $(".filter").not('.'+value).fadeOut('3000');
+            $('.filter').filter('.'+value).fadeIn('3000');
 
         }
     });
