@@ -113,7 +113,7 @@ p {
 }
 
 .navbar .dropdown-menu-custom {
-    background-color: #000;
+    background-color: #00061d;
     color: #f8f8f8;
     padding: 0;
     border-radius: 0px;
@@ -321,6 +321,10 @@ header {
     overflow: hidden;
     background-color: #000;
     position: relative;
+}
+
+header a.button {
+    margin-bottom: 0;
 }
 
 .main-menu {
@@ -1871,6 +1875,12 @@ section.footer div.footer-wrapper > i {
 
 /* Author Site Style - Start */
 
+header.author {
+    background-image: url('../img/author_bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
 .author-caption {
     width: 100%;
     max-height: 100%;
@@ -1972,6 +1982,18 @@ button.filter-active:hover {
 /* Author Site Style - End */
 
 /* SuperVOD i SuperLIVE Site Style - Start */
+
+header.super-vod {
+    background-image: url('../img/super_vod_bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+header.super-live {
+    background-image: url('../img/super_live_bg.png');
+    background-size: cover;
+    background-position: center;
+}
 
 .super-vod, .super-live {
     position: relative;
@@ -2384,7 +2406,10 @@ section.contact-us .contact-us-btn > .button {
 
 /* CM Platform Site Style - Start */
 
-header .cm-platform {
+header.cm-platform {
+    background-image: url('../img/cm_platform_bg.png');
+    background-size: cover;
+    background-position: center;
     position: relative;
     margin: 0;
     padding: 0;
@@ -2575,6 +2600,12 @@ header .cm-platform {
 
 
 /* Studio Site Style - Start */
+header.studio {
+    background-image: url('../img/studio_bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
 section.price .icon {
     position: relative;
 }
@@ -2652,8 +2683,22 @@ section.price .price-add, section.possibilities .possibilities-add  {
 
 
 /* Blog Site Style - Start */
+header.blog {
+    background-image: url('../img/blog_bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
 section.blog {
-    margin: 0;
+    margin-top: -15%;
+}
+.blog-strong {
+    font-weight: 700;
+}
+
+.blog-color {
+    font-weight: 700;
+    color:  #e91e63;
 }
 
 .blog-content {
@@ -2661,7 +2706,7 @@ section.blog {
 }
 
 .blog-description {
-    width: 50%;
+    max-width: 720px;;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -2671,6 +2716,16 @@ section.blog {
 .blog-description > p{
     color: black;
     padding: 10px 0;
+}
+
+.blog-description img.float-left {
+    margin: 20px 20px 20px 0;
+    max-width: 400px;
+}
+
+.blog-description img.float-right {
+    margin: 20px 0 20px 20px;
+    max-width: 400px;
 }
 
 /* Blog Site Style - End */
