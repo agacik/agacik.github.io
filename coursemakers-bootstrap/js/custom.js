@@ -59,5 +59,11 @@ $(function () {
         
 
     
+    
+
+    $('.faq-quesion').click(
+        function(){ $(this).next().toggleClass('faq-active')});
+
+    
 });
 

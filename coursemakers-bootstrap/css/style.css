@@ -1873,6 +1873,57 @@ section.footer div.footer-wrapper > i {
 }
 
 
+/* FAQ Section - START */
+
+.faq-header {
+    max-width: 720px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.faq-content {
+    background-color: #19245a;
+    overflow: hidden;
+}
+
+.faq-content:nth-of-type(2n) {
+    background-color: #151E4F;
+}
+
+.faq-content:first-of-type {
+    border-radius: 2px 2px 0 0;
+}
+
+.faq-content:last-of-type {
+    border-radius: 0 0 2px 2px;
+}
+
+.faq-quesion {
+    max-width: 720px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.faq-answer {
+    max-width: 720px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 15px;
+    display: none;
+}
+
+.faq-active {
+    display: block;
+}
+
+/* FAQ Section - END */
+
 /* Author Site Style - Start */
 
 header.author {
