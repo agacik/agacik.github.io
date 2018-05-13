@@ -60,10 +60,17 @@ $(function () {
 
     
     
-
+//FAQ Animate
     $('.faq-quesion').click(
         function(){ $(this).next().toggleClass('faq-active')});
 
+    
+    
+//Smooth Scrool
+    $('a[href*="#"]:not([href="#"])').click(function(){
+        $('html, body').animate({
+            scrollTop: $(this.hash).offset().top}, 500, )
+    });
     
 });
 

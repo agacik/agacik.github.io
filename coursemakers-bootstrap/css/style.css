@@ -1905,7 +1905,6 @@ section.footer div.footer-wrapper > i {
     right: 0;
     margin: 0 auto;
     padding: 15px;
-    font-weight: 700;
     cursor: pointer;
 }
 
@@ -2114,9 +2113,7 @@ section.quality div#quality-item-3 {
 
 
 section.possibilities div#possibilities-item-1 {
-    background-image: url("../img/super_live_04.jpg");
-    background-color: rgba(52, 74, 162, 0.8);
-    background-blend-mode: multiply;
+    background-image: url("../img/super_live_04.png");
     max-width: 380px;
     height: 280px;
     background-size: cover;
@@ -2124,9 +2121,7 @@ section.possibilities div#possibilities-item-1 {
 }
 
 section.possibilities div#possibilities-item-2 {
-    background-image: url("../img/super_live_05.jpg");
-    background-color: rgba(52, 74, 162, 0.8);
-    background-blend-mode: multiply;
+    background-image: url("../img/super_live_05.png");
     max-width: 380px;
     height: 280px;
     background-size: cover;
@@ -2134,9 +2129,7 @@ section.possibilities div#possibilities-item-2 {
 }
 
 section.possibilities div#possibilities-item-3 {
-    background-image: url("../img/super_live_06.jpg");
-    background-color: rgba(52, 74, 162, 0.8);
-    background-blend-mode: multiply;
+    background-image: url("../img/super_live_06.png");
     max-width: 380px;
     height: 280px;
     background-size: cover;
@@ -2158,7 +2151,7 @@ section.possibilities div#possibilities-item-3 a {
 section.quality div.quality-image .item-mask, section.possibilities div.possibilities-image .item-mask {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(0deg, rgba(63, 81, 181, 1), rgba(63, 81, 181, 0.5));
+    background-image: rgb(21, 30, 79);
     opacity: 1;
     position: absolute;
     top: 0;
@@ -2309,7 +2302,6 @@ section.process .arrow-down-triangle {
 
 .price-animation {
     position: relative;
-    background: #19245a;
     color: #f8f8f8;
     border-radius: 2px;
     border: none;
@@ -2317,8 +2309,26 @@ section.process .arrow-down-triangle {
     padding-top: 20px;
 }
 
-.price-animation .icon {
-    margin-top: 20px;
+.price-animation .price-more-header p:first-of-type {
+    background-color: transparent;
+}
+
+.price-animation .price-more-header p:nth-of-type(2), .price-more p:first-of-type {
+    border-radius: 2px 2px 0 0;
+}
+
+.price-more p:first-of-type {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    color: rgba(248, 248, 248, 0.36);
+    text-transform: uppercase;
+    line-height: 22px;
+}
+
+.price-animation .price-more-header p:last-of-type,  .price-pack {
+    border-radius: 0 0 2px 2px;
 }
 
 .price-more {
@@ -2334,12 +2344,39 @@ section.process .arrow-down-triangle {
 }
 
 .price-more p {
-    padding: 5px;
+    padding: 15px;
     background-color: #151E4F;
+    margin: 0;
 }
 
 .price-more p:nth-of-type(2n) {
-    background-color: transparent;
+    background-color: #19245a;
+}
+
+.price-pack {
+    background-color: #151E4F;
+    margin: 0;
+    padding: 15px;
+}
+
+.price-pack h3 {
+    margin-bottom: 100px;
+}
+
+.price-animation .price-icon {
+    position: relative;
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.price-animation .price-icon-animate {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 
@@ -2350,20 +2387,20 @@ section.price .price-add #live i {
     -webkit-text-fill-color: transparent;
 }
 
-section.price .price-add #video i {
-    margin: 20px 2px;
+
+
+section.price .price-add .price-icon-animate .icon svg {
+    max-width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    fill: url(#linear_orange);
     background: -webkit-linear-gradient(90deg, #f44336, #e91e63);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-section.price .price-add .price-animation:hover i {
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    -webkit-transition: -webkit-transform 1s linear;
-    transition: -webkit-transform 1s linear;
-    transition: transform 1s linear;
-    transition: transform 1s linear, -webkit-transform 1s linear;
 }
 
 .price-animation:hover #live {
@@ -2641,6 +2678,11 @@ header.cm-platform {
     margin: 30px 0;
 }
 
+.platform-text {
+    padding: 30px;
+    padding-bottom: 0;
+}
+
 .platform-content img {
     margin: 0;
     padding: 0;
@@ -2728,7 +2770,7 @@ section.price div.price-image .item-mask > .item-content {
 }
 
 section.price .price-add, section.possibilities .possibilities-add  {
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 /* Studio Site Style - End */
 
@@ -2756,7 +2798,7 @@ section.blog {
     background-color: #f8f8f8;
 }
 
-.blog-description {
+.blog-description, .knowledge-header {
     max-width: 720px;;
     left: 0;
     right: 0;
@@ -2951,3 +2993,45 @@ section.blog {
 }
 
 /* RWD Style - End */
+
+
+#bg-line {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: absolute;
+}
+
+#bg-line::after {
+    content: "";
+    background-image: url('../img/bg_line.png');
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    position: fixed;
+    transform: rotate(45deg);
+    z-index: 0;   
+}
+
+#bg-dot {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: absolute;
+}
+
+#bg-dot::after {
+    content: "";
+    background-image: url('../img/bg_dot.png');
+    opacity: 0.8;
+    top: 600px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    position: fixed;
+    z-index: 0;   
+}
