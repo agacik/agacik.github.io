@@ -318,13 +318,16 @@ section.header {
 header {
     width: 100%;
     height: 100vh;
-    overflow: hidden;
     background-color: #000;
     position: relative;
 }
 
 header a.button {
     margin-bottom: 0;
+}
+
+section:first-of-type {
+    margin-top: 0;
 }
 
 .main-menu {
@@ -552,7 +555,7 @@ section.author div.author-image {
     float: left;
     overflow: hidden;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     -webkit-transition: all 0.45s linear;
     transition: all 0.45s linear;
 }
@@ -1267,11 +1270,6 @@ section.about-us div.about-us-header p {
 
 /* Knowledge Section Style - Start */
 
-section.knowledge {
-    margin: 110px 0 22px 0;
-    overflow: hidden;
-}
-
 section.knowledge .knowledge-item {
     display: inline-block;
     width: 100%;
@@ -1287,7 +1285,7 @@ section.knowledge .knowledge-item {
     text-align: center;
     font-size: 14px;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 section.knowledge #knowledge-item-1 {
@@ -1730,6 +1728,7 @@ section.footer {
     font-size: 11px;
     color: rgba(248, 248, 248, 0.37);
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 section.footer .footer-logo {
@@ -2082,9 +2081,7 @@ section.quality .quality-content, section.possibilities .possibilities-content {
 }
 
 section.quality div#quality-item-1 {
-    background-image: url("../img/super_vod_04.jpg");
-    background-color: rgba(52, 74, 162, 0.8);
-    background-blend-mode: multiply;
+    background-image: url("../img/super_vod_04.png");
     max-width: 380px;
     height: 280px;
     background-size: cover;
@@ -2092,9 +2089,7 @@ section.quality div#quality-item-1 {
 }
 
 section.quality div#quality-item-2 {
-    background-image: url("../img/super_vod_05.jpg");
-    background-color: rgba(52, 74, 162, 0.8);
-    background-blend-mode: multiply;
+    background-image: url("../img/super_vod_05.png");
     max-width: 380px;
     height: 280px;
     background-size: cover;
@@ -2102,9 +2097,7 @@ section.quality div#quality-item-2 {
 }
 
 section.quality div#quality-item-3 {
-    background-image: url("../img/super_vod_06.jpg");
-    background-color: rgba(52, 74, 162, 0.8);
-    background-blend-mode: multiply;
+    background-image: url("../img/super_vod_06.png");
     max-width: 380px;
     height: 280px;
     background-size: cover;
@@ -2175,71 +2168,63 @@ section.quality div.quality-image .item-mask > .item-content, section.possibilit
 }
 
 section.quality .quality-add, section.possibilities .possibilities-add  {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 section.process {
     position: relative;
 }
 
+section.process .process-mask .process-item .item-content h2, section.process .process-mask .process-item .item-content h3, section.process .process-mask .process-item .item-content p {
+    margin: 0;
+}
+
 section.process .process-content {
     position: relative;
 }
 
-
 section.process .process-mask {
     width: 100%;
     height: 80px;
-    background-color: rgba(52, 74, 162, 0.6);
+/*    background-color: rgba(21, 30, 79, 1);*/
+    background-color: rgba(52, 74, 162, 0.8);
     margin: 10px 0;
     position: relative;
     vertical-align: middle;
 }
 
 section.process #process-week-1 {
-    background-image: url("../img/process-week-1.jpg");
-    background-color: rgba(52, 74, 162, 0.9);
-    background-blend-mode: multiply;
+    background-image: url("../img/process-week-1.png");
     background-size: cover;
     background-position: right bottom;
 }
 
 section.process #process-week-2 {
-    background-image: url("../img/process-week-2.jpg");
-    background-color: rgba(52, 74, 162, 0.9);
-    background-blend-mode: multiply;
+    background-image: url("../img/process-week-2.png");
     background-size: cover;
     background-position: right bottom;
 }
 
 section.process #process-week-3 {
-    background-image: url("../img/process-week-3.jpg");
-    background-color: rgba(52, 74, 162, 0.9);
-    background-blend-mode: multiply;
+    background-image: url("../img/process-week-3.png");
     background-size: cover;
     background-position: right bottom;
 }
 
 section.process #process-week-4 {
-    background-image: url("../img/process-week-4.jpg");
-    background-color: rgba(52, 74, 162, 0.9);
-    background-blend-mode: multiply;
+    background-image: url("../img/process-week-4.png");
     background-size: cover;
     background-position: right bottom;
 }
 
 section.process #process-week-5 {
-    background-image: url("../img/process-week-5.jpg");
-    background-color: rgba(52, 74, 162, 0.9);
-    background-blend-mode: multiply;
+    background-image: url("../img/process-week-5.png");
     background-size: cover;
     background-position: right bottom;
 }
 
 section.process #process-week-6 {
-    background-image: url("../img/process-week-6.jpg");
-    background-color: rgba(52, 74, 162, 0.9);
-    background-blend-mode: multiply;
+    background-image: url("../img/process-week-6.png");
     background-size: cover;
     background-position: right bottom;
 }
@@ -2270,12 +2255,6 @@ section.process .process-mask .process-item .item-content {
 }
 
 
-section.process .process-mask .process-item .item-content h3 {
-    margin: 0;
-    text-align: center;
-    display: block;
-
-}
 
 section.process .arrow-down {
     position: absolute;
@@ -2389,7 +2368,7 @@ section.price .price-add #live i {
 
 
 
-section.price .price-add .price-icon-animate .icon svg {
+section.price .price-add .price-icon-animate .icon svg#star {
     max-width: 30px;
     position: absolute;
     top: 50%;
@@ -2484,6 +2463,14 @@ section.contact-us .contact-us-btn > .button {
     background-color: transparent;
 }
 
+
+#error-404 section.sitemap div.sitemap-wrapper p.sitemap-items a {
+    color: rgba(248, 248, 248, 0.65);
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+
 /* Error 404 Site Style - End */
 
 
@@ -2524,7 +2511,7 @@ header.cm-platform {
 }
 
 .cm-platform img {
-    max-width: 300px;
+    max-width: 450px;
     height: auto;
     margin: 20px;
 }
@@ -2783,7 +2770,7 @@ header.blog {
 }
 
 section.blog {
-    margin-top: -15%;
+    margin-top: -300px;
 }
 .blog-strong {
     font-weight: 700;
@@ -2796,6 +2783,7 @@ section.blog {
 
 .blog-content {
     background-color: #f8f8f8;
+    padding: 15px;
 }
 
 .blog-description, .knowledge-header {
@@ -2803,7 +2791,6 @@ section.blog {
     left: 0;
     right: 0;
     margin: 0 auto;
-    padding: 20px 0;
 }
 
 .blog-description > p{
@@ -2958,6 +2945,7 @@ section.blog {
     section.author div.author-image .item-mask {
         background-color: transparent;
         opacity: 1;
+        transition: all 0s;
     }
 
     section.process .arrow-down {
@@ -2996,14 +2984,9 @@ section.blog {
 
 
 #bg-line {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: block;
-    position: absolute;
-}
-
-#bg-line::after {
-    content: "";
     background-image: url('../img/bg_line.png');
     opacity: 0.1;
     top: 0;
@@ -3012,21 +2995,17 @@ section.blog {
     right: 0;
     background-repeat: repeat;
     position: fixed;
-    transform: rotate(45deg);
     z-index: 0;   
+    -webkit-animation: slide_down 30s linear infinite;
+    animation: slide_down 30s linear infinite;
 }
 
 #bg-dot {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: block;
-    position: absolute;
-}
-
-#bg-dot::after {
-    content: "";
     background-image: url('../img/bg_dot.png');
-    opacity: 0.8;
+    opacity: 1;
     top: 600px;
     left: 0;
     bottom: 0;
@@ -3034,4 +3013,34 @@ section.blog {
     background-repeat: repeat;
     position: fixed;
     z-index: 0;   
+    transform: scale(1.5);
+    -webkit-animation: slide_right 30s linear infinite;
+    animation: slide_right 30s linear infinite;
 }
+
+
+#bg-dot-big {
+    position: fixed;
+    background: url('../img/bg_dot_big.png') repeat 0 0;
+    width: 100%;
+    height: 100vh;
+    -webkit-animation: slide 40s linear infinite;
+    animation: slide 40s linear infinite;
+}
+
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: 0 -1000px; }
+}
+
+@-webkit-keyframes slide_down {
+    from { background-position: 0 0; }
+    to { background-position: 0 1000px; }
+}
+
+@-webkit-keyframes slide_right {
+    from { background-position: 0 0; }
+    to { background-position: 1000px 0; }
+}
+

@@ -72,5 +72,21 @@ $(function () {
             scrollTop: $(this.hash).offset().top}, 500, )
     });
     
+    
+    
+//Animate backgroung
+//    $(window).scroll(function() {
+//        var winTop = $(window).scrollTop()
+//        if (winTop >= 30) {
+//            $("#bg-dot-big").css({
+//                '-webkit-animation': 'slide 20s linear infinite'
+//            })
+//        } else {
+//            $("#bg-dot-big").css({
+//                '-webkit-animation': 'slide_down 20s linear infinite'
+//            })
+//        } });
+    
+    
 });
 
