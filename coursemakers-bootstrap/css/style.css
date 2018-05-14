@@ -887,7 +887,6 @@ div.icon {
     left: 0;
     width: 70px;
     height: 70px;
-    /*    background-image: linear-gradient(135deg, #248cef, #344aa2);*/
     -webkit-filter: blur(40px);
     filter: blur(40px);
 }
@@ -897,6 +896,8 @@ div.icon {
     transform: rotate(0deg);
     background: -webkit-gradient(linear, left top, right top, from(#f44336), to(#e91e63));
     background: linear-gradient(90deg, #f44336, #e91e63);
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(189, 53, 75, 0.8);
+    box-shadow: 0px 0px 20px 2px rgba(189, 53, 75, 0.8);
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
     -webkit-transition: -webkit-transform 0.5s linear;
@@ -953,8 +954,8 @@ div.icon {
     opacity: 0.2;
     -webkit-transform-origin: center;
     transform-origin: center;
-    -webkit-filter: blur(20px);
-    filter: blur(20px);
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
 }
 
 .support-animation:hover #live {
@@ -1005,19 +1006,21 @@ div.icon {
     z-index: 10;
 }
 
+.platform_icon_big_shadow {
+    box-shadow: 0px 0px 100px 20px rgba(63, 81, 181, 0.8);
+    filter: blur(40px);
+}
+
+
 .platform_icon_small {
     position: absolute;
     top: 20px;
     left: 0;
     right: 0;
     margin: 0 auto;
-
     -webkit-transition: all 0.5s linear, -webkit-filter 0s linear;
-
     transition: all 0.5s linear, -webkit-filter 0s linear;
-
     transition: all 0.5s linear, filter 0s linear;
-
     transition: all 0.5s linear, filter 0s linear, -webkit-filter 0s linear;
     filter: drop-shadow(-2px 2px 2px rgba(63, 81, 181, 0.8));
     -webkit-filter: drop-shadow(-2px 2px 2px rgba(63, 81, 181, 0.8));
@@ -1035,6 +1038,7 @@ div.icon {
     transform-origin: right bottom;
     filter: drop-shadow(-2px 2px 2px rgba(189, 53, 75, 0.8));
     -webkit-filter: drop-shadow(-2px 2px 2px rgba(189, 53, 75, 0.8));
+    
 }
 
 .support-animation:hover .platform_icon_big {
@@ -1102,6 +1106,11 @@ div.icon {
     filter: drop-shadow(0px 0px 10px rgba(63, 81, 181, 0.8));
     -webkit-filter: drop-shadow(0px 0px 10px rgba(63, 81, 181, 0.8));
     margin-bottom: -30px;
+}
+
+.marketing_icon_big_shadow {
+    box-shadow: 0px 0px 100px 20px rgba(63, 81, 181, 0.8);
+    filter: blur(40px);
 }
 
 .support-animation:hover .marketing_icon_small {
@@ -2771,12 +2780,17 @@ header.sales-booster {
 .sales-booster-neewsletter {
     max-width: 500px;
     background-color: rgba(0, 1, 7, 0.85);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 30px auto;
     padding: 30px;
 }
 
+.sales-booster .header-content h3, .sales-booster .header-content p {
+    color: rgba(248, 248, 248, 0.65);
+}
 
 .sales-booster form input[type="text"],
 .sales-booster form input[type="email"] {
@@ -3058,6 +3072,9 @@ header.sales-booster {
         background-position: top;
     }
 
+    section.newsletter form input[type="text"], section.newsletter form input[type="email"] {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
