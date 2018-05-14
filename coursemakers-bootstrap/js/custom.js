@@ -81,8 +81,8 @@ $(function () {
         }, 0).fadeIn(0);
         
         $('#bg-line').animate({
-            backgroundPositionY: -1.5*(window.pageYOffset)
-        }, 10).slideDown(10);
+            backgroundPositionY: -(window.pageYOffset)
+        }, 100);
     })
     
 //    $(window).scroll(function() {

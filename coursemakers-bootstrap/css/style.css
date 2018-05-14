@@ -68,6 +68,11 @@ p {
     margin-bottom: 25px;
 }
 
+sup {
+    font-size: 50%;
+    top: -20px;
+}
+
 .container {
     max-width: 1230px;
     margin: auto;
@@ -328,6 +333,7 @@ header a.button {
 
 section:first-of-type {
     margin-top: 0;
+    overflow: visible;
 }
 
 .main-menu {
@@ -551,6 +557,9 @@ header div.header-icon a#music {
 /*   Header + Menu Section Style - End   */
 
 /*   Author Section Style - Start   */
+section.author-index {
+    margin-top: 50px;
+}
 
 section.author div.author-image {
     display: inline-block;
@@ -638,6 +647,7 @@ section.author div.author-image a:hover .item-mask {
 
 section.author div.author-image a:hover .item-mask .item-content .item-content-inner  {
     -webkit-transition: all 0.45s linear;
+    -webkit-transition: all 0.45s linear 0.45s;
     transition: all 0.45s linear 0.45s;
     opacity: 1;
 }
@@ -891,7 +901,7 @@ div.icon {
     filter: blur(40px);
 }
 
-.support-animation:hover #video::after {
+.support-animation:hover #video::after, .price-animation:hover #video::after {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     background: -webkit-gradient(linear, left top, right top, from(#f44336), to(#e91e63));
@@ -1007,9 +1017,11 @@ div.icon {
 }
 
 .platform_icon_big_shadow {
-    box-shadow: 0px 0px 100px 20px rgba(63, 81, 181, 0.8);
-    filter: blur(40px);
-}
+        -webkit-box-shadow: 0px 0px 100px 40px rgba(63, 81, 181, 0.8);
+        box-shadow: 0px 0px 100px 40px rgba(63, 81, 181, 0.8);
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+    }
 
 
 .platform_icon_small {
@@ -1024,6 +1036,40 @@ div.icon {
     transition: all 0.5s linear, filter 0s linear, -webkit-filter 0s linear;
     filter: drop-shadow(-2px 2px 2px rgba(63, 81, 181, 0.8));
     -webkit-filter: drop-shadow(-2px 2px 2px rgba(63, 81, 181, 0.8));
+    z-index: 1;
+}
+
+.platform_icon_small_shadow {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transition: all 0.5s linear, -webkit-filter 0s linear;
+    transition: all 0.5s linear, -webkit-filter 0s linear;
+    transition: all 0.5s linear, filter 0s linear;
+    transition: all 0.5s linear, filter 0s linear, -webkit-filter 0s linear;
+    z-index: 0;
+}
+
+.platform_icon_small_shadow {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transition: all 0.5s linear, -webkit-filter 0s linear;
+    transition: all 0.5s linear, -webkit-filter 0s linear;
+    transition: all 0.5s linear, filter 0s linear;
+    transition: all 0.5s linear, filter 0s linear, -webkit-filter 0s linear;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(63, 81, 181, 0.8);
+    box-shadow: 0px 0px 10px 0px rgba(63, 81, 181, 0.8);
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
 }
 
 
@@ -1037,8 +1083,7 @@ div.icon {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
     filter: drop-shadow(-2px 2px 2px rgba(189, 53, 75, 0.8));
-    -webkit-filter: drop-shadow(-2px 2px 2px rgba(189, 53, 75, 0.8));
-    
+    -webkit-filter: drop-shadow(-2px 2px 2px rgba(189, 53, 75, 0.8)); 
 }
 
 .support-animation:hover .platform_icon_big {
@@ -1062,8 +1107,18 @@ div.icon {
     transition: fill 1s linear;
 }
 
+#platform_icon_item_small_shadow {
+    fill: transparent;
+    -webkit-transition: fill 1s linear;
+    transition: fill 1s linear;
+}
 
-
+.support-animation:hover #platform_icon_item_small_shadow {
+    fill: url(#linear_orange);
+    opacity: 0.5;
+    -webkit-transition: fill 1s linear;
+    transition: fill 1s linear;
+}
 
 
 
@@ -1109,7 +1164,9 @@ div.icon {
 }
 
 .marketing_icon_big_shadow {
+    -webkit-box-shadow: 0px 0px 100px 20px rgba(63, 81, 181, 0.8);
     box-shadow: 0px 0px 100px 20px rgba(63, 81, 181, 0.8);
+    -webkit-filter: blur(40px);
     filter: blur(40px);
 }
 
@@ -1944,6 +2001,10 @@ header.author {
     background-position: center;
 }
 
+header.author + section.author {
+    margin-top: -120px;
+}
+
 .author-caption {
     width: 100%;
     max-height: 100%;
@@ -2272,7 +2333,7 @@ section.process .process-mask .process-item .item-content {
 
 section.process .arrow-down {
     position: absolute;
-    top: 145px;
+    top: 175px;
     left: 50px;
     display: block;
     height: 500px;
@@ -2283,7 +2344,7 @@ section.process .arrow-down {
 section.process .arrow-down-triangle {
     display: block;
     position: absolute;
-    top: 645px;
+    top: 675px;
     left: 45px;
     width: 0;
     height: 0;
@@ -2393,6 +2454,7 @@ section.price .price-add .price-icon-animate .icon svg#star {
     left: 0;
     right: 0;
     margin: 0 auto;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     fill: url(#linear_orange);
     background: -webkit-linear-gradient(90deg, #f44336, #e91e63);
@@ -2654,6 +2716,7 @@ section.price .price-description {
     left: 0;
     right: 0;
     margin: 0 auto;
+    -webkit-transform: translateY(-85%);
     transform: translateY(-85%);
 }
 
@@ -2691,6 +2754,7 @@ section.price div#price-item-2 a {
 section.price div.price-image .item-mask {
     width: 100%;
     height: 100%;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(rgba(25, 36, 90, 0.95), rgba(25, 36, 90, 0.5))));
     background-image: linear-gradient(0deg, rgba(rgba(25, 36, 90, 0.95), rgba(25, 36, 90, 0.5)));
     opacity: 1;
     position: absolute;
@@ -2794,7 +2858,7 @@ header.sales-booster {
 
 .sales-booster form input[type="text"],
 .sales-booster form input[type="email"] {
-    width: 340px;
+    width: 100%;
     height: 40px;
     color: #f8f8f8;
     padding: 10px 0;
@@ -3046,6 +3110,7 @@ header.sales-booster {
     section.author div.author-image .item-mask {
         background-color: transparent;
         opacity: 1;
+        -webkit-transition: all 0s;
         transition: all 0s;
     }
 
@@ -3109,6 +3174,7 @@ header.sales-booster {
     opacity: 1;
     position: fixed;
     z-index: 0;   
+    -webkit-transform: scale(1.5);   
     transform: scale(1.5);
     -webkit-animation: slide_right 30s linear infinite;
     animation: slide_right 30s linear infinite;
