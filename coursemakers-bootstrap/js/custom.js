@@ -75,6 +75,16 @@ $(function () {
     
     
 //Animate backgroung
+    $(window).scroll(function() {
+        $('#bg-dot-big').animate({
+            backgroundPositionY: -(window.pageYOffset)
+        }, 0);
+        
+        $('#bg-line').animate({
+            backgroundPositionY: -1.5*(window.pageYOffset)
+        }, 'fadeIn')
+    })
+    
 //    $(window).scroll(function() {
 //        var winTop = $(window).scrollTop()
 //        if (winTop >= 30) {

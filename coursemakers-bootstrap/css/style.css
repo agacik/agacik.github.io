@@ -3100,8 +3100,6 @@ header.sales-booster {
     background-repeat: repeat;
     position: fixed;
     z-index: 0;   
-    -webkit-animation: slide_down 30s linear infinite;
-    animation: slide_down 30s linear infinite;
 }
 
 #bg-dot {
@@ -3120,22 +3118,12 @@ header.sales-booster {
 #bg-dot-big {
     position: fixed;
     background: url('../img/bg_dot_big.png') repeat 0 0;
+    background-attachment: local;
     width: 100%;
     height: 100vh;
-    -webkit-animation: slide 40s linear infinite;
-    animation: slide 40s linear infinite;
 }
 
 
-@-webkit-keyframes slide {
-    from { background-position: 0 0; }
-    to { background-position: 0 -1000px; }
-}
-
-@-webkit-keyframes slide_down {
-    from { background-position: 0 0; }
-    to { background-position: 0 1000px; }
-}
 
 @-webkit-keyframes slide_right {
     from { background-position: 0 0; }
