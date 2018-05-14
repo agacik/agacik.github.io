@@ -433,6 +433,13 @@ header .caption .header-content {
     margin: 0 auto;
 }
 
+.header-content {
+    max-width: 720px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
 header div.caption h1 {
     font-family: 'Playfair Display', san-serif;
     font-size: 32px;
@@ -670,7 +677,6 @@ section.author div.author-image .item-mask .item-content .item-content-inner h2 
     line-height: 40px;
     margin-bottom: 10px;
 }
-
 
 
 section.author div.author-image .item-mask .item-content .item-content-inner span {
@@ -1873,7 +1879,6 @@ section.footer div.footer-wrapper > i {
 
 
 /* FAQ Section - START */
-
 .faq-header {
     max-width: 720px;
     left: 0;
@@ -2279,6 +2284,10 @@ section.process .arrow-down-triangle {
 }
 
 
+section.price {
+    overflow: visible;
+}
+
 .price-animation {
     position: relative;
     color: #f8f8f8;
@@ -2600,66 +2609,6 @@ header.cm-platform {
 
 }
 
-#star-1 {
-    position: absolute;
-    top: 25px;
-    left: 105px;
-    transform: rotate(20deg);
-    font-size: 10px;
-}
-
-#star-2 {
-    position: absolute;
-    top: -10px;
-    left: 120px;
-    transform: rotate(-20deg);
-    font-size: 8px;
-}
-
-#star-3 {
-    position: absolute;
-    top: -15px;
-    left: 245px;
-    transform: rotate(20deg);
-    font-size: 7px;
-}
-
-#star-4 {
-    position: absolute;
-    top: 15px;
-    left: 265px;
-    transform: rotate(-20deg);
-    font-size: 10px;
-}
-
-#star-5 {
-    position: absolute;
-    top: 40px;
-    left: 260px;
-    transform: rotate(-20deg);
-    font-size: 12px;
-}
-
-#star-1 > i,
-#star-2 > i,
-#star-3 > i,
-#star-4 > i,
-#star-5 > i {
-    background: -webkit-linear-gradient(90deg, #248cef, #344aa2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;  
-}
-
-.price-add:hover #star-1 > i,
-.price-add:hover #star-2 > i,
-.price-add:hover #star-3 > i,
-.price-add:hover #star-4 > i,
-.price-add:hover #star-5 > i {
-    background: -webkit-linear-gradient(90deg, #f44336, #e91e63);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;  
-}
-
 .platform-content {
     background-color: #000414; 
     margin: 30px 0;
@@ -2812,6 +2761,144 @@ section.blog {
 
 
 
+/* SalesBooster Site Style - Start */
+header.sales-booster {
+    background-image: url('../img/sales_booster_bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.sales-booster-neewsletter {
+    max-width: 500px;
+    background-color: rgba(0, 1, 7, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+
+.sales-booster form input[type="text"],
+.sales-booster form input[type="email"] {
+    width: 340px;
+    height: 40px;
+    color: #f8f8f8;
+    padding: 10px 0;
+    margin: 10px 0 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #f8f8f8;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+
+.sales-booster form input[type="text"]::-webkit-input-placeholder,
+.sales-booster form input[type="email"]::-webkit-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    background-color: transparent;
+    color: rgba(248, 248, 248, 0.25);
+    padding: 10px 0;
+}
+
+
+.sales-booster form input[type="text"]:-ms-input-placeholder,
+.sales-booster form input[type="email"]:-ms-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    background-color: transparent;
+    color: rgba(248, 248, 248, 0.25);
+    padding: 10px 0;
+}
+
+
+.sales-booster form input[type="text"]::placeholder,
+.sales-booster form input[type="email"]::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    background-color: transparent;
+    color: rgba(248, 248, 248, 0.25);
+    padding: 10px 0;
+}
+
+.sales-booster form input[type="text"]:focus,
+.sales-booster form input[type="email"]:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #f8f8f8;
+    color: #f8f8f8;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+.sales-booster form input[type="checkbox"] + label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+    padding-left: 20px;
+    margin: 0;
+    vertical-align: middle;
+    font-size: 16px;
+    color: rgba(248, 248, 248, 0.25);
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    vertical-align: middle;
+}
+
+.sales-booster form input[type="checkbox"] {
+    display: none;
+    position: relative;
+}
+
+.sales-booster form input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    background-color: #f8f8f8;
+    top: 4px;
+
+}
+
+
+.sales-booster form input[type="checkbox"]:checked + label::before {
+    color: #f8f8f8;
+    background-color: transparent;
+    background-image: linear-gradient(135deg, #248cef, #344aa2);
+    border: 2px solid #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    line-height: 6px;
+    vertical-align: middle;
+    -webkit-box-shadow: 0px 0px 10px #248cef;
+    box-shadow: 0px 0px 10px #248cef;
+}
+
+
+
+/* SalesBooster Site Style - End */
+
+
 /* AboutUs Site Style - Start */
 
 
@@ -2859,7 +2946,7 @@ section.blog {
 }
 
 #about-item-6 {
-    background-image: url("../img/about_03.jpg");
+    background-image: url("../img/about_03.png");
     max-width: 400px;
     height: 350px;
     background-size: cover;
@@ -3003,14 +3090,8 @@ section.blog {
 #bg-dot {
     width: 100%;
     height: 100vh;
-    display: block;
-    background-image: url('../img/bg_dot.png');
+    background: url('../img/bg_dot.png')  repeat 0 0;
     opacity: 1;
-    top: 600px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-repeat: repeat;
     position: fixed;
     z-index: 0;   
     transform: scale(1.5);
