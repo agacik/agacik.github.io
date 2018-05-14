@@ -78,11 +78,11 @@ $(function () {
     $(window).scroll(function() {
         $('#bg-dot-big').animate({
             backgroundPositionY: -(window.pageYOffset)
-        }, 0);
+        }, 0).fadeIn(0);
         
         $('#bg-line').animate({
             backgroundPositionY: -1.5*(window.pageYOffset)
-        }, 'fadeIn')
+        }, 10).slideDown(10);
     })
     
 //    $(window).scroll(function() {
