@@ -1,0 +1,110 @@
+/*General Style - START*/
+
+}* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+body {
+    background-color: #040404;
+    color: #faf9f9;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+
+
+/*
+Font:
+font-family: 'Montserrat', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+button {
+    background-color: #f34336;
+    color: #faf9f9;
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+    border: 2px solid #f34336;
+    width: 122px;
+	height: 36px;
+	border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    vertical-align: middle;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+button:hover, button:focus {
+    background-color: transparent;
+    color: #f34336;
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+    box-shadow: inset 0 -50px 0 0 #040404;
+    transition: all 1s ease;
+}
+
+/*General Style - End*/
+
+
+/*Navigation Style - Start*/
+.navbar {
+    color: #faf9f9;
+    background-color: transparent;
+}
+
+.navbar-toggler {
+    background-color: #f34336;
+    color: #faf9f9;
+}
+
+li.nav-item {
+    position: relative;
+    overflow: hidden;
+    margin: 0 10px;
+}
+li.nav-item a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #faf9f9;
+    transition: all 1s ease;
+}
+
+li.nav-item a:hover{
+    color: #f34336;
+    transition: all 1s ease;
+}
+
+li.nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #f34336;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 1s ease;
+}
+
+li.nav-item:hover::after {
+    left: 50%;
+    opacity: 1;
+    transition: all 1s ease;
+}
+/*Navigation Style - End*/
