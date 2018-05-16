@@ -1,0 +1,43 @@
+row: 1200px;
+
+hero section:
+font-family: Montserrat Bold 14px #faf9f9;
+text-transform: upper;
+
+h1 {
+#fff;
+Montserrat Black Italic 42px upper
+}
+
+h2 {
+SourceSansPro Italic 16px faf9f9 op. 0.5
+}
+
+h3 {
+SourceSansPro Italic 16px faf9f9
+}
+
+p {
+
+Montserrat Light 16px #fff op. 0.5
+}
+
+p header {
+	font-family: SourceSansPro;
+	font-size: 16px;
+	font-weight: bold;
+	color: #faf9f9;
+
+}
+
+
+button {
+	width: 122px;
+	height: 36px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #f34336;
+}
+
+button text: Montserrat Bold 14px Upper #faf9f9
