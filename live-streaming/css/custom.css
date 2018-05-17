@@ -150,24 +150,30 @@ li.nav-item:hover::before {
 .navbar-brand img {
     margin-left: 15px;
 }
+
 .circle {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    border: 2px solid #f34336;
+    border: 1px solid #f34336;
+    background-color: rgba(243, 67, 54, 0.6);
+    padding: 4px;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
     opacity: 0;
-    animation: live 2s ease;
+    animation: live 1s ease;
     animation-iteration-count: infinite;
+    transform-origin: center center;
+    box-sizing: border:;
+    -box;
 }
 
 .dot {
     position: absolute;
-    top: 4px;
+    top: 2px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -179,16 +185,30 @@ li.nav-item:hover::before {
 
 @keyframes live {
     0% {
-        opacity: 0.1;
-    }
-    30% {
-        opacity: 0.5;
-        transition: scale(0.5);
+        border-width: 0px;
+        opacity: 0;
     }
 
+    25% {
+        border-width: 1px;
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+
+    50% {
+        border-width: 1px;
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
+    90% {
+        border-width: 1px;
+        opacity: 0.25;
+        transform: scale(1.4);
+    }
     100% {
-        opacity: 1;
-        transition: scale(1.2);
+        border-width: 1px;
+        opacity: 0.1;
+        transform: scale(1.6);
     }
 }
 
@@ -313,6 +333,7 @@ li.nav-item:hover::before {
 /*Header Style - End*/
 
 /*Offer Style - Start*/
+
 .offer {
     margin-top: -60px;
 }
@@ -338,7 +359,7 @@ li.nav-item:hover::before {
     line-height: 37px;
     font-weight: 700;
     text-align: center;
-    color: #faf9f9; 
+    color: #faf9f9;
 }
 
 .offer__content__img {
@@ -347,4 +368,5 @@ li.nav-item:hover::before {
     margin-top: -2px;
     vertical-align: middle;
 }
+
 /*Offer Style - End*/
