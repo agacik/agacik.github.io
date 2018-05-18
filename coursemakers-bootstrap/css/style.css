@@ -1459,14 +1459,18 @@ section.knowledge .knowledge-item .item-mask .item-content .item-content-inner {
 }
 
 section.knowledge .knowledge-item .item-mask .item-content .item-content-inner h2 {
-    font-family: 'Playfair Display', san-serif;
-    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
     color: #f8f8f8;
-    font-weight: 700;
-    font-style: italic;
     margin: 0;
     line-height: 40px;
     margin-bottom: 10px;
+    text-decoration: line-through(3);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 
