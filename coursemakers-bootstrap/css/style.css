@@ -334,6 +334,7 @@ header a.button {
 section:first-of-type {
     margin-top: 0;
     overflow: visible;
+    scroll-behavior: smooth;
 }
 
 .main-menu {
@@ -3096,11 +3097,6 @@ header.sales-booster {
         position: relative;
         float: none;
         margin-bottom: 20px;
-    }
-
-    header,
-    header.super-vod {
-        margin-top: -100px;
     }
 
     .caption {

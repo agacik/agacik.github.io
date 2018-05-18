@@ -66,12 +66,12 @@ $(function () {
 
     
     
-//Smooth Scrool
-    $('a[href*="#"]:not([href="#"])').click(function(){
-        $('html, body').animate({
-            scrollTop: $(this.hash).offset().top}, 500, )
-    });
     
+//Smooth Scrool
+    $('header .button, header button').click(function(){
+        $('html, body').animate({
+            scrollTop: $(this.hash).offset().top-125}, 500 )
+    });
     
     
 //Animate backgroung
