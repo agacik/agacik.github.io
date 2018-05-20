@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #001d8a;
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-image: url("../img/background.png");
+  width: 100vw;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+  top: 0;
+  color: #fff;
+  display: inline-block;
+  padding: 20px 0; }
+  header .container {
+    max-width: 960px;
+    margin: 0 auto; }
+  header .main-top {
+    float: left;
+    width: 300px; }
+    header .main-top h1 {
+      display: inline-block;
+      margin: 0; }
+    header .main-top i {
+      color: #ecd407;
+      font-size: 36px;
+      float: left;
+      display: inline-block;
+      margin: 2px 20px; }
+  header .header-contact {
+    float: right;
+    width: 200px; }
+    header .header-contact span {
+      font-size: 14px;
+      display: block; }
+    header .header-contact i {
+      color: #fff;
+      font-size: 30px;
+      float: left;
+      display: inline-block;
+      margin: 2px 20px; }
+
+footer {
+  width: 100vw;
+  height: 20vh;
+  bottom: 0;
+  background-color: #292929; }
+  footer .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    font-size: 12px;
+    color: #f8f8f8;
+    text-align: center; }
+    footer .container span {
+      display: block; }
+    footer .container .phone {
+      width: 50%;
+      display: inline-block;
+      float: left;
+      text-align: center;
+      margin-bottom: 5px; }
+    footer .container .email {
+      width: 50%;
+      display: inline-block;
+      float: left;
+      text-align: center;
+      margin-bottom: 5px; }
+    footer .container i {
+      background-color: #ecd407;
+      padding: 10px;
+      margin-bottom: 5px;
+      color: #292929; }
+
+.form {
+  position: relative;
+  right: 0;
+  margin: 0;
+  padding: 15px 0;
+  color: #f8f8f8; }
+  .form .container {
+    float: right; }
+    .form .container h2 {
+      font-size: 32px; }
+      .form .container h2 span {
+        color: #ecd407; }
+    .form .container form {
+      background-color: #001d8a;
+      padding: 20px;
+      max-width: 45%;
+      float: right; }
+      .form .container form input {
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+        height: 30px;
+        padding: 5px 10px; }
+      .form .container form textarea {
+        width: 100%;
+        height: 60px;
+        padding: 5px 10px; }
+      .form .container form ::placeholder {
+        font-family: "Open Sans", sans-serif;
+        color: #292929; }
+      .form .container form button {
+        background-color: #ecd407;
+        color: #292929;
+        border: none;
+        outline: none;
+        margin: 10px 0;
+        padding: 10px;
+        font-weight: 700; }

@@ -1,0 +1,38 @@
+@mixin footer-content {
+    width: 100vw;
+    height: 20vh;
+    bottom: 0;
+    background-color: $grey-color;
+    .container {
+        max-width: $width-container;
+        margin: 0 auto;
+        padding: 15px 0;
+        font-size: 12px;
+        color: #f8f8f8;
+        text-align: center;
+                    span {
+                display: block;
+                
+            }
+        .phone {
+            width: 50%;
+            display: inline-block;
+            float: left;
+            text-align: center;
+                            margin-bottom: 5px;
+
+        }
+        .email {
+            width: 50%;
+            display: inline-block;
+            float: left;
+            text-align: center;
+                            margin-bottom: 5px;
+        }
+            i {
+        background-color: $yellow-color;
+        padding: 10px;
+                margin-bottom: 5px;
+                color: $grey-color;
+    }
+    }}
