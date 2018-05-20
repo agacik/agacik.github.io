@@ -1,0 +1,11 @@
+Stwórz plik "main.js", a w nim dwie zmienne:
+
+var num1 = 2;
+var num2 = 5;
+Nastêpnie napisz funkcjê, która pobiera te dwie zmienne jako parametry.
+
+Funkcja zwraca wiêksz¹ liczbê.
+
+Nastêpnie wynik dzia³ania funkcji wyœwietl w konsoli.
+
+Plik wgraj do repozytorium zdalnego i podeœlij link do sprawdzenia.
