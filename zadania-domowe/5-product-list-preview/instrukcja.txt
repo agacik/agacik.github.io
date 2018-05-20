@@ -1,0 +1,18 @@
+Wykorzystuj¹c dotychczasow¹ wiedzê z zakresu CSS stwórz galeriê produktów analogiczn¹ do za³¹czonej grafiki:
+- 5-products-list-preview.png
+
+Specyfikacja: 
+- t³o strony to #98fb98
+- obrazki produktów ustaw jako t³o 
+- po najechaniu na obraz produktu pojawia siê maska w kolorze #ff6f00, na której znajduje siê link z ikon¹ koszyka (font awesome) 
+- po najechaniu na produkt maska ma pojawiaæ siê p³ynnie dziêki w³aœciwoœci transition 
+- projekt jest responsywny - w rozdzielczoœci poni¿ej 992px produkty maj¹ siê wyœwietlaæ w dwóch kolumnach, a poni¿ej 480px w jednej kolumnie 
+- do ustawienia koszyka u¿yj odpowiednich pozycji (relative, absolute)
+
+Zdjêcia produktów za³¹czone do projektu:
+- product-1.jpg
+- product-2.jpg
+- product-3.jpg
+- product-4.jpg
+
+Zadanie zrób za pomoc¹ GitHub Pages
