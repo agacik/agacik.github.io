@@ -13,6 +13,7 @@ body {
     width: 100vw;
     font-size: 0;
     text-align: center;
+
 }
 
 .gallery__item {
@@ -21,14 +22,14 @@ body {
     height: 200px;
     margin: 10px;
     position: relative;
-    transition: 1s all ease;
     overflow: hidden;
+    transition: 2s all ease;
 }
 
 .gallery__item i {
     font-size: 46px;
     opacity: 0;
-    color: yellow;
+    color: transparent;
     position: relative;
     line-height: 200px;
     left: -200px;
@@ -73,7 +74,7 @@ body {
 .gallery__item:hover {
     background-color: rgba(255, 111, 0, 0.8);
     background-blend-mode: multiply;
-    transition: 1s background-color ease;
+    transition: 2s all ease;
 }
 
 .gallery__item:hover i {
@@ -81,4 +82,10 @@ body {
     color: white;    
     left: 0px;
     transition: 1.2s left ease;
+}
+
+@media max-width: 992px {
+   .gallery__item {
+    max-width: 48%;
+} 
 }

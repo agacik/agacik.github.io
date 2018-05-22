@@ -1,0 +1,442 @@
+/*   Main Style - START   */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    color: #291f1a;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+h1::selection, h2::selection, h3::selection {
+    background-color: #1ac056;
+}
+
+p::selection {
+    background-color: #1ac056;
+}
+
+h2,
+h3 {
+    font-weight: 300;
+    margin: 0;
+}
+
+span {
+    color: #1ac056;
+    font-weight: 400;
+}
+
+*a, i, .fab {
+    transition: color 1s linear;
+    color: #f9fcfe;
+}
+
+section {
+    overflow: hidden;
+    padding: 0 80px 50px;
+}
+
+section > h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+section p {
+    line-height: 25px;
+    text-align: justify;
+}
+
+/*   Main Style - END   */
+
+/*   Nav Style - START   */
+
+nav#menu {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    z-index: 100;
+}
+
+nav#menu .toggle {
+    display: none;
+}
+
+nav#menu #drop {
+    display: none;    
+}
+
+nav#menu > ul {
+    margin: 0;
+    float: right;
+}
+
+nav#menu > ul > li {
+    display: inline-block;
+}
+
+nav#menu > ul > li > a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 25px;
+    line-height: 60px;
+}
+
+nav#menu > ul > li:hover > a {
+    border-bottom: 2px solid #1ac056;
+    color: #1ac056;
+}
+
+nav#menu.scroll {
+    background-color: #fff;
+}
+
+nav#menu > ul > li > a.scroll {
+    color: #1ac056;
+}
+
+
+/*   Nav Style - END   */
+
+/*   Header Style - START   */
+
+header#main {
+    background-image: url("../img/header-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+header#main > div.header-content {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header#main h1 {
+    font-size: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+header#main p.main {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+
+/*   Header Style - END   */
+
+/*   O-mnie Style - START   */
+
+section#o-mnie {
+    box-shadow: 0px 5px 5px 0px rgba(51, 37, 32, 0.2);
+    background-color: #f9fcfe;
+}
+
+section#o-mnie figure {
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin: 0;
+}
+
+section#o-mnie > figure > img {
+    max-width: 200px;
+    max-height: 100%;
+    border: 10px solid #fff;
+    border-radius: 5px;
+}
+
+section#o-mnie > article {
+    line-height: 25px;
+    text-align: justify;
+    width: 50%;
+    float: left;
+}
+
+/*   O-mnie Style - END   */
+
+/*   Skills Style - START   */
+
+section#skills p,
+.skills-icon {
+    text-align: center;
+}
+
+figure.skills-icon-item {
+    display: inline-block;
+}
+
+
+
+/*   Skills Style - END   */
+
+/*   Portfolio Style - START   */
+
+section#portfolio {
+    box-sizing: border-box;
+}
+
+section#portfolio .portfolio-items {
+    text-align: center;
+    font-size: 0;
+}
+
+section#portfolio a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section#portfolio a:hover {
+    color: #1ac056;
+}
+
+section#portfolio .portfolio-item {
+    position: relative;
+    height: 350px;
+    width: 33%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+section#portfolio .portfolio-item .item-mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 61, 79, 0.8);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    padding: 5px;
+}
+
+section#portfolio .portfolio-item .item-mask:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+section#portfolio .portfolio-item .item-mask .item-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px solid #fff;
+    margin: 5px;
+    width: auto;
+    height: 330px;
+}
+
+section#portfolio .portfolio-item .item-mask .item-content .item-content-inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 5px;
+}
+
+section#portfolio .portfolio-item .item-mask .item-content .item-content-inner h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+section#portfolio .portfolio-item .item-mask .item-content .item-content-inner h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+section#portfolio .portfolio-item .item-mask .item-content .item-content-inner p {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+section#portfolio #portfolio-item-1 {
+    background-image: url("../img/portfolio1.jpg");
+}
+
+section#portfolio #portfolio-item-2 {
+    background-image: url("../img/portfolio2.jpg");
+}
+
+section#portfolio #portfolio-item-3 {
+    background-image: url("../img/portfolio4.jpg");
+}
+
+
+/*   Portfolio Style - END   */
+
+/*   Contact Style - START   */
+section#contact {
+    background-color: #213b50;
+    color: #fff;
+    overflow: hidden;
+}
+
+section#contact .contact-data {
+    font-size: initial;
+    width: 50%;
+    float: left;
+    position: relative;
+    padding: 30px 0;
+}
+
+section#contact  .contact-data h2 {
+    text-align: left;
+    font-size: 38px;    
+}
+
+section#contact .contact-data address {
+    font-style: normal;
+    line-height: 25px
+    color: #fff;
+    margin: 72px 0;
+}
+
+section#contact .contact-data address p {
+    line-height: 12px;
+}
+
+section#contact .contact-data address a.mail {
+    color: #1ac056;
+}
+
+
+section#contact .contact-form {
+    font-size: initial;
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    text-align: left;
+    margin-top: 100px;
+}
+
+section#contact .contact-form input {
+    background-color: #2B4A64;
+    font-family: 'Lato', sans-serif;
+    color: #f9fcfe;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+section#contact .contact-form input::placeholder {
+    color: #f9fcfe;
+    font-family: 'Lato', sans-serif;
+}
+
+section#contact .contact-form input:focus, section#contact .contact-form textarea:focus  {
+    border: 1px solid #f9fcfe;
+    background-color: #426684;
+}
+
+section#contact .contact-form button {
+    padding: 15px 30px;
+    color: #f9fcfe;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #1ac056;
+    outline: none;
+    border: 1px solid #1ac056;
+    margin-top: 5px;
+    float: right;
+}
+
+section#contact .contact-form button:hover {
+    color: #1ac056;
+    background-color: #f9fcfe;
+}
+
+section#contact .contact-form textarea {
+    background-color: #2B4A64;
+    font-family: 'Lato', sans-serif;
+    color: #f9fcfe;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 10px 10px 40px 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+section#contact .contact-form textarea::placeholder {
+    color: #f9fcfe;
+    font-family: 'Lato', sans-serif;
+}
+
+section#contact .contact-data .contact-social-icons a {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    color: #f9fcfe;
+    border: 1px solid #f9fcfe;
+    font-size: 22px;
+    margin-right: 30px;
+    line-height: 38px;
+}
+
+section#contact .contact-data .contact-social-icons a:hover i {
+    transform: scale(0.8);   
+    color: #213b50; 
+}
+
+section#contact .contact-data .contact-social-icons a:hover {
+    color: #213b50;
+    background-color: #f9fcfe;
+}
+
+
+/*   Contact Style - END   */
+
+/*   Footer Style - START   */
+
+footer {
+    background: #142634;
+    padding: 0 80px;
+    color: #f9fcfe;
+    height: 28px;
+    font-size: 14px;
+}
+
+footer .copyright {
+    position: relative;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    margin:0;
+    
+}
+
+
+
+/*   Footer Style - END   */
