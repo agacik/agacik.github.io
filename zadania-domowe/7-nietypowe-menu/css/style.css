@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    width: 100vw;
+    height: 80px;
+    background-color: pink;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    line-height: 70px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+nav ul .float-left {
+    display: inline-block;
+    float: left;
+}
+
+nav ul .float-right {
+    display: inline-block;
+    float: right;
+}
+
+section {
+    position: relative;
+    background-color: white;
+}
+
+section:before {
+    content: "";
+    width: 0;
+	height: 0;
+	border-left: 50vw solid transparent;
+	border-right: 50vw solid transparent;
+	border-bottom: 50px solid white;
+	margin: auto 0;
+    position: absolute;
+    top: -50px;
+}
