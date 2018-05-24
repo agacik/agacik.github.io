@@ -1,0 +1,3 @@
+Przebuduj projekt swojego portfolio u¿ywaj¹c siatki responsywnej i komponentów Bootstrap.
+
+Zadanie wyœlij za pomoc¹ GitHub Pages

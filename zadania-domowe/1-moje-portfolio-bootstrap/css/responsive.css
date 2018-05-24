@@ -1,0 +1,82 @@
+/*   Max-width 1200px - START   */
+@media all and (max-width: 1200px) {
+    
+}
+/*   Max-width 1200px - END   */
+
+/*   Max-width 992px - START   */
+@media all and (max-width: 992px) {
+    .header-content {
+        padding: 10%;
+    }
+    
+    nav#menu > ul {
+        display: none;
+        width: 100%;
+        margnin: 0;
+        padding: 0;
+    }    
+    
+    nav#menu .toggle {
+        display: block;
+        padding: 0 20px;
+        color: white;
+        font-size: 20px;
+        line-height: 60px;
+        text-align: right;
+    }
+        
+    nav#menu #drop:checked + ul {
+        display: block;
+    }
+    
+    nav#menu ul li {
+        display: list-item;
+        list-style: none;
+        background-color: transparent;
+        width: 100%;
+        text-align: right;
+        font-size: 20px;
+        
+    }   
+    
+    nav#menu ul li a {
+        color: #1ac056;
+        background-color: white;
+        
+    }  
+
+}
+    
+    
+}
+/*   Max-width 992px - END   */
+
+
+/*   Max-width 768px - START   */
+@media all and (max-width: 768px) {
+    section {
+        padding: 0 40px 50px;
+    }
+    
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+    
+}
+/*   Max-width 768px - END   */
+
+/*   Max-width 576px - START   */
+@media all and (max-width: 576px) {
+    section {
+        padding: 0 10px 30px;
+    }
+        
+    section#contact {
+    padding: 10px;
+}
+/*   Max-width 576px - END   */
