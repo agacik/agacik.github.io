@@ -1,0 +1,40 @@
+/*Offer Style - Start*/
+
+.offer {
+    margin-top: -60px;
+    button {
+        @include button-bg($red-color);
+        color: $text-color;
+    }
+    &__content {
+        &:nth-of-type(2) {
+            border-left: 1px solid rgba($white-color, 0.2);
+            border-right: 1px solid rgba($white-color, 0.2);
+        }
+        &__paragraph {
+            font-family: $main-font;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 22px;
+            text-align: center;
+            @include opacity-font-color('color', rgba($text-color, 0.5));
+            padding: 0 30px;
+        }
+        &__title {
+            font-family: $header-font;
+            font-size: 16px;
+            line-height: 37px;
+            font-weight: 700;
+            text-align: center;
+            color: $text-color;
+        }
+        &__img {
+            height: 10px;
+            margin-right: 10px;
+            margin-top: -2px;
+            vertical-align: middle;
+        }
+    }
+}
+
+/*Offer Style - End*/

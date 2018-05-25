@@ -1,0 +1,27 @@
+@mixin opacity-font-color($attribute, $color) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  #{$attribute}: $color;
+}
+
+@mixin button-bg($bg) {
+    background: $bg;
+    border: 2px solid $bg;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    vertical-align: middle;
+    padding: 5px 10px;
+    transition: all 1s ease;
+    cursor: pointer;
+  &:hover, &:focus {
+    background: darken($bg,25%);
+    border: 2px solid darken($bg,25%);
+    transition: all 1s ease;
+  }
+}

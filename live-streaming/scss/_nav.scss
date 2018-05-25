@@ -1,0 +1,154 @@
+/*Navigation Style - Start*/
+
+.navbar {
+    color: $text-color;
+    background-color: transparent;
+    button {
+        @include button-bg($red-color);
+        color: $text-color;
+    }
+    &-toggler {
+        background-color: $red-color;
+        color: $text-color;
+        width: 36px;
+        height: 36px;
+        position: relative;
+        outline: none;
+        .fa-bars {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 24px;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .navbar-brand {
+        .logo-dot {
+            position: relative;
+            top: 8px;
+            left: -50%;
+            .circle {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                border: 1px solid $red-color;
+                background-color: rgba($red-color, 0.6);
+                padding: 4px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                opacity: 0;
+                animation: live 1s ease;
+                animation-iteration-count: infinite;
+                transform-origin: center center;
+                box-sizing: border-box;
+            }
+            .dot {
+                position: absolute;
+                top: 2px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                width: 8px;
+                height: 8px;
+                background-color: $red-color;
+                border-radius: 50%;
+            }
+        }
+    }
+    .navbar-brand-img {
+        margin-left: 15px;
+    }
+    .nav-item {
+        position: relative;
+        overflow: hidden;
+        margin: 0 10px;
+        .nav-link {
+            font-family: $main-font;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 50px;
+            text-transform: uppercase;
+            color: $text-color;
+            transition: all 1s ease;
+            &:hover {
+                color: $red-color;
+                transition: all 1s ease;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: -100px;
+            display: block;
+            width: 100%;
+            border-bottom: 2px solid $red-color;
+            opacity: 0;
+            transform: translateX(-50%);
+            transition: all 1s ease;
+        }
+        &:hover::after {
+            left: 10%;
+            opacity: 1;
+            transition: all 1s ease;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: -100px;
+            display: block;
+            width: 100%;
+            border-bottom: 2px solid $red-color;
+            opacity: 0;
+            transform: translateX(50%);
+            transition: all 1s ease;
+        }
+        &:hover::before {
+            right: 10%;
+            opacity: 1;
+            transition: all 1s ease;
+        }
+    }
+    &.scroll {
+        background-color: $bg-color;
+        padding: 0 16px;
+    }
+}
+
+
+
+
+@keyframes live {
+    0% {
+        border-width: 0px;
+        opacity: 0;
+    }
+
+    25% {
+        border-width: 1px;
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+
+    50% {
+        border-width: 1px;
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
+    90% {
+        border-width: 1px;
+        opacity: 0.25;
+        transform: scale(1.4);
+    }
+    100% {
+        border-width: 1px;
+        opacity: 0.1;
+        transform: scale(1.6);
+    }
+}
+
+/*Navigation Style - End*/
