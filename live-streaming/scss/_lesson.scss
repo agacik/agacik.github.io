@@ -1,0 +1,58 @@
+/*Lesson Style - Start*/
+
+.lesson {
+    margin: 90px 0 0 0;
+    width: 100%;
+    &__container {
+        background-color: $white-color;
+        padding: 0 100px 50px;
+        button {
+            @include button-bg($red-color);
+            color: $text-color;
+            margin-top: 35px;
+        }
+    }
+    &__content {
+        border-bottom: 1px solid rgba($grey-color, 0.25);
+        padding: 50px 0 20px;
+        &__wrapper {
+            padding: 0 30px;
+        }
+        &__number {
+            font-family: $main-font;
+            font-size: 70px;
+            color: rgba(#28333f, 0.25);
+            font-weight: 300;
+            text-align: left;
+            margin-top: -10px;
+        }
+        &__title {
+            color: $red-color;
+            font-family: $header-font;
+            font-size: 22px;
+            font-weight: 700;
+        }
+        &__paragraph {
+            color: rgba($bg-color, 0.8);
+            font-family: $main-font;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+        &__point {
+            color: rgba($bg-color, 0.8);
+            font-family: $main-font;
+            font-size: 16px;
+            font-weight: 300;
+            list-style-position: inside;
+            list-style: url('../img/triangle.svg');
+            margin-left: 20px;
+            vertical-align: middle;
+        }
+        &__duration {
+            color: rgba($grey-light-color, 0.8);
+        }
+    }
+}
+
+/*Lesson Style - End*/

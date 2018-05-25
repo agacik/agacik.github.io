@@ -14,6 +14,12 @@ body {
   max-width: 1200px;
   margin: auto; }
 
+::-moz-selection {
+  background-color: #f34336; }
+
+::selection {
+  background-color: #f34336; }
+
 /*Navigation Style - Start*/
 .navbar {
   color: #faf9f9;
@@ -106,45 +112,9 @@ body {
         color: #f34336;
         -webkit-transition: all 1s ease;
         transition: all 1s ease; }
-    .navbar .nav-item::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: -100px;
-      display: block;
-      width: 100%;
-      border-bottom: 2px solid #f34336;
-      opacity: 0;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      -webkit-transition: all 1s ease;
-      transition: all 1s ease; }
-    .navbar .nav-item:hover::after {
-      left: 10%;
-      opacity: 1;
-      -webkit-transition: all 1s ease;
-      transition: all 1s ease; }
-    .navbar .nav-item::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      right: -100px;
-      display: block;
-      width: 100%;
-      border-bottom: 2px solid #f34336;
-      opacity: 0;
-      -webkit-transform: translateX(50%);
-              transform: translateX(50%);
-      -webkit-transition: all 1s ease;
-      transition: all 1s ease; }
-    .navbar .nav-item:hover::before {
-      right: 10%;
-      opacity: 1;
-      -webkit-transition: all 1s ease;
-      transition: all 1s ease; }
   .navbar.scroll {
     background-color: #040404;
-    padding: 0 16px; }
+    padding: 3px 16px; }
 
 @-webkit-keyframes live {
   0% {
@@ -356,3 +326,123 @@ body {
     vertical-align: middle; }
 
 /*Offer Style - End*/
+/*Level Style - Start*/
+.level {
+  margin: 20px 0; }
+  .level .level__container {
+    background-color: #ffffff;
+    background-image: url("../img/level_bg.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain; }
+    .level .level__container .level__content {
+      padding: 50px; }
+      .level .level__container .level__content__title {
+        color: #040404;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 300; }
+      .level .level__container .level__content__paragraph {
+        color: rgba(4, 4, 4, 0.5);
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px; }
+
+/*Level Style - End*/
+/*Plus Style - Start*/
+.plus {
+  margin: 90px 0 0 0;
+  width: 100%; }
+  .plus__container {
+    background-image: url("../img/plus_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 55px 100px; }
+  .plus__content {
+    padding: 40px 30px 30px 30px;
+    background-color: #ffffff; }
+    .plus__content__title {
+      color: #040404;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 38px; }
+    .plus__content__paragraph {
+      color: #040404;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 22px; }
+    .plus__content__img {
+      display: block;
+      height: 30px;
+      fill: #f34336; }
+
+/*Plus Style - End*/
+/*Lesson Style - Start*/
+.lesson {
+  margin: 90px 0 0 0;
+  width: 100%; }
+  .lesson__container {
+    background-color: #ffffff;
+    padding: 0 100px 50px; }
+    .lesson__container button {
+      background: #f34336;
+      border: 2px solid #f34336;
+      border-radius: 5px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      outline: none;
+      vertical-align: middle;
+      padding: 5px 10px;
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease;
+      cursor: pointer;
+      color: #faf9f9;
+      margin-top: 35px; }
+      .lesson__container button:hover, .lesson__container button:focus {
+        background: #a0140a;
+        border: 2px solid #a0140a;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease; }
+  .lesson__content {
+    border-bottom: 1px solid rgba(40, 51, 63, 0.25);
+    padding: 50px 0 20px; }
+    .lesson__content__wrapper {
+      padding: 0 30px; }
+    .lesson__content__number {
+      font-family: "Montserrat", sans-serif;
+      font-size: 70px;
+      color: rgba(40, 51, 63, 0.25);
+      font-weight: 300;
+      text-align: left;
+      margin-top: -10px; }
+    .lesson__content__title {
+      color: #f34336;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 22px;
+      font-weight: 700; }
+    .lesson__content__paragraph {
+      color: rgba(4, 4, 4, 0.8);
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px; }
+    .lesson__content__point {
+      color: rgba(4, 4, 4, 0.8);
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      list-style-position: inside;
+      list-style: url("../img/triangle.svg");
+      margin-left: 20px;
+      vertical-align: middle; }
+    .lesson__content__duration {
+      color: rgba(197, 197, 197, 0.8); }
+
+/*Lesson Style - End*/

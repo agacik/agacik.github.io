@@ -1,0 +1,55 @@
+'use strict';
+
+var lessonArray = {
+    "lesson": [
+        {
+            number: "03", 
+            tittle: "Tytuł 03", 
+            paragraph: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi commodi tempora iusto pariatur suscipit autem dignissimos libero repellendus quos, quod eum ipsa eius et, hic, inventore officiis corrupti odio esse laboriosam laudantium veritatis optio accusamus eligendi, quasi. Accusantium, ad cum, voluptatibus suscipit autem ex facere nihil repellendus quis quasi minima.", 
+            list: [ 
+                { listContent: "Jak 03" }, 
+                { listContent: "Jak 03 kolejne" },
+                { listContent: "Jak 03 kolejne kolejne" }
+            ] 
+        },
+        {
+            number: "04", 
+            tittle: "Tytuł 04", 
+            paragraph: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi commodi tempora iusto pariatur suscipit autem dignissimos libero repellendus quos, quod eum ipsa eius et, hic, inventore officiis corrupti odio esse laboriosam laudantium veritatis optio accusamus eligendi, quasi. Accusantium, ad cum, voluptatibus suscipit autem ex facere nihil repellendus quis quasi minima.", 
+            list: [ 
+                { listContent: "Jak 04" }, 
+                { listContent: "Jak 04 kolejne" },
+                { listContent: "Jak 04 kolejne kolejne" }
+            ] 
+        },
+        {
+            number: "05", 
+            tittle: "Tytuł 05", 
+            paragraph: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi commodi tempora iusto pariatur suscipit autem dignissimos libero repellendus quos, quod eum ipsa eius et, hic, inventore officiis corrupti odio esse laboriosam laudantium veritatis optio accusamus eligendi, quasi. Accusantium, ad cum, voluptatibus suscipit autem ex facere nihil repellendus quis quasi minima.", 
+            list: [ 
+                { listContent: "Jak 05" }, 
+                { listContent: "Jak 05 kolejne" },
+                { listContent: "Jak 05 kolejne kolejne" }
+            ] 
+        },
+    ]
+}
+
+console.log(jsonOsoby);
+
+
+jsonOsoby.osoby[2].zainteresowania.forEach( function (element, index) {
+    console.log(element.nazwa);
+});
+
+//console.log(jsonOsoby.osoby[2].zainteresowania);
+
+
+
+
+
+
+
+//jsonOsoby.osoby[0].zainteresowania.forEach( function(zainteresowanie, index) {
+//    console.log("index: " + index + " zainteresowanie: " + zainteresowanie.nazwa)
+//});

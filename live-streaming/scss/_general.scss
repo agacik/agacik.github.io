@@ -16,6 +16,10 @@ body {
     margin: auto;
 }
 
+::selection {
+    background-color: $red-color;
+}
+
 
 
 
