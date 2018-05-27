@@ -2786,6 +2786,28 @@ section.price div.price-image .item-mask > .item-content {
 section.price .price-add, section.possibilities .possibilities-add  {
     margin: 15px 0;
 }
+
+#studio_pack_01 {
+    background-image: url("../img/studio_12.png");
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    
+}
+
+#studio_pack_02 {
+    background-image: url("../img/studio_11.png");
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    
+}
 /* Studio Site Style - End */
 
 
