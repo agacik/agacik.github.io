@@ -97,6 +97,23 @@ $(function () {
 //            })
 //        } });
     
+//Hamburger Menu Close Button
+    $('.navbar-toggler').click(function() {
+        $('.navbar-toggler i').toggleClass('fa-times');
+    })
     
 });
+
+//ScroolReveal - scroll animation section
+    window.sr = ScrollReveal({
+        origin: 'top',
+        reset: true,
+        duration: 750,
+        delay: 0,
+        distance: 0,
+        
+    });
+        sr.reveal('section');  
+    
+
 
