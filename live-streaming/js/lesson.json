@@ -3,10 +3,10 @@
 var lessonArray = {
     "lesson": [
         {
-            number: "03", 
-            tittle: "Tytuł 03", 
-            paragraph: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi commodi tempora iusto pariatur suscipit autem dignissimos libero repellendus quos, quod eum ipsa eius et, hic, inventore officiis corrupti odio esse laboriosam laudantium veritatis optio accusamus eligendi, quasi. Accusantium, ad cum, voluptatibus suscipit autem ex facere nihil repellendus quis quasi minima.", 
-            list: [ 
+            "number": "03", 
+            "tittle": "Tytuł 03", 
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi commodi tempora iusto pariatur suscipit autem dignissimos libero repellendus quos, quod eum ipsa eius et, hic, inventore officiis corrupti odio esse laboriosam laudantium veritatis optio accusamus eligendi, quasi. Accusantium, ad cum, voluptatibus suscipit autem ex facere nihil repellendus quis quasi minima.", 
+            "list": [ 
                 { listContent: "Jak 03" }, 
                 { listContent: "Jak 03 kolejne" },
                 { listContent: "Jak 03 kolejne kolejne" }
