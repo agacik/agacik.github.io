@@ -25,7 +25,7 @@ $(function() {
     
     
 //    View more lesson
-    var jsonUrl = "http://leguralnie.pl/json/ogloszenia-json.json";
+    var jsonUrl = "https://jsonplaceholder.typicode.com/users";
     var output = $('.lesson__more');
     var myHTML = "";
     
@@ -38,10 +38,10 @@ $(function() {
                     myHTML = myHTML + "<div class='col-sm-12 lesson__content'><div class='row'>";
                         myHTML = myHTML + "<div class='col-sm-1'>";
                             myHTML = myHTML + "<h2 class='lesson__content__number'> " + element.id + "</h2></div>";
-                            myHTML = myHTML + "<div class='col-sm-11 lesson__content__wrapper'>" + "<h2 class='lesson__content__title'>" + element.title + "</h2>";
-                            myHTML = myHTML + "<p class='lesson__content__paragraph'>" + element.description + "</p>";
+                            myHTML = myHTML + "<div class='col-sm-11 lesson__content__wrapper'>" + "<h2 class='lesson__content__title'>" + element.name + "</h2>";
+                            myHTML = myHTML + "<p class='lesson__content__paragraph'>" + element.email + "</p>";
                                 myHTML = myHTML + "<ul class='lesson__content__point'>";
-                                    myHTML = myHTML + "<li class='lesson__content__list'> " + element.city + "<span class='lesson__content__duration'> (" + element.category+ ")</span></li>";
+                                    myHTML = myHTML + "<li class='lesson__content__list'> " + element.address.street + "<span class='lesson__content__duration'> (" + element.company.name + ")</span></li>";
                                 myHTML = myHTML + "</ul>";
                         myHTML = myHTML + "</div>";
                     myHTML = myHTML + "</div>";
@@ -60,5 +60,10 @@ $(function() {
         $(this).hide();
     });
     
+
+//    FAQ - Show Hide Answer
+    $('.faq__content__question').click(function() {
+        $(this).toggleClass('faq__content__question--show').next().toggleClass('faq__content__answer--show');
+    })    
     
 });

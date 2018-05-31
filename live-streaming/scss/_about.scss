@@ -1,34 +1,39 @@
-/*Level Style - Start*/
-.level {
+/*About Me Style - Start*/
+
+.about {
     margin: 20px 0;
-    .level__container {
+    &__container {
         background-color: $white-color;
-        background-image: url('../img/level_bg.png');
+        background-image: url('../img/about_bg.png');
         background-repeat: no-repeat;
         background-position: top right;
         background-size: contain;
-        .level__content {
-            padding: 50px;
-        
+    }
+    &__content {
+        padding: 50px;
+
         &__title {
             color: $bg-color;
             font-family: $header-font;
             font-size: 32px;
-            font-style: italic; 
+            font-style: italic;
             font-weight: 400;
             margin-bottom: 20px;
-            }
+        }
         &__paragraph {
             color: rgba($bg-color, 0.5);
-            font-family: $main-font;
+            font-family: $header-font;
             font-size: 16px;
             font-weight: 300;
             line-height: 22px;
+            &--strong {
+                font-weight: 700;
             }
         }
-        
     }
-    
+
 }
 
-/*Level Style - End*/
+
+
+/*About Me Style - End*/

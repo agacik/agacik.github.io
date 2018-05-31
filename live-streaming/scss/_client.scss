@@ -18,6 +18,8 @@
             font-size: 32px;
             font-weight: 300;
             font-style: italic;
+            max-width: $text-width;
+            margin: 0 auto;
         }
         &__subtitle {
             color: rgba($text-color, 0.5);

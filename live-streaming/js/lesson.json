@@ -1,7 +1,4 @@
 'use strict';
-
-var lessonArray = {
-    "lesson": [
         {
             "number": "03", 
             "tittle": "Tytuł 03", 
@@ -31,25 +28,4 @@ var lessonArray = {
                 { listContent: "Jak 05 kolejne" },
                 { listContent: "Jak 05 kolejne kolejne" }
             ] 
-        },
-    ]
-}
-
-console.log(jsonOsoby);
-
-
-jsonOsoby.osoby[2].zainteresowania.forEach( function (element, index) {
-    console.log(element.nazwa);
-});
-
-//console.log(jsonOsoby.osoby[2].zainteresowania);
-
-
-
-
-
-
-
-//jsonOsoby.osoby[0].zainteresowania.forEach( function(zainteresowanie, index) {
-//    console.log("index: " + index + " zainteresowanie: " + zainteresowanie.nazwa)
-//});
+        }

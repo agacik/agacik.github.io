@@ -1,0 +1,77 @@
+/*FAQ Style - Start*/
+
+.faq {
+    margin: 80px 0;
+    &__container {
+        background-color: $white-color;
+        padding: 0;
+    }
+    &__title {
+        color: $bg-color;
+        font-family: $header-font;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 400;
+        padding: 20px 0;
+        text-align: center;
+    }
+    &__content {
+        &:nth-of-type(2n+1) {
+            background-color: $faq-color;
+        }
+        &__question {
+            display: inline-block;
+            color: rgba($bg-color, 0.8);
+            font-family: $main-font;
+            font-size: 16px;
+            font-weight: 300;
+            width: 100%;
+            margin: 0;
+            padding: 10px 40px;
+            cursor: pointer;
+            &::after {
+                content: "\f053";
+                font-family: "Font Awesome 5 Free";
+                transform: rotate(-90deg);
+                font-weight: 900;
+                font-size: 12px;
+                float: right;
+                color: $bg-color;
+                margin-top: 4px;
+            }
+            &--show {
+                background-color: $red-color;
+                color: rgba($white-color, 0.8);
+                &::after {
+                    content: "\f053";
+                    font-family: "Font Awesome 5 Free";
+                    transform: rotate(90deg);
+                    font-weight: 900;
+                    font-size: 12px;
+                    float: right;
+                    color: $white-color;
+                    margin-top: 4px;
+                }
+            }
+        }
+        &__answer {
+            color: rgba($white-color, 0.5);
+            background-color: $faq-bg-color;
+            font-family: $main-font;
+            font-size: 16px;
+            font-weight: 300;
+            width: 100%;
+            padding: 10px 40px;
+            margin: 0;
+            display: none;
+            &--show {
+                display: block;
+            }
+        }
+    }
+
+}
+
+
+
+/*FAQ Style - End*/
