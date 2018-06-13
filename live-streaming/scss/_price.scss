@@ -1,0 +1,128 @@
+/*Price Style - Start*/
+
+.price {
+    margin: 90px 0 0 0;
+    width: 100%;
+    button {
+        @include button-bg($red-color);
+        color: $text-color;
+    }
+    &__container {}
+    &__content {
+        padding: 10px 30px;
+        position: relative;
+        &__title {
+            color: $white-color;
+            font-family: $header-font;
+            font-size: 32px;
+            font-weight: 300;
+            font-style: italic;
+            max-width: $text-width;
+            margin: 0 auto;
+        }
+        &__subtitle {
+            color: rgba($text-color, 0.5);
+            font-family: $header-font;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 300;
+            max-width: $text-width;
+            margin: 0 auto;
+        }
+        &__list {
+            text-align: left;
+            color: rgba($text-color, 0.5);
+            font-family: $header-font;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 300;
+            max-width: $text-width;
+            margin: 15px auto;
+            list-style-type: none;
+            &::before {
+                content: "\f00c";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                font-size: 16px;
+                float: left;
+                margin-left: -30px;
+                color: $red-color;
+            }
+        }
+
+        &__icon {
+            color: $red-color;
+            display: inline-block;
+            float: left;
+            margin: 0 20px;
+            vertical-align: top;
+        }
+    }
+    &__box {
+        margin: 80px 0;
+        padding-bottom: 30px;
+        background-color: $white-color;
+        position: relative;
+        text-align: center;
+        &__title {
+            padding: 30px;
+            background-color: $red-color;
+            font-family: $header-font;
+            color: $white-color;
+            &--pack {
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 300;
+            }
+            &--header {
+                font-size: 36px;
+                line-height: 32px;
+                font-weight: 700;
+                margin-top: 10px;
+            }
+        }
+        &__paragraph {
+            padding: 10px 30px;
+            color: $bg-color;
+            font-family: $header-font;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+&__box__about {
+        margin: 80px 0;
+        padding-bottom: 30px;
+        background-color: $bg-color;
+        position: relative;
+        text-align: center;
+        &__title {
+            padding: 30px;
+            background-color: $bg-color;
+            font-family: $header-font;
+            color: $white-color;
+            &--pack {
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 300;
+            }
+            &--header {
+                font-size: 36px;
+                line-height: 32px;
+                font-weight: 700;
+                margin-top: 10px;
+            }
+        }
+        &__paragraph {
+            padding: 10px 30px;
+            color: $white-color;
+            font-family: $header-font;
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
+
+
+}
+
+/*Price Style - End*/

@@ -925,3 +925,124 @@ body {
       z-index: -1; }
 
 /*Fotter Style - End*/
+/*Price Style - Start*/
+.price {
+  margin: 90px 0 0 0;
+  width: 100%; }
+  .price button {
+    background: #f34336;
+    border: 2px solid #f34336;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    vertical-align: middle;
+    padding: 5px 10px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    cursor: pointer;
+    color: #faf9f9; }
+    .price button:hover {
+      background: #a0140a;
+      border: 2px solid #a0140a;
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease; }
+  .price__content {
+    padding: 10px 30px;
+    position: relative; }
+    .price__content__title {
+      color: #ffffff;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 32px;
+      font-weight: 300;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto; }
+    .price__content__subtitle {
+      color: rgba(250, 249, 249, 0.5);
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 300;
+      max-width: 600px;
+      margin: 0 auto; }
+    .price__content__list {
+      text-align: left;
+      color: rgba(250, 249, 249, 0.5);
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 300;
+      max-width: 600px;
+      margin: 15px auto;
+      list-style-type: none; }
+      .price__content__list::before {
+        content: "\f00c";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 16px;
+        float: left;
+        margin-left: -30px;
+        color: #f34336; }
+    .price__content__icon {
+      color: #f34336;
+      display: inline-block;
+      float: left;
+      margin: 0 20px;
+      vertical-align: top; }
+  .price__box {
+    margin: 80px 0;
+    padding-bottom: 30px;
+    background-color: #ffffff;
+    position: relative;
+    text-align: center; }
+    .price__box__title {
+      padding: 30px;
+      background-color: #f34336;
+      font-family: "Source Sans Pro", sans-serif;
+      color: #ffffff; }
+      .price__box__title--pack {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 300; }
+      .price__box__title--header {
+        font-size: 36px;
+        line-height: 32px;
+        font-weight: 700;
+        margin-top: 10px; }
+    .price__box__paragraph {
+      padding: 10px 30px;
+      color: #040404;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 16px;
+      font-weight: 300; }
+  .price__box__about {
+    margin: 80px 0;
+    padding-bottom: 30px;
+    background-color: #040404;
+    position: relative;
+    text-align: center; }
+    .price__box__about__title {
+      padding: 30px;
+      background-color: #040404;
+      font-family: "Source Sans Pro", sans-serif;
+      color: #ffffff; }
+      .price__box__about__title--pack {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 300; }
+      .price__box__about__title--header {
+        font-size: 36px;
+        line-height: 32px;
+        font-weight: 700;
+        margin-top: 10px; }
+    .price__box__about__paragraph {
+      padding: 10px 30px;
+      color: #ffffff;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 16px;
+      line-height: 26px; }
+
+/*Price Style - End*/
