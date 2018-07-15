@@ -27,78 +27,80 @@ body {
   z-index: 100;
   display: block;
   list-style: none; }
-
-.menu__mobile {
-  display: none; }
-.menu__item {
-  display: block;
-  list-style: none;
-  width: 100%;
-  height: 85px;
-  overflow: hidden; }
-  .menu__item--logo {
-    height: 130px;
-    background-color: #ffffff; }
-  .menu__item--image {
-    max-width: 116px;
-    height: auto;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
-  .menu__item--link {
+  .menu__mobile {
+    display: none; }
+  .menu__item {
     display: block;
-    position: relative;
+    list-style: none;
     width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: #ffffff; }
-    .menu__item--link::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 100%;
+    height: 85px;
+    overflow: hidden; }
+    .menu__item--logo {
+      height: 130px;
+      background-color: #ffffff; }
+    .menu__item--image {
+      max-width: 116px;
+      height: auto;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+    .menu__item--link {
+      display: block;
+      position: relative;
       width: 100%;
       height: 100%;
-      background: #b4edb4;
-      opacity: 0.1;
-      -webkit-transition: right 0.3s ease-out;
-      transition: right 0.3s ease-out;
-      z-index: 200; }
-    .menu__item--link:hover::before {
-      right: 0px;
-      -webkit-transition: right 0.3s ease-out;
-      transition: right 0.3s ease-out;
-      z-index: 200; }
-  .menu__item--sporty {
-    background-color: #ffa754; }
-  .menu__item--oklubie {
-    background-color: #e9532a; }
-  .menu__item--aktualnosci {
-    background-color: #49b5ac; }
-  .menu__item--galeria {
-    background-color: #3b9d89; }
-  .menu__item--kontakt {
-    background-color: #714178; }
-  .menu__item--reforma {
-    background-color: #000000; }
-  .menu__item--social {
-    background-color: #ffffff; }
-  .menu__item--copyright {
-    background-color: #ffffff;
-    color: gray;
-    font-size: 8px;
-    text-transform: none; }
-  .menu__item__img {
-    max-width: 25px;
-    margin: 2px; }
-  .menu__item__img--wrapper {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    text-align: center; }
+      text-decoration: none;
+      color: #ffffff; }
+      .menu__item--link::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 100%;
+        width: 100%;
+        height: 100%;
+        background: #b4edb4;
+        opacity: 0.1;
+        -webkit-transition: right 0.3s ease-out;
+        transition: right 0.3s ease-out;
+        z-index: 200; }
+      .menu__item--link:hover::before {
+        right: 0px;
+        -webkit-transition: right 0.3s ease-out;
+        transition: right 0.3s ease-out;
+        z-index: 200; }
+    .menu__item--sporty {
+      background-color: #ffa754; }
+    .menu__item--oklubie {
+      background-color: #e9532a; }
+    .menu__item--aktualnosci {
+      background-color: #49b5ac; }
+    .menu__item--galeria {
+      background-color: #3b9d89; }
+    .menu__item--kontakt {
+      background-color: #714178; }
+    .menu__item--reforma {
+      background-color: #000000; }
+    .menu__item--social {
+      background-color: #ffffff; }
+      .menu__item--social .menu__item__img {
+        margin: 5px;
+        vertical-align: middle; }
+    .menu__item--copyright {
+      background-color: #ffffff;
+      color: gray;
+      font-size: 8px;
+      text-transform: none; }
+    .menu__item__img {
+      max-width: 25px;
+      margin: 2px; }
+    .menu__item__img--wrapper {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      text-align: center; }
 
 @media (max-width: 768px) {
   .menu {
@@ -233,4 +235,148 @@ body {
       position: absolute;
       top: -33.3vh;
       left: 50%; } }
+/*Sporty Style - End*/
+/*Sporty Style - Start*/
+.fitness {
+  float: left;
+  width: calc(100% - 130px);
+  height: 100vh;
+  position: relative;
+  left: 0;
+  display: block; }
+  .fitness__wrapper {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #ffffff; }
+  .fitness__item {
+    float: left;
+    height: 100vh;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: -webkit-transform 2s ease;
+    transition: -webkit-transform 2s ease;
+    transition: transform 2s ease;
+    transition: transform 2s ease, -webkit-transform 2s ease;
+    z-index: -10; }
+    .fitness__item--link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: #ffffff;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden; }
+    .fitness__item--title {
+      font-family: "Montserrat", sans-serif;
+      font-size: 24px;
+      position: relative;
+      top: 51px;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 32px;
+      padding-top: 35px;
+      text-shadow: 0px 1px 5px #969696; }
+    .fitness__item--trening {
+      background-image: url(../img/kolor_fit_1_image_normal.jpg); }
+  .fitness__article {
+    float: left;
+    height: auto;
+    width: 80%;
+    margin: 30px auto 50px;
+    padding: 0px 50px;
+    color: #555555; }
+    .fitness__article--title {
+      padding: 20px 0 15px;
+      font-size: 24px;
+      font-weight: normal;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 4px; }
+    .fitness__article--paragraph {
+      margin: 15px auto;
+      font-size: 14px;
+      text-align: left; }
+    .fitness__article--strong {
+      font-weight: 700; }
+  .fitness__circle {
+    margin: 20px 20px 0;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    position: relative; }
+    .fitness__circle--wrapper {
+      height: 100%;
+      position: relative;
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+      -webkit-transition: all 1s ease-in-out;
+      transition: all 1s ease-in-out;
+      width: 100%; }
+      .fitness__circle--wrapper:hover {
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+        -webkit-transform-origin: center;
+                transform-origin: center; }
+    .fitness__circle--img {
+      width: 200px;
+      border-radius: 50%; }
+    .fitness__circle--front {
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      height: 100%;
+      overflow: hidden;
+      width: 100%; }
+    .fitness__circle--back {
+      background-image: url(../img/instruktorzy1_1_img_normal.jpg);
+      -webkit-filter: grayscale(2);
+              filter: grayscale(2);
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      font-size: 14px;
+      line-height: 150px;
+      text-align: center;
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+      -webkit-transform-origin: center;
+              transform-origin: center; }
+    .fitness__circle--caption {
+      padding-top: 20px;
+      font-size: 18px;
+      font-weight: normal;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3px; }
+
+@media (max-width: 768px) {
+  .fitness {
+    display: inline;
+    width: 100%; }
+    .fitness__item {
+      float: left;
+      width: 50%;
+      height: -33.3vh;
+      overflow: hidden;
+      position: absolute;
+      top: -33.3vh;
+      right: 0; }
+    .fitness__article {
+      width: 100%;
+      background-color: #ffffff; } }
 /*Sporty Style - End*/

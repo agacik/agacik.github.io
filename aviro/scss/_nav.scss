@@ -16,9 +16,6 @@
     z-index: 100;
     display: block;
     list-style: none;
-}
-
-.menu {
     &__mobile {
         display: none;
     }
@@ -85,6 +82,10 @@
         }
         &--social {
             background-color: $text-color;
+            .menu__item__img {
+                margin: 5px;
+                vertical-align: middle;
+            }
         }
         &--copyright {
             background-color: $text-color;
