@@ -1,0 +1,36 @@
+@mixin header-text {
+  font-family: Roboto;
+  font-size: 100px;
+  font-weight: 300;
+  font-stretch: condensed;
+  line-height: 0.4;
+  text-align: left;
+  color: $black-color;
+}
+@mixin main-text {
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 300;
+  font-stretch: condensed;
+  line-height: 0.8;
+  letter-spacing: -1.3px;
+  text-align: left;
+  color: $white-color;
+}
+@mixin text {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: condensed;
+  text-align: center;
+  color: $white-color;
+}
+@mixin strong-text {
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: bold;
+  font-stretch: condensed;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: rgba($white-color, 0.8);
+}
