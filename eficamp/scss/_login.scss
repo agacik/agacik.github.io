@@ -1,0 +1,63 @@
+.login-form {
+    padding: 30px;
+}
+
+.logo-top-wrapper {
+    float: right;
+}
+
+.logo-top {
+    padding: 20px;
+    border: 1px solid rgba($white-color, 0.3);
+    border-radius: 5px;
+    max-width: 100px;
+}
+
+
+.login-form-content {
+    background-color: $topaz-color;
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    padding: 28px;
+}
+
+.login-form-circle {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    background-color: $white-color;
+    text-align: center;
+}
+
+.login-form-input {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+.form-nav-item {
+    opacity: 0.8;
+    text-shadow: 0.6px 0.8px 0 rgba(15, 15, 15, 0.83);
+    @include strong-text;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+
+#go {
+    padding: 10px 50px;
+    font-family: Roboto;
+    font-size: 15.5px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: condensed;
+    letter-spacing: normal;
+    text-align: left;
+    color: $black-color;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin: 20px;
+}

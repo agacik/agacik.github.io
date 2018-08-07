@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-image: url(../img/bg.jpg); }
+
+.login-form {
+  padding: 30px; }
+
+.logo-top-wrapper {
+  float: right; }
+
+.logo-top {
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  max-width: 100px; }
+
+.login-form-content {
+  background-color: #13bdd2;
+  width: 100%;
+  height: 500px;
+  border-radius: 5px;
+  padding: 28px; }
+
+.login-form-circle {
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  text-align: center; }
+
+.login-form-input {
+  width: 100%;
+  height: 35px;
+  outline: none;
+  border: none;
+  padding: 5px; }
+
+.form-nav-item {
+  opacity: 0.8;
+  text-shadow: 0.6px 0.8px 0 rgba(15, 15, 15, 0.83);
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: bold;
+  font-stretch: condensed;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  margin: 5px 0; }
+
+#go {
+  padding: 10px 50px;
+  font-family: Roboto;
+  font-size: 15.5px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: condensed;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin: 20px; }
