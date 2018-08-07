@@ -1,0 +1,474 @@
+/* F5 Style - START */
+
+/* Style Generalne - START */
+
+.ab_body_bg {
+    background-image: url(../img/f5_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    max-width: 100vw;
+    height: 100vh;
+}
+
+/* Style Generalne - END */
+
+/* Style Nawigacji - START */
+
+.ab_navigation {
+    background-image: radial-gradient(circle, rgba(137, 137, 137, 0.4), rgba(137, 137, 137, 1));
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding: 5px 10%;
+    z-index: 100;
+    &_scroll {
+        background-color: $grey_color;
+    }
+    .ab_navigation_hamburger {
+        display: none;
+        cursor: pointer;
+        width: 100%;
+        max-height: 57px;
+    }
+    .ab_navigation_toggle {
+        display: none;
+        cursor: pointer;
+    }
+    .ab_logo_nav_mobile {
+        display: none;
+        cursor: pointer;
+    }
+    #ab_navigation_drop {
+        display: none;
+    }
+    .ab_navigation_wrapper {
+        max-height: 57px;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+        top: 5px;
+        list-style: none;
+    }
+    .ab_navigation_left {
+        display: inline-block;
+        float: left;
+        text-align: left;
+    }
+    .ab_navigation_center {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .ab_navigation_right {
+        display: inline-block;
+        float: right;
+        text-align: right;
+    }
+    .ab_navigation_item {
+        display: inline-block;
+        position: relative;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        color: $text-color;
+        font-size: 0.44em;
+        text-align: center;
+        margin: 0 5px;
+    }
+    .ab_logo_nav {
+        height: auto;
+        width: 100px;
+        position: relative;
+        vertical-align: middle;
+    }
+    .ab_small {
+        font-size: 0.4em;
+        vertical-align: middle;
+    }
+    .ab_uppercase {
+        text-transform: uppercase;
+    }
+    .ab_nav_link {
+        color: $text-color;
+        font-size: 1em;
+        vertical-align: middle;
+    }
+    .ab_nav_link:hover,
+    .ab_nav_link:focus {
+        color: $red-color;
+    }
+    .ab_nav_img {
+        max-height: 20px;
+        vertical-align: middle;
+    }
+}
+
+/* Style Nawigacji - START */
+
+/* Style Nagłówka - START */
+
+.ab_header {
+    max-width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    .ab_wrapper {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: translateY(-50%);
+        padding: 0 10%;
+        text-align: left;
+    }
+    .ab_header_items {
+        width: 50%;
+        float: left;
+        &_img {
+            width: 80%;
+            text-align: left;
+        }
+    }
+    .ab_header_content {
+        margin-top: 5%;
+        width: 50%;
+        float: right;
+        color: $text-color;
+        text-align: left;
+    }
+    .ab_header_content_title {
+        font-size: 1.5em;
+        line-height: 130%;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .ab_header_content_description {
+        font-size: 0.6em;
+        line-height: 130%;
+        margin: 20px 0;
+    }
+}
+
+/* Style Nagłówka - END */
+
+/* Style Artykułu - START */
+
+.ab_article {
+    background-color: $text-color;
+    max-width: 100vw;
+    height: auto;
+    padding: 20px 0;
+    position: relative;
+    box-sizing: content-box;
+    overflow: hidden;
+    .ab_article_wrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: translateY(-50%);
+        padding: 0px 10%;
+        text-align: left;
+    }
+    .ab_article_image {
+        width: 50%;
+        float: right;
+        padding: 10px;
+        &_img {
+            max-width: 100%;
+            text-align: right;
+            float: right;
+        }
+    }
+    .ab_article_content {
+        width: 50%;
+        float: left;
+        color: $black-color;
+        text-align: left;
+        padding: 10px;
+    }
+    .ab_article_content_title {
+        font-size: 1.5em;
+        line-height: 130%;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .ab_article_content_description {
+        font-size: 0.6em;
+        line-height: 130%;
+        margin: 20px 0;
+    }
+}
+
+/* Style Artykułu - END */
+
+/* Style Marek - START */
+
+.ab_brand {
+    background-color: $grey_color;
+    width: 100%;
+    height: auto;
+    padding: 5px 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ab_brand_wrapper {
+    width: 100%;
+}
+
+.ab_brand_item {
+    display: inline-block;
+    overflow: hidden;
+    width: 15%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ab_brand_link {
+    text-decoration: none;
+}
+
+.ab_brand_img {
+    max-height: 35px;
+    max-width: 120px;
+    margin: 40px 0;
+}
+
+/* Style Marek - END */
+
+/* Style Stopki - START */
+
+.ab_footer {
+    background-color: $grey_color;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 20px 10%;
+    text-align: center;
+    vertical-align: middle;
+    .ab_footer_item {
+        width: 25%;
+        float: left;
+        text-align: left;
+        color: $text-color;
+    }
+    .ab_footer_item_title {
+        font-size: 0.5em;
+        margin: 20px 0;
+        color: $text-color;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .ab_footer_list {
+        list-style: none;
+        display: block;
+    }
+    .ab_footer_list_item {
+        margin-left: 20px;
+        line-height: 30px;
+        font-size: 0.4em;
+        color: $text-color;
+    }
+    .ab_footer_link {
+        color: $text-color;
+        text-decoration: none;
+    }
+    .ab_footer_link:hover {
+        color: $red-color;
+        text-decoration: none;
+    }
+    .ab_footer_icon {
+        max-width: 5%;
+        margin: 5px;
+        vertical-align: middle;
+    }
+    .ab_footer_icon_social {
+        max-width: 10%;
+        margin-left: 20px;
+        transform: scale(1);
+        transition: transform 0.5s linear;
+    }
+    .ab_footer_icon_social:hover {
+        transform: scale(1.2);
+        transition: transform 0.5s linear;
+    }
+}
+
+/* Style Stopki - END */
+
+/* Style Generalne - END */
+
+/* Style Responsywne - START */
+
+@media (max-width: 768px) {
+
+    /* Style Nawigacji RWD - START */
+    .ab_navigation {
+        height: 52px;
+        padding: 0;
+        .ab_navigation_wrapper,
+        .ab_navigation_right,
+        .ab_navigation_left {
+            display: none;
+        }
+        .ab_navigation_on {
+        display: list-item;
+        position: relative;
+        width: 100vw;
+        text-align: center;
+        vertical-align: middle;
+        top: -10px;
+        list-style: none;
+        } 
+        
+        .ab_navigation_center {
+            display: list-item;
+            background-color: $grey_color;
+            width: inherit;
+            position: relative;
+            right: 0; 
+            left: 0;
+            transform: none;
+            text-align: center;
+            font-size: 2em;
+        }
+        .ab_navigation_item {
+            display: block;
+            padding: 10px 0;
+            top: 0;
+            transform: none;
+        }
+        .ab_navigation_hamburger {
+            display: inline-block;
+            cursor: pointer;
+            width: 100%;
+        }
+        .ab_navigation_toggle {
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+            text-align: center;
+            vertical-align: middle;
+            float: right;
+        }
+        .ab_navigation_toggle_img {
+            width: 20px;
+            margin: 15px 20px;
+        }
+        .ab_logo_nav_mobile {
+            display: inline-block;
+            cursor: pointer;
+            text-align: left;
+            float: left;
+            vertical-align: middle;
+            margin: 5px 20px;
+        }
+    }
+    /* Style Nawigacji RWD - END */
+    /* Style Nagłówka RWD - START */
+    .ab_header {
+        .ab_wrapper {
+            padding: 5%;
+        }
+        .ab_header_items {
+            width: 100%;
+            display: block;
+            text-align: center;
+            &_img {
+                max-width: 30%;
+            }
+        }
+        .ab_header_content {
+            width: 100%;
+            display: block;
+            font-size: 1.6em;
+        }
+    }
+    /* Style Nagłówka RWD - END */
+    /* Style Artykułu RWD - START */
+    .ab_article {
+        .ab_article_wrapper {
+            padding: 5%;
+        }
+        .ab_article_image {
+            width: 100%;
+            display: block;
+            text-align: center;
+            &_img {
+                max-width: 30%;
+                float: none;
+            }
+        }
+        .ab_article_content {
+            width: 100%;
+            display: block;
+            font-size: 1.8em;
+        }
+    }
+    /* Style Artykułu RWD - END */
+    /* Style Marek RWD - START */
+    .ab_brand {
+        padding: 2%;
+        .ab_brand_wrapper {
+            padding: 0;
+        }
+        .ab_brand_item {
+            width: 30%;
+            display: inline-block;
+            text-align: center;
+        }
+        .ab_brand_img {
+            margin: 10px;
+        }
+    }
+    /* Style Marek RWD - END */
+    /* Style Stopki RWD - START */
+    .ab_footer {
+        padding: 5%;
+        .ab_footer_item_title {
+            font-size: 0.8em;
+            margin: 20px 0;
+            color: $text-color;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .ab_footer_list {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+        .ab_footer_item {
+            width: 100%;
+            display: block;
+            font-size: 1.8em;
+            text-align: center;
+        }
+        .ab_footer_list_item {
+            margin: 0px;
+            line-height: 25px;
+            font-size: 0.6em;
+        }
+        .ab_footer_icon {
+            max-width: 15px;
+        }
+        .ab_footer_icon_social {
+            max-width: 25px;
+            margin: 0;
+        }
+    }
+    /* Style Stopki RWD - END */
+}
+
+/* Style Responsywne - END */
+
+/*F5 Style - End*/

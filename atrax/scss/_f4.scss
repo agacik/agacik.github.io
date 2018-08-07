@@ -1,0 +1,106 @@
+/* F4 Style - START */
+
+/* Style Generalne - START */
+
+.ab_intro_header {
+    background-image: url(../img/f4_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    max-width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    .ab_intro_wrapper {
+        width: 100%;
+        position: absolute;
+        top: 30%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: translateY(-30%);
+        padding: 0 10%;
+        text-align: left;
+    }
+    .ab_intro_logo_img {
+        width: 25%;
+        height: auto;
+    }
+    .ab_intro_title {
+        color: $text-color;
+        font-size: $header-font-size;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+    .ab_intro_more {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: translateY(5%);
+        padding: 0 10%;
+        text-align: center;
+
+        &_img {
+            width: 50px;
+            height: auto;
+            cursor: pointer;
+            animation: ab_more_img_animation 2s ease;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+
+/* Animacja strzałki dolnej (f4_arrow.png) - START */
+
+@keyframes ab_more_img_animation {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* Animacja strzałki dolnej (f4_arrow.png) - END */
+
+/* Style Generalne - END */
+
+/* Style Responsywne - START */
+
+@media (max-width: 768px) {
+    .ab_intro_header {
+        .ab_intro_logo_img {
+            width: 50%;
+        }
+        .ab_intro_more {
+            &_img {
+                width: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .ab_intro_header {
+        .ab_intro_logo_img {
+            width: 40%;
+        }
+        .ab_intro_more {
+            &_img {
+                width: 40px;
+            }
+        }
+    }
+}
+
+
+
+
+/* Style Responsywne - END */
+
+/* F4 Style - END */

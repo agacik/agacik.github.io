@@ -1,0 +1,110 @@
+/* General Style - START */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: transparent;
+    color: $text-color;
+    font-family: $main-font;
+    font-size: $header-font-size;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+::selection {
+    background-color: lighten($selection-color, 5%);
+    color: $text-color;
+}
+
+
+
+
+/* Back to Top - START */
+.ab_backtotop {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    bottom: 30px;
+    right: 30px;
+    text-align: right;
+    cursor: pointer;
+    border: 1px solid $black-color;
+    padding: 5px;
+    z-index: 99;
+    display: none;
+}
+.ab_backtotop_arrow {
+    width: 20px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    background-color: transparent;
+}
+.ab_backtotop_on {
+    display: block;
+}
+/* Back to Top - END */
+
+
+
+
+
+/* Button Style - START */
+.ab_button {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid $text-color;
+    background-color: transparent;
+    color: $text-color;
+    font-size: 0.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.ab_button_white {
+    border: 1px solid $text-color;
+    color: $text-color;
+}
+
+.ab_button_black {
+    border: 1px solid $black_color;
+    color: $black_color;
+}
+
+.ab_button_arrow {
+    max-width: 50px;
+    vertical-align: middle;
+    margin: 0 10px;
+    animation: ab_arrow_animation 2s ease;
+    animation-iteration-count: infinite;
+}
+
+.ab_button:hover {
+    background-color: $grey_color;
+}
+
+@keyframes ab_arrow_animation {
+    0%,
+    100% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(8px);
+    }
+}
+
+/* Button Style - START */
+
+
+
+/* General Style - END */
