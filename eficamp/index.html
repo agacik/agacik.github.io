@@ -10,45 +10,50 @@
 </head>
 
 <body>
-    <header class="container login-form">
+    <main class="container login-form">
         <div class="login-form-wrapper row">
-            <div class="login-form-logo col-sm-4">
+            <div class="login-form-logo col-sm-12 col-md-4">
                 <div class="logo-top-wrapper">
                     <img src="img/logo_top.png" alt="Main Logo" class="logo-top">
                 </div>
             </div>
 
-            <div class="login-form-content col-sm-4">
-               <h1>Login</h1>
-               <h3>Aby, zaimportować dane zaloguj się do swojego banku</h3>
-               <div class="login-form-circle">
-               </div>
-               <p id="result"></p>
-                <form action="">
-                    <input id="input" type="text" class="login-form-input">
+            <div class="login-form-content col-sm-12 col-md-4">
+                <h1>Login</h1>
+                <h3>Aby, zaimportować dane zaloguj się do swojego banku</h3>
+                <div class="login-form-circle mx-auto">
+                </div>
+
+                <form action="" autocomplete="off">
+                    <div class="result-wrapper mx-auto text-center">
+                        <p id="result"></p>
+                        <a href="" id="close">X</a>
+                    </div>
+                    <input id="input" type="text" class="login-form-input" placeholder="Numer klienta">
                 </form>
                 <button id="other">Select Other</button>
                 <button id="go">Go</button>
-                
             </div>
         </div>
-        <div class="row">
-            <div class="login-form-nav col-md-4">
 
+        <div class="row">
+            <div class="login-form-nav col-sm-12 col-md-4">
             </div>
             <div class="login-form-nav col-md-4">
                 <div class="row">
-                    <div class="col-sm-3 form-nav-item">Security</div>
-                    <div class="col-sm-3 form-nav-item">Loggin In</div>
-                    <div class="col-sm-3 form-nav-item">Contact</div>
-                    <div class="col-sm-3 form-nav-item">Facebook</div>
+                    <div class="col-sm-3 form-nav-item"><a href="">Security</a></div>
+                    <div class="col-sm-3 form-nav-item"><a href="">Loggin In</a></div>
+                    <div class="col-sm-3 form-nav-item"><a href="">Contact</a></div>
+                    <div class="col-sm-3 form-nav-item"><a href="">Facebook</a></div>
                 </div>
-            </div>    
+            </div>
         </div>
 
-    </header>
+    </main>
 </body>
 
 <script src="js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.5.2/qs.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 </html>

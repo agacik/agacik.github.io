@@ -10,6 +10,26 @@ body {
   font-size: 16px;
   background-image: url(../img/bg.jpg); }
 
+h1 {
+  text-shadow: -0.7px -0.7px;
+  text-align: center;
+  margin: 20px 0;
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 300;
+  font-stretch: condensed;
+  line-height: 0.8;
+  letter-spacing: -1.3px;
+  color: #ffffff; }
+
+h3 {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: condensed;
+  color: #ffffff; }
+
 .login-form {
   padding: 30px; }
 
@@ -34,18 +54,22 @@ body {
   height: 94px;
   border-radius: 50%;
   background-color: #ffffff;
-  text-align: center; }
+  text-align: center;
+  margin-top: 50px; }
 
 .login-form-input {
   width: 100%;
   height: 35px;
   outline: none;
   border: none;
-  padding: 5px; }
+  padding: 5px;
+  border-radius: 2px;
+  margin: 5px 0; }
 
-.form-nav-item {
+.form-nav-item a {
   opacity: 0.8;
   text-shadow: 0.6px 0.8px 0 rgba(15, 15, 15, 0.83);
+  text-decoration: none;
   font-family: Roboto;
   font-size: 11px;
   font-weight: bold;
@@ -54,7 +78,38 @@ body {
   text-align: left;
   color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
-  margin: 5px 0; }
+  margin: 5px 0;
+  color: #ffffff; }
+
+#result {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: condensed;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 5px;
+  font-weight: 700;
+  display: inline-block; }
+
+#close {
+  display: none;
+  width: 20px;
+  height: 20px;
+  background-color: #5be0f0;
+  border-radius: 50%;
+  opacity: 0.8;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: bold;
+  font-stretch: condensed;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none; }
 
 #go {
   padding: 10px 50px;
@@ -64,9 +119,28 @@ body {
   font-style: normal;
   font-stretch: condensed;
   letter-spacing: normal;
-  text-align: left;
+  text-transform: uppercase;
+  background-color: #ffffff;
   color: #000000;
   border: none;
   border-radius: 5px;
   outline: none;
-  margin: 20px; }
+  margin: 20px;
+  cursor: pointer; }
+
+#other {
+  visibility: hidden;
+  font-family: Roboto;
+  font-size: 15.5px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: condensed;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin: 20px;
+  background-color: transparent;
+  cursor: pointer; }
