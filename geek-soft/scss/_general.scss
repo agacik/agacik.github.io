@@ -57,7 +57,7 @@ a {
 }
 
 .trash-icon {
-    color: rgba($color-light-red,0.5);
+    color: rgba($color-light-red, 0.5);
     font-size: 18px;
     vertical-align: middle;
     display: inline-block;
@@ -70,15 +70,37 @@ a {
     transition: 0.3s linear display;
 }
 
-.delete:hover .delete-button{
+.delete:hover .delete-button {
     right: -18px;
     border-left: 1px solid $color-dark-navy-blue;
     transition: 0.5s linear right;
 }
 
+
+@media screen and (max-width: 576px) {
+
+    .delete-button {
+        right: -100%;
+    }
+
+    .trash-icon {
+        color: rgba($color-light-red, 0.5);
+        font-size: 18px;
+        vertical-align: middle;
+        display: inline-block;
+        text-align: center;
+        transition: 0.3s linear display;
+        cursor: pointer;
+    }
+
+    .delete:hover .delete-button {
+        right: 0;
+        border-left: 1px solid $color-dark-navy-blue;
+        transition: 0.8s linear right;
+    }
+}
+
 /*Delete Icon and Action - End*/
-
-
 
 /*Decoration Top and Bottom Content - Start*/
 

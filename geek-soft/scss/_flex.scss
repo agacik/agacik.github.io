@@ -69,7 +69,6 @@
     padding-left: 15px;
     position: relative;
     overflow: hidden;
-    ;
 }
 
 
@@ -180,6 +179,41 @@
 
 .col-24 {
     flex: 24;
+}
+
+
+@media screen and (max-width: 576px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .column {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 15px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .column:first-of-type {
+        margin-left: 0;
+    }
+
+    .column:nth-last-of-type(2) {
+        padding-right: 0;
+    }
+
+    .column:last-of-type {
+        padding-right: 0;
+        justify-content: center;
+    }
+
 }
 
 /*Flex Style - End*/
