@@ -1,0 +1,185 @@
+/*Flex Style - Start*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-self: center;
+    justify-content: flex-start;
+    width: 640px;
+    height: auto;
+    position: relative;
+}
+
+.content .row:hover {
+    width: 664px;
+    position: relative;
+    left: -12px;
+    background-color: $color-light-gray-blue;
+    transition: 0.3s linear width, 0.3s linear left;
+    z-index: 3;
+}
+
+.content .row::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 96%;
+    height: 1px;
+    text-align: center;
+    border-bottom: 1px solid $color-dark-navy-blue;
+}
+
+.content .row:last-of-type::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 96%;
+    height: 1px;
+    text-align: center;
+    border-bottom: 0px solid $color-dark-navy-blue;
+}
+
+.row:hover::after {
+    border-bottom: 0px solid $color-dark-navy-blue;
+}
+
+.column {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    position: relative;
+    overflow: hidden;
+    ;
+}
+
+
+.column:first-of-type {
+    margin-left: 12px;
+}
+
+.column:nth-last-of-type(2) {
+    padding-right: 15px;
+}
+
+.column:last-of-type {
+    padding-right: 12px;
+    justify-content: flex-end;
+}
+
+.col-1 {
+    flex: 1;
+}
+
+.col-2 {
+    flex: 2;
+}
+
+.col-3 {
+    flex: 3;
+}
+
+.col-4 {
+    flex: 4;
+}
+
+.col-5 {
+    flex: 5;
+}
+
+.col-6 {
+    flex: 6;
+}
+
+.col-7 {
+    flex: 7;
+}
+
+.col-8 {
+    flex: 8;
+}
+
+.col-9 {
+    flex: 9;
+}
+
+.col-10 {
+    flex: 10;
+}
+
+.col-11 {
+    flex: 11;
+}
+
+.col-12 {
+    flex: 12;
+}
+
+.col-13 {
+    flex: 13;
+}
+
+.col-14 {
+    flex: 14;
+}
+
+.col-15 {
+    flex: 15;
+}
+
+.col-16 {
+    flex: 16;
+}
+
+.col-17 {
+    flex: 17;
+}
+
+.col-18 {
+    flex: 18;
+}
+
+.col-19 {
+    flex: 19;
+}
+
+.col-20 {
+    flex: 20;
+}
+
+.col-21 {
+    flex: 21;
+}
+
+.col-22 {
+    flex: 22;
+}
+
+.col-23 {
+    flex: 23;
+}
+
+.col-24 {
+    flex: 24;
+}
+
+/*Flex Style - End*/

@@ -1,0 +1,48 @@
+.popover {
+    background-color: $color-light-gray-blue;
+    width: 600px;
+    height: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -30px;
+    border: 1px solid $color-dark-navy-blue;
+    border-radius: 4px 4px 0 0;
+
+}
+
+.question {
+    padding: 5px;
+}
+
+.yes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: auto;
+    height: 100%;
+    color: $color-white;
+    font-size: 14px;
+    background-color: $color-green;
+    text-transform: uppercase;
+    border-left: 1px solid $color-dark-navy-blue;
+    border-radius: 0 4px 0 0;
+    cursor: pointer;
+}
+
+.no {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: auto;
+    height: 100%;
+    text-transform: uppercase;
+    border-left: 1px solid $color-dark-navy-blue;
+    cursor: pointer;
+}
