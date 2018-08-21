@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-general;
+    color: $color-gray;
+    font-size: 14px;
+    background-color: $background-color;
+    font-weight: 400;
+    text-align: left;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+.title {
+    font-family: $font-general;
+    color: $color-light-navy-blue;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 400;
+    text-shadow: 1px 2px 2px rgba($color-black, 0.5);
+    border-bottom: none;
+}
+
+
+//Delate Icon and Action - Start
+
+.delate-button {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: -200px;
+    width: auto;
+    height: 100%;
+    background-color: $color-light-red;
+    color: $color-white;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 18px;
+    transition: 0.5s linear right;
+    cursor: pointer;
+}
+
+.trash-icon-delate {
+    color: $color-white;
+    margin-left: 10px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.trash-icon {
+    color: rgba($color-light-red,0.5);
+    font-size: 18px;
+    vertical-align: middle;
+    display: inline-block;
+    transition: 0.3s linear display;
+    cursor: pointer;
+}
+
+.delate:hover .trash-icon {
+    display: none;
+    transition: 0.3s linear display;
+}
+
+.delate:hover .delate-button{
+    right: -18px;
+    border-left: 1px solid $color-dark-navy-blue;
+    transition: 0.5s linear right;
+}
+
+//Delate Icon and Action - End
+
+//Decoration Top and Bottom Content - Start
+
+.content {
+    position: relative;
+    background-color: $color-dark-blue;
+    width: 640px;
+    height: auto;
+    border-radius: 4px;
+}
+
+
+.content::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    width: 100%;
+    height: 2px;
+    background-color: $background-color;
+    z-index: 2;
+
+}
+
+.content::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    height: 2px;
+    background-color: $background-color;
+    z-index: 2;
+}
+
+
+
+//Decoration Top and Bottom Content - End
