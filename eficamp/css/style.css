@@ -144,3 +144,137 @@ h3 {
   margin: 20px;
   background-color: transparent;
   cursor: pointer; }
+
+.quit {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #e21a61;
+  border-radius: 50%;
+  background-color: transparent;
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all; }
+
+.quit::before {
+  position: absolute;
+  top: -10px;
+  left: -40px;
+  right: 0;
+  margin: 0 auto;
+  content: "";
+  height: 40px;
+  width: 0.5px;
+  background-color: #dbdede; }
+
+.quit::after {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  content: "";
+  height: 15px;
+  width: 8px;
+  border-radius: 4px 4px 0 0;
+  border: 2px solid #13bdd2;
+  background-color: #e21a61;
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all; }
+
+.quit:hover {
+  border: 3px solid #ffffff;
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all; }
+
+.quit:hover::after {
+  border: 2px solid #13bdd2;
+  background-color: #ffffff;
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all; }
+
+.scherch {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #e21a61;
+  border-radius: 50%;
+  background-color: #13bdd2;
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+  z-index: 8; }
+
+.scherch::after {
+  position: absolute;
+  bottom: -8px;
+  right: -4px;
+  content: "";
+  height: 10px;
+  width: 4px;
+  border-radius: 0 0 4px 4px;
+  background-color: #e21a61;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+  z-index: 7; }
+
+.scherch:hover {
+  border: 3px solid #ffffff;
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all; }
+
+.scherch:hover::after {
+  background-color: #ffffff;
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all; }
+
+.dashboard {
+  background-color: #dbdede; }
+
+.nav-denim {
+  background-color: #13bdd2;
+  color: #ffffff; }
+
+.nav-link {
+  height: 100px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.nav-top-menu {
+  background-color: transparent;
+  position: relative; }
+
+.nav-top-menu:hover {
+  background-color: #000000; }
+
+.nav-top-menu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  margin: 0 auto;
+  width: 14px;
+  height: 14px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: none;
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all; }
+
+.nav-top-menu:hover::after {
+  display: block;
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all; }
+
+.icon-top {
+  max-height: 25px;
+  width: auto;
+  display: block; }

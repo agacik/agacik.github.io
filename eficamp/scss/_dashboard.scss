@@ -1,0 +1,50 @@
+.dashboard {
+    background-color: $silver-color;
+}
+
+.nav-denim {
+    background-color: $topaz-color;
+    color: $white-color;
+}
+
+.nav-link {
+    height: 100px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-top-menu {
+    background-color: transparent;
+    position: relative;
+}
+
+.nav-top-menu:hover {
+    background-color: $black-color;
+}
+
+.nav-top-menu::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    margin: 0 auto;
+    width: 14px;
+    height: 14px;
+    background-color: $black-color;
+    border-radius: 50%;
+    display: none;
+    transition: 0.5s linear all;
+}
+
+.nav-top-menu:hover::after {
+    display: block;
+    transition: 0.5s linear all;
+}
+
+.icon-top {
+    max-height: 25px;
+    width: auto;
+    display: block;
+}
