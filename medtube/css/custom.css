@@ -1,0 +1,125 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #444;
+    background-color: #fff
+}
+
+a.btn-comercial-more {
+    display: inline-block;
+    width: 240px;
+    font-family: 'Open Sans' ,sans-serif;
+    border-radius: 0px;
+    background-clip: padding-box;
+    background: transparent;
+    color: #FFF;
+    background-color: #f36;
+    border: 1px solid #f36;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s 0.2s ease-out;
+    transition: 0.3s 0.2s ease-out;
+    outline: none;
+}
+
+a.btn-comercial-more:focus,
+a.btn-comercial-more:focus-within,
+a.btn-comercial-more:active,
+a.btn-comercial-more:visited,
+    {
+    color: #FFFFFF;
+    background-color: #f36;
+    border: 1px solid #f36;
+}
+
+
+a.btn-comercial-more:hover {
+    color: #FFFFFF;
+    background: #e60039;
+    border: 1px solid #e60039;
+}
+
+button.btn-send {
+    font-family: 'Open Sans' ,sans-serif;
+    border-radius: 0px;
+    background-clip: padding-box;
+    background: transparent;
+    color: #FFF;
+    background-color: #0893dc;
+    border: 1px solid #0893dc;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s 0.2s ease-out;
+    transition: 0.3s 0.2s ease-out;
+    outline: none;
+}
+
+button.btn-send:focus,
+button.btn-send:focus-within,
+button.btn-send:active,
+button.btn-send:visited,
+    {
+    color: #FFFFFF;
+    background-color: #0893dc;
+    border: 1px solid #0893dc;
+}
+
+
+button.btn-send:hover {
+    color: #FFFFFF;
+    background: #056292;
+    border: 1px solid #056292;
+}
+
+button.btn-case-study {
+    font-family: 'Open Sans' ,sans-serif;
+    border-radius: 0px;
+    background-clip: padding-box;
+    background: transparent;
+    color: #FFF;
+    background-color: #f36;
+    border: 1px solid #f36;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s 0.2s ease-out;
+    transition: 0.3s 0.2s ease-out;
+    outline: none;
+}
+
+button.btn-case-study:focus,
+button.btn-case-study:focus-within,
+button.btn-case-study:active,
+button.btn-case-study:visited,
+    {
+    color: #FFFFFF;
+    background-color: #f36;
+    border: 1px solid #f36;
+}
+
+
+button.btn-case-study:hover {
+    color: #FFFFFF;
+    background: #e60039;
+    border: 1px solid #e60039;
+}
+
+
+.newsletter-box {
+    padding: 20px 0;
+}
+
+span.white {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 300;
+}
