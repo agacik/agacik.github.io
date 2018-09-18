@@ -536,7 +536,7 @@ jQuery(function ($) {
         
         $all_fields.val("");
         
-        var $error_border =  "border-bottom: 1px solid red;";
+        var $error_border =  "border-bottom: 1px solid #f36;";
         var contact_form_bValid, user_name_bValid,user_email_bValid,user_email_subject_bValid, user_email_message_bValid;
         
         
@@ -688,8 +688,33 @@ jQuery(function ($) {
 });
 
 
-//Smooth Scrool
-    $('.btn-comercial-more').click(function(){
+    //Smooth Scrool
+
+jQuery(function ($) {
+    
+    $(document).on("click",".btn-offer-more",function(event){
+    var thishref =$(this).attr("href");
+    var url = thishref.substr(thishref.indexOf("#"));
+    if(url.length>1){
+        event.preventDefault();
         $('html, body').animate({
-            scrollTop: $(this.hash).offset().top-76}, 1500 )
-    });
+                  scrollTop: $(url).offset().top-76
+        }, 800);
+    }
+});
+    
+    
+        
+    $(document).on("click",".btn-comercial-more",function(event){
+    var thishref =$(this).attr("href");
+    var url = thishref.substr(thishref.indexOf("#"));
+    if(url.length>1){
+        event.preventDefault();
+        $('html, body').animate({
+                  scrollTop: $(url).offset().top-76
+        }, 3000);
+    }
+});
+    
+    
+});    

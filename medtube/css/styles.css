@@ -1439,7 +1439,7 @@ header.one-page .navbar-nav > li > a span {
     font-style: normal;
     font-weight: 300;
     color: #fff;
-    font-size: 1.52857em;
+    font-size: 1.42857em;
     line-height: 37px;
     max-width: 960px;
     margin: 35px auto 25px;
@@ -2232,20 +2232,22 @@ p.bkb_question_submit_container {
 }
 
 .cta-section-3 h2 {
-    font-size: 26px;
-    line-height: 42px;
+    font-size: 24px;
     color: #FFFFFF;
-    font-weight: 300;
+    font-weight: 700;
     margin: 0;
     font-family: 'Open Sans' ,sans-serif;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 .cta-section-3 p {
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 0.004em;
+    font-size: 16px;
+    font-weight: 500;
     color: #f2f2f2;
+    padding: 0px 42px;
+    margin-bottom: 32px;
 }
 
 .cta-section-3 a {
@@ -3640,11 +3642,7 @@ img.centered {
 }
 
 .article-author {
-    margin-top: 24px;
-    background: #F9FAFB;
-    padding: 30px;
     min-height: 100px;
-    border-bottom: 1px solid #EBEBEB;
     padding-bottom: 24px;
 }
 
@@ -3652,14 +3650,14 @@ img.centered {
     width: 100px;
     max-width: 100%;
     max-height: auto;
-    float: right;
-    border: 1px solid #EBEBEB;
+    float: left;
     padding: 3px;
     margin-top: 0px;
-    margin-left: 12px;
+    margin-right: 12px;
 }
 
 .article-author .about_author {
+    margin-top: 12px;
     margin-bottom: 24px;
 }
 

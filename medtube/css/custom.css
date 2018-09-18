@@ -6,7 +6,7 @@ body {
     background-color: #fff
 }
 
-a.btn-comercial-more {
+a.btn-comercial-more, a.btn-offer-more {
     display: inline-block;
     width: 240px;
     font-family: 'Open Sans' ,sans-serif;
@@ -30,6 +30,10 @@ a.btn-comercial-more:focus,
 a.btn-comercial-more:focus-within,
 a.btn-comercial-more:active,
 a.btn-comercial-more:visited,
+a.btn-offer-more:focus,
+a.btn-offer-more:focus-within,
+a.btn-offer-more:active,
+a.btn-offer-more:visited,
     {
     color: #FFFFFF;
     background-color: #f36;
@@ -37,7 +41,7 @@ a.btn-comercial-more:visited,
 }
 
 
-a.btn-comercial-more:hover {
+a.btn-comercial-more:hover, a.btn-offer-more:hover {
     color: #FFFFFF;
     background: #e60039;
     border: 1px solid #e60039;
@@ -113,13 +117,21 @@ button.btn-case-study:hover {
     border: 1px solid #e60039;
 }
 
+#newsletter-form {
+    padding: 5px 0;
+}
 
 .newsletter-box {
-    padding: 20px 0;
+    vertical-align: middle;
 }
 
 span.white {
     color: #FFF;
     font-size: 16px;
     font-weight: 300;
+}
+
+.error {
+    color: #f36;
+    font-size: 12px;
 }
