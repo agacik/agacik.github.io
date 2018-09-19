@@ -6,10 +6,11 @@ body {
     background-color: #fff
 }
 
-a.btn-comercial-more, a.btn-offer-more {
+a.btn-comercial-more,
+a.btn-offer-more {
     display: inline-block;
     width: 240px;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     border-radius: 0px;
     background-clip: padding-box;
     background: transparent;
@@ -41,14 +42,52 @@ a.btn-offer-more:visited,
 }
 
 
-a.btn-comercial-more:hover, a.btn-offer-more:hover {
+a.btn-comercial-more:hover,
+a.btn-offer-more:hover {
+    color: #FFFFFF;
+    background: #e60039;
+    border: 1px solid #e60039;
+}
+
+a.btn-price {
+    display: inline-block;
+    width: 120px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 0px;
+    background-clip: padding-box;
+    background: transparent;
+    color: #FFF;
+    background-color: #f36;
+    border: 1px solid #f36;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s 0.2s ease-out;
+    transition: 0.3s 0.2s ease-out;
+    outline: none;
+}
+
+a.btn-price:focus,
+a.btn-price:focus-within,
+a.btn-price:active,
+a.btn-price:visited
+    {
+    color: #FFFFFF;
+    background-color: #f36;
+    border: 1px solid #f36;
+}
+
+
+a.btn-price:hover{
     color: #FFFFFF;
     background: #e60039;
     border: 1px solid #e60039;
 }
 
 button.btn-send {
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     border-radius: 0px;
     background-clip: padding-box;
     background: transparent;
@@ -83,7 +122,7 @@ button.btn-send:hover {
 }
 
 button.btn-case-study {
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     border-radius: 0px;
     background-clip: padding-box;
     background: transparent;
@@ -134,4 +173,125 @@ span.white {
 .error {
     color: #f36;
     font-size: 12px;
+}
+
+.price-layout-1 {
+    position: relative;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #f36;
+    margin-bottom: 12px;
+}
+
+.price-layout-1:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.price-layout-1 div.price-content {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 12px;
+    color: #555555;
+    text-align: center;
+}
+
+.price-layout-1 div.price-content-button {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+    padding: 12px;
+    color: #555555;
+    text-align: center;
+}
+
+.price-layout-1 div.price-content:nth-of-type(2n+1) {
+    background-color: #F9FAFB;
+}
+
+.price-layout-1 .price-meta {
+    clear: both;
+    background-color: #f36;
+    padding: 12px;
+}
+
+.price-layout-1 .price-meta img {
+    border-radius: 0;
+    background-clip: padding-box;
+    width: 60px;
+    height: 60px;
+    margin: 1px 15px 0 0;
+    float: left;
+}
+
+.price-layout-1 .price-meta .price-author {
+    overflow: hidden;
+}
+
+.price-layout-1 .price-meta .price-author p {
+    margin: 6px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+.price-layout-1 .price-meta .price-author strong {
+    margin: 6px;
+    font-size: 22px;
+    color: #FFF;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.price-layout-1 .price-meta .price-author span {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #7c7c7c;
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
 }
