@@ -72,15 +72,14 @@ a.btn-price {
 a.btn-price:focus,
 a.btn-price:focus-within,
 a.btn-price:active,
-a.btn-price:visited
-    {
+a.btn-price:visited {
     color: #FFFFFF;
     background-color: #f36;
     border: 1px solid #f36;
 }
 
 
-a.btn-price:hover{
+a.btn-price:hover {
     color: #FFFFFF;
     background: #e60039;
     border: 1px solid #e60039;
@@ -175,6 +174,10 @@ span.white {
     font-size: 12px;
 }
 
+.academy-container .testimony-layout-1 {
+    min-height: 220px;
+}
+
 .price-layout-1 {
     position: relative;
     text-align: left;
@@ -186,8 +189,8 @@ span.white {
 .price-layout-1:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
-    -webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 }
 
 .price-layout-1 div.price-content {
@@ -276,7 +279,7 @@ span.white {
 }
 
 @media (min-width: 768px) {
-.col-sm-15 {
+    .col-sm-15 {
         width: 20%;
         float: left;
     }
@@ -294,4 +297,16 @@ span.white {
         width: 20%;
         float: left;
     }
+}
+
+.section-subheading-img img {
+    height: 60px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    background-color: rgba(256, 256, 256, 0.6);
+    padding: 10px
+}
+
+.section-subheading-img img:hover {
+    background-color: rgba(256, 256, 256, 0.9);
 }

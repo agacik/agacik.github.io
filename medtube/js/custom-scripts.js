@@ -291,6 +291,90 @@ jQuery(function ($) {
         
     }
     
+    
+    // TESTIMONIAL CAROUSEL.
+
+    if ($(".academy-container").length > 0) {
+        
+        var $parent_testimonial_container = $(".academy-container");
+        
+        $parent_testimonial_container.each(function(){
+            
+            var $this = $(this); // Each Carousel.
+            
+            var items_val = 1,
+                  nav_val = false,
+                  autoplay_val = true,
+                  autoplaytimeout_val = 5000;
+            
+            
+            // Status.
+            if ( $this.attr('data-carousel') && $this.data('carousel') !== 1 ) {
+                return '';
+            }
+            
+            // no of items
+            
+             if ( $this.attr('data-items') &&  ! isNaN( $this.data('items') ) ) {
+           
+                items_val = $this.data('items');
+            }
+            
+             // navigation status.
+          
+            
+             if ( $this.attr('data-nav') &&  ! isNaN( $this.data('nav') ) ) {
+           
+                nav_val = $this.data('nav');
+                
+            }
+            
+            // Autoplay status.
+            
+             if ( $this.attr('data-autoplay') &&  ! isNaN( $this.data('autoplay') ) ) {
+                 
+                autoplay_val = $this.data('autoplay');
+            }
+            
+             // Autoplay status.
+            
+             if ( $this.attr('data-autoplaytimeout') &&  ! isNaN( $this.data('autoplaytimeout') ) ) {
+           
+                autoplaytimeout_val = $this.data('autoplaytimeout');
+            }
+            
+         
+            $this.owlCarousel({
+                items: items_val,
+                loop: true,
+                autoplay: autoplay_val,
+                autoplayTimeout: autoplaytimeout_val,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: items_val,
+                        nav: nav_val,
+                        loop: false,
+                    }
+                },
+                nav: nav_val,
+                navText: ["<i class='nav-icon'></i>", "<i class='nav-icon'></i>"]
+            });
+            
+            
+        })
+        
+    }
+    
+    
     // Testimonial CONTAINER 2
     
      if ($(".testimonial-container-2").length > 0) {
