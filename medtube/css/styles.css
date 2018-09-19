@@ -4610,8 +4610,7 @@ ol.rounded-list li {
     list-style: none;
 }
 
-.rounded-list a,
-.rounded-list a:visited {
+.rounded-list p {
     position: relative;
     display: block;
     padding: 0.4em 0.4em 0.4em 20px;
@@ -4625,17 +4624,17 @@ ol.rounded-list li {
     cursor: auto;
 }
 
-.rounded-list a:hover {
+.rounded-list p:hover {
     color: #444;
     background: #EEEEEE;
 }
 
-.rounded-list a:hover:before {
+.rounded-list p:hover:before {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 }
 
-.rounded-list a:before {
+.rounded-list p:before {
     content: counter(li);
     counter-increment: li;
     position: absolute;
