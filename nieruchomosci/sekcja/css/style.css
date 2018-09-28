@@ -1,0 +1,108 @@
+/*Sekcja dla Nieruchomości*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section-wycena {
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+    z-index: 99;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.3em;
+    text-shadow: -11px 11px 15px rgba(25, 25, 25, 0.6);
+    background-color: rgba(45, 57, 90, 0.9);
+    position: relative;
+    overflow: hidden
+}
+
+.section-wycena .text-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 80px;
+    margin: 0 40px;
+    text-align: center;
+    min-height: 80px;
+}
+
+.section-wycena .text-container h3 {
+    text-align: center;
+}
+
+.section-wycena .btn-container {
+    display: inline-block;
+    position: relative;
+        vertical-align: middle;
+    background-color: rgba(45, 57, 90, 0.9);
+}
+
+.section-wycena .btn-container .btn-wycena {
+    border: solid 2px transparent;
+    color: #FFFFFF;
+    background-color: #ED1B34;
+    text-transform: uppercase;
+    width: 300px;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    -webkit-box-shadow: 1px 2px 4px rgba(66, 1, 1, 0.5);
+    box-shadow: 1px 2px 4px rgba(66, 1, 1, 0.5);
+    z-index: 99;
+    text-align: center;
+    outline: none;
+}
+
+.section-wycena .btn-container .btn-wycena:hover {
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #2D395A;
+    color: #FFFFFF;
+    border: solid 2px transparent;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.section-wycena .btn-container .a-wycena {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+@media (max-width: 1196px) {
+    .section-wycena {
+        height: 160px;
+    }
+
+    .section-wycena .btn-container {
+        display: inline-block;
+        position: relative;
+        top: 0;
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    .section-wycena .text-container {
+        display: inline;
+        width: 100%;
+        margin: 0;
+        line-height: 80px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .section-wycena .text-container {
+        display: inline;
+        width: 100%;
+        margin: 0;
+        line-height: 40px;
+    }
+
+}

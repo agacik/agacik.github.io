@@ -1,0 +1,37 @@
+/*Przycisk dla Nieruchomości*/
+
+.btn-wycena {
+    border: solid 2px transparent;
+    color: #FFFFFF;
+    background-color: #ED1B34;
+    text-transform: uppercase;
+    width: 300px;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    -webkit-box-shadow: 1px 2px 4px rgba(66, 1, 1, 0.5);
+    box-shadow: 1px 2px 4px rgba(66, 1, 1, 0.5);
+    z-index: 99;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: calc(15vh - 36px);
+    outline: none;
+}
+
+.btn-wycena:hover {
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #2D395A;
+    color: #FFFFFF;
+    border: solid 2px transparent;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.a-wycena {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 600;
+}

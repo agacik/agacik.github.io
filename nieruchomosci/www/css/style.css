@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.background-img {
+    background-image: url('../img/bg.jpg');
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+
+/*Navigacja dla Nieruchomości - START*/
+.nav {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    float: left;
+    font-weight: 600;
+    overflow: hidden;
+    background: #ed1b34;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    color: #FFF;
+}
+
+.navbar-bonus {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.nav-box {
+    line-height: 70px;
+    font-weight: 600;
+    overflow: hidden;
+    top: 0px;
+    right: 0px;
+    z-index: 5000;
+    color: #FFF;
+    list-style: none;
+    text-align: right;
+}
+
+.nav-item {
+    width: 200px;
+    display: inline-block;
+}
+
+.nav-logo {
+    max-height: 50px;
+    width: auto;
+    float: left;
+    text-align: right;
+}
+
+.nav .nav-link {
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+/*Navigacja dla Nieruchomości - START*/
+
+
+/*Formularz dla Nieruchomości - START*/
+.form-section {
+    padding: 120px 0 80px 0;
+}
+
+.form-bonus {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: #ED1B34 2px solid;
+    overflow: hidden;
+}
+
+.form-title {
+    background-color: #ED1B34;
+    color: #FFF;
+    height: 80px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-shadow: -14px 14px 18px #000000;
+    line-height: 80px;
+}
+
+.form-subtitle-left {
+    background-color: #2D395A;
+    color: #FFF;
+    height: 60px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-shadow: -14px 14px 18px #000000;
+    line-height: 60px;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 100;
+}
+
+.form-subtitle-left:after {
+    background-color: #2D395A;
+    height: 60px;
+    width: 100%;
+    content: "";
+    position: absolute;
+    left: -35px;
+    margin-bottom: 20px;
+    z-index: -1;
+}
+
+.form-subtitle-right {
+    background-color: #2D395A;
+    color: #FFF;
+    height: 60px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-shadow: -14px 14px 18px #000000;
+    line-height: 60px;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 100;
+}
+
+.form-subtitle-right:after {
+    background-color: #2D395A;
+    height: 60px;
+    width: 100%;
+    content: "";
+    position: absolute;
+    right: -35px;
+    margin-bottom: 20px;
+    z-index: -1;
+}
+
+.form-col {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.btn-form-wrapper {
+    margin-top: 20px;
+    position: relative;
+}
+
+/*Formularz dla Nieruchomości - END*/
+
+
+/*Modal dla Nieruchomości - START*/
+.modal-content-custom {
+    border-radius: 0px;
+    border: #2D395A 2px solid;
+}
+
+.modal-header .close {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    outline: none;
+}
+
+.modal-header-custom {
+    background-color: #2D395A;
+    color: #FFF;
+    height: 80px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-shadow: -14px 14px 18px #000000;
+    line-height: 80px;
+    padding: 0;
+    display: block;
+    position: relative;
+    border-radius: 0px;
+}
+
+.modal-body-custom {
+    border-top: 1px solid #e9ecef;
+    vertical-align: middle;
+    color: #2D395A;
+    padding: 20px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0;
+}
+
+.modal-body-custom p {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.modal-body-custom p .fas {
+    vertical-align: top;
+}
+
+.tooltip-inner {
+    max-width: 350px;
+    /* If max-width does not work, try using width instead */
+    width: 350px;
+}
+
+.tooltip {
+    margin: 10px;
+}
+
+.pobierz-poradnik-title {
+    font-size: 1.2rem;
+    color: #ED1B34;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.star {
+    color: #ED1B34;
+    font-weight: 700;
+}
+
+/*Modal dla Nieruchomości - END*/
+
+.section-wycena {
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+    z-index: 99;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.3em;
+    text-shadow: -11px 11px 15px rgba(25, 25, 25, 0.6);
+    background-color: rgba(45, 57, 90, 0.9);
+    position: relative;
+    overflow: hidden
+}
+
+.section-wycena .text-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 80px;
+    margin: 0 40px;
+    text-align: center;
+    min-height: 80px;
+}
+
+.section-wycena .text-container h3 {
+    text-align: center;
+    line-height: 80px;
+}
+
+.section-wycena .btn-container {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    background-color: rgba(45, 57, 90, 0.9);
+}
+
+.btn-wycena {
+    border: solid 2px transparent;
+    color: #FFFFFF;
+    background-color: #ED1B34;
+    text-transform: uppercase;
+    width: 300px;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    -webkit-box-shadow: 1px 2px 4px rgba(66, 1, 1, 0.5);
+    box-shadow: 1px 2px 4px rgba(66, 1, 1, 0.5);
+    z-index: 99;
+    text-align: center;
+    outline: none;
+}
+
+.btn-wycena:hover {
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #2D395A;
+    color: #FFFFFF;
+    border: solid 2px transparent;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.section-wycena .btn-container .a-wycena {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+
+.form-group {
+    z-index: 2;
+}
+.poradnik {
+    position: absolute;
+    top: -180px;
+    max-width: 180px;
+    -webkit-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.6);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    margin: 20px 80px;
+    z-index: 1;
+}
+
+.section-content {
+    margin-bottom: 40px;
+    counter-reset: section;
+}
+
+.content-column {
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.content-column:first-of-type::after {
+    content: '1';
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 10rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.content-column:nth-of-type(n+1)::after {
+    counter-increment: section;
+    content: counter(section);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 10rem;
+    font-weight: 700;
+    color: rgba(45, 57, 90, 0.2);
+}
+
+.content-title {
+    background-color: #2D395A;
+    color: #FFF;
+    height: 60px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-shadow: -14px 14px 18px #000000;
+    line-height: 60px;
+    position: relative;
+    z-index: 100;
+}
+
+.content-paragraph {
+    padding: 20px;
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 1196px) {
+    .section-wycena {
+        height: 160px;
+    }
+
+    .section-wycena .btn-container {
+        display: inline-block;
+        position: relative;
+        top: 0;
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    .section-wycena .text-container {
+        display: inline;
+        width: 100%;
+        margin: 0;
+        line-height: 80px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .section-wycena .text-container {
+        display: inline;
+        width: 100%;
+        margin: 0;
+        line-height: 40px;
+    }
+
+}
