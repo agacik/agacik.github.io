@@ -329,8 +329,11 @@ body {
 }
 
 .section-content {
-    margin-bottom: 40px;
     counter-reset: section;
+}
+
+.content-box {
+    margin-bottom: 40px;
 }
 
 .content-column {
