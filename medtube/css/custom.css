@@ -9,7 +9,7 @@ body {
 a.btn-comercial-more,
 a.btn-offer-more {
     display: inline-block;
-    width: 240px;
+    width: 340px;
     font-family: 'Open Sans', sans-serif;
     border-radius: 0px;
     background-clip: padding-box;
@@ -83,6 +83,46 @@ a.btn-price:hover {
     color: #FFFFFF;
     background: #e60039;
     border: 1px solid #e60039;
+}
+
+a.btn-contact {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .92857em;
+    line-height: 13px;
+    padding: 11px 15px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: gray;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    vertical-align: middle;
+}
+
+a.btn-contact:focus,
+a.btn-contact:focus-within,
+a.btn-contact:active,
+a.btn-contact:visited {
+    color: gray;
+    background-color: transparent;
+    border: 1px solid  #5a5a5a;
+}
+
+
+a.btn-contact:hover {
+    text-decoration: none;
+    border-color: #5a5a5a;
+    background-color: transparent;
+    color: #5a5a5a;
+    outline: none;
 }
 
 button.btn-send {
@@ -263,6 +303,16 @@ span.white {
     color: #7c7c7c;
 }
 
+.navbar-custom-contact {
+    line-height: 76px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.top-phone-no {
+    margin: 0 20px;
+}
+
 .col-xs-15,
 .col-sm-15,
 .col-md-15,
@@ -305,4 +355,50 @@ span.white {
     margin-right: 20px;
     background-color: rgba(256, 256, 256, 1);
     padding: 10px
+}
+
+@media only screen and (max-width: 479px) and (min-width: 0px) {
+.navbar-default .navbar-nav a.btn-contact {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .92857em;
+    line-height: 13px;
+    padding: 11px 15px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: gray;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    vertical-align: middle;
+}
+
+a.btn-contact:focus,
+a.btn-contact:focus-within,
+a.btn-contact:active,
+a.btn-contact:visited {
+    color: gray;
+    background-color: transparent;
+    border: 1px solid  #5a5a5a;
+}
+
+
+a.btn-contact:hover {
+    text-decoration: none;
+    border-color: #5a5a5a;
+    background-color: transparent;
+    color: #5a5a5a;
+    outline: none;
+}
+    
+    .section-banner {
+        height: 100%;
+    }
 }

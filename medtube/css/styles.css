@@ -261,7 +261,7 @@ a:focus {
 }
 
 blockquote {
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #626262;
 }
 
@@ -271,7 +271,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     color: #444;
@@ -484,7 +484,7 @@ strong {
     border: 0px solid #9fe0f7;
     -webkit-transition: 0.2s 0.2s ease-out;
     transition: 0.2s 0.2s ease-out;
-        border: 1px solid #0893dc;
+    border: 1px solid #0893dc;
 }
 
 #backTop.custom:hover {
@@ -632,7 +632,7 @@ blockquote {
     padding: 12px 26px 26px 42px;
     margin: 0 0 20px;
     font-size: 14px;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background: #FFFFFF;
     position: relative;
     border: 1px solid #EBEBEB;
@@ -740,7 +740,7 @@ ol li {
     font-size: 24px;
     margin-bottom: 24px;
     text-transform: uppercase;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.03em;
     font-weight: 700;
     color: #444;
@@ -780,7 +780,7 @@ ol li {
     font-size: 24px;
     margin-bottom: 24px;
     text-transform: uppercase;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.03em;
     font-weight: 700;
     color: #ffffff;
@@ -1058,18 +1058,18 @@ a.btn-sm-load-more {
 .main-header {
     height: auto;
     left: 0;
-    position: absolute;
+    position: relative;
     top: 0;
     width: 100%;
     z-index: 1000;
 }
 
 .main-header .sticky-wrapper {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 1);
 }
 
 .main-header .top-bar {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(255, 255, 255, 0.4);
     line-height: 38px;
     color: #FFFFFF;
     font-size: 14px;
@@ -1215,13 +1215,18 @@ a.btn-sm-load-more {
 /***********************************************************************************************/
 /* 03. MAIN NAVIGATION MENU */
 /***********************************************************************************************/
-.navbar-header a.logo {
-    margin-top: 16px;
+.navbar-header a.brand-logo {
+    margin: 19px 0;
+    margin-left: 7px;
     display: inline-block;
+    vertical-align: middle;
 }
 
-.navbar-header a.logo img {
+.navbar-header a.brand-logo img {
     display: block;
+    height: 38px;
+    max-height: 38px;
+    vertical-align: middle;
 }
 
 .navbar-default {
@@ -1229,10 +1234,11 @@ a.btn-sm-load-more {
     background: transparent;
     margin-bottom: 0px;
     padding: 0 !important;
+    height: 100%;
 }
 
 .navbar-default .navbar-nav {
-    margin-top: 10px;
+    margin-top: 0;
 }
 
 .navbar-default .navbar-nav > li {
@@ -1240,7 +1246,7 @@ a.btn-sm-load-more {
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #FFF;
+    color: #444;
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
@@ -1381,10 +1387,12 @@ header.one-page .navbar-nav > li > a span {
     opacity: 1;
     -webkit-transition: opacity 0.3s ease-out;
     transition: opacity 0.3s ease-out;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 1);
     width: 100%;
     padding: 0px;
     margin: 0;
+    -webkit-box-shadow:  0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow:  0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 }
 
 /***********************************************************************************************/
@@ -1411,12 +1419,13 @@ header.one-page .navbar-nav > li > a span {
 }
 
 .section-banner {
-    padding: 180px 0px 180px;
+    padding: 50px 0px 50px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
     overflow: hidden;
+    height: 400px;
 }
 
 .banner-content {
@@ -1424,7 +1433,7 @@ header.one-page .navbar-nav > li > a span {
 }
 
 .banner-content h2 {
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 48px;
     line-height: 60px;
     font-weight: 700;
@@ -1434,7 +1443,7 @@ header.one-page .navbar-nav > li > a span {
 }
 
 .banner-content h3 {
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #FFFFFF;
     font-style: normal;
     font-weight: 300;
@@ -1492,7 +1501,7 @@ header.one-page .navbar-nav > li > a span {
 }
 
 #jumbotron_1 .jumbotron-content h2 {
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 48px;
     line-height: 60px;
     font-weight: 700;
@@ -1506,7 +1515,7 @@ header.one-page .navbar-nav > li > a span {
 }
 
 #jumbotron_1 .jumbotron-content h3 {
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
@@ -1635,7 +1644,7 @@ div.remodal span.bkbm-btn-clear {
 #result {
     height: 20px;
     font-size: 16px;
-    font-family: 'Open Sans' sans-serif;
+    font-family: 'Open Sans'sans-serif;
     color: #333;
     padding: 5px;
     margin-bottom: 10px;
@@ -1833,7 +1842,7 @@ div.suggestionList ul li a:visited {
     text-transform: uppercase;
     font-size: 24px;
     line-height: 42px;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.03em;
     font-weight: 700;
     color: #444;
@@ -1907,7 +1916,7 @@ h2.only-heading {
     text-transform: uppercase;
     font-size: 24px;
     line-height: 42px;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.03em;
     font-weight: 700;
     color: #444;
@@ -2088,7 +2097,7 @@ p.bkb_question_submit_container {
     display: block;
     font-size: 46px;
     font-weight: 300;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 46px;
     margin: 5px 0;
     position: relative;
@@ -2102,7 +2111,7 @@ p.bkb_question_submit_container {
     font-size: 48px;
     display: inline-block;
     margin-left: 5px;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #9a9a9a;
 }
@@ -2110,7 +2119,7 @@ p.bkb_question_submit_container {
 .counter-layout-9 span.counter_text {
     color: #eb464a;
     display: block;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     letter-spacing: 0.1em;
     line-height: 32px;
@@ -2178,7 +2187,7 @@ p.bkb_question_submit_container {
     line-height: 42px;
     color: #FFFFFF;
     margin: 0;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     letter-spacing: 0.01em;
     text-transform: uppercase;
@@ -2236,7 +2245,7 @@ p.bkb_question_submit_container {
     color: #FFFFFF;
     font-weight: 700;
     margin: 0;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 50px;
@@ -2268,7 +2277,7 @@ p.bkb_question_submit_container {
     font-size: 42px;
     line-height: 48px;
     margin-bottom: 32px;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
 
@@ -2306,7 +2315,7 @@ p.bkb_question_submit_container {
 
 .about-us-section-2 .activity_box h4 {
     position: relative;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #6f6f6f;
     margin-bottom: 0px;
     font-weight: 500;
@@ -2491,7 +2500,7 @@ p.bkb_question_submit_container {
 }
 
 .section-news-block .news-wrapper .news-content .news-text h5 a {
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 32px;
     color: #444444;
     font-size: 18px;
@@ -2563,7 +2572,7 @@ p.bkb_question_submit_container {
     text-transform: uppercase;
     font-size: 24px;
     line-height: 42px;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.03em;
     font-weight: 700;
     color: #444;
@@ -3305,7 +3314,7 @@ p.voting-closed-message {
     font-size: 36px;
     line-height: 24px;
     font-weight: 500;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 24px 0;
     text-transform: uppercase;
     letter-spacing: 0.02em;
@@ -3816,7 +3825,7 @@ ul.pagination li:last-child {
     top: 15px;
     color: #F8F8F8;
     font-size: 32px;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .commentslist li article header h5 {
@@ -3982,7 +3991,7 @@ ul.pagination li:last-child {
     text-transform: uppercase;
     font-size: 18px;
     color: #626262;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     position: relative;
 }
@@ -4050,7 +4059,7 @@ ul.pagination li:last-child {
     margin-top: 12px;
     font-size: 18px;
     color: #0893dc;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     position: relative;
 }
@@ -4105,7 +4114,7 @@ ul.pagination li:last-child {
     text-transform: uppercase;
     font-size: 18px;
     color: #626262;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     position: relative;
 }
@@ -4171,7 +4180,7 @@ ul.pagination li:last-child {
     text-transform: uppercase;
     font-size: 18px;
     color: #626262;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     position: relative;
 }
@@ -4239,7 +4248,7 @@ ul.pagination li:last-child {
     text-transform: uppercase;
     font-size: 18px;
     color: #626262;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     position: relative;
 }
@@ -4366,7 +4375,7 @@ ul.pagination li:last-child {
 
 .ff-counter-layout-2 h4 {
     margin: 0px;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     text-transform: uppercase;
@@ -4399,12 +4408,12 @@ ul.pagination li:last-child {
     font-size: 36px;
     color: #0893dc;
     font-weight: 400;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .ff-counter-layout-3 h4 {
     margin-top: 0px;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     text-align: left;
@@ -4440,7 +4449,7 @@ ul.pagination li:last-child {
     margin-top: 24px;
     text-transform: uppercase;
     font-size: 18px;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     position: relative;
 }
@@ -4489,7 +4498,7 @@ ul.pagination li:last-child {
 .section-kb-categories .kb-cat-block h2 {
     font-size: 18px;
     color: #0893dc;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     position: relative;
 }
@@ -4546,7 +4555,7 @@ ul.pagination li:last-child {
 .kb-cat-lists h2 {
     font-size: 18px;
     color: #626262;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     position: relative;
 }
@@ -4791,7 +4800,7 @@ ol.none-list li a:before {
 }
 
 .section-our-team .team-layout-1 .team-meta h3 {
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     margin: 0;
     font-size: 18px;
@@ -4802,7 +4811,7 @@ ol.none-list li a:before {
 .section-our-team .team-layout-1 .team-meta p {
     color: #ffffff;
     font-size: 14px;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     text-transform: capitalize;
 }
@@ -4897,7 +4906,7 @@ ol.none-list li a:before {
 }
 
 .section-our-team .team-layout-2 .team-meta h3 {
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     margin: 0;
     font-size: 18px;
@@ -4908,7 +4917,7 @@ ol.none-list li a:before {
 .section-our-team .team-layout-2 .team-meta p {
     color: #ffffff;
     font-size: 14px;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     text-transform: capitalize;
 }
@@ -5130,14 +5139,14 @@ ol.none-list li a:before {
     font-size: 32px;
     color: #0893dc;
     font-weight: 400;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .section-counter-2 .counter-block-2 h4 {
     margin-top: 12px;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #FFFFFF;
     letter-spacing: 0.03em;
@@ -5189,7 +5198,7 @@ ol.none-list li a:before {
 
 .testimony-layout-1 div.testimony-content {
     position: relative;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.03em;
@@ -5234,7 +5243,7 @@ ol.none-list li a:before {
     color: #0893dc;
     text-transform: uppercase;
     font-weight: 400;
-    
+
 }
 
 .testimony-layout-1 .testimony-meta .testimony-author span {
@@ -5332,12 +5341,12 @@ ol.none-list li a:before {
     font-size: 36px;
     color: #0893dc;
     font-weight: 400;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .section-counter-testimonial .counter-block-2 h4 {
     margin-top: 0px;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     text-align: left;
@@ -5356,7 +5365,7 @@ ol.none-list li a:before {
 
 .section-counter-testimonial .testimony-layout-2 p {
     position: relative;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 0.03em;
@@ -5555,7 +5564,7 @@ ol.none-list li a:before {
     font-size: 170px;
     font-weight: 600;
     letter-spacing: 0.1em;
-    font-family: 'Open Sans' ,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     margin: 80px 0;
     color: #0893dc;
@@ -6153,6 +6162,11 @@ footer a:hover {
         text-align: center;
     }
 
+
+    .navbar-default {
+        height: auto;
+    }
+
     .navbar-default .navbar-nav li ul.drop-down {
         top: 68px;
     }
@@ -6170,8 +6184,13 @@ footer a:hover {
         padding: 5px;
     }
 
+
     .navbar-default .navbar-toggle span.icon-bar {
-        height: 1px;
+        height: 2px;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #444;
     }
 
     .navbar-default .navbar-right {
@@ -6350,6 +6369,16 @@ footer a:hover {
         color: #0893dc;
     }
 
+    .navbar-default .navbar-toggle {
+        border: none;
+        border-color: transparent;
+    }
+
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background-color: #FFF;
+    }
+
     .navbar-default .nav > li > a,
     .navbar-default header.one-page .navbar-nav > li > a {
         padding: 5px 15px;
@@ -6361,7 +6390,7 @@ footer a:hover {
     }
 
     .navbar-default .navbar-collapse {
-        background: #0d0d0d;
+        background: #FFF;
         margin-top: 12px;
         padding: 12px 0;
     }
@@ -6398,7 +6427,7 @@ footer a:hover {
         margin: 0px;
         width: 100%;
         text-align: left;
-        background: rgba(0, 0, 0, 0.7);
+        background: #FFF;
     }
 
     .navbar-default .navbar-nav li a {
@@ -6594,6 +6623,16 @@ footer a:hover {
         height: 1px;
     }
 
+    .navbar-default .navbar-toggle {
+        border: none;
+        border-color: transparent;
+    }
+
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background-color: #FFF;
+    }
+
     .navbar-default a:after {
         display: none;
     }
@@ -6602,7 +6641,7 @@ footer a:hover {
         margin: 0px;
         width: 100%;
         text-align: left;
-        background: rgba(0, 0, 0, 0.7);
+        background: #FFF;
     }
 
     .navbar-default .navbar-nav li {
