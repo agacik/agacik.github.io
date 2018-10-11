@@ -328,6 +328,8 @@ body {
     z-index: 1;
 }
 
+
+/*Trzy kroki - START*/
 .section-content {
     counter-reset: section;
 }
@@ -384,6 +386,49 @@ body {
     line-height: 1.6rem;
     margin-bottom: 0;
 }
+
+/*Trzy kroki - END*/
+
+
+/*Landing Page + Widok 3D - START*/
+.section-vod {
+    counter-reset: section;
+}
+
+.vod-box {
+    margin-bottom: 40px;
+}
+
+.vod-column {
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.vod-title {
+    background-color: #2D395A;
+    color: #FFF;
+    height: 60px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-shadow: -14px 14px 18px #000000;
+    line-height: 60px;
+    position: relative;
+    z-index: 100;
+}
+
+.vod-paragraph {
+    padding: 20px;
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    margin-bottom: 0;
+}
+
+/*Landing Page + Widok 3D - END*/
+
 
 @media (max-width: 1196px) {
     .section-wycena {
