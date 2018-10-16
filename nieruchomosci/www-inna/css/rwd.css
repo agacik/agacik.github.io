@@ -1,0 +1,66 @@
+@media (max-width: 576px) {
+    .stepwizard-step p {
+        margin-top: 20px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 0.8rem;
+        margin-left: 5px;
+        margin-right: 5px;
+        -webkit-transform: rotate(-40deg);
+        transform: rotate(-40deg);
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+
+    .stepwizard-form {
+        padding: 20px;
+        padding-bottom: 50px;
+    }
+
+    .stepwizard-title h1 {
+        letter-spacing: 0.1rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    .stepwizard-subtitle h3 {
+        font-size: 1.3rem;
+    }
+
+    .stepwizard-step {
+        width: 33.3%;
+        margin-bottom: 10px;
+    }
+
+    .btn-wrapper {
+        text-align: center;
+    }
+
+    .formularz-wrapper {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .has-error .invalid-feedback {
+        font-size: 60%;
+    }
+
+    .btn-wrapper .btn-custom {
+        margin-top: 30px;
+    }
+
+
+
+}
+
+@media (max-width: 800px) {
+    .section-wycena .text-container {
+        display: inline;
+        width: 100%;
+        margin: 0;
+        line-height: 40px;
+    }
+
+}
