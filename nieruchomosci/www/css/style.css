@@ -7,6 +7,7 @@ body {
     position: relative;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif,
 }
 
 .background-img {
@@ -87,9 +88,13 @@ body {
 
 .form-title {
     background-color: #ED1B34;
-    color: #FFF;
     height: 80px;
     width: 100%;
+    position: relative;
+}
+
+.form-title h2 {
+    color: #FFF;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
@@ -106,7 +111,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-shadow: -14px 14px 18px #000000;
     line-height: 60px;
     position: relative;
@@ -120,6 +125,7 @@ body {
     width: 100%;
     content: "";
     position: absolute;
+    top: 0;
     left: -35px;
     margin-bottom: 20px;
     z-index: -1;
@@ -133,7 +139,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-shadow: -14px 14px 18px #000000;
     line-height: 60px;
     position: relative;
@@ -148,6 +154,7 @@ body {
     content: "";
     position: absolute;
     right: -35px;
+    top: 0;
     margin-bottom: 20px;
     z-index: -1;
 }
@@ -155,6 +162,11 @@ body {
 .form-col {
     display: inline-block;
     vertical-align: top;
+}
+
+.form-control {
+    position: relative;
+    z-index: 2;
 }
 
 .btn-form-wrapper {
@@ -182,19 +194,22 @@ body {
 
 .modal-header-custom {
     background-color: #2D395A;
-    color: #FFF;
     height: 80px;
     width: 100%;
+    display: block;
+    position: relative;
+    border-radius: 0px;
+    padding: 0;
+}
+
+.modal-header-custom h2 {
+    color: #FFF;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
     font-size: 1.8rem;
     text-shadow: -14px 14px 18px #000000;
     line-height: 80px;
-    padding: 0;
-    display: block;
-    position: relative;
-    border-radius: 0px;
 }
 
 .modal-body-custom {
@@ -279,7 +294,8 @@ body {
     background-color: rgba(45, 57, 90, 0.9);
 }
 
-.btn-wycena {
+.btn-wycena,
+.btn-wycena:focus {
     border: solid 2px transparent;
     color: #FFFFFF;
     background-color: #ED1B34;
@@ -312,10 +328,16 @@ body {
     font-weight: 600;
 }
 
+.btn-custom {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+}
 
 .form-group {
     z-index: 2;
 }
+
 .poradnik {
     position: absolute;
     top: -180px;
@@ -373,7 +395,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.3em;
     text-shadow: -14px 14px 18px #000000;
     line-height: 60px;
     position: relative;
@@ -402,22 +424,24 @@ body {
 .vod-column {
     background-color: rgba(255, 255, 255, 0.8);
     overflow: hidden;
-    min-height: 300px;
 }
 
 .vod-title {
     background-color: #2D395A;
-    color: #FFF;
     height: 60px;
     width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.vod-title h3 {
+    color: #FFF;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
     font-size: 1.4rem;
     text-shadow: -14px 14px 18px #000000;
     line-height: 60px;
-    position: relative;
-    z-index: 100;
 }
 
 .vod-paragraph {
@@ -427,8 +451,88 @@ body {
     margin-bottom: 0;
 }
 
+
 /*Landing Page + Widok 3D - END*/
 
+/*Footer - START*/
+.footer {
+    width: 100%;
+    height: auto;
+    float: left;
+    font-weight: 600;
+    overflow: hidden;
+    background: #ed1b34;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer-menu-top {
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 1px;
+    padding-right: 1px;
+    font-size: 18px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-menu-bottom {
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 1px;
+    padding-right: 1px;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-menu-top a, .footer-menu-bottom a {
+    text-decoration: none;
+    color: #FFF;
+    cursor: pointer;
+    text-align: center;
+}
+
+.footer-menu-top a:hover, .footer-menu-bottom a:hover {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    outline: none;
+}
+
+.footer-author {
+    line-height: 70px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #FFF;
+}
+
+.footer-author strong {
+    font-weight: 700;
+}
+
+.footer-author a, .footer-author a:hover {
+    text-decoration: none;
+    color: #FFF;
+    outline: none;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+
+/*Footer - END*/
 
 @media (max-width: 1196px) {
     .section-wycena {
@@ -450,9 +554,15 @@ body {
         line-height: 80px;
     }
 
+    .form-title h2 {
+        font-size: 1.2rem;
+        line-height: 40px;
+        margin: 0;
+    }
+
 }
 
-@media (max-width: 800px) {
+@media (max-width: 992px) {
     .section-wycena .text-container {
         display: inline;
         width: 100%;
@@ -460,4 +570,77 @@ body {
         line-height: 40px;
     }
 
+    .poradnik {
+        display: none;
+    }
+
+    .vod-title h3 {
+        font-size: 1rem;
+    }
+
+    .content-column {
+        min-height: 225px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .nav-logo {
+        max-height: 40px;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .navbar-bonus {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .content-title {
+        font-size: 1.1rem;
+    }
+
+    .vod-title h3 {
+        font-size: 0.6rem;
+    }
+
+    .btn-wycena, .btn-wycena:focus {
+        width: 100%;
+        font-size: 0.8rem;
+        display: block;
+        text-decoration: none;
+    }
+
+    .modal-header-custom h2 {
+        font-size: 1rem;
+    }
+
+    .modal-header-custom h2 span {
+        display: none;
+    }
+
+    .modal-body-custom span {
+        display: block;
+    }
+
+    .pobierz-poradnik-title {
+        font-size: 0.8rem;
+    }
+    
+    .footer-menu-top, .footer-menu-bottom {
+        display: none;
+    }
+    
+    .footer-left, .footer-right  {
+        line-height: 35px;
+        text-align: center;
+    }
+    
+    .form-subtitle-left, .form-subtitle-right {
+       font-size: 1rem; 
+    }
 }
