@@ -747,20 +747,6 @@ ol li {
     margin-bottom: 50px;
 }
 
-.section-heading:before {
-    position: absolute;
-    content: '';
-    width: 120px;
-    height: 24px;
-    display: block;
-    top: 36px;
-    left: 50%;
-    margin-left: -60px;
-    background-image: url("../images/heading_seperator_alt.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
 .section-heading span {
     font-style: 400;
     color: #444;
@@ -1194,13 +1180,13 @@ a.btn-sm-load-more {
 
 .logo {
     margin: 10px;
-    background-color: rgba(256, 256, 256, 0.5);
+    background-color: rgba(256, 256, 256, 1);
     height: 80px;
 }
 
 .logo:hover {
     margin: 10px;
-    background-color: rgba(256, 256, 256, 0.8);
+    background-color: rgba(256, 256, 256, 1);
 }
 
 .header-container {
