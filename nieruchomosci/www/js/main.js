@@ -12,7 +12,6 @@ $(document).ready(function () {
 
     document.getElementById("btn-wycena-submit").addEventListener("click", function (event) {
         event.preventDefault();
-       event.stopPropagation();
 
         var rodzajNieruchomosci = document.getElementById("rodzajNieruchomosci");
         var rodzajNieruchomosciWartosc = rodzajNieruchomosci.options[rodzajNieruchomosci.selectedIndex].value;
