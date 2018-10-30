@@ -745,6 +745,8 @@ jQuery(function ($) {
     }
 
 
+    
+       
     //WoW Animation.
     animations();
 

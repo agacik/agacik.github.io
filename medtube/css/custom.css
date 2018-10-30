@@ -113,7 +113,7 @@ a.btn-contact:active,
 a.btn-contact:visited {
     color: gray;
     background-color: transparent;
-    border: 1px solid  #5a5a5a;
+    border: 1px solid #5a5a5a;
 }
 
 
@@ -358,47 +358,62 @@ span.white {
 }
 
 @media only screen and (max-width: 479px) and (min-width: 0px) {
-.navbar-default .navbar-nav a.btn-contact {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: .92857em;
-    line-height: 13px;
-    padding: 11px 15px;
-    border: 1px solid transparent;
-    background-color: transparent;
-    color: gray;
-    text-transform: uppercase;
-    border-radius: 4px;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
-    vertical-align: middle;
-}
+    .navbar-default .navbar-nav a.btn-contact {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: .92857em;
+        line-height: 13px;
+        padding: 11px 15px;
+        border: 1px solid transparent;
+        background-color: transparent;
+        color: gray;
+        text-transform: uppercase;
+        border-radius: 4px;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        -webkit-transition: all .2s ease-in;
+        transition: all .2s ease-in;
+        vertical-align: middle;
+    }
 
-a.btn-contact:focus,
-a.btn-contact:focus-within,
-a.btn-contact:active,
-a.btn-contact:visited {
-    color: gray;
-    background-color: transparent;
-    border: 1px solid  #5a5a5a;
-}
+    a.btn-contact:focus,
+    a.btn-contact:focus-within,
+    a.btn-contact:active,
+    a.btn-contact:visited {
+        color: gray;
+        background-color: transparent;
+        border: 1px solid #5a5a5a;
+    }
 
 
-a.btn-contact:hover {
-    text-decoration: none;
-    border-color: #5a5a5a;
-    background-color: transparent;
-    color: #5a5a5a;
-    outline: none;
-}
-    
+    a.btn-contact:hover {
+        text-decoration: none;
+        border-color: #5a5a5a;
+        background-color: transparent;
+        color: #5a5a5a;
+        outline: none;
+    }
+
     .section-banner {
         height: 100%;
     }
+}
+
+#newsletter {
+    padding-top: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .stuck {
+        position: fixed;
+    }
+
+    li {
+        font-size: 13px;
+    }
+
 }
