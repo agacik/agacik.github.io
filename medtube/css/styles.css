@@ -341,6 +341,7 @@ textarea {
     background-clip: padding-box;
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    margin: 10px 0;
 }
 
 input[type=text]:focus,

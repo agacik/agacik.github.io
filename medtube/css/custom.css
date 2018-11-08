@@ -401,6 +401,19 @@ span.white {
     .section-banner {
         height: 100%;
     }
+
+    .widget-post-category li strong {
+        font-size: 13px;
+    }
+
+    .banner-content h3 {
+        font-size: 1.2em;
+        line-height: 25px;
+    }
+    
+    a.btn-comercial-more, a.btn-offer-more {
+        width: 100%;
+    }
 }
 
 #newsletter {
