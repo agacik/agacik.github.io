@@ -337,7 +337,7 @@ input[type=password],
 input[type=submit],
 input[type=button],
 textarea {
-    border-radius: 0;
+    border-radius: 4px;
     background-clip: padding-box;
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -1183,6 +1183,7 @@ a.btn-sm-load-more {
     margin: 10px;
     background-color: rgba(256, 256, 256, 1);
     height: 80px;
+    border-radius: 4px;
 }
 
 .logo:hover {
@@ -4466,10 +4467,10 @@ ul.pagination li:last-child {
 
 .section-kb-categories .kb-cat-block {
     background: #FFFFFF;
-    border: 1px solid #EBEBEB;
     position: relative;
     margin-bottom: 42px;
     padding: 24px 24px;
+    border-radius: 8px;
 }
 
 .section-kb-categories .kb-cat-block .icon {
@@ -4610,7 +4611,6 @@ ol.rounded-list li {
     position: relative;
     display: block;
     padding: 0.4em 0.4em 0.4em 20px;
-    *padding: .4em;
     margin: .5em 0;
     background: #EDEDED;
     color: #444;
@@ -4618,6 +4618,7 @@ ol.rounded-list li {
     -webkit-transition: background 0.5s ease-out;
     transition: background 0.5s ease-out;
     cursor: auto;
+    border-radius: 4px;
 }
 
 .rounded-list p:hover {
@@ -5181,6 +5182,7 @@ ol.none-list li a:before {
     background: rgba(255, 255, 255, 0.95);
     padding: 12px 12px 24px 24px;
     margin-bottom: 12px;
+    border-radius: 8px;
 }
 
 .testimony-layout-1 div.testimony-content {
@@ -5842,6 +5844,7 @@ footer a:hover {
     background: #F9FAFB;
     margin-bottom: 42px;
     padding: 20px;
+    border-radius: 8px;
 }
 
 .site-sidebar .badge {
@@ -5852,6 +5855,7 @@ footer a:hover {
     font-weight: normal;
     letter-spacing: 0.03em;
     padding: 8px;
+    border-radius: 4px;
 }
 
 .widget-title {

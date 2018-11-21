@@ -3,7 +3,8 @@ body {
     font-size: 14px;
     line-height: 1.42857;
     color: #444;
-    background-color: #fff
+    background-attachment: ;
+    ckground-color: #fff
 }
 
 a.btn-comercial-more,
@@ -216,6 +217,7 @@ span.white {
 
 .academy-container .testimony-layout-1 {
     min-height: 220px;
+    border-radius: 8px;
 }
 
 .price-layout-1 {
@@ -224,6 +226,7 @@ span.white {
     background: rgba(255, 255, 255, 0.95);
     border: 1px solid #f36;
     margin-bottom: 12px;
+    border-radius: 8px;
 }
 
 .price-layout-1:hover {
@@ -264,6 +267,7 @@ span.white {
     clear: both;
     background-color: #f36;
     padding: 12px;
+    border-radius: 6px 6px 0 0;
 }
 
 .price-layout-1 .price-meta img {
@@ -326,6 +330,52 @@ span.white {
 .col-xs-15 {
     width: 20%;
     float: left;
+}
+
+.section-footer {
+    padding: 20px 0;
+}
+
+#social-buttons {
+    display: block;
+}
+
+.social-button-list {
+    list-style: none;
+}
+
+.social-button-list li {
+    display: inline-block;
+    margin: 4px;
+}
+
+.copyright-item {
+    text-align: right;
+    margin-top: 16px;
+    vertical-align: middle;
+}
+
+.chat-icon {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 32px;
+    height: 32px;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,.4);
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.4);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#chat {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 999;
+    width: 32px;
+    height: 32px;
 }
 
 @media (min-width: 768px) {
@@ -425,6 +475,12 @@ span.white {
     a.btn-offer-more {
         width: 100%;
     }
+
+
+    .copyright-item {
+        text-align: center;
+    }
+
 }
 
 #newsletter {
