@@ -778,7 +778,7 @@ jQuery(function ($) {
 
 jQuery(function ($) {
     
-    $(document).on("click",".btn-offer-more",function(event){
+    $(document).on("click",".btn-price",function(event){
     var thishref =$(this).attr("href");
     var url = thishref.substr(thishref.indexOf("#"));
     if(url.length>1){
