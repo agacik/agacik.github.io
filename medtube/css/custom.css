@@ -363,8 +363,8 @@ span.white {
     background-color: #FFF;
     padding: 10px;
     border-radius: 4px;
-    -webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,.4);
-    box-shadow: 0 2px 6px 0 rgba(0,0,0,.4);
+    -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .4);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .4);
     overflow: hidden;
     cursor: pointer;
 }
@@ -404,7 +404,8 @@ span.white {
     margin-bottom: 10px;
     margin-right: 20px;
     background-color: rgba(256, 256, 256, 1);
-    padding: 10px
+    padding: 10px;
+    border-radius: 4px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -415,7 +416,7 @@ span.white {
         float: left;
         margin: 0;
     }
-    
+
     .navbar-default .navbar-right {
         margin: 0;
     }
@@ -423,18 +424,18 @@ span.white {
 
 
 @media only screen and (max-width: 479px) and (min-width: 0px) {
-        .navbar-default .navbar-header {
+    .navbar-default .navbar-header {
         width: auto;
         text-align: start;
         clear: both;
         float: none;
         margin: 0;
     }
-    
+
     .navbar-default .navbar-collapse {
         margin-top: 0;
     }
-    
+
     .navbar-default .navbar-nav a.btn-contact {
         display: inline-block;
         vertical-align: middle;
