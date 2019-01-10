@@ -28,6 +28,11 @@ $(window).on("load", function() {
         $(".wrapper").removeClass("overlay");
         return false;
     });
+        $(".post-project .cancel").on("click", function(){
+        $(".post-popup.job_post").removeClass("active");
+        $(".wrapper").removeClass("overlay");
+        return false;
+    });
 
     //  ============= SIGNIN CONTROL FUNCTION =========
 

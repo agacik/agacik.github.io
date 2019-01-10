@@ -913,7 +913,7 @@ main {
 }
 
 .user-specs span {
-    color: #686868;
+    color: #b2b2b2;
     font-size: 14px;
 }
 
@@ -1032,7 +1032,8 @@ main {
     cursor: pointer;
 }
 
-.sgt-text img, .sgt-text i {
+.sgt-text img,
+.sgt-text i {
     margin-right: 5px;
 }
 
@@ -1047,16 +1048,22 @@ main {
     color: #b2b2b2;
     width: 30px;
     height: 30px;
-    border: 1px solid #e5e5e5;
+    border: 1px #e7e7e7 solid;
+    border-radius: 4px;
     text-align: center;
     line-height: 30px;
     font-weight: 700;
     cursor: pointer;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
 }
 
 .suggestion-usd > span i:hover {
-    background-color: #ff3366;
-    color: #fff;
+    background-color: transparent;
+    color: #5a5a5a;
+    border: 1px #5a5a5a solid;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
 }
 
 .view-more {
@@ -1179,6 +1186,7 @@ main {
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .post-st {
@@ -1253,6 +1261,7 @@ main {
     border-right: 1px solid #e4e4e4;
     border-bottom: 1px solid #e4e4e4;
     margin-bottom: 20px;
+    border-radius: 4px 4px 0 0;
 }
 
 .post_topbar {
@@ -1762,7 +1771,6 @@ main {
 .no-margin {
     margin: 0;
     border: 0;
-    border-radius: inherit;
 }
 
 .posty {
@@ -1822,6 +1830,7 @@ main {
     width: 100%;
     background-color: #fff;
     padding: 20px;
+    border-radius: 0 0 4px 4px;
 }
 
 .plus-ic {
@@ -1838,7 +1847,18 @@ main {
     border: 1px solid #e7e7e7;
     text-align: center;
     color: #b2b2b2;
-    border-radius: 100px;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+
+.plus-ic i:hover {
+    background-color: transparent;
+    color: #5a5a5a;
+    border: 1px #5a5a5a solid;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
 }
 
 /* =============== comment-sec ================ */
@@ -1948,6 +1968,10 @@ main {
     margin-right: 10px;
 }
 
+.cm_img img {
+    border-radius: 50%;
+}
+
 .comment_box {
     float: left;
 }
@@ -1977,6 +2001,7 @@ main {
     margin-left: 5px;
     cursor: pointer;
     font-weight: 600;
+    outline: none;
     -webkit-transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;
 }
@@ -2163,17 +2188,19 @@ main {
     float: left;
     width: 100%;
     position: relative;
+    border-radius: 4px;
 }
 
 .post-project h3 {
     float: left;
     width: 100%;
-    background-color: #ff3366;
+    background-color: #0893dc;
     color: #fff;
     text-align: center;
     font-size: 18px;
     font-weight: 500;
     padding: 20px 0;
+    border-radius: 4px 4px 0 0;
 }
 
 .post-project-fields {
@@ -2181,6 +2208,7 @@ main {
     width: 100%;
     padding: 30px 20px;
     background-color: #fff;
+    border-radius: 4px;
 }
 
 .post-project-fields form {
@@ -2218,6 +2246,7 @@ main {
     float: left;
     margin-top: 10px;
     width: 100%;
+    text-align: right;
 }
 
 .post-project-fields form ul li {
@@ -2225,17 +2254,43 @@ main {
     margin-right: 15px;
 }
 
+.post-project-fields form ul li:last-of-type {
+    margin-right: 0px;
+}
+
 .post-project-fields form ul li button.active {
-    background-color: #ff3366;
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: #0893dc;
     color: #fff;
+}
+
+.post-project-fields form ul li button.active:hover {
+    background-color: #056492;
+}
+
+.post-project-fields form ul li button.cancel {
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #808080;
+}
+
+.post-project-fields form ul li button.cancel:hover {
+    border-color: #5a5a5a;
+    background-color: transparent;
+    color: #5a5a5a;
 }
 
 .post-project-fields form ul li button,
 .post-project-fields form ul li a {
     color: #444;
+    height: 40px;
+    ;line-height: 40px;
     font-size: 16px;
-    border: 1px solid #e5e5e5;
-    padding: 10px 25px;
+    border: 1px solid transparent;
+    outline: none;
+    padding: 0px 15px;
     display: inline-block;
     background-color: #fff;
     font-weight: 600;
@@ -2246,6 +2301,31 @@ main {
 .post-project-fields form ul li a:hover {
     background-color: #ff3366;
     color: #fff;
+}
+
+.post-project-fields .file-upload {
+    position: relative;
+    float: right;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid #ff3366;
+    color: #ff3366;
+    border-radius: 4px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+
+.post-project-fields .file-upload:hover {
+    background-color: #e60039;
+    border: 1px solid #e60039;
+    color: #FFFFFF;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
 }
 
 ::-webkit-input-placeholder {
