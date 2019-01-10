@@ -1011,6 +1011,7 @@ main {
 .sgt-text {
     float: left;
     padding-left: 10px;
+    max-width: 130px;
 }
 
 .sgt-text h4 {
@@ -1190,7 +1191,7 @@ main {
 }
 
 .post-st {
-    float: right;
+    text-align: center;
     margin-top: 5px;
 }
 
@@ -1393,6 +1394,11 @@ main {
     font-size: 14px;
     float: left;
     margin-right: 3px;
+    max-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 16px;
 }
 
 .descp li img {
@@ -2137,7 +2143,7 @@ main {
 
 .hr-rate {
     float: right;
-    width: 55px;
+    width: 52px;
 }
 
 .hr-rate span {
@@ -2286,7 +2292,8 @@ main {
 .post-project-fields form ul li a {
     color: #444;
     height: 40px;
-    ;line-height: 40px;
+    ;
+    line-height: 40px;
     font-size: 16px;
     border: 1px solid transparent;
     outline: none;
