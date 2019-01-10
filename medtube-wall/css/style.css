@@ -1019,6 +1019,7 @@ main {
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 4px;
+    line-height: 16px;
 }
 
 .sgt-text span {
@@ -1037,7 +1038,6 @@ main {
 .sgt-text i {
     margin-right: 5px;
 }
-
 
 .suggestion-usd > span {
     float: right;
