@@ -9,47 +9,124 @@ var config = {
   };
   firebase.initializeApp(config);
 
-  var messageRef = firebase.database().ref('krople');
-          
-
- document.getElementById('january-form').addEventListener('submit', submbitForm);
- 
 
   
+
+          
+// January Qiuz - START
+ var januaryRef = firebase.database().ref('krople').child('january');
+ 
+ document.getElementById('january-form').addEventListener('submit', submbitJanuary);
+ 
 // FireBase Conect
- function submbitForm(e){
+ function submbitJanuary(e){
      e.preventDefault();
 
-
      var today  = new Date();
-     var january_date = today.toLocaleDateString("en-US");
+     var january_date = today.toLocaleDateString();
+     var january_time = today.toLocaleTimeString();
      var january_gender = document.querySelector('input[name=gender]:checked').value;
      var january_wiek = document.querySelector('input[name=wiek]:checked').value;
      var january_opcja = document.querySelector('input[name=pora]:checked').value;
 
-     saveMessage(january_date, january_gender, january_wiek, january_opcja);
+     saveJanuary(january_date, january_time, january_gender, january_wiek, january_opcja);
 
      document.querySelector('#january-form').style.display = 'none';
      document.querySelector('.january-thankfull').style.display = 'block';
+
+     
+     var mostViewedPosts = firebase.database().ref('krople');
+
+     $('#pills-january').append(mostViewedPosts);
+
+
  }
 
 
-
+// Get Value of Input ID
  function getRadioValue(id){
      return document.getElementById(id).value;
  }
 
- function saveMessage(january_date, january_gender, january_wiek, january_opcja){
-     var newMessageRef = messageRef.push();
+ // FireBase Add
+ function saveJanuary(january_date, january_time, january_gender, january_wiek, january_opcja){
+     var newMessageRef = januaryRef.push();
      newMessageRef.set({
+        january_id: january_time,
         january_date: january_date,
         january_gender: january_gender,
         january_wiek: january_wiek,
         january_opcja: january_opcja,
-     })
+     }, function(error) {
+        if (error) {
+          // The write failed...
+          $('.january-thankfull').text('Nastąpił błąd połączenia z bazą danych. Spróbuj ponownie.');
+        } else {
+          // Data saved successfully!
+
+          const newElement = 
+          $(`
+         <div>
+         <h3 class="mb-5">Dziękuję za odpowiedź</h3>
+         <h4>Twoje odpowiedzi</h4>
+             <span class="d-block"> <strong>${'Data wypelniania ankiety: '}</strong> ${january_date}</span>
+             <span class="d-block"> <strong>${'Godzina wypełniania ankiety: '}</strong>${january_time} </span>
+             <span class="d-block"> <strong>${'Płeć z ankiety: '}</strong> ${january_gender} </span>
+             <span class="d-block"> <strong>${'Wiek z ankiety: '}</strong> ${january_wiek} </span>
+             <span class="d-block"> <strong>${'Pytanie z ankiety: '}</strong> ${january_opcja} </span>
+         </div>
+         `);
+
+          $('.january-thankfull').append(newElement);
+        }
+      }
+     )
+ }
+ // January Qiuz - END
+
+
+
+
+ // February Qiuz - START
+ var februaryRef = firebase.database().ref('krople').child('february');
+
+ document.getElementById('february-form').addEventListener('submit', submbitForm);
+ 
+// FireBase Conect
+ function submbitForm(e){
+     e.preventDefault();
+
+     var today  = new Date();
+     var february_date = today.toLocaleDateString();
+     var february_time = today.toLocaleTimeString();
+     var february_gender = document.querySelector('input[name=february-gender]:checked').value;
+     var february_wiek = document.querySelector('input[name=february-wiek]:checked').value;
+     var february_opcja = document.querySelector('input[name=february-pora]:checked').value;
+
+     saveMessage(february_date, february_time, february_gender, february_wiek, february_opcja);
+
+     document.querySelector('#february-form').style.display = 'none';
+     document.querySelector('.february-thankfull').style.display = 'block';
  }
 
 
+// Get Value of Input ID
+ function getRadioValue(id){
+     return document.getElementById(id).value;
+ }
+
+ // FireBase Add
+ function saveMessage(february_date, february_time, february_gender, february_wiek, february_opcja){
+     var newMessageRef = februaryRef.push();
+     newMessageRef.set({
+        february_id: february_time,
+        february_date: february_date,
+        february_gender: february_gender,
+        february_wiek: february_wiek,
+        february_opcja: february_opcja,
+     })
+ }
+ // February Qiuz - END
 
 
 
@@ -169,4 +246,85 @@ $(function() {
     $('.filter-button').click(
         function(){ $(this).addClass('filter-active')});
       
+});
+
+
+
+
+const leadingZero = function(element) {
+    if (element < 10) return element = "0" + element;
+    return element;
+}
+
+const showCount = function() {
+    const currentYear = (new Date).getFullYear();
+    const month = 1;
+    const day = 18;
+    const dateToday = new Date();
+
+    //rok, miesiąc, dzień, godzina, minuta
+    const uberImportantDate = new Date(currentYear, month-1, day, 9, 30);
+    const msInADay = 24 * 60 * 60 * 1000; //1 dzień w milisekundach - to w nich przecież zwracany czas metodą getTime
+
+    const timeDifference = (uberImportantDate.getTime() - dateToday.getTime());
+
+    const eDaysToDate = timeDifference / msInADay;
+    const daysToDate = Math.floor(eDaysToDate);
+
+    //musimy tutaj sprawdzić, czy powyższa zmienna nie jest 0,
+    //bo inaczej poniżej byśmy mieli % 0 czyli dzielenie przez 0
+    if (daysToDate < 1) {
+        daysToDateFix = 1;
+    } else {
+        daysToDateFix = daysToDate;
+    }
+
+    const eHoursToDate = (eDaysToDate % daysToDateFix)*24;
+    const hoursToDate = Math.floor(eHoursToDate);
+
+    const eMinutesToDate = (eHoursToDate - hoursToDate)*60;
+    const minutesToDate = Math.floor(eMinutesToDate);
+
+    const eSecondsToDate = Math.floor((eMinutesToDate - minutesToDate)*60);
+    const secondsToDate = Math.floor(eSecondsToDate);
+
+    // const tekst = 'Do moich kolejnych urodzin pozostało: '
+    //         +daysToDate+' dni, '
+    //         +hoursToDate+ ' godzin, '
+    //         +minutesToDate+ ' minut i '
+    //         +leadingZero(secondsToDate)+' sekund';
+
+    // const element = document.getElementById('pills-february');
+    // const elementTabs = document.getElementById('pills-home-tab');
+    const element = $('#pills-profile-tab-february');
+    const elementTabs = $('#pills-profile-tab-february').children('#pills-home-tab');
+    const elementContent = $('#pills-february');
+    
+    
+
+    //jeżeli czas się skończył
+        const timeDiff = uberImportantDate - dateToday;
+        if (timeDiff < 0) {;
+            elementTabs.classList.add('disabled');
+        } else {
+            // element.innerHTML = tekst;
+            elementTabs.addClass('active show');
+            element.siblings().children().removeClass('active show');
+            elementContent.addClass('active show');
+            elementContent.siblings().removeClass('active show');
+
+            setTimeout(function() {
+                showCount()
+            }, 500);
+        }
+    }
+
+
+showCount();
+
+$('#pills-home-tab').click(function(){
+    $(this).parent().siblings().children().removeClass('active show');
+    console.log(this);
+    $(this).children().addClass('active show');
+    $(this).parent().siblings().children().removeClass('active show');
 });

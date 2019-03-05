@@ -77,29 +77,26 @@ a {
 }
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
+  .delete-button {
+    right: -100%;
+    padding: 5px;}
 
-    .delete-button {
-        right: -100%;
-    }
+  .trash-icon {
+    color: rgba(244, 59, 59, 0.5);
+    font-size: 18px;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    -webkit-transition: 0.3s linear display;
+    transition: 0.3s linear display;
+    cursor: pointer; }
 
-    .trash-icon {
-        color: rgba($color-light-red, 0.5);
-        font-size: 18px;
-        vertical-align: middle;
-        display: inline-block;
-        text-align: center;
-        transition: 0.3s linear display;
-        cursor: pointer;
-    }
-
-    .delete:hover .delete-button {
-        right: 0;
-        border-left: 1px solid $color-dark-navy-blue;
-        transition: 0.8s linear right;
-    }
-}
-
+  .delete:hover .delete-button {
+    right: 0;
+    border-left: 0px solid #111d29;
+    -webkit-transition: 0.8s linear right;
+    transition: 0.8s linear right; } }
 /*Delete Icon and Action - End*/
 
 /*Decoration Top and Bottom Content - Start*/

@@ -91,6 +91,35 @@
     </header> -->
     <!--Header - End -->
 
+    <style>
+    .nav-tabs.disabled[data-title] {
+        position: relative;
+    }    
+    .nav-tabs.disabled[data-title]:hover:before {
+        content: '';
+        top: 28px;
+        left: 50%;
+        width: 10px; 
+        height: 10px; 
+        position: absolute;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid #24CF5E;
+        z-index: 100;
+}
+    .nav-tabs.disabled[data-title]:hover:after {
+        content: attr(data-title);
+        font-size: 10px;
+        padding: 5px;
+        top: 38px;
+        left: -2px;
+        width: 150%;
+        position: absolute;
+        background-color: #24CF5E;
+        color: white;
+        z-index: 100;
+}
+    </style>
     <div class="container">
 
         <div class="d-flex"></div>
@@ -99,9 +128,9 @@
                 <a class="nav-tabs active" id="pills-home-tab" data-toggle="pill" href="#pills-january" role="tab"
                     aria-controls="pills-home" aria-selected="true">Styczeń</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-tabs" id="pills-profile-tab" data-toggle="pill" href="#pills-february" role="tab"
-                    aria-controls="pills-profile" aria-selected="false">Luty</a>
+            <li class="nav-item" id="pills-profile-tab-february">
+                <a class="nav-tabs" id="pills-home-tab" data-toggle="pill" href="#pills-february" role="tab"
+                    aria-controls="pills-profile" aria-selected="false" data-title="Zablokowany dostęp. Odblokuje się 19.01.2019 r.">Luty</a>
             </li>
             <li class="nav-item">
                 <a class="nav-tabs" id="pills-contact-tab" data-toggle="pill" href="#pills-march" role="tab"
@@ -117,32 +146,32 @@
             </li>
             <li class="nav-item">
                 <a class="nav-tabs disabled" id="pills-contact-tab" data-toggle="pill" href="#pills-june" role="tab"
-                    aria-controls="pills-contact" aria-selected="false" title="Zablokowany dostęp">Czerwiec</a>
+                    aria-controls="pills-contact" aria-selected="false" data-title="Zapraszamy do udziału w ankiecie od 01.06.2019 r.">Czerwiec</a>
             </li>
             <li class="nav-item">
-                    <a class="nav-tabs disabled" id="pills-contact-tab" data-toggle="pill" href="#pills-june" role="tab"
-                        aria-controls="pills-contact" aria-selected="false" title="Zablokowany dostęp">Lipiec</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-tabs disabled" id="pills-contact-tab" data-toggle="pill" href="#pills-june" role="tab"
-                            aria-controls="pills-contact" aria-selected="false" title="Zablokowany dostęp">Sierpień</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-tabs disabled" id="pills-contact-tab" data-toggle="pill" href="#pills-june" role="tab"
-                                aria-controls="pills-contact" aria-selected="false" title="Zablokowany dostęp">Wrzesień</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-tabs disabled" id="pills-contact-tab" data-toggle="pill" href="#pills-june" role="tab"
-                                    aria-controls="pills-contact" aria-selected="false" title="Zablokowany dostęp">Październik</a>
-                            </li>
-                            <li class="nav-item">
-                                    <a class="nav-tabs disabled" id="pills-contact-tab" data-toggle="pill" href="#pills-june" role="tab"
-                                        aria-controls="pills-contact" aria-selected="false" title="Zablokowany dostęp">Listopad</a>
-                                </li>
-                                <li class="nav-item">
-                                        <a class="nav-tabs disabled" id="pills-contact-tab" data-toggle="pill" href="#pills-june" role="tab"
-                                            aria-controls="pills-contact" aria-selected="false" title="Zablokowany dostęp">Grudzień</a>
-                                    </li>
+                <a class="nav-tabs disabled" id="pills-contact-tab" data-toggle="pill" href="#pills-july" role="tab"
+                    aria-controls="pills-contact" aria-selected="false" title="Zablokowany dostęp">Lipiec</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-tabs disabled" id="pills-contact-tab" data-toggle="pill" href="#pills-august" role="tab"
+                    aria-controls="pills-contact" aria-selected="false" title="Zablokowany dostęp">Sierpień</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-tabs disabled" id="pills-contact-tab" data-toggle="pill" href="#pills-september" role="tab"
+                    aria-controls="pills-contact" aria-selected="false" title="Zablokowany dostęp">Wrzesień</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-tabs disabled" id="pills-contact-tab" data-toggle="pill" href="#pills-october" role="tab"
+                    aria-controls="pills-contact" aria-selected="false" title="Zablokowany dostęp">Październik</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-tabs disabled" id="pills-contact-tab" data-toggle="pill" href="#pills-november" role="tab"
+                    aria-controls="pills-contact" aria-selected="false" title="Zablokowany dostęp">Listopad</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-tabs disabled" id="pills-contact-tab" data-toggle="pill" href="#pills-december" role="tab"
+                    aria-controls="pills-contact" aria-selected="false" title="Zablokowany dostęp">Grudzień</a>
+            </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-january" role="tabpanel" aria-labelledby="pills-january-tab">
@@ -196,38 +225,89 @@
                     </div>
                 </form>
                 <div class="january-thankfull text-center p-5 m-5" style="display: none;">
-                    <h3 class="text-center">Dziękujemy za odpowiedź</h3></div>
+                    
+                </div>
             </div>
             <div class="tab-pane fade" id="pills-february" role="tabpanel" aria-labelledby="pills-february-tab">
-                    <form id="february-form" class="p-5">
-                            <h3 class="text-center">Ankieta luty</h3>
-                        </form>            
+                <form id="february-form" class="p-5">
+                    <h3 class="text-center">Luty</h3>
+
+                    <div class="form-wrapper d-flex justify-content-center flex-column">
+
+                        <span class="d-flex justify-content-center text-center mb-3">Płeć:</span>
+
+                        <div class="radio-wrapper mx-auto">
+                            <input class="mr-2" type="radio" name="february-gender" value="kobieta" id="february-women" required><label
+                                for="february-women">w lutym kobieta</label>
+                        </div>
+
+                        <div class="radio-wrapper mx-auto mb-5">
+                            <input class="mr-2" type="radio" name="february-gender" value="mężczyzna" id="february-men"><label for="february-men">w lutym mężczyzna</label>
+                        </div>
+
+                        <span class="d-flex justify-content-center text-center mb-3">Wiek:</span>
+
+                        <div class="radio-wrapper mx-auto">
+                            <input class="mr-2" type="radio" name="february-wiek" value="poniżej 18 lat" id="february-young" required><label
+                                for="february-young">w lutym poniżej 18 lat</label>
+                        </div>
+
+                        <div class="radio-wrapper mx-auto">
+                            <input class="mr-2" type="radio" name="february-wiek" value="18 - 35 lat" id="february-middelage"><label for="february-middelage">w lutym 18
+                                - 35 lat</label>
+                        </div>
+
+                        <div class="radio-wrapper mx-auto mb-5">
+                            <input class="mr-2" type="radio" name="february-wiek" value="powyżej 35 lat" id="february-old"><label for="february-old">w lutym powyżej
+                                35 lat</label>
+                        </div>
+
+                        <span class="d-flex justify-content-center text-center mb-3">Kiedy używasz kropli?</span>
+                        <div class="radio-wrapper mx-auto">
+                            <input class="mr-2" type="radio" name="february-pora" value="rano" id="february-rano" required><label for="february-rano">w lutym Rano</label>
+                        </div>
+
+                        <div class="radio-wrapper mx-auto">
+                            <input class="mr-2" type="radio" name="february-pora" value="popoludniu" id="february-popoludniu"><label for="february-popoludniu">w lutym Po
+                                południu</label>
+                        </div>
+
+                        <div class="radio-wrapper mx-auto">
+                            <input class="mr-2" type="radio" name="february-pora" value="wieczor" id="february-wieczor"><label for="february-wieczor">w lutym Wieczorem</label>
+                        </div>
+                        <button class="nav-item-btn mx-auto" type="submit" id="february-btn">Wyślij</button>
+                    </div>
+                </form>
+                <div class="february-thankfull text-center p-5 m-5" style="display: none;">
+                    <h3 class="text-center">Dziękujemy za odpowiedź</h3>
+                </div>
             </div>
             <div class="tab-pane fade" id="pills-march" role="tabpanel" aria-labelledby="pills-march-tab">
-                    <form id="february-form" class="p-5">
-                            <h3 class="text-center">Ankieta marzec</h3>
-                        </form>     
+                <form id="february-form" class="p-5">
+                    <h3 class="text-center">Ankieta marzec</h3>
+                </form>
             </div>
             <div class="tab-pane fade" id="pills-april" role="tabpanel" aria-labelledby="pills-april-tab">
-                    <form id="february-form" class="p-5">
-                            <h3 class="text-center">Ankieta kwiecień</h3>
-                        </form>     
+                <form id="february-form" class="p-5">
+                    <h3 class="text-center">Ankieta kwiecień</h3>
+                </form>
             </div>
             <div class="tab-pane fade" id="pills-may" role="tabpanel" aria-labelledby="pills-may-tab">
-                    <form id="february-form" class="p-5">
-                            <h3 class="text-center">Ankieta maj</h3>
-                        </form>     
+                <form id="february-form" class="p-5">
+                    <h3 class="text-center">Ankieta maj</h3>
+                </form>
             </div>
             <div class="tab-pane fade" id="pills-june" role="tabpanel" aria-labelledby="pills-june-tab">
-                    <form id="february-form" class="p-5">
-                            <h3 class="text-center">Ankieta czerwiec</h3>
-                        </form>     
+                <form id="february-form" class="p-5">
+                    <h3 class="text-center">Ankieta czerwiec</h3>
+                </form>
             </div>
         </div>
 
 
     </div>
-    </div>
+
+    <div id="test8"></div>
 
     <!--FAQ - Start-->
     <section class="faq d-none">
@@ -305,144 +385,6 @@
     </section>
     <!--FAQ - End-->
 
-
-
-    <!--Offer - Start-->
-    <section class="offer d-none" id="offer">
-        <div class="offer__container container text-center">
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="offer__content">
-                        <h2 class="offer__content__title"><img src="img/graphic-tool.png" alt="" class="offer__content__img img-fluid">grafika</h2>
-                        <p class="offer__content__paragraph">Potrzebujesz logo, ikony, wizytówki, plakaty, dyplomy lub
-                            inne rzeczy? Chętnie je dla Ciebie zaprojektuję.</p>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="offer__content">
-                        <h2 class="offer__content__title"><img src="img/printer.png" alt="" class="offer__content__img img-fluid">druk</h2>
-                        <p class="offer__content__paragraph">Otrzymaj wydruki Twoich materiałów promocyjnych,
-                            niezależnie czy są to wizytówki, papier firmowy, wielkoformatowe banery czy smycze.</p>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="offer__content">
-                        <h2 class="offer__content__title"><img src="img/website.png" alt="" class="offer__content__img img-fluid">strony
-                            internetowe</h2>
-                        <p class="offer__content__paragraph">Przygotuję dla Ciebie makietę strony, projekt graficzny i
-                            z wielką przyjemnością zakoduje i wrzucę do internetu.</p>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="offer__content">
-                        <h2 class="offer__content__title"><img src="img/contact.png" alt="" class="offer__content__img img-fluid">Zacznijmy
-                            współpracować</h2>
-                        <div class="offer__content__contact offer__content__paragraph">
-                            <div class="offer__content__paragraph__wrapper">
-                                <a href="mailto:agata@koodi.pl"><i class="fas fa-envelope offer__content__paragraph__icon m-2"></i></a>
-                                agata@koodi.pl<br>
-                            </div>
-                            <div class="offer__content__paragraph__wrapper">
-                                <a href="tel:+48600552910"><i class="fas fa-phone offer__content__paragraph__icon m-2"></i></a>
-                                600 552 910
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Offer - End-->
-
-    <section class="customer d-none" id="customer">
-        <div class="container">
-            <h2 class="customer__content__title">Klienci</h2>
-            <div class="customer__logo slider">
-                <div class="slide customer__logo__slide">
-                    <img src="./img/rok_bezpieczenstwa.png" class="img-fluid customer__logo__img" alt="">
-                    <!--
-                    <div class="customer__logo_mask">
-                        <p class="customer__logo_mask--description">
-                            Farm Frites Poland
-                        </p>
-                    </div>
--->
-                </div>
-                <div class="slide customer__logo__slide">
-                    <img src="./img/docas.png" class="img-fluid customer__logo__img" alt="">
-                    <!--
-                    <div class="customer__logo_mask">
-                        <p class="customer__logo_mask--description">
-                            DOCAS24
-                        </p>
-                    </div>
--->
-                </div>
-                <div class="slide customer__logo__slide">
-                    <img src="./img/lider_lebork.png" class="img-fluid customer__logo__img" alt="">
-                    <!--
-                    <div class="customer__logo_mask">
-                        <p class="customer__logo_mask--description">
-                            KS LIDER AMICUS Lębork
-                        </p>
-                    </div>
--->
-                </div>
-                <div class="slide customer__logo__slide">
-                    <a href="http://agamar.pl/"><img src="./img/agamar.png" class="img-fluid customer__logo__img" alt=""></a>
-                    <!--
-                    <div class="customer__logo_mask">
-                        <p class="customer__logo_mask--description">
-                            Agamar
-                        </p>
-                    </div>
--->
-                </div>
-                <div class="slide customer__logo__slide">
-                    <a href="http://lukspanda.pl/"><img src="./img/lukspanda.png" class="img-fluid customer__logo__img"
-                            alt=""></a>
-                    <!--
-                    <div class="customer__logo_mask">
-                        <p class="customer__logo_mask--description">
-                            LUKS PANDA Sierakowice
-                        </p>
-                    </div>
--->
-                </div>
-                <div class="slide customer__logo__slide">
-                    <img src="./img/sp_sierakowice.png" class="img-fluid customer__logo__img" alt="">
-                    <!--
-                    <div class="customer__logo_mask">
-                        <p class="customer__logo_mask--description">
-                            SP 1 Sierakowice
-                        </p>
-                    </div>
--->
-                </div>
-                <div class="slide customer__logo__slide">
-                    <img src="./img/course_makers.png" class="img-fluid customer__logo__img" alt="">
-                    <!--
-                    <div class="customer__logo_mask">
-                        <p class="customer__logo_mask--description">
-                            Course Makers
-                        </p>
-                    </div>
--->
-                </div>
-                <div class="slide customer__logo__slide">
-                    <a href="http://datomni.com/"><img src="./img/datomni.png" class="img-fluid customer__logo__img"
-                            alt=""></a>
-                    <!--
-                    <div class="customer__logo_mask">
-                        <p class="customer__logo_mask--description">
-                            Datomni
-                        </p>
-                    </div>
--->
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!--footer - Start-->
     <section class="footer" id="footer">
