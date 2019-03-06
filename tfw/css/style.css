@@ -313,6 +313,8 @@ body {
 .tfw-header {
   background-image: url(../img/baner.jpg);
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
   height: 519px;
   width: 100vw;
   position: relative;
