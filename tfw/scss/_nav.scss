@@ -1,0 +1,236 @@
+.tfw-nav {
+    background-image: url(../img/pattern.jpg);
+    background-repeat: repeat;
+    height: 155px;
+    width: 100vw;
+    min-width: 100%;
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    &-logo {
+        background-color: $color_yellow;
+        display: inline-block;
+        height: 45px;
+        margin: 1em 0;
+        width: 45px;
+    }
+    &-menu {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            width: 100%;
+            li {
+                display: inline-block;
+            }
+            a {
+                color: $color_darkgrey;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 1.2em;
+                display: inline-block;
+                position: relative;
+                transition: all 1.5s ease;
+                z-index: 5;
+                &::after {
+                    display: none;
+                    position: absolute;
+                    content: attr(data-title);
+                    top: 2px;
+                    left: 2px;
+                    color: $color_yellow;
+                    font-weight: 700;
+                    z-index: -1;
+                    transition: all 1.5s ease;
+                }
+                &:hover {
+                    transition: all 1.5s ease;
+                }
+                &:hover::after {
+                    display: block;
+                    transition: all 1.5s ease;
+                }
+            }
+        }
+    }
+    &-hamburger {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-sizing: border-box;
+        height: 77px;
+        width: 77px;
+        background-color: $color_yellow;
+    }
+    .hamburger-icon {
+        width: 26px;
+        height: 3px;
+        margin: 2px 0;
+        border-radius: 3px;
+        background-color: $color_white;
+    }
+    &-hamburger:hover .hamburger-icon {
+        background-color: $color_plum;
+    }
+
+    &-hamburger:hover .hamburger-top {
+        transform: translate(-2px, 6px) rotate(45deg);
+        transition: all 1s linear;
+    }
+
+    &-hamburger .hamburger-middle {
+        display: block;
+        transition-delay: 1s;
+    }
+    &-hamburger:hover .hamburger-middle {
+        display: none;
+        transition: all 1s linear;
+        transition-delay: 1s;
+    }
+
+    &-hamburger:hover .hamburger-bottom {
+        transform: translate(-2px, -1px) rotate(-45deg);
+        transition: all 1s linear;
+    }
+    &-brand {
+        display: none;
+    }
+
+}
+
+.social-icon {
+    color: darkgray;
+    padding: 5px;
+    cursor: pointer;
+    &-wrapper {
+        position: absolute;
+        top: 10px;
+        right: 0px;
+    }
+    &-link {
+        color: darkgray;
+        text-decoration: none;
+        outline: none;
+        &:hover {
+            color: darken(darkgray, 40%);
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        background-color: $color_white;
+        position: fixed;
+        min-width: 100%;
+        z-index: 100;
+        &-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-logo {
+            background-color: $color_yellow;
+            display: inline-block;
+            height: 45px;
+            margin: 1em 0;
+            width: 45px;
+            order: 1;
+        }
+        &-menu {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            display: block;
+            position: absolute;
+            top: 77px;
+            left: 0;
+            margin: 0;
+            width: 100%;
+            background-color: $color_white;
+            transition: all 2s linear;
+            order: 4;
+            box-sizing: border-box;
+            border: 15px $color_yellow solid;
+            border-top: none;
+            &--toggle {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: all 2s linear;
+            }
+            ul {
+                background-color: $color_white;
+                display: block;
+                height: 100%;
+                position: relative;
+                list-style-type: none;
+                text-align: center;
+                li {
+                    border-bottom: 1px solid $color_yellow;
+                    color: $color_darkgrey;
+                    display: block;
+                    text-align: center;
+                    font-size: 1.2em;
+                    padding: 1em 0;
+                }
+                li:last-of-type {
+                    border-bottom: none;
+                }
+                a {
+                    position: relative;
+                    z-index: 5;
+                    &::after {
+                        display: none;
+                        position: absolute;
+                        content: attr(data-title);
+                        top: 2px;
+                        left: 2px;
+                        color: $color_yellow;
+                        font-weight: 700;
+                        z-index: -1;
+                        transition: all 1.5s ease;
+                    }
+                    &:hover {
+                        transition: all 1.5s ease;
+                    }
+                    &:hover::after {
+                        display: block;
+                        transition: all 1.5s ease;
+                    }
+                }
+            }
+        }
+        &-hamburger {
+            display: flex;
+            order: 3;
+        }
+        &-brand {
+            display: flex;
+            flex-direction: column;
+            order: 2;
+            .brand-description {
+                color: $color_lightgrey;
+                text-align: center;
+                font-size: 3vw;
+                line-height: 5.5vw;
+                font-weight: 700;
+
+            }
+        }
+
+    }
+}
