@@ -16,20 +16,20 @@
         text-transform: uppercase;
         font-weight: 700;
     }
-        &-subtitle {
+    &-subtitle {
         font-size: 35px;
         line-height: 45px;
         color: #ba272e;
         font-weight: 700;
     }
     &-content {
-       font-size: 15px;
+        font-size: 15px;
         line-height: 24px;
         color: #000;
         margin-top: 30px;
     }
     &-image {
-       position: relative;
+        position: relative;
     }
     &-label {
         position: absolute;
@@ -65,20 +65,19 @@
         }
     }
     &-box {
-        border: 1px solid lighten(lightgrey, 10%);
         padding: 15px;
         margin-bottom: 15px;
         margin-top: 15px;
         background-color: #FFF;
-        box-shadow: 5px 5px 5px lightgrey;
+        box-shadow: 0 0 1em lightgrey;
     }
-    
+
     &-box-full {
         padding: 0px;
         margin-bottom: 15px;
         margin-top: 15px;
         background-color: #FFF;
-        box-shadow: 5px 5px 5px lightgrey;
+        box-shadow: 0 0 1em lightgrey;
     }
     &-box-title {
         width: 100%;
@@ -92,24 +91,24 @@
         font-weight: 700;
         text-transform: uppercase;
     }
-    
+
     &-box-title-small {
         padding: 10px 0px;
         font-size: 27px;
         line-height: 27px;
     }
-    
+
     &-box-full-content {
         padding: 15px;
         font-size: 14px;
         line-height: 24px;
         text-align: center;
     }
-    
-     &-box-full-content-image {
+
+    &-box-full-content-image {
         max-width: 150px;
-         margin-top: 15px;
-         text-align: center;
+        margin-top: 15px;
+        text-align: center;
     }
     &-box-full-content-number {
         font-size: 60px;

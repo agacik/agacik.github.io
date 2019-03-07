@@ -359,6 +359,8 @@ body {
       padding: 0 20px;
       text-transform: uppercase;
       font-weight: 700; }
+    .tfw-search-bar-select-label-small {
+      font-size: 12px; }
 
 .tfw-promo {
   background-color: #FFF;
@@ -418,20 +420,19 @@ body {
       margin-top: 40px;
       margin-left: 60px; }
   .tfw-promo-box {
-    border: 1px solid #ededed;
     padding: 15px;
     margin-bottom: 15px;
     margin-top: 15px;
     background-color: #FFF;
-    -webkit-box-shadow: 5px 5px 5px lightgrey;
-            box-shadow: 5px 5px 5px lightgrey; }
+    -webkit-box-shadow: 0 0 1em lightgrey;
+            box-shadow: 0 0 1em lightgrey; }
   .tfw-promo-box-full {
     padding: 0px;
     margin-bottom: 15px;
     margin-top: 15px;
     background-color: #FFF;
-    -webkit-box-shadow: 5px 5px 5px lightgrey;
-            box-shadow: 5px 5px 5px lightgrey; }
+    -webkit-box-shadow: 0 0 1em lightgrey;
+            box-shadow: 0 0 1em lightgrey; }
   .tfw-promo-box-title {
     width: 100%;
     padding: 5px 0px;
