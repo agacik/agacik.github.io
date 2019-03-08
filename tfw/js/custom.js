@@ -9,8 +9,8 @@ $(document).ready(function () {
         if ($(this).find(":selected").val() == 'gdynia') {
             $('#tfw-promo').load('https://agacik.github.io/tfw/gdynia.html');
         };
-        if ($(this).find(":selected").val() == 'kielce') {
-            $('#tfw-promo').load('https://agacik.github.io/tfw/kielce.html');
+        if ($(this).find(":selected").val() == 'katowice') {
+            $('#tfw-promo').load('https://agacik.github.io/tfw/katowice.html');
         };
         if ($(this).find(":selected").val() == 'krakow') {
             $('#tfw-promo').load('https://agacik.github.io/tfw/krakow.html');
