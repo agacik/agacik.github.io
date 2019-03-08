@@ -1,10 +1,8 @@
 .tfw-promo {
     background-color: #FFF;
     color: #000;
-    height: 100px;
     width: 100vw;
     position: relative;
-    min-width: 100%;
     &-container {
         position: relative;
         height: 100%;
@@ -23,18 +21,21 @@
         font-weight: 700;
     }
     &-content {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 24px;
         color: #000;
-        margin-top: 30px;
+        margin-top: 15px;
     }
     &-image {
         position: relative;
     }
+    &-photo {
+        width: 100%;
+    }
     &-label {
         position: absolute;
         bottom: 20px;
-        width: 90%;
+        width: 104%;
         height: 40px;
         color: #FFF;
         background-color: #ba272e;
@@ -46,11 +47,16 @@
     &-triagle {
         position: absolute;
         bottom: 20px;
-        right: -30px;
+        right: -60px;
         height: 40px;
         widows: auto;
     }
     &-button {
+        &-wrapper {
+            position: absolute;
+            bottom: 15px;
+            width: 100%;
+        }
         background-color: #ba272e;
         padding: 5px 10px;
         color: #FFF;
@@ -58,61 +64,165 @@
         line-height: 40px;
         text-transform: uppercase;
         min-width: 240px;
-        &-wrapper {
-            position: relative;
-            margin-top: 40px;
-            margin-left: 60px;
+        display: block;
+        margin: 0 auto;
+        &:hover {
+            background-color: darken(#ba272e, 10%);
+            transition: background-color 500ms linear;
         }
     }
     &-box {
         padding: 15px;
         margin-bottom: 15px;
-        margin-top: 15px;
         background-color: #FFF;
         box-shadow: 0 0 1em lightgrey;
+        &-title {
+            width: 100%;
+            padding: 5px 0px;
+            background-color: #ba272e;
+            color: #FFF;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 44px;
+            line-height: 44px;
+            font-weight: 700;
+            text-transform: uppercase;
+            &-small {
+                padding: 10px 0px;
+                font-size: 27px;
+                line-height: 27px;
+            }
+        }
+        &-full {
+            padding: 0px;
+            margin-bottom: 15px;
+            background-color: #FFF;
+            box-shadow: 0 0 1em lightgrey;
+            &:last-of-type {
+                margin-bottom: 45px;
+            }
+            &-content {
+                padding: 15px;
+                font-size: 14px;
+                line-height: 22px;
+                color: #000;
+                text-align: center;
+                &-image {
+                    max-width: 150px;
+                    margin-top: 15px;
+                    text-align: center;
+                }
+                &-star {
+                    max-width: 120px;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    text-align: center;
+                }
+                &-testimonial {
+                    font-style: italic;
+                    font-weight: 700;
+                    text-align: justify;
+                    max-width: 200px;
+                    margin: 0 auto;
+                    margin-bottom: 15px;
+                }
+                &-photo {
+                    max-width: 200px;
+                    margin-top: 15px;
+                    text-align: center;
+                }
+                &-city {
+                    color: #ba272e;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+                &-adress {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+
+
+                &-number {
+                    font-size: 60px;
+                    line-height: 100px;
+                }
+            }
+            &-description {
+                padding: 15px;
+                padding-bottom: 0px;
+                font-size: 14px;
+                line-height: 22px;
+                color: #000;
+                text-align: justify;
+                max-width: 230px;
+                margin: 0 auto;
+            }
+        }
     }
 
-    &-box-full {
-        padding: 0px;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        background-color: #FFF;
-        box-shadow: 0 0 1em lightgrey;
-    }
-    &-box-title {
+
+    &-video {
+        height: 415px;
         width: 100%;
-        padding: 5px 0px;
-        background-color: #ba272e;
-        color: #FFF;
-        text-align: center;
-        vertical-align: middle;
-        font-size: 44px;
-        line-height: 44px;
-        font-weight: 700;
-        text-transform: uppercase;
     }
 
-    &-box-title-small {
-        padding: 10px 0px;
-        font-size: 27px;
-        line-height: 27px;
-    }
 
-    &-box-full-content {
-        padding: 15px;
-        font-size: 14px;
-        line-height: 24px;
-        text-align: center;
-    }
+}
 
-    &-box-full-content-image {
-        max-width: 150px;
-        margin-top: 15px;
-        text-align: center;
-    }
-    &-box-full-content-number {
-        font-size: 60px;
-        line-height: 100px;
-    }
 
+@media (max-width: 575.98px) {
+    .tfw-promo {
+                top: 110px;
+        &-title {
+            font-size: 32px;
+            line-height: 52px;
+            margin-top: 15px;
+
+        }
+        &-subtitle {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &-content {
+            margin-top: 15px;
+        }
+        &-label {
+            width: 100%;
+        }
+        &-triagle {
+            display: none;
+        }
+        &-video {
+            height: 100%;
+            width: 100%;
+        }
+        &-button {
+        &-wrapper {
+            position: relative;
+            margin-top: 30px;
+            width: 100%;
+        }
+        }
+        
+        &-box {
+            &-full {
+                &:last-of-type {
+                    margin-bottom: 15px;
+                }
+                &-description {
+                max-width: 100%;
+            }
+            }
+            &-title {
+                font-size: 32px;
+                &-small {
+                    font-size: 22px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
 }

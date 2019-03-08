@@ -1,26 +1,39 @@
 .tfw-header {
-    background-image: url(../img/baner.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-    height: 519px;
-    width: 100vw;
     position: relative;
-    min-width: 100%;
     &-container {
         position: relative;
         height: 100%;
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: -15px;
+    }
+    &-background {
+        width: 100vw;
+        position: relative
     }
     &-button {
+        &-wrapper {
+            position: absolute;
+            left: 300px;
+            bottom: 70px;
+        }
         background-color: #ba272e;
         padding: 5px 20px;
         color: #FFF;
         font-size: 20px;
         line-height: 40px;
-        &-wrapper {
-            position: absolute;
-            left: 160px;
-            bottom: 80px;
+        transition: background-color 500ms linear;
+        &:hover {
+            background-color: darken(#ba272e, 10%);
+            transition: background-color 500ms linear;
         }
     }
+}
+
+
+@media (max-width: 575.98px) {
+    .tfw-header {
+        display: none;
+    }
+
 }

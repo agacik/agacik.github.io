@@ -27,8 +27,22 @@
             text-transform: uppercase;
             font-weight: 700;
         }
-            &-label-small {
-        font-size: 12px;
+        &-label-small {
+            font-size: 12px;
+        }
     }
+}
+
+@media (max-width: 767.98px) {
+    .tfw-search-bar {
+        height: 160px;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .tfw-search-bar {
+        top: 110px;
+        height: 200px;
     }
 }
