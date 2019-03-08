@@ -131,7 +131,7 @@ body {
     transition: background-color 500ms linear; }
     .tfw-header-button-wrapper {
       position: absolute;
-      left: 300px;
+      left: 20%;
       bottom: 70px; }
     .tfw-header-button:hover {
       background-color: #901e24;
