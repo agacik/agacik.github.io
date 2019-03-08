@@ -3,7 +3,7 @@ $(document).ready(function () {
             $('#tfw-promo').load( 'https://agacik.github.io/tfw/wroclaw.html' );
         });
     //remove this });
-        $('#research').click(function(){
-            $('#content').load( 'about.html' );
+        $('#city').val('gdynia').click(function(){
+            $('#tfw-promo').load( 'https://agacik.github.io/tfw/gdynia.html' );
         });
     });
