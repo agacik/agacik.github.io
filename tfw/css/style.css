@@ -310,8 +310,10 @@ body {
           line-height: 26px; }
         .tfw-promo-box-full-content-adress {
           font-weight: 700;
-          font-size: 18px;
+          font-size: 16px;
           line-height: 26px; }
+          .tfw-promo-box-full-content-adress-gallery {
+            font-size: 10px; }
         .tfw-promo-box-full-content-number {
           font-size: 60px;
           line-height: 100px; }
