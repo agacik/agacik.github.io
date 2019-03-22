@@ -40,7 +40,7 @@
         color: #FFF;
         background-color: #ba272e;
         text-align: center;
-        font-size: 30px;
+        font-size: 22px;
         line-height: 40px;
         font-weight: 700;
     }
@@ -66,9 +66,21 @@
         min-width: 240px;
         display: block;
         margin: 0 auto;
-        &:hover {
+        outline: none;
+        &:hover, &:focus {
             background-color: darken(#ba272e, 10%);
             transition: background-color 500ms linear;
+            outline: none;
+        }
+    }
+    &-link {
+        outline: none;
+        text-decoration: none;
+        color: #FFF;
+        &:hover, &:focus {
+            outline: none;
+            text-decoration: none;
+            color: #FFF;
         }
     }
     &-box {
@@ -111,6 +123,7 @@
                     max-width: 150px;
                     margin-top: 15px;
                     text-align: center;
+                    border-radius: 100px;
                 }
                 &-star {
                     max-width: 120px;
@@ -157,6 +170,7 @@
                 line-height: 22px;
                 color: #000;
                 text-align: justify;
+                text-justify: inter-word;
                 max-width: 230px;
                 margin: 0 auto;
             }

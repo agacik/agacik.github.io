@@ -51,7 +51,8 @@ body {
   color: #53354A; }
 
 .red {
-  color: #ba272e; }
+  color: #ba272e;
+  font-weight: 700; }
 
 .padding-left-0 {
   padding-left: 0px; }
@@ -213,7 +214,7 @@ body {
     color: #FFF;
     background-color: #ba272e;
     text-align: center;
-    font-size: 30px;
+    font-size: 22px;
     line-height: 40px;
     font-weight: 700; }
   .tfw-promo-triagle {
@@ -231,15 +232,25 @@ body {
     text-transform: uppercase;
     min-width: 240px;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    outline: none; }
     .tfw-promo-button-wrapper {
       position: absolute;
       bottom: 15px;
       width: 100%; }
-    .tfw-promo-button:hover {
+    .tfw-promo-button:hover, .tfw-promo-button:focus {
       background-color: #901e24;
       -webkit-transition: background-color 500ms linear;
-      transition: background-color 500ms linear; }
+      transition: background-color 500ms linear;
+      outline: none; }
+  .tfw-promo-link {
+    outline: none;
+    text-decoration: none;
+    color: #FFF; }
+    .tfw-promo-link:hover, .tfw-promo-link:focus {
+      outline: none;
+      text-decoration: none;
+      color: #FFF; }
   .tfw-promo-box {
     padding: 15px;
     margin-bottom: 15px;
@@ -278,7 +289,8 @@ body {
         .tfw-promo-box-full-content-image {
           max-width: 150px;
           margin-top: 15px;
-          text-align: center; }
+          text-align: center;
+          border-radius: 100px; }
         .tfw-promo-box-full-content-star {
           max-width: 120px;
           margin-top: 15px;
@@ -315,6 +327,7 @@ body {
         line-height: 22px;
         color: #000;
         text-align: justify;
+        text-justify: inter-word;
         max-width: 230px;
         margin: 0 auto; }
   .tfw-promo-video {
