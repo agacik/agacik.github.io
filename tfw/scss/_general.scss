@@ -8,6 +8,7 @@ body {
     font-family: 'Lato', sans-serif;
     line-height: 2em;
     color: $color_plum;
+    overflow-x: hidden;
 }
 
 .red {
@@ -25,9 +26,9 @@ body {
 
 @media (max-width: 575.98px) {
     .padding-left-0 {
-    padding-left: 15px;
+    // padding-left: 15px;
 }
     .padding-right-0 {
-    padding-right: 15px;
+    // padding-right: 15px;
 }
 }

@@ -48,7 +48,8 @@ body {
           box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   line-height: 2em;
-  color: #53354A; }
+  color: #53354A;
+  overflow-x: hidden; }
 
 .red {
   color: #ba272e;
@@ -60,12 +61,6 @@ body {
 .padding-right-0 {
   padding-right: 0px; }
 
-@media (max-width: 575.98px) {
-  .padding-left-0 {
-    padding-left: 15px; }
-
-  .padding-right-0 {
-    padding-right: 15px; } }
 .tfw-nav {
   background-image: url(../img/pattern.jpg);
   background-repeat: repeat;
