@@ -1,0 +1,245 @@
+.tfw-promo {
+    color: #ba272e;
+    width: 100vw;
+    position: relative;
+    &-container {
+        position: relative;
+        height: 100%;
+    }
+    &-title {
+        font-size: 68px;
+        line-height: 108px;
+        color: #ba272e;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &-subtitle {
+        font-size: 35px;
+        line-height: 45px;
+        color: #ba272e;
+        font-weight: 700;
+    }
+    &-content {
+        font-size: 14px;
+        line-height: 24px;
+        color: #ba272e;
+        margin-top: 15px;
+        text-align: center;
+    }
+    &-image {
+        position: relative;
+    }
+    &-photo {
+        width: 100%;
+    }
+    &-label {
+        position: absolute;
+        bottom: 20px;
+        width: 104%;
+        height: 40px;
+        color: #FFF;
+        background-color: #ba272e;
+        text-align: center;
+        font-size: 22px;
+        line-height: 40px;
+        font-weight: 700;
+    }
+    &-triagle {
+        position: absolute;
+        bottom: 20px;
+        right: -60px;
+        height: 40px;
+        widows: auto;
+    }
+    &-button {
+        &-wrapper {
+            position: absolute;
+            bottom: 15px;
+            width: 100%;
+        }
+        background-color: #ba272e;
+        padding: 5px 10px;
+        color: #FFF;
+        font-size: 20px;
+        line-height: 40px;
+        text-transform: uppercase;
+        min-width: 240px;
+        display: block;
+        margin: 0 auto;
+        outline: none;
+        &:hover, &:focus {
+            background-color: darken(#ba272e, 10%);
+            transition: background-color 500ms linear;
+            outline: none;
+        }
+    }
+    &-link {
+        outline: none;
+        text-decoration: none;
+        color: #FFF;
+        &:hover, &:focus {
+            outline: none;
+            text-decoration: none;
+            color: #FFF;
+        }
+    }
+    &-box {
+        padding: 15px;
+        margin-bottom: 15px;
+        background-color: #FFF;
+        box-shadow: 0 0 1em lightgrey;
+        &-title {
+            width: 100%;
+            padding: 5px 0px;
+            background-color: #ba272e;
+            color: #FFF;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 44px;
+            line-height: 44px;
+            font-weight: 700;
+            text-transform: uppercase;
+            &-small {
+                padding: 10px 0px;
+                font-size: 27px;
+                line-height: 27px;
+            }
+        }
+        &-full {
+            padding: 0px;
+            margin-bottom: 15px;
+            background-color: #FFF;
+            box-shadow: 0 0 1em lightgrey;
+            &:last-of-type {
+                margin-bottom: 45px;
+            }
+            &-content {
+                padding: 15px;
+                font-size: 14px;
+                line-height: 22px;
+                color: #000;
+                text-align: center;
+                &-image {
+                    max-width: 150px;
+                    margin-top: 15px;
+                    text-align: center;
+                    border-radius: 100px;
+                }
+                &-star {
+                    max-width: 120px;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    text-align: center;
+                }
+                &-testimonial {
+                    font-style: italic;
+                    font-weight: 700;
+                    text-align: justify;
+                    max-width: 200px;
+                    margin: 0 auto;
+                    margin-bottom: 15px;
+                }
+                &-photo {
+                    max-width: 200px;
+                    margin-top: 15px;
+                    text-align: center;
+                }
+                &-city {
+                    color: #ba272e;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+                &-adress {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 26px;
+                    &-gallery {
+                        font-size: 10px;
+                    }
+                }
+
+
+                &-number {
+                    font-size: 60px;
+                    line-height: 100px;
+                }
+            }
+            &-description {
+                padding: 15px;
+                padding-bottom: 0px;
+                font-size: 14px;
+                line-height: 22px;
+                color: #000;
+                text-align: justify;
+                text-justify: inter-word;
+                max-width: 230px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+
+    &-video {
+        height: 415px;
+        width: 100%;
+    }
+
+
+}
+
+
+@media (max-width: 575.98px) {
+    .tfw-promo {
+                top: 110px;
+        &-title {
+            font-size: 32px;
+            line-height: 52px;
+            margin-top: 15px;
+
+        }
+        &-subtitle {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &-content {
+            margin-top: 15px;
+        }
+        &-label {
+            width: 100%;
+        }
+        &-triagle {
+            display: none;
+        }
+        &-video {
+            height: 100%;
+            width: 100%;
+        }
+        &-button {
+        &-wrapper {
+            position: relative;
+            margin-top: 30px;
+            width: 100%;
+        }
+        }
+        
+        &-box {
+            &-full {
+                &:last-of-type {
+                    margin-bottom: 15px;
+                }
+                &-description {
+                max-width: 100%;
+            }
+            }
+            &-title {
+                font-size: 32px;
+                &-small {
+                    font-size: 22px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+}

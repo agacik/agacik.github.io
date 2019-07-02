@@ -1,0 +1,55 @@
+.tfw-nav {
+    background-image: url(../img/pattern.jpg);
+    background-repeat: repeat;
+    height: 155px;
+    width: 100vw;
+    min-width: 100%;
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .social-icon {
+        color: darkgray;
+        margin: 0 5px;
+        cursor: pointer;
+        display: inline-block;
+
+        &-wrapper {
+            position: absolute;
+            top: 20px;
+            right: 0px;
+        }
+        &-link {
+            text-decoration: none;
+            outline: none;
+            position: relative;
+            text-align: center;
+            opacity: 0.7;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        &-img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+
+
+
+@media (max-width: 575.98px) {
+    .tfw-nav {
+        height: 110px;
+        position: fixed;
+        z-index: 1000;
+        .social-icon {
+            display: none;
+        }
+    }
+
+}
