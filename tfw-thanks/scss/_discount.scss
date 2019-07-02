@@ -1,5 +1,6 @@
 .tfw-discount {
     position: relative;
+    margin-top: 30px;
     margin-bottom: 30px;
     &-container {
         position: relative;
@@ -77,7 +78,6 @@
 
 .tfw-question {
     position: relative;
-    
     margin: 0 auto;
     margin-bottom: 30px;
     &-box {
@@ -97,7 +97,7 @@
         z-index: 1000;
         &-title {
             font-size: 30px;
-                        line-height: 60px;
+            line-height: 60px;
             color: #FFF;
             font-weight: 700;
             padding: 15px 0;
@@ -108,19 +108,41 @@
             color: #FFF;
             font-weight: 300;
         }
-        
+
     }
-    &-subtitle {
-        width: 100%;
-        background-color: #ba272e;
-        color: #FFF;
-        font-size: 16px;
-        line-height: 32px;
-        vertical-align: middle;
-        margin-top: -10px;
-        font-weight: 300;
-        text-align: center;
-        margin-bottom: 30px;
+}
+
+@media (max-width: 575.98px) {
+
+    .tfw-discount,
+    .tfw-contact,
+    .tfw-film,
+    .tfw-question {
+        top: 110px;
+    }
+    .tfw-contact {
+        &-content {
+            font-size: 18px;
+            line-height: 22px;
+        }
     }
 
+    .tfw-question {
+        &-content {
+            padding: 10px;
+            &-title {
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFF;
+                font-weight: 700;
+                padding: 5px 0;
+            }
+            &-text {
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFF;
+                font-weight: 300;
+            }
+        }
+    }
 }

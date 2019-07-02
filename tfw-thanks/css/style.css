@@ -164,9 +164,10 @@ body {
 
 @media (max-width: 575.98px) {
   .tfw-header {
-    display: none; } }
+    top: 110px; } }
 .tfw-discount {
   position: relative;
+  margin-top: 30px;
   margin-bottom: 30px; }
   .tfw-discount-container {
     position: relative;
@@ -253,18 +254,31 @@ body {
       line-height: 40px;
       color: #FFF;
       font-weight: 300; }
-  .tfw-question-subtitle {
-    width: 100%;
-    background-color: #ba272e;
-    color: #FFF;
-    font-size: 16px;
-    line-height: 32px;
-    vertical-align: middle;
-    margin-top: -10px;
-    font-weight: 300;
-    text-align: center;
-    margin-bottom: 30px; }
 
+@media (max-width: 575.98px) {
+  .tfw-discount,
+  .tfw-contact,
+  .tfw-film,
+  .tfw-question {
+    top: 110px; }
+
+  .tfw-contact-content {
+    font-size: 18px;
+    line-height: 22px; }
+
+  .tfw-question-content {
+    padding: 10px; }
+    .tfw-question-content-title {
+      font-size: 18px;
+      line-height: 22px;
+      color: #FFF;
+      font-weight: 700;
+      padding: 5px 0; }
+    .tfw-question-content-text {
+      font-size: 18px;
+      line-height: 22px;
+      color: #FFF;
+      font-weight: 300; } }
 .tfw-search-bar {
   background-color: #ba272e;
   color: #FFF;
