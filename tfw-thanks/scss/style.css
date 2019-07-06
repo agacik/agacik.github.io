@@ -49,7 +49,12 @@ body {
   font-family: 'Lato', sans-serif;
   line-height: 2em;
   color: #53354A;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-image: url(../img/pattern.jpg);
+  background-repeat: repeat;
+  height: 155px;
+  width: 100vw;
+  min-width: 100%; }
 
 .red {
   color: #ba272e;
@@ -113,13 +118,13 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    margin-bottom: -15px; }
-  .tfw-header-shadow {
-    -webkit-box-shadow: 20px 20px 20px rgba(255, 255, 255, 0.4);
-            box-shadow: 20px 20px 20px rgba(255, 255, 255, 0.4); }
+    margin-bottom: 10px; }
   .tfw-header-background {
     width: 100vw;
     position: relative; }
+  .tfw-header-shadow {
+    -webkit-box-shadow: 0px 6px 20px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 6px 20px -8px rgba(0, 0, 0, 0.75); }
   .tfw-header-button {
     background-color: #ba272e;
     padding: 5px 20px;
@@ -136,7 +141,8 @@ body {
       background-color: #901e24;
       -webkit-transition: background-color 500ms linear;
       transition: background-color 500ms linear; }
-  .tfw-header .carousel-control-next-icon, .tfw-header .carousel-control-prev-icon {
+  .tfw-header .carousel-control-next-icon,
+  .tfw-header .carousel-control-prev-icon {
     display: inline-block;
     width: 28px;
     height: 15px;
@@ -149,15 +155,113 @@ body {
     background-image: url("../img/prev.png");
     height: 28px;
     width: 15px; }
-  .tfw-header .carousel-control-next, .tfw-header .carousel-control-prev {
+  .tfw-header .carousel-control-next,
+  .tfw-header .carousel-control-prev {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
     top: 45%; }
 
-@media (max-width: 575.98px) {
-  .tfw-header {
-    display: none; } }
+.tfw-discount {
+  position: relative;
+  margin-bottom: 30px; }
+  .tfw-discount-container {
+    position: relative;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px; }
+  .tfw-discount-content {
+    display: inline;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #ba272e;
+    margin-top: 15px;
+    text-align: center;
+    width: 100%; }
+    .tfw-discount-content-bold {
+      font-weight: 700; }
+
+.tfw-contact {
+  position: relative;
+  margin-bottom: 30px; }
+  .tfw-contact-container {
+    position: relative;
+    height: 100%;
+    margin: 0px;
+    padding: 0px; }
+  .tfw-contact-content {
+    display: inline;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #ba272e;
+    margin-top: 15px;
+    text-align: center;
+    width: 100%; }
+    .tfw-contact-content-bold {
+      font-weight: 700; }
+    .tfw-contact-content-link {
+      color: #000;
+      text-decoration: underline; }
+      .tfw-contact-content-link:hover {
+        color: #ba272e; }
+
+.tfw-film {
+  position: relative; }
+  .tfw-film-subtitle {
+    width: 100%;
+    background-color: #ba272e;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 32px;
+    vertical-align: middle;
+    margin-top: -10px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px; }
+
+.tfw-question {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 30px; }
+  .tfw-question-box {
+    position: relative; }
+  .tfw-question-bg {
+    position: relative;
+    display: inline-block; }
+  .tfw-question-content {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 1000; }
+    .tfw-question-content-title {
+      font-size: 30px;
+      line-height: 60px;
+      color: #FFF;
+      font-weight: 700;
+      padding: 15px 0; }
+    .tfw-question-content-text {
+      font-size: 30px;
+      line-height: 40px;
+      color: #FFF;
+      font-weight: 300; }
+  .tfw-question-subtitle {
+    width: 100%;
+    background-color: #ba272e;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 32px;
+    vertical-align: middle;
+    margin-top: -10px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px; }
+
 .tfw-search-bar {
   background-color: #ba272e;
   color: #FFF;
@@ -195,8 +299,7 @@ body {
     top: 110px;
     height: 200px; } }
 .tfw-promo {
-  background-color: #FFF;
-  color: #000;
+  color: #ba272e;
   width: 100vw;
   position: relative; }
   .tfw-promo-container {
@@ -216,8 +319,9 @@ body {
   .tfw-promo-content {
     font-size: 14px;
     line-height: 24px;
-    color: #000;
-    margin-top: 15px; }
+    color: #ba272e;
+    margin-top: 15px;
+    text-align: center; }
   .tfw-promo-image {
     position: relative; }
   .tfw-promo-photo {
