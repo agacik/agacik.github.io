@@ -1,0 +1,301 @@
+.tfw-discount {
+    position: relative;
+    top: -50px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    &-container {
+        position: relative;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+    &-content {
+        display: inline;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 32px;
+        color: #ba272e;
+        margin-top: 15px;
+        text-align: center;
+        width: 100%;
+        &-bold {
+            font-weight: 700;
+        }
+    }
+    &-spacer {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.tfw-contact {
+    position: relative;
+    margin-bottom: 30px;
+    &-container {
+        position: relative;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+
+    }
+    &-content {
+        display: inline;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 30px;
+        color: #ba272e;
+        margin-top: 15px;
+        text-align: center;
+        width: 100%;
+        &-bold {
+            font-weight: 700;
+        }
+        &-link {
+            color: #000;
+            text-decoration: underline;
+            &:hover {
+                color: #ba272e;
+            }
+        }
+    }
+
+}
+
+.tfw-film {
+    position: relative;
+    top: -50px;
+    &-container {
+        margin-bottom: 30px;
+    }
+    &-image {
+        width: 100%;
+        height: auto;
+    }
+    &-subtitle {
+        width: 100%;
+        background-color: #ba272e;
+        color: #FFF;
+        font-size: 20px;
+        line-height: 40px;
+        vertical-align: middle;
+        margin-top: -10px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    &-content {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.75);
+        text-align: justify;
+    }
+    &-button {
+        display: block;
+        padding: 15px 40px;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #FFF;
+        text-align: center;
+        background-color: #ba272e;
+        border-radius: 10px;
+        margin: 0 auto;
+        -webkit-box-shadow: 0px 10px 20px -8px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 10px 20px -8px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 10px 20px -8px rgba(0, 0, 0, 0.75);
+        transition: 200ms linear all;
+        &:hover {
+            background-color: #891d22;
+        }
+    }
+
+}
+
+
+
+.tfw-social {
+    position: relative;
+    top: -50px;
+    &-container {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    &-image {
+        width: 98%;
+        height: auto;
+        margin-left: 2%;
+        cursor: pointer;
+    }
+    &-ribon {
+        position: absolute;
+        top: 5%;
+        left: 0;
+        width: 30%;
+        background-color: #ba272e;
+        color: #FFF;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: left;
+        padding-left: 30px;
+    }
+    &-title {
+        position: absolute;
+        bottom: 15%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        background-image: url('../img/square_white.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #ba272e;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 48px;
+        cursor: pointer;
+        transition: 200ms linear all;
+    }
+    &-container:hover &-title {
+        background-image: url('../img/square_red.png');
+        color: #FFF;
+        transition: 200ms linear all;
+    }
+    &-content {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.75);
+        text-align: justify;
+    }
+    &-button {
+        display: block;
+        padding: 15px 40px;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #FFF;
+        text-align: center;
+        background-color: #ba272e;
+        border-radius: 10px;
+        margin: 0 auto;
+        -webkit-box-shadow: 0px 10px 20px -8px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 10px 20px -8px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 10px 20px -8px rgba(0, 0, 0, 0.75);
+        transition: 200ms linear all;
+        &:hover {
+            background-color: #891d22;
+        }
+    }
+
+}
+
+
+
+.tfw-question {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    &-box {
+        position: relative;
+    }
+    &-bg {
+        position: relative;
+        display: inline-block;
+    }
+    &-content {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        z-index: 1000;
+        &-title {
+            font-size: 36px;
+            line-height: 50px;
+            color: #FFF;
+            font-weight: 700;
+        }
+        &-text {
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFF;
+            font-weight: 300;
+        }
+        &-link {
+            color: #FFF;
+            text-decoration: underline;
+            font-weight: 700;
+            &:hover {
+                color: #ba272e;
+            }
+        }
+    }
+    &-arrow {
+        width: auto;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+
+    .tfw-discount,
+    .tfw-contact,
+    .tfw-film,
+    .tfw-question,
+    .tfw-social {
+        top: 110px;
+    }
+    .tfw-contact {
+        &-content {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    .tfw-question {
+        &-content {
+            padding: 10px;
+            &-title {
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFF;
+                font-weight: 700;
+            }
+            &-text {
+                font-size: 14px;
+                line-height: 18px;
+                color: #FFF;
+                font-weight: 300;
+            }
+        }
+        &-arrow {
+            display: inline-block;
+            width: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    .tfw-discount {
+        &-content {
+            padding: 0 15px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &-spacer {
+            border: 1px solid #ba272e;
+        }
+    }
+    .tfw-social {
+        &-ribon {
+            width: 45%;
+        }
+        &-title {
+            font-size: 14px;
+            line-height: 30px;
+            background-size: contain;
+        }
+    }
+}

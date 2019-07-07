@@ -1,0 +1,28 @@
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 28px;
+    height: 15px;
+    background: no-repeat 50%/100% 100%;
+}
+
+.carousel-control-next-icon {
+    background-image: url('../img/next.png');
+    height: 28px;
+    width: 15px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../img/prev.png');
+    height: 28px;
+    width: 15px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    align-items: stretch;
+    top: 80px;
+}
+
+#carousel-city .carousel-control-next, #carousel-city .carousel-control-prev {
+    align-items: stretch;
+    top: 165px;
+}
