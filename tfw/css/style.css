@@ -133,6 +133,24 @@ body {
       background-color: #901e24;
       -webkit-transition: background-color 500ms linear;
       transition: background-color 500ms linear; }
+  .tfw-header .carousel-control-next-icon, .tfw-header .carousel-control-prev-icon {
+    display: inline-block;
+    width: 28px;
+    height: 15px;
+    background: no-repeat 50%/100% 100%; }
+  .tfw-header .carousel-control-next-icon {
+    background-image: url("../img/next.png");
+    height: 28px;
+    width: 15px; }
+  .tfw-header .carousel-control-prev-icon {
+    background-image: url("../img/prev.png");
+    height: 28px;
+    width: 15px; }
+  .tfw-header .carousel-control-next, .tfw-header .carousel-control-prev {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    top: 45%; }
 
 @media (max-width: 575.98px) {
   .tfw-header {

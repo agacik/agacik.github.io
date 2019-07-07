@@ -38,4 +38,8 @@ $(document).ready(function () {
     $('#city').change(function () {
         $('#tfw-promo').load('https://agacik.github.io/tfw/' + $(this).find(":selected").val() + '.html');
     });
+
+    $('#carousel-header').carousel({
+        interval:   4000,
+         });
 });
