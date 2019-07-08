@@ -259,16 +259,23 @@ body {
     -webkit-box-shadow: 0px 10px 20px -8px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 10px 20px -8px rgba(0, 0, 0, 0.75);
     -webkit-transition: 200ms linear all;
-    transition: 200ms linear all; }
+    transition: 200ms linear all;
+    text-decoration: none;
+    outline: none; }
     .tfw-film-button:hover {
       background-color: #891d22; }
+  .tfw-film-link:hover, .tfw-film-link:focus {
+    text-decoration: none;
+    color: #FFF;
+    outline: none; }
 
 .tfw-social {
   position: relative;
   top: -50px; }
   .tfw-social-container {
     position: relative;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    overflow: hidden; }
   .tfw-social-image {
     width: 98%;
     height: auto;
